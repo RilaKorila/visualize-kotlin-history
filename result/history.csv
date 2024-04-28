@@ -1,2 +1,3 @@
 ファイル名, 実行コマンド
 commiter_freq.txt, git log --format='%an' | sort | uniq -c | sort -nr
+commit_info.csv, git log --format='%an,%ad,%s' --date=iso-local --numstat --branches

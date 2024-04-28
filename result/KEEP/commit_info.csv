@@ -1,0 +1,1420 @@
+author,commit_time,message,lines_changed,branches
+Mikhail Zarechenskiy,2024-04-24 22:08:33 +0900,Update status of the non-local break/continue feature
+
+1	1	proposals/break-continue-in-inline-lambdas.md
+Nikita Bobko,2024-02-13 00:43:46 +0900,Fix references-to-java-synthetic-properties release version
+
+1	1	proposals/references-to-java-synthetic-properties.md
+Ilya Gorbunov,2024-02-05 15:41:03 +0900,Update status of KEEP-314
+
+2	2	proposals/open-ended-ranges.md
+Ilya Gorbunov,2022-10-12 02:57:56 +0900,Do not generalize Int/Long/Char as discrete types
+
+7	5	proposals/open-ended-ranges.md
+Ilya Gorbunov,2022-10-12 02:47:46 +0900,Add Rust ranges to the overview
+
+11	1	proposals/open-ended-ranges.md
+Ilya Gorbunov,2022-07-23 01:52:46 +0900,Expand summary of the Swift range API
+
+6	2	proposals/open-ended-ranges.md
+Ilya Gorbunov,2022-07-23 01:38:23 +0900,More conclusions from UX research
+
+16	3	proposals/open-ended-ranges.md
+Ilya Gorbunov,2022-07-22 04:01:57 +0900,Add a section about equality
+
+12	0	proposals/open-ended-ranges.md
+Ilya Gorbunov,2022-07-19 19:21:13 +0900,Open-ended ranges and rangeUntil operator KEEP
+
+231	0	proposals/open-ended-ranges.md
+Ilya Gorbunov,2023-04-28 01:18:16 +0900,Describe comparable time marks and their use cases
+
+102	9	proposals/stdlib/durations-and-time-measurement.md
+Anastasiya,2024-01-17 00:22:10 +0900,Merge pull request #369 from ejller/nekrasova/subclassOptInRequired
+Anastasia.Nekrasova,2024-01-15 19:35:48 +0900,Update proposals/subclass-opt-in-required.md
+
+60	2	proposals/subclass-opt-in-required.md
+Nikita Bobko,2024-01-03 00:14:01 +0900,Move data-objects.md to proposals/
+
+0	0	data-objects.md => proposals/data-objects.md
+Nikita Bobko,2024-01-02 23:50:26 +0900,Add "data objects" proposal
+
+207	0	data-objects.md
+Mikhail Zarechenskiy,2024-01-02 18:01:28 +0900,Add JetBrains official badge and Code of Conduct
+
+4	0	CODE_OF_CONDUCT.md
+2	0	README.md
+Abduqodiri Qurbonzoda,2023-09-08 21:52:16 +0900,HexFormat proposal
+
+320	0	proposals/stdlib/hex-format.md
+deotime,2023-05-29 21:17:56 +0900,Fix typos in Enum.entries KEEP (#346)
+
+3	3	proposals/enum-entries.md
+Anton Arhipov,2022-03-31 00:07:49 +0900,Update definitely-non-nullable-types.md
+
+2	2	proposals/definitely-non-nullable-types.md
+Denis.Zharkov,2021-08-11 21:07:31 +0900,Fix definitely-non-nullable-types.md
+
+8	8	proposals/definitely-non-nullable-types.md
+Denis.Zharkov,2021-08-11 21:03:19 +0900,Rename definitely-not-nullable-types.md -> definitely-non-nullable-types.md
+
+2	2	proposals/{definitely-not-nullable-types.md => definitely-non-nullable-types.md}
+Denis.Zharkov,2021-08-11 20:56:34 +0900,Update definitely-not-nullable-types.md
+
+24	18	proposals/definitely-not-nullable-types.md
+Denis.Zharkov,2021-07-20 02:15:04 +0900,Add definitely-not-nullable-types.md
+
+122	0	proposals/definitely-not-nullable-types.md
+Ludek Novy,2023-03-27 15:28:58 +0900,Create LICENSE
+
+201	0	LICENSE
+Vsevolod Tolstopyatov,2023-03-18 01:18:48 +0900,Update EnumEntries proposal (#345)
+
+41	29	proposals/enum-entries.md
+Pavel Shepelev,2022-12-21 16:44:47 +0900,Update result.md (#337)
+
+1	1	proposals/stdlib/result.md
+Евгений Михайлович Желенский,2022-12-21 16:43:22 +0900,Introduce secondary constructors with body (#335)
+
+15	0	proposals/inline-classes.md
+Евгений Михайлович Желенский,2022-12-21 16:35:48 +0900,Forbid context receivers for inline classes (#336)
+
+1	0	proposals/inline-classes.md
+Pavel Mikhailovskii,2022-12-14 20:16:51 +0900,A proposal for supporting references to synthetic Java properties (#329)
+
+133	0	proposals/references-to-java-synthetic-properties.md
+Pavel Mikhailovskii,2022-11-11 23:59:04 +0900,A proposal for supporting non-local `break` and `continue`
+
+164	0	proposals/break-continue-in-inline-lambdas.md
+FW,2022-11-10 12:27:22 +0900,Mark Markdown files as `linguist-detectable` (#332)
+
+1	0	.gitattributes
+icyerasor,2022-10-20 16:18:06 +0900,Missing space (#325)
+
+1	1	notes/value-classes.md
+Zheyu Jin,2022-09-30 03:21:04 +0900,Fix package name that contains `Continuation` def (#286)
+
+1	1	proposals/coroutines.md
+Egor Andreevich,2022-09-30 03:20:05 +0900,Fix minor typos (#298)
+
+6	6	proposals/context-receivers.md
+Leonid Startsev,2022-09-28 21:37:50 +0900,Actualize proposal about annotation instantiation (#324)
+
+4	5	proposals/annotation-instantiation.md
+Vsevolod Tolstopyatov,2022-09-13 04:02:33 +0900,KEEP for SubclassOptInRequired (#319)
+
+133	0	proposals/subclass-opt-in-required.md
+Ilya Gorbunov,2022-08-27 02:42:26 +0900,KEEP 321: update status, design decisions and minor edits
+
+13	8	proposals/stdlib/optional-extensions.md
+Kevin Bierhoff,2022-08-27 02:21:15 +0900,java.util.Optional extensions KEEP (KT-50484)
+
+280	0	proposals/stdlib/optional-extensions.md
+Vsevolod Tolstopyatov,2022-08-02 16:54:12 +0900, Decommission `Enum.values()` and replace it with `Enum.entries` (#284)
+
+187	0	proposals/enum-entries.md
+ilya-g,2022-07-31 22:25:28 +0900,Add a section about specialized value time marks (#310)
+
+55	5	proposals/stdlib/durations-and-time-measurement.md
+Ilmir Usmanov,2022-07-31 21:54:46 +0900,Document inline classes with generic underlying parameter (#313)
+
+17	1	proposals/inline-classes.md
+Shumaf Lovpache,2022-06-18 00:51:57 +0900,Fix typo in fragment with converted code example
+
+1	1	notes/web-workers.md
+Vahram,2022-07-06 17:35:14 +0900,fixed some grammar mistakes in README (#311)
+
+12	12	README.md
+Mikhail Glukhikh,2022-06-23 20:27:56 +0900,OptIn: KT-48890 related changes
+
+1	29	proposals/opt-in.md
+Mikhail Glukhikh,2022-06-08 19:25:53 +0900,Drop requirement about no parameters in opt-in marker
+
+0	2	proposals/opt-in.md
+Philipp Hofmann,2022-03-31 21:30:39 +0900,Code review
+
+2	2	proposals/coroutines.md
+Philipp Hofmann,2022-03-28 16:43:11 +0900,Fix a small typo in Coroutines proposal
+
+1	1	proposals/coroutines.md
+Mikhail Glukhikh,2021-12-24 20:52:30 +0900,Add chapter about OptIn contagiousness in lexical scopes
+
+45	3	proposals/opt-in.md
+Mikhail Glukhikh,2021-12-24 20:38:36 +0900,Add exception to marker on overridden rule
+
+21	2	proposals/opt-in.md
+Anastasia.Shadrina,2022-01-12 21:02:30 +0900,Add update on context receivers prototype state
+
+32	2	proposals/context-receivers.md
+Ilya Gorbunov,2022-01-10 09:43:15 +0900,Revert some changes and update the Duration proposal according to the latest design decisions in Kotlin 1.6.0
+
+51	36	proposals/stdlib/durations-and-time-measurement.md
+Ilya Gorbunov,2021-04-14 01:37:02 +0900,Update proposal with Duration API and storage changes
+
+21	32	proposals/stdlib/durations-and-time-measurement.md
+Anastasiya Shadrina,2021-09-07 16:35:50 +0900,Fix samples
+
+3	3	proposals/context-receivers.md
+Anastasiya Shadrina,2021-08-12 02:28:26 +0900,Fix functional types sample
+
+12	9	proposals/context-receivers.md
+Roman Elizarov,2021-07-28 16:15:03 +0900,Revert "capitalize `unit`"
+
+1	1	proposals/context-receivers.md
+Benjamin Shults,2021-06-27 01:12:20 +0900,capitalize `unit`
+
+1	1	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-25 17:31:13 +0900,Minor formatting fixes
+
+2	2	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-24 22:47:02 +0900,Update ToC
+
+1	1	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-24 18:13:57 +0900,Improve "Referencing specific receiver" section
+
+23	5	proposals/context-receivers.md
+Yufui Glen,2021-06-24 16:37:04 +0900,Minor improvements (#263)
+
+28	28	proposals/context-receivers.md
+Roman Elizarov,2021-06-22 03:21:32 +0900,~ Overloading by the presence of context
+
+49	0	proposals/context-receivers.md
+Márton Braun,2021-06-18 20:43:09 +0900,Fix typos and add some articles in Context Receivers proposal (#261)
+
+39	39	proposals/context-receivers.md
+Roman Elizarov,2021-06-18 16:20:19 +0900,~ Clarify context receivers vs builders
+
+5	1	proposals/context-receivers.md
+Roman Elizarov,2021-06-18 15:58:34 +0900,~ Parentheses vs angle brackets
+
+41	4	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-17 19:23:10 +0900,Add link to the issue
+
+3	2	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-17 17:57:43 +0900,~ Minor wording fixes
+
+7	7	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-17 17:42:54 +0900,~ Minor wording fixes
+
+6	6	proposals/context-receivers.md
+Roman Elizarov,2021-06-16 02:44:25 +0900,~ Open issues and concerns section
+
+69	0	proposals/context-receivers.md
+Roman Elizarov,2021-06-15 20:59:18 +0900,~ small style corrections, avoid direct use of Logger as context in examples
+
+41	39	proposals/context-receivers.md
+Roman Elizarov,2021-06-12 04:07:12 +0900,~ Corrections and additions
+
+342	184	proposals/context-receivers.md
+Anastasiya Shadrina,2021-06-11 17:12:50 +0900,Add initial proposal for context-receivers
+
+1000	0	proposals/context-receivers.md
+Alexander Udalov,2021-09-03 06:20:28 +0900,Minor, fix typo in opt-in requirements proposal
+
+2	2	proposals/opt-in.md
+Alexey Subach,2021-08-31 04:38:45 +0900,Fix typo in scripting-support.md
+
+1	1	proposals/scripting-support.md
+Alexey Subach,2021-08-30 06:41:54 +0900,Fix typo in Kotlin Scripting support proposal
+
+1	1	proposals/scripting-support.md
+xeruf,2021-08-10 19:47:10 +0900,scripting-support: language annotations for code blocks
+
+41	37	proposals/scripting-support.md
+Roman Elizarov,2021-08-13 20:18:48 +0900,Minor corrections (header and use-cases)
+
+22	10	proposals/opt-in.md
+Mikhail Glukhikh,2021-08-13 17:40:33 +0900,Make OptIn usage example more clear and consistent with new changes
+
+7	10	proposals/opt-in.md
+Mikhail Glukhikh,2021-08-13 17:32:45 +0900,Rephrase description when type requires opt-in marker
+
+2	2	proposals/opt-in.md
+Mikhail Glukhikh,2021-08-13 17:29:15 +0900,Change error message about OptIn usage
+
+2	1	proposals/opt-in.md
+Mikhail Glukhikh,2021-08-13 00:00:28 +0900,Fix typo
+
+1	2	proposals/opt-in.md
+Mikhail Glukhikh,2021-07-30 22:34:49 +0900,OptIn: add chapter about contagiousness
+
+56	9	proposals/opt-in.md
+Mikhail Glukhikh,2021-07-30 18:50:28 +0900,OptIn: add chapter about overridden declarations
+
+40	0	proposals/opt-in.md
+Mikhail Glukhikh,2021-07-30 18:20:11 +0900,OptIn: replace -Xopt-in with a new -opt-in
+
+5	5	proposals/opt-in.md
+Mikhail Glukhikh,2021-07-30 18:11:52 +0900,OptIn: add info about targets/retentions
+
+4	2	proposals/opt-in.md
+Mikhail Glukhikh,2021-07-30 18:01:00 +0900,OptIn: minor style fixes
+
+3	3	proposals/opt-in.md
+Mikhail Glukhikh,2021-07-30 17:56:38 +0900,Rename experimental.md to opt-in.md
+
+1	200	proposals/experimental.md
+200	0	proposals/opt-in.md
+1	1	proposals/unsigned-types.md
+Alexander Udalov,2021-08-03 04:12:39 +0900,Update repeatable annotations (#257)
+
+10	5	proposals/repeatable-annotations.md
+Alexander Udalov,2021-07-26 07:41:14 +0900,Update repeatable annotations KEEP (#257) informed by implementation
+
+11	7	proposals/repeatable-annotations.md
+Roman Elizarov,2021-07-21 22:34:02 +0900,value-classes: Fix int-as-Any example
+
+6	4	notes/value-classes.md
+Alexander Udalov,2021-05-28 04:00:35 +0900,Repeatable annotations (#257)
+
+163	0	proposals/repeatable-annotations.md
+Leonid Startsev,2021-07-14 19:57:43 +0900,Proposal for Instantiation of annotation classes (#267)
+
+66	0	proposals/annotation-instantiation.md
+Louis CAD,2021-06-18 20:36:58 +0900,Add missing comma (#262)
+
+1	1	notes/value-classes.md
+ilya-g,2021-06-01 19:39:25 +0900,Clarifications about unsigned types use cases (#254)
+
+23	4	proposals/unsigned-types.md
+Vincent Lau,2021-05-26 21:14:20 +0900,Fix typo (#256)
+
+1	1	proposals/inline-classes.md
+Roman Elizarov,2021-05-09 20:05:45 +0900,Revise Result type for Kotlin 1.5, remove restrictions (#244)
+
+56	32	proposals/stdlib/result.md
+Vusi Moyo,2021-05-09 19:34:16 +0900,grammar fixes (#255)
+
+11	11	notes/value-classes.md
+Ilmir Usmanov,2021-05-06 16:09:59 +0900,Inline classes are stable now
+
+1	1	proposals/inline-classes.md
+Ilya Gorbunov,2021-05-07 23:40:35 +0900,Update status of KEEP-135 (unsigned types)
+
+11	1	proposals/unsigned-types.md
+Ilya Gorbunov,2021-05-05 02:42:53 +0900,Update status of KEEP-223
+
+1	1	proposals/stdlib/locale-agnostic-case-conversions.md
+Ilya Gorbunov,2021-05-05 02:42:34 +0900,Update status of KEEP-227
+
+4	5	proposals/stdlib/char-int-conversions.md
+Louis CAD,2021-04-20 19:36:02 +0900,Fix wrong word: underlying -> underlining (#252)
+
+1	1	notes/value-classes.md
+Roman Elizarov,2021-04-16 19:52:20 +0900,Introduce an explicit `copy var` notation (#247)
+
+165	145	notes/value-classes.md
+Ilmir Usmanov,2021-04-12 23:16:13 +0900,Explain mangling of functions with Result in signature
+
+9	0	proposals/inline-classes.md
+zhelenskiy,2021-04-14 17:26:53 +0900,Fixing broken heading link (#250)
+
+1	1	notes/value-classes.md
+Roman Elizarov,2021-04-09 20:16:58 +0900,Expect sealed in multiplatform (#246)
+
+22	0	proposals/sealed-interface-freedom.md
+Nicola Corti,2021-03-19 17:45:11 +0900,Updating confusing comment on Result/Limitations (#212)
+
+1	1	proposals/stdlib/result.md
+Egor Andreevich,2021-03-19 02:44:31 +0900,Fix a few typos in value-classes.md (#239)
+
+6	6	notes/value-classes.md
+Ilya Gorbunov,2021-03-16 23:40:39 +0900,Restore the old proposal file with a link to the new one
+
+1	0	proposals/stdlib/locale-agnostic-string-conversions.md
+Ilya Gorbunov,2020-12-18 10:43:59 +0900,Clarify details of the new functions and proposed replacements
+
+100	44	proposals/stdlib/locale-agnostic-case-conversions.md
+Ilya Gorbunov,2020-12-18 22:15:19 +0900,Rename the proposal file
+
+0	0	proposals/stdlib/{locale-agnostic-string-conversions.md => locale-agnostic-case-conversions.md}
+Abduqodiri Qurbonzoda,2020-11-17 05:43:54 +0900,Add some detailed explanations
+
+7	5	proposals/stdlib/locale-agnostic-string-conversions.md
+Abduqodiri Qurbonzoda,2020-11-10 11:09:14 +0900,Update KEEP document, detailed explanation still needed
+
+12	7	proposals/stdlib/locale-agnostic-string-conversions.md
+Ilmir Usmanov,2021-03-16 09:27:32 +0900,Revert the limitation of var properties inside inline classes
+
+1	5	proposals/inline-classes.md
+Ilya Gorbunov,2021-03-13 13:17:42 +0900,Update KEEP-20 status
+
+1	1	proposals/stdlib/occurrences-of.md
+Ilmir Usmanov,2021-03-09 09:23:23 +0900,Add link to issue
+
+2	2	notes/web-workers.md
+Ilmir Usmanov,2021-03-09 09:22:09 +0900,Add link to issue
+
+2	2	notes/code-coloring.md
+Ilmir Usmanov,2021-03-09 08:54:51 +0900,Move implicit code coloring issues from web-workers to code coloring
+
+72	3	notes/code-coloring.md
+2	59	notes/web-workers.md
+Ilmir Usmanov,2021-02-10 05:40:18 +0900,with -> context
+
+1	2	notes/code-coloring.md
+Ilmir Usmanov,2021-02-10 05:18:03 +0900,Minor. Fix stilistic errors
+
+7	6	notes/code-coloring.md
+Ilmir Usmanov,2021-02-10 04:32:03 +0900,Design notes on web workers
+
+822	0	notes/web-workers.md
+Ilmir Usmanov,2021-02-10 04:31:30 +0900,Design notes on code coloring
+
+295	0	notes/code-coloring.md
+Roman Elizarov,2021-02-03 16:50:48 +0900,Sealed interfaces and sealed classes freedom (#225)
+
+1	2	proposals/sealed-class-inheritance.md
+186	0	proposals/sealed-interface-freedom.md
+Roman Elizarov,2021-02-02 01:21:53 +0900,Design Notes on Kotlin Value Classes discussion issue added
+
+1	0	notes/value-classes.md
+Roman Elizarov,2021-02-02 01:01:57 +0900,Updated minus 100 points link
+
+1	1	notes/value-classes.md
+Roman Elizarov,2021-02-02 00:18:12 +0900,Design Notes on Kotlin Value Classes (#236)
+
+10	3	README.md
+1238	0	notes/value-classes.md
+Abduqodiri Qurbonzoda,2021-01-22 03:24:55 +0900,Add a stub under the old name with a link to the renamed doc
+
+1	0	proposals/stdlib/scan-and-scanReduce.md
+Abduqodiri Qurbonzoda,2021-01-14 08:43:04 +0900,Update runningFold and runningReduce KEEP
+
+133	0	proposals/stdlib/runningFold-and-runningReduce.md
+0	211	proposals/stdlib/scan-and-scanReduce.md
+Ilya Gorbunov,2021-01-21 00:59:27 +0900,Update KEEP-223 status
+
+3	2	proposals/stdlib/locale-agnostic-string-conversions.md
+Ilya Gorbunov,2021-01-21 00:54:52 +0900,JVM records: add related issue number
+
+1	0	proposals/jvm-records.md
+Abduqodiri Qurbonzoda,2021-01-21 02:19:36 +0900,Straighten Char-to-code and Char-to-digit conversions out (#228)
+
+185	0	proposals/stdlib/char-int-conversions.md
+Ilya Gorbunov,2020-12-07 18:03:22 +0900,Initial version of the JVM records support proposal
+
+164	0	proposals/jvm-records.md
+Ilmir Usmanov,2021-01-12 20:12:26 +0900,Inline Classes: Document mangling schemes
+
+91	0	proposals/inline-classes.md
+Roman Elizarov,2020-12-25 17:43:25 +0900,Delete denotable-nullability-flexible-types.md
+
+0	104	proposals/denotable-nullability-flexible-types.md
+zhelenskiy,2020-12-24 20:08:29 +0900,A typo fixed (#216)
+
+1	1	proposals/scripting-support.md
+Denis Zharkov,2019-10-02 01:34:12 +0900,Add proposal KEEP-193: Named arguments in their own position
+
+76	0	proposals/named-arguments-in-their-own-position.md
+Anton Bannykh,2018-09-22 01:18:30 +0900,Fill the Kotlin/JS implementation details
+
+30	2	proposals/enhancing-main-convention.md
+Denis Zharkov,2018-09-19 00:34:10 +0900,Update enhancing-main-convention.md
+
+8	7	proposals/enhancing-main-convention.md
+Denis Zharkov,2018-09-19 00:29:31 +0900,Update enhancing-main-convention.md
+
+1	1	proposals/enhancing-main-convention.md
+Denis Zharkov,2018-09-18 23:59:35 +0900,Update enhancing-main-convention.md
+
+1	1	proposals/enhancing-main-convention.md
+Denis Zharkov,2018-09-18 23:56:20 +0900,Add initial proposal for enhancing-main-convention
+
+182	0	proposals/enhancing-main-convention.md
+Ilmir Usmanov,2020-12-17 21:58:05 +0900,Explain the need for @JvmInline annotation
+
+2	0	proposals/inline-classes.md
+Ilmir Usmanov,2020-12-15 16:12:33 +0900,Use @JvmInline value instead of inline modifier
+
+116	95	proposals/inline-classes.md
+Roman Elizarov,2020-12-15 21:00:30 +0900,Revamping the KEEP (#232)
+
+50	20	README.md
+Vadim Semenov,2020-11-26 23:27:58 +0900,Fix a note about lambdas and suspending functions in KEEP (#222)
+
+1	1	proposals/coroutines.md
+Ilya Gorbunov,2020-11-25 00:32:17 +0900,Actualize info about monotonic clock implementation in K/N
+
+4	2	proposals/stdlib/durations-and-time-measurement.md
+Leonid Startsev,2020-11-21 04:30:44 +0900,Update serialization KEEP with actual for 1.4 and 1.0.0 information (#220)
+
+147	157	proposals/extensions/serialization.md
+Denis Zharkov,2020-10-28 18:12:30 +0900,Use proper naming in jdk-dependent-built-ins.md
+
+4	4	proposals/jdk-dependent-built-ins.md
+Ilya Gorbunov,2020-10-09 00:28:12 +0900,Use Unicode I with dot literally
+
+2	2	proposals/stdlib/locale-agnostic-string-conversions.md
+Abduqodiri Qurbonzoda,2020-10-08 21:26:00 +0900,Introduce locale-insensitive by default API for text processing (#221)
+
+104	0	proposals/stdlib/locale-agnostic-string-conversions.md
+iseki,2020-07-07 19:56:54 +0900,Fixed typo in coroutines.md (#217)
+
+1	1	proposals/coroutines.md
+Leonid Startsev,2020-04-08 21:45:12 +0900,Add explicit mode gradle DSL for both Groovy and Kotlin
+
+28	5	proposals/explicit-api-mode.md
+Pavel Semyonov,2020-04-08 19:43:58 +0900,Actualize Experimental API in Explicit API mode with new annotation names
+
+4	4	proposals/explicit-api-mode.md
+Arun Sasidharan,2020-03-27 02:02:33 +0900,Fix typos in android-parcelable.md (#98)
+
+7	7	proposals/extensions/android-parcelable.md
+Leonid Startsev,2020-03-20 21:39:20 +0900,Explicit api mode (#197)
+
+151	0	proposals/explicit-api-mode.md
+Ilya Gorbunov,2020-03-06 14:39:20 +0900,Minor: typo in heading markdown
+
+1	1	proposals/stdlib/scan-and-scanReduce.md
+Ilya Gorbunov,2020-01-31 15:46:22 +0900,Add a stub under the old name with a link to the renamed doc
+
+1	0	proposals/stdlib/durations-and-clocks.md
+Ilya Gorbunov,2020-01-31 15:42:59 +0900,Rename the proposal document
+
+0	0	proposals/stdlib/{durations-and-clocks.md => durations-and-time-measurement.md}
+Ilya Gorbunov,2020-01-31 15:40:49 +0900,Rename Clock and ClockMark to TimeSource and TimeMark
+
+46	47	proposals/stdlib/durations-and-clocks.md
+Abduqodiri Qurbonzoda,2020-02-14 05:33:10 +0900,Add link to KEEP issue
+
+3	0	proposals/stdlib/scan-and-scanReduce.md
+Abduqodiri Qurbonzoda,2020-02-14 03:55:21 +0900,scan and scanReduce extension functions (#206)
+
+208	0	proposals/stdlib/scan-and-scanReduce.md
+Dmitriy Novozhilov,2019-12-26 21:24:29 +0900,Update Kotlin Contracts proposal according changes in 1.4
+
+1	1	proposals/kotlin-contracts.md
+Alexander Udalov,2019-12-25 02:02:28 +0900,Rename "Experimental API support" -> "Opt-in requirements" (#95)
+
+67	59	proposals/experimental.md
+Him188,2019-11-02 02:37:54 +0900,Add missing bracket
+
+1	1	proposals/val-in-when-subject.md
+Alexander Udalov,2019-12-16 23:43:35 +0900,Remove -Xexperimental CLI argument (#95)
+
+6	13	proposals/experimental.md
+Ilya Gorbunov,2019-08-17 08:51:44 +0900,Update proposal text after renaming functions of Clock and ClockMark
+
+25	9	proposals/stdlib/durations-and-clocks.md
+Ilya Gorbunov,2019-06-19 04:36:41 +0900,Update status and prototype
+
+2	2	proposals/stdlib/durations-and-clocks.md
+Ilya Gorbunov,2019-06-19 04:36:22 +0900,Duration.toString behavior refinements
+
+7	3	proposals/stdlib/durations-and-clocks.md
+Ilya Gorbunov,2019-06-06 00:32:40 +0900,Duration and measureTime proposal
+
+389	0	proposals/stdlib/durations-and-clocks.md
+Ilya Chernikov,2019-08-20 21:39:03 +0900,Scripting KEEP: more documentation on kotlin-main-kts example
+
+81	64	proposals/scripting-support.md
+Ilya Chernikov,2019-08-20 19:15:12 +0900,Update the example in the scripting KEEP - use kotlin.main.kts
+
+124	33	proposals/scripting-support.md
+Ilya Chernikov,2019-08-19 22:37:48 +0900,Update scripting KEEP according to the changes in 1.3.50
+
+113	65	proposals/scripting-support.md
+Ilya Gorbunov,2019-06-05 05:02:38 +0900,Use stable link to the inline classes proposal
+
+1	1	proposals/stdlib/result.md
+Ilya Gorbunov,2019-05-25 01:54:25 +0900,Describe floating point/unsigned number conversion rules
+
+19	3	proposals/unsigned-types.md
+Ilya Gorbunov,2019-05-25 01:50:07 +0900,Actualize status of stdlib API proposals
+
+2	2	proposals/stdlib/random.md
+1	1	proposals/stdlib/result.md
+2	2	proposals/unsigned-types.md
+Mikhail Zarechenskiy,2019-03-19 23:26:57 +0900,Update proposal about inline classes, fix wording
+
+42	29	proposals/inline-classes.md
+Yan Zhulanow,2019-02-13 00:46:41 +0900,Remove a Parcelable framework comparison link (404)
+
+0	1	proposals/extensions/android-parcelable.md
+Mikhail Zarechenskiy,2019-01-22 00:43:44 +0900,Fix comment wrt class objects of inline class
+
+1	1	proposals/inline-classes.md
+Mikhail Zarechenskiy,2019-01-22 00:14:08 +0900,Fix example with reflection and inline classes
+
+10	6	proposals/inline-classes.md
+Mikhail Zarechenskiy,2019-01-21 20:41:00 +0900,Add examples with inline classes and reflection
+
+53	0	proposals/inline-classes.md
+Mikhail Zarechenskiy,2019-01-18 23:52:50 +0900,Remove restriction about inner classes
+
+0	1	proposals/inline-classes.md
+Burkhard Mittelbach,2018-11-29 01:48:52 +0900,small typo
+
+2	2	proposals/extensions/opening-classes-for-frameworks.md
+Roman Elizarov,2018-11-23 00:18:12 +0900,Merge pull request #170 from LouisCAD/patch-5
+Louis CAD,2018-11-23 00:15:57 +0900,Fix typo. Retrowing -> Rethrowing
+
+1	1	proposals/stdlib/result.md
+Alexander Udalov,2018-11-09 23:55:25 +0900,Add more details to the "How to propose" section
+
+4	2	README.md
+Roman Elizarov,2018-10-25 03:31:38 +0900,Merge pull request #161 from deviant-studio/patch-1
+Roman Elizarov,2018-10-19 23:36:08 +0900,Merge pull request #164 from Kotlin/coroutines
+Roman Elizarov,2018-10-19 23:32:04 +0900,Kotlin Coroutines (Stable in Kotlin 1.3)
+
+0	1	README.md
+1970	0	proposals/coroutines.md
+Mikhail Zarechenskiy,2018-10-18 21:59:36 +0900,Update section about type mapping on JVM for inline classes
+
+92	13	proposals/inline-classes.md
+max-kammerer,2018-10-16 21:37:31 +0900,Merge pull request #153 from max-kammerer/jvmfield
+max-kammerer,2018-10-16 21:37:15 +0900,Merge pull request #151 from max-kammerer/jvmstatic
+max-kammerer,2018-10-15 19:56:24 +0900,Update jvm-field-annotation-in-interface-companion.md
+
+0	2	proposals/jvm-field-annotation-in-interface-companion.md
+max-kammerer,2018-10-15 19:55:20 +0900,Update jvm-field-annotation-in-interface-companion.md
+
+12	9	proposals/jvm-field-annotation-in-interface-companion.md
+max-kammerer,2018-10-15 19:47:11 +0900,Update jvm-static-annotation-in-interface-companion.md
+
+4	4	proposals/jvm-static-annotation-in-interface-companion.md
+Mykola D,2018-09-24 18:21:13 +0900,Update result.md
+
+1	1	proposals/stdlib/result.md
+Mikhail Zarechenskiy,2018-09-24 16:46:00 +0900,Merge pull request #160 from LouisCAD/patch-4
+Louis CAD,2018-09-24 16:22:47 +0900,Fix pronoun. this -> these
+
+1	1	proposals/inline-classes.md
+Ilya Chernikov,2018-09-19 21:52:12 +0900,Update according to the changes in 1.3
+
+184	229	proposals/scripting-support.md
+Ilya Chernikov,2018-06-27 18:34:06 +0900,Update implementation status
+
+0	1	proposals/scripting-support.md
+Mikhail Zarechenskiy,2018-09-20 22:11:20 +0900,Fix markdown syntax
+
+2	2	proposals/inline-classes.md
+Mikhail Zarechenskiy,2018-09-20 22:05:29 +0900,Add information about inline classes ABI
+
+206	3	proposals/inline-classes.md
+Mikhail Zarechenskiy,2018-09-13 19:13:03 +0900,Update section aboug generic inline classes
+
+12	5	proposals/inline-classes.md
+Roman Elizarov,2018-09-20 16:20:23 +0900,Updated status and references for serialization KEEP-149
+
+2	1	proposals/extensions/serialization.md
+Roman Elizarov,2018-09-20 16:15:54 +0900,Merge pull request #148 from Kotlin/serialization
+Roman Elizarov,2018-09-20 16:04:40 +0900,Merge pull request #159 from Kotlin/result-rename
+Roman Elizarov,2018-09-20 04:40:19 +0900,SuccessOrFailure renamed to Result
+
+160	155	proposals/stdlib/{success-or-failure.md => result.md}
+Ilya Gorbunov,2018-09-14 04:56:02 +0900,Tick random element selection extension as done
+
+1	2	proposals/stdlib/random.md
+ilya-g,2018-09-13 02:35:10 +0900,Merge pull request #141 from LouisCAD/patch-4
+Ilya Gorbunov,2018-09-12 22:02:42 +0900,Change signed-to-unsigned widening conversion specification
+
+2	2	proposals/unsigned-types.md
+Ilya Gorbunov,2018-09-12 22:02:11 +0900,Formatting: change level of question headers
+
+4	4	proposals/unsigned-types.md
+Ilya Gorbunov,2018-08-31 11:49:39 +0900,Random (#131): add resolutions for two questions, update what remains pending
+
+9	5	proposals/stdlib/random.md
+Mikhael Bogdanov,2018-09-10 21:00:40 +0900,@JvmField for interface companion properties
+
+42	0	proposals/jvm-field-annotation-in-interface-companion.md
+Mikhael Bogdanov,2018-09-10 19:07:09 +0900,@JvmStatic for interface companion members
+
+36	0	proposals/jvm-static-annotation-in-interface-companion.md
+Leonid Startsev,2018-05-24 00:43:49 +0900,Kotlin serialization compiler plugin
+
+466	0	proposals/extensions/serialization.md
+Roman Elizarov,2018-08-14 20:11:55 +0900,Merge pull request #144 from cortinico/patch-success-or-failure
+Nicola Corti,2018-08-08 19:01:36 +0900,Fixed return type of findUserByName in the sealed class example
+
+1	1	proposals/stdlib/success-or-failure.md
+Dmitry Savvinov,2018-08-07 17:48:27 +0900,Proposal: Kotlin Contracts (#140)
+
+450	0	proposals/kotlin-contracts.md
+Louis CAD,2018-07-27 06:12:21 +0900,Fix typo
+
+2	2	proposals/unsigned-types.md
+Roman Elizarov,2018-07-24 20:54:47 +0900,Merge pull request #128 from Kotlin/success-or-failure
+Roman Elizarov,2018-07-24 20:53:27 +0900,KEEP header updated
+
+4	4	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-24 19:02:40 +0900,SuccessOrFailure.getOrDefault
+
+2	0	proposals/stdlib/success-or-failure.md
+ilya-g,2018-07-24 02:36:26 +0900,Merge pull request #132 from Kotlin/random
+ilya-g,2018-07-24 00:54:55 +0900,Merge pull request #136 from Kotlin/unsigned_types
+Ilya Gorbunov,2018-07-24 00:46:26 +0900,Expand on asKotlinRandom/asJavaRandom
+
+7	1	proposals/stdlib/random.md
+Ilya Gorbunov,2018-07-23 23:40:29 +0900,Add a point about unclear parameter names
+
+5	0	proposals/stdlib/random.md
+Ilya Gorbunov,2018-07-23 10:10:28 +0900,Add an option how to evolve repeatable implementation
+
+6	0	proposals/stdlib/random.md
+Ilya Gorbunov,2018-07-23 09:43:26 +0900,Add a link to the reference implementation of Random
+
+1	1	proposals/stdlib/random.md
+Dmitry Petrov,2018-06-09 23:50:25 +0900,#120: Add "Open questions" section
+
+59	1	proposals/val-in-when-subject.md
+Dmitry Petrov,2018-06-07 20:16:41 +0900,#120: Minor tweaks
+
+8	8	proposals/val-in-when-subject.md
+Dmitry Petrov,2018-06-07 18:58:27 +0900,KEEP #120: Local variable declaration in 'when' subject
+
+83	0	proposals/val-in-when-subject.md
+Ilya Gorbunov,2018-07-14 09:01:36 +0900,Fix typos and minor issues
+
+19	19	proposals/unsigned-types.md
+Ilya Gorbunov,2018-07-14 00:07:32 +0900,Update links to other KEEPs
+
+4	4	proposals/unsigned-types.md
+Ilya Gorbunov,2018-07-14 00:07:14 +0900,Rewrite hexadecimal constant literal use case
+
+18	5	proposals/unsigned-types.md
+Ilya Gorbunov,2018-07-13 23:14:10 +0900,Restructure the proposal, add API details
+
+306	70	proposals/unsigned-types.md
+Alexander Udalov,2018-07-04 20:25:37 +0900,Move Arity to "Future improvements", add "Type checks and casts", other fixes (#107)
+
+15	40	proposals/functional-types-with-big-arity-on-jvm.md
+Alexander Udalov,2018-04-24 20:53:18 +0900,Minor, fix formatting
+
+1	1	proposals/functional-types-with-big-arity-on-jvm.md
+Alexander Udalov,2018-04-24 20:49:27 +0900,Function types with big arity on JVM (#107)
+
+117	0	proposals/functional-types-with-big-arity-on-jvm.md
+Ilya Gorbunov,2018-07-14 00:30:30 +0900,Update status of the completed standard library proposals
+
+1	1	proposals/stdlib/abstract-collections.md
+1	1	proposals/stdlib/bignumber-operations.md
+1	1	proposals/stdlib/group-and-fold.md
+1	1	proposals/stdlib/map-copying.md
+1	1	proposals/stdlib/on-each.md
+1	1	proposals/stdlib/string-to-number.md
+1	1	proposals/stdlib/window-sliding.md
+Ilya Gorbunov,2018-07-09 22:01:57 +0900,Minor edits, do not use non-public constructors
+
+6	6	proposals/unsigned-types.md
+Mikhail Zarechenskiy,2018-07-05 15:11:43 +0900,Add proposal: unsigned types
+
+143	0	proposals/unsigned-types.md
+Alexander Udalov,2018-07-13 23:15:09 +0900,Do not require magic argument if another -X argument is already used (#95)
+
+1	3	proposals/experimental.md
+Alexander Udalov,2018-05-05 00:18:35 +0900,Prohibit non-intended usages of Experimental/UseExperimental and markers (#95)
+
+12	0	proposals/experimental.md
+Alexander Udalov,2018-05-04 23:30:16 +0900,Add TYPEALIAS target to UseExperimental/WasExperimental (#95)
+
+2	2	proposals/experimental.md
+Alexander Udalov,2018-04-24 19:48:52 +0900,Experimental and SinceKotlin in kotlin-stdlib (#95)
+
+46	1	proposals/experimental.md
+Alexander Udalov,2018-04-24 02:26:36 +0900,Improve experimentality of Experimental/UseExperimental (#95)
+
+8	1	proposals/experimental.md
+Alexander Udalov,2018-04-24 19:46:25 +0900,Fix typo in Experimental declaration (#95)
+
+1	1	proposals/experimental.md
+Alexander Udalov,2018-04-24 02:08:27 +0900,Greatly simplify Experimental design (#95)
+
+31	180	proposals/experimental.md
+Alexander Udalov,2018-02-08 00:25:38 +0900,Rename UseExperimental.{annotationClass -> markerClass} (#95)
+
+1	1	proposals/experimental.md
+Alexander Udalov,2018-02-08 00:24:38 +0900,Move UseExperimental declaration to the top (#95)
+
+13	14	proposals/experimental.md
+Alexander Udalov,2018-02-07 20:45:38 +0900,Allow same module exemption for non-public inline functions (#95)
+
+1	1	proposals/experimental.md
+Alexander Udalov,2018-01-31 00:19:58 +0900,Change Scope -> Impact, COMPILE_TIME/RUNTIME -> COMPILATION/LINKAGE/RUNTIME (#95)
+
+15	6	proposals/experimental.md
+Alexander Udalov,2018-01-30 23:18:38 +0900,Always require propagation outside of the API's module (#95)
+
+5	2	proposals/experimental.md
+Louis CAD,2017-12-28 20:55:53 +0900,Add kotlin modifier to snippets for syntax colors
+
+9	9	proposals/experimental.md
+Alexander Udalov,2017-12-28 04:30:42 +0900,Experimental API support (#95)
+
+275	0	proposals/experimental.md
+Mikhail Zarechenskiy,2018-07-13 22:48:25 +0900,Merge pull request #103 from zarechenskiy/master
+Roman Elizarov,2018-07-13 18:41:30 +0900,API: added lambda param names, fold function, updated getOrElse
+
+8	7	proposals/stdlib/success-or-failure.md
+Ilya Gorbunov,2018-07-12 20:15:01 +0900,Consider extension to select random element as a future advancement
+
+2	0	proposals/stdlib/random.md
+Ilya Gorbunov,2018-07-10 01:53:36 +0900,A concern about Random name overloading
+
+5	0	proposals/stdlib/random.md
+Ilya Gorbunov,2018-07-10 01:41:56 +0900,Add a section about new collection shuffling functions
+
+11	0	proposals/stdlib/random.md
+Ilya Gorbunov,2018-07-07 04:27:39 +0900,Random API proposal
+
+229	0	proposals/stdlib/random.md
+Roman Elizarov,2018-07-09 21:32:33 +0900,Fixed Rx example, added CompletableFuture example and note on differences
+
+28	4	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-08 18:46:06 +0900,Added link to Result library for Kotlin and note on "Railway Oriented Programming"
+
+12	3	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-08 16:58:42 +0900,Merge pull request #129 from LouisCAD/patch-2
+Roman Elizarov,2018-07-08 16:57:29 +0900,Merge pull request #130 from LouisCAD/patch-3
+Louis CAD,2018-07-08 03:39:17 +0900,Fix spelling. Parametrizing -> Parameterizing
+
+3	3	proposals/stdlib/success-or-failure.md
+Louis CAD,2018-07-07 23:17:33 +0900,Fix typo. ware -> were
+
+1	1	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-07 23:03:59 +0900,Strong note on discouraged use as return type
+
+30	8	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-07 02:41:48 +0900,Integration into the language section is fleshed out, potential road shown
+
+44	1	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-07 02:13:30 +0900,Unresolved questions and Future advancements are reformatted as subsections
+
+13	8	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-07 01:54:51 +0900,Added "Additional APIs for collections" open question
+
+9	0	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-06 19:47:33 +0900,More details on SuccessOrFailure vs Try in Appendix
+
+29	0	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-06 05:51:15 +0900,Link to the KEEP-127 issue
+
+2	0	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-06 05:25:35 +0900,onFailure/onSuccess function param renamed to action like in onEach
+
+2	2	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-06 04:42:32 +0900,Clarifications on discriminated unions, Either types, and other corrections
+
+54	39	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-05 13:36:53 +0900,Wording improved and more typos fixed
+
+36	29	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-07-05 00:27:38 +0900,Minor fixes (typos)
+
+2	2	proposals/stdlib/success-or-failure.md
+Roman Elizarov,2018-06-29 00:22:35 +0900,Initial draft of SuccessOrFailure KEEP
+
+555	0	proposals/stdlib/success-or-failure.md
+Mikhail Zarechenskiy,2018-07-02 19:47:16 +0900,Fixes, additions about inline classes
+
+102	1	proposals/inline-classes.md
+Ilya Chernikov,2018-06-19 18:05:14 +0900,Fix scripting-misc library name
+
+1	1	proposals/scripting-support.md
+Ilya Chernikov,2018-06-14 05:16:55 +0900,minor typo and add info about compilation caching
+
+3	2	proposals/scripting-support.md
+Ilya Chernikov,2018-06-14 02:31:18 +0900,minor typo
+
+1	1	proposals/scripting-support.md
+Ilya Chernikov,2018-06-14 02:01:45 +0900,Update scripting KEEP
+
+534	308	proposals/scripting-support.md
+Ilya Chernikov,2017-09-08 23:16:18 +0900,Update text after review and prototyping (up to interfaces definitions)
+
+89	62	proposals/scripting-support.md
+Ilya Chernikov,2017-08-08 21:01:56 +0900,Update text after review
+
+154	61	proposals/scripting-support.md
+Andrey Mischenko,2017-08-02 00:30:40 +0900,Fixed typo
+
+1	1	proposals/scripting-support.md
+Ilya Chernikov,2017-08-02 00:38:31 +0900,Add Selector class, some wording fixes
+
+14	4	proposals/scripting-support.md
+Ilya Chernikov,2017-07-27 21:36:24 +0900,New proposal for updated scripting support
+
+0	129	proposals/script-definition-template.md
+424	0	proposals/scripting-support.md
+Bruce Eckel,2018-04-25 10:09:07 +0900,"white" was misspelled as "while"
+
+1	1	proposals/jdk-dependent-built-ins.md
+Mikhail Zarechenskiy,2018-04-04 20:41:00 +0900,Fixes, added clarification about restrictions
+
+146	13	proposals/inline-classes.md
+Mikhail Zarechenskiy,2018-04-04 17:26:52 +0900,Update link to the corresponding issue
+
+1	1	proposals/inline-classes.md
+Mikhail Zarechenskiy,2018-04-03 22:27:49 +0900,Proposal: inline classes
+
+163	0	proposals/inline-classes.md
+RUSshy,2017-03-16 02:12:23 +0900,Added syntax highlightning
+
+3	3	proposals/stdlib/on-each.md
+Denis Zharkov,2018-02-16 20:50:33 +0900,Update status for many already implemented issues
+
+2	2	proposals/bound-callable-references.md
+2	2	proposals/data-class-inheritance.md
+1	1	proposals/destructuring-in-parameters.md
+2	2	proposals/extensions/android-parcelable.md
+2	2	proposals/inline-properties.md
+2	2	proposals/jdk-dependent-built-ins.md
+2	2	proposals/local-delegated-properties.md
+3	3	proposals/type-aliases.md
+Denis Zharkov,2018-02-14 18:42:08 +0900,Add minor fixes to proposal for lateinit isInitialized
+
+11	10	proposals/lateinit-property-isinitialized-intrinsic.md
+Alexander Udalov,2018-02-14 18:27:33 +0900,Remove deinitialize from proposed intrinsics and rename the proposal
+
+24	48	proposals/{lateinit-property-intrinsics.md => lateinit-property-isinitialized-intrinsic.md}
+Alexander Udalov,2017-08-30 20:42:14 +0900,Disallow usages of isInitialize/deinitialize in inline functions
+
+16	13	proposals/lateinit-property-intrinsics.md
+Alexander Udalov,2017-08-30 18:23:30 +0900,Rename 'reset' to 'deinitialize'
+
+10	11	proposals/lateinit-property-intrinsics.md
+Alexander Udalov,2017-07-14 21:42:50 +0900,Add another issue related to inline functions
+
+14	1	proposals/lateinit-property-intrinsics.md
+Alexander Udalov,2017-07-13 23:23:56 +0900,Add link to the original YouTrack issue
+
+2	0	proposals/lateinit-property-intrinsics.md
+Alexander Udalov,2017-07-13 22:47:01 +0900,Proposal: lateinit property intrinsics
+
+222	0	proposals/lateinit-property-intrinsics.md
+Lilia,2017-10-25 21:26:11 +0900,Update jsr-305-custom-nullability-qualifiers.md
+
+2	2	proposals/jsr-305-custom-nullability-qualifiers.md
+Denis Zharkov,2018-02-14 18:00:03 +0900,Merge pull request #78 from Kotlin/jsr-305
+Denis Zharkov,2018-02-14 17:59:12 +0900,Update proposal about JSR-305
+
+3	9	proposals/jsr-305-custom-nullability-qualifiers.md
+Dmitry Jemerov,2017-10-20 17:54:45 +0900,Merge pull request #90 from kevinhwang/master
+Kevin Hwang,2017-10-20 17:45:44 +0900,Fix typo in android-parcelable.md
+
+1	1	proposals/extensions/android-parcelable.md
+Dmitry Jemerov,2017-10-05 20:51:49 +0900,Merge pull request #88 from alteredworlds/fix-kotlinlang-slack-invite
+Tom Gilbert,2017-10-05 20:45:28 +0900,correct kotlinlang slack invitation link
+
+1	1	README.md
+Dmitry Petrov,2017-09-19 17:15:09 +0900,KEEP #86: Local and top-level lateinit vars
+
+46	0	proposals/local-and-top-level-lateinit-vars.md
+Denis Zharkov,2017-09-12 21:47:06 +0900,Add some fixes and clarifications to proposal
+
+53	19	proposals/jsr-305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-09-12 20:39:53 +0900,Add clarification and examples on definition of annotation migration status
+
+72	6	proposals/jsr-305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-09-12 18:54:15 +0900,Update compiler configuration for JSR-305 description
+
+51	22	proposals/jsr-305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-09-11 23:56:18 +0900,Minor. Apply UnderMigration related renames
+
+17	17	proposals/jsr-305-custom-nullability-qualifiers.md
+Dmitry Jemerov,2017-09-12 17:08:48 +0900,Merge pull request #85 from cbeust/patch-1
+Cedric Beust,2017-09-12 14:12:49 +0900,Update denotable-nullability-flexible-types.md
+
+1	1	proposals/denotable-nullability-flexible-types.md
+Dmitry Petrov,2017-08-31 20:07:56 +0900,KEEP #82: Denotable nullability flexible types
+
+104	0	proposals/denotable-nullability-flexible-types.md
+Vincent de Smet,2017-08-17 18:50:48 +0900,Renamed an old  'entityView' to 'containerView' (#80)
+
+1	1	proposals/android-extensions-entity-caching.md
+Denis Zharkov,2017-08-16 11:41:44 +0900,Add a part on conflicts between default qualifiers and overridden
+
+30	0	proposals/jsr-305-custom-nullability-qualifiers.md
+Yan Zhulanow,2017-08-15 01:27:32 +0900,Android Extensions: View holder pattern support and caching options (#33)
+
+135	0	proposals/android-extensions-entity-caching.md
+Denis Zharkov,2017-08-14 15:19:43 +0900,Add link to the proposal discussions and contributors
+
+2	0	proposals/jsr-305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-08-14 15:12:18 +0900,Rename proposal file
+
+0	0	proposals/{jsr305-custom-nullability-qualifiers.md => jsr-305-custom-nullability-qualifiers.md}
+Denis Zharkov,2017-08-14 15:03:04 +0900,Make spelling for JSR-305 consistent in the text
+
+6	6	proposals/jsr305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-08-14 15:01:16 +0900,Add some notes about jsr305.jar and open issues
+
+24	1	proposals/jsr305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-08-14 13:33:17 +0900,Fix grammar issues
+
+16	16	proposals/jsr305-custom-nullability-qualifiers.md
+Denis Zharkov,2017-08-11 20:59:12 +0900,Start proposal on support of custom JSR305 nullability qualifiers
+
+266	0	proposals/jsr305-custom-nullability-qualifiers.md
+Andrey Breslav,2017-07-04 04:32:35 +0900,Initial proposal for Parcelable support (#71)
+
+301	0	proposals/extensions/android-parcelable.md
+Ilya Gorbunov,2017-06-15 05:46:59 +0900,KEEP #49: Update status and the proposal
+
+22	10	proposals/stdlib/bignumber-operations.md
+Andrey Breslav,2017-06-09 17:28:58 +0900,Create `extensions` directory
+
+0	0	proposals/{ => extensions}/opening-classes-for-frameworks.md
+Andrey Breslav,2017-06-09 17:26:24 +0900,Merge pull request #40 from Kotlin/opening-classes-for-frameworks
+Andrey Breslav,2017-06-09 17:25:24 +0900,Minor
+
+7	6	proposals/opening-classes-for-frameworks.md
+Ilya Gorbunov,2017-05-19 14:24:17 +0900,KEEP #11: Update branch url, keep status and renumber and reorder list of questions
+
+15	15	proposals/stdlib/window-sliding.md
+Ilya Gorbunov,2017-05-05 01:50:24 +0900,KEEP #11: Classify similar api
+
+8	8	proposals/stdlib/window-sliding.md
+Ilya Gorbunov,2017-05-02 22:14:56 +0900,New version of the proposal: 'windowed', 'chunked' and 'pairwise' functions
+
+94	47	proposals/stdlib/window-sliding.md
+ilya-g,2017-05-02 23:17:36 +0900,Merge pull request #65 from voddan/patch-2
+Daniil,2017-03-06 22:33:36 +0900,Deleted `ushr`
+
+1	1	proposals/stdlib/bignumber-operations.md
+Daniil,2017-02-19 03:58:20 +0900,Updated for `%` to mean `rem` instead of `mod`
+
+6	12	proposals/stdlib/bignumber-operations.md
+Ilya Gorbunov,2017-02-02 11:42:58 +0900,Update reference implementation links, update status and question resolutions of group-and-fold proposal.
+
+16	14	proposals/stdlib/group-and-fold.md
+1	1	proposals/stdlib/map-copying.md
+1	1	proposals/stdlib/on-each.md
+Alexander Udalov,2016-12-21 22:09:37 +0900,Merge pull request #62 from Kotlin/udalov
+Alexander Udalov,2016-12-19 17:43:42 +0900,Update type checking rules of bound class literals (#5)
+
+10	26	proposals/bound-callable-references.md
+Ilya Gorbunov,2016-12-05 02:47:39 +0900,Update status of KEEP #11, write resolutions
+
+7	1	proposals/stdlib/window-sliding.md
+Ilya Gorbunov,2016-12-05 02:44:34 +0900,Update status of KEEPs #53, #23, #13, #47, #19
+
+1	1	proposals/stdlib/abstract-collections.md
+4	4	proposals/stdlib/group-and-fold.md
+1	1	proposals/stdlib/map-copying.md
+1	1	proposals/stdlib/on-each.md
+5	1	proposals/stdlib/string-to-number.md
+Ilya Gorbunov,2016-11-25 12:47:15 +0900,KEEP #47: Update status, update signatures, answer questions, rewrite alternatives. Finalize name by replacing 'peek' with 'onEach' and renaming the proposal file itself.
+
+20	13	proposals/stdlib/{peek.md => on-each.md}
+ilya-g,2016-11-23 13:34:59 +0900,KEEP #11: Add similar API
+
+1	0	proposals/stdlib/window-sliding.md
+Dmitry Jemerov,2016-11-22 23:39:10 +0900,Update generic-values-and-valueof-for-enums.md
+
+3	4	proposals/generic-values-and-valueof-for-enums.md
+Dmitry Jemerov,2016-11-22 23:36:58 +0900,Merge pull request #37 from Kotlin/generic-values-and-valueof-for-enums
+max-kammerer,2016-11-22 23:10:45 +0900,Merge pull request #60 from max-kammerer/patch-2
+max-kammerer,2016-11-22 23:06:09 +0900,update
+
+4	6	proposals/generic-values-and-valueof-for-enums.md
+Dmitry Jemerov,2016-11-22 21:48:30 +0900,Add status for keep
+
+1	2	proposals/scope-control-for-implicit-receivers.md
+Dmitry Jemerov,2016-11-22 21:47:59 +0900,Merge pull request #38 from Kotlin/scope-control-for-implicit-receivers
+Dmitry Jemerov,2016-11-22 21:42:55 +0900,Update underscore-for-unused-parameters.md
+
+1	2	proposals/underscore-for-unused-parameters.md
+Dmitry Jemerov,2016-11-22 21:42:10 +0900,Merge pull request #56 from Kotlin/underscore-for-unused-parameters
+Dmitry Jemerov,2016-11-22 21:36:53 +0900,Update underscores-in-numeric-literals.md
+
+1	0	proposals/underscores-in-numeric-literals.md
+Dmitry Jemerov,2016-11-22 21:35:31 +0900,Add discussion link
+
+3	0	proposals/script-definition-template.md
+Dmitry Jemerov,2016-11-22 21:34:21 +0900,Update jdk-dependent-built-ins.md
+
+1	0	proposals/jdk-dependent-built-ins.md
+Dmitry Petrov,2016-11-21 23:57:34 +0900,KEEP #4 - Explicitly specify restrictions on abbreviated types with projections as top-level arguments - as for regular types. - Local and nested type aliases are not supported in 1.1.
+
+47	1	proposals/type-aliases.md
+Dmitry Jemerov,2016-11-18 20:57:24 +0900,Remove mention of octal literals from examples
+
+1	5	proposals/underscores-in-numeric-literals.md
+Dmitry Jemerov,2016-11-18 20:56:29 +0900,Merge pull request #54 from cypressious/integer_underscore
+Andrey Breslav,2016-11-16 21:13:13 +0900,Merge pull request #58 from Kotlin/desctructuring-in-parameters-scope-update
+Dmitry Petrov,2016-11-09 21:56:59 +0900,Merge remote-tracking branch 'origin/master'
+Dmitry Petrov,2016-11-09 21:56:53 +0900,KEEP #4: - type aliases in interfaces can't be internal - type inference for type alias constructor arguments
+
+26	6	proposals/type-aliases.md
+Denis Zharkov,2016-11-08 22:17:37 +0900,Update resolution scope for destructuring in lambdas
+
+6	3	proposals/destructuring-in-parameters.md
+Kirill Rakhman,2016-11-07 22:08:14 +0900,Update underscores-in-numeric-literals.md
+
+1	1	proposals/underscores-in-numeric-literals.md
+Denis Zharkov,2016-11-02 23:30:38 +0900,Add link to KEEP-57 issue in the relevant proposal
+
+1	2	proposals/scope-control-for-implicit-receivers.md
+Denis Zharkov,2016-11-02 22:48:30 +0900,Update proposal about scope control for implicit parameters
+
+37	7	proposals/scope-control-for-implicit-receivers.md
+Denis Zharkov,2016-10-20 19:30:40 +0900,Add proposal about underscore for unused parameters
+
+114	0	proposals/underscore-for-unused-parameters.md
+Kirill Rakhman,2016-10-20 07:02:21 +0900,Create proposal for Underscores in Numeric Literals
+
+81	0	proposals/underscores-in-numeric-literals.md
+Denis Zharkov,2016-10-19 21:17:06 +0900,Update destructuring-in-parameters.md
+
+3	2	proposals/destructuring-in-parameters.md
+Dmitry Jemerov,2016-10-18 22:22:28 +0900,Merge pull request #21 from Kotlin/destructuring-in-parameters
+Zalim Bashorov,2016-06-06 19:48:03 +0900,JsName: add last decisions and change status.
+
+22	6	proposals/js/JsName.md
+Zalim Bashorov,2016-06-01 05:14:35 +0900,Minor: update title
+
+1	1	proposals/js/_Glossary.md
+Zalim Bashorov,2016-06-01 05:12:35 +0900,Add _Glossary.md for common terms used in Kotlin JS
+
+1	1	proposals/js/JsName.md
+4	0	proposals/js/_Glossary.md
+Zalim Bashorov,2016-05-31 22:22:43 +0900,Update for JsName: drop wrong statements
+
+2	2	proposals/js/JsName.md
+Zalim Bashorov,2016-05-31 21:54:34 +0900,Update for JsName: fix typo
+
+1	1	proposals/js/JsName.md
+Zalim Bashorov,2016-05-31 21:45:31 +0900,Update for JsName: clarify behavior for overrides and extension functions
+
+109	0	proposals/js/JsName.md
+Zalim Bashorov,2016-05-24 19:58:24 +0900,Update proposal for `@JsName`
+
+14	2	proposals/js/JsName.md
+Zalim Bashorov,2016-05-20 05:28:37 +0900,Add proposal for `@JsName`
+
+76	0	proposals/js/JsName.md
+Ilya Gorbunov,2016-10-14 05:03:24 +0900,KEEP #53: Abstract readonly and mutable collections proposal.
+
+103	0	proposals/stdlib/abstract-collections.md
+Stanislav Erokhin,2016-10-10 17:49:02 +0900,Add syntax highlighting to code samples
+
+23	23	proposals/bound-callable-references.md
+Dmitry Petrov,2016-10-04 22:35:18 +0900,KEEP #4, minor: - add kotlin.SinceKotlin to the list of standard annotations that should be applicable to type aliases; - make related text a bit more general.
+
+1	1	proposals/type-aliases.md
+Dmitry Petrov,2016-10-04 22:19:31 +0900,KEEP #4: update type aliases proposal.
+
+137	57	proposals/type-aliases.md
+ilya-g,2016-10-03 21:17:22 +0900,Merge pull request #52 from voddan/patch-1
+Alexander Udalov,2016-10-03 16:57:33 +0900,Slightly rephrase "related issues" section (#31)
+
+2	2	proposals/data-class-inheritance.md
+Daniil,2016-10-01 06:36:17 +0900,updated "unresolved questions"
+
+6	0	proposals/stdlib/bignumber-operations.md
+Daniil,2016-10-01 05:15:09 +0900,BigInteger#mod resolves to the method in JDK
+
+1	1	proposals/stdlib/bignumber-operations.md
+Ilya Gorbunov,2016-09-16 20:04:10 +0900,KEEP #11: Add similar API links, remove unnatural usecases, add other instead. Rewrite question about dropTrailing parameter.
+
+39	43	proposals/stdlib/window-sliding.md
+Daniil,2016-07-26 04:08:00 +0900,Create a proposal "Extending Kotlin API for BigInteger and BigDecimal", KEEP #49
+
+135	0	proposals/stdlib/bignumber-operations.md
+Ilya Gorbunov,2016-08-29 11:40:12 +0900,KEEP #47: Add a link to the discussion.
+
+1	0	proposals/stdlib/peek.md
+Christian Brüggemann,2016-08-13 01:06:37 +0900,Create peek proposal + use cases
+
+90	0	proposals/stdlib/peek.md
+ilya-g,2016-08-27 23:56:47 +0900,Consider also advantages of the first alternative
+
+4	0	proposals/stdlib/map-copying.md
+ilya-g,2016-08-27 23:29:49 +0900,Add proposed functions to the table with similar API
+
+3	3	proposals/stdlib/map-copying.md
+Alexander Udalov,2016-08-16 00:35:40 +0900,Merge pull request #43
+Alexander Udalov,2016-08-16 00:33:44 +0900,Add TODO about Array type arguments in JS (#5)
+
+2	0	proposals/bound-callable-references.md
+Alexander Udalov,2016-08-12 22:40:47 +0900,Do not erase arguments of Array expressions in class literals, add examples (#5)
+
+16	4	proposals/bound-callable-references.md
+Ilya Gorbunov,2016-08-12 23:20:33 +0900,KEEP #23 Update link to the reference implementation.
+
+3	1	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-08-10 02:19:17 +0900,KEEP #23 Update list of the proposed function signatures
+
+51	35	proposals/stdlib/group-and-fold.md
+Alexander Udalov,2016-08-11 01:09:31 +0900,Fix typo (#5)
+
+1	1	proposals/bound-callable-references.md
+Alexander Udalov,2016-08-11 00:39:51 +0900,Substitution of arguments with stars in class literals (#5)
+
+51	10	proposals/bound-callable-references.md
+Alexander Udalov,2016-08-10 22:07:10 +0900,Clarify class literals for primitive types (#5)
+
+2	1	proposals/bound-callable-references.md
+Alexander Udalov,2016-08-10 04:08:02 +0900,Minor clarifications about function type and function/property references (#5)
+
+4	0	proposals/bound-callable-references.md
+Alexander Udalov,2016-08-10 04:00:43 +0900,Update LHS resolution algorithm with a special case for objects (#5)
+
+12	8	proposals/bound-callable-references.md
+Andrey Breslav,2016-08-10 01:11:37 +0900,KEEP Shepherds
+
+8	0	README.md
+ilya-g,2016-08-10 03:54:12 +0900,Update link to reference implementation, after it has been merged
+
+1	1	proposals/stdlib/map-copying.md
+ilya-g,2016-08-09 06:50:11 +0900,Add a link to the Immutable Collections proposal
+
+1	0	README.md
+Ilya Gorbunov,2016-08-09 04:36:55 +0900,KEEP #23: Update list of open questions, provide resolutions to some of them.
+
+12	2	proposals/stdlib/group-and-fold.md
+Andrey Breslav,2016-07-26 01:32:26 +0900,Proposal: Opening classes for frameworks
+
+113	0	proposals/opening-classes-for-frameworks.md
+Andrey Breslav,2016-07-25 21:30:19 +0900,KEEP header added
+
+5	0	proposals/data-class-inheritance.md
+Andrey Breslav,2016-07-25 20:36:42 +0900,A note about compiler extension
+
+1	0	proposals/scope-control-for-implicit-receivers.md
+Andrey Breslav,2016-07-25 20:28:34 +0900,Proposal: Scope control for implicit receivers
+
+102	0	proposals/scope-control-for-implicit-receivers.md
+Andrey Breslav,2016-07-23 03:35:33 +0900,Proposal: Generic values() and valueOf() for enums
+
+98	0	proposals/generic-values-and-valueof-for-enums.md
+Andrey Breslav,2016-07-15 22:49:20 +0900,Typo fixed
+
+1	1	proposals/sealed-class-inheritance.md
+Andrey Breslav,2016-07-15 22:48:03 +0900,Add motivation for inlining property accessors
+
+6	1	proposals/inline-properties.md
+ilya-g,2016-07-14 23:51:15 +0900,KEEP #19, Update list of open questions
+
+3	2	proposals/stdlib/string-to-number.md
+ilya-g,2016-07-14 23:23:49 +0900,KEEP #13: Change status
+
+1	1	proposals/stdlib/map-copying.md
+Andrey Breslav,2016-07-14 00:03:57 +0900,Inline properties: addition about using the modifier on the property itself
+
+14	2	proposals/inline-properties.md
+Andrey Breslav,2016-07-13 19:56:26 +0900,Proposal: inline properties. Correct issue number
+
+1	1	proposals/inline-properties.md
+Andrey Breslav,2016-07-13 19:53:16 +0900,Proposal: inline properties
+
+35	0	proposals/inline-properties.md
+Andrey Breslav,2016-07-13 06:16:54 +0900,Minor corrections to sealed-class-inheritance.md
+
+11	13	proposals/sealed-class-inheritance.md
+Andrey Breslav,2016-07-13 06:09:50 +0900,Merge pull request #22 from erokhins/patch-1
+Andrey Breslav,2016-07-13 06:09:24 +0900,Discussion link added o jdk-dependent-built-ins.md
+
+4	0	proposals/jdk-dependent-built-ins.md
+Andrey Breslav,2016-07-13 05:54:19 +0900,Corrections to jdk-dependent-built-ins.md
+
+53	51	proposals/jdk-dependent-built-ins.md
+Andrey Breslav,2016-07-13 01:56:26 +0900,Soft wraps used
+
+40	91	proposals/jdk-dependent-built-ins.md
+Denis Zharkov,2016-06-17 20:59:20 +0900,Get rid of TODO's
+
+1	4	proposals/jdk-dependent-built-ins.md
+Denis Zharkov,2016-06-17 20:56:48 +0900,Adjust proposal to conventional rules
+
+6	0	TargetDependentBuiltIns.md => proposals/jdk-dependent-built-ins.md
+Denis Zharkov,2016-06-17 20:34:56 +0900,Add more detailed description of proposed solution
+
+84	10	TargetDependentBuiltIns.md
+Denis Zharkov,2016-04-18 19:57:47 +0900,Add clarifications and "Chosen solution" section
+
+26	2	TargetDependentBuiltIns.md
+Denis Zharkov,2016-03-30 20:53:15 +0900,Add TODO about static and constructors
+
+2	0	TargetDependentBuiltIns.md
+Denis Zharkov,2016-03-25 21:05:45 +0900,Add initial description
+
+90	0	TargetDependentBuiltIns.md
+Andrey Breslav,2016-07-13 01:15:43 +0900,Corrections for local delegated properties
+
+7	5	proposals/local-delegated-properties.md
+max-kammerer,2016-06-14 22:25:58 +0900,Create local-delegated-properties.md
+
+60	0	proposals/local-delegated-properties.md
+Ilya Gorbunov,2016-07-12 01:24:21 +0900,KEEP #23: Add a note about using java.util.stream.Collector with groupingBy.
+
+2	0	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-07-11 22:49:34 +0900,KEEP #23: Rename API members after discussion.
+
+17	11	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-07-11 12:00:38 +0900,Propose different API, KEEP #23
+
+88	36	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-07-07 05:04:17 +0900,KEEP #23 Add a link to the implementation
+
+9	4	proposals/stdlib/group-and-fold.md
+Ilya Chernikov,2016-06-30 23:34:57 +0900,Update script definition template document:
+
+21	12	proposals/script-definition-template.md
+Alexander Udalov,2016-06-24 02:53:49 +0900,Minor, add Kotlin syntax highlighting
+
+4	4	proposals/data-class-inheritance.md
+Alexander Udalov,2016-06-24 02:36:41 +0900,Add proposal for allowing data classes to have base classes (#31)
+
+114	0	proposals/data-class-inheritance.md
+Stanislav Erokhin,2016-06-22 20:39:15 +0900,Update sealed-class-inheritance.md
+
+77	2	proposals/sealed-class-inheritance.md
+Ilya Chernikov,2016-06-21 23:42:35 +0900,Initial proposal for Script Definition Template
+
+117	0	proposals/script-definition-template.md
+Ilya Gorbunov,2016-06-16 10:33:58 +0900,Update question list, KEEP #20
+
+1	1	proposals/stdlib/occurrences-of.md
+Dmitry Petrov,2016-06-10 16:29:23 +0900,4: update proposal based on experience & discussions related to current prototype.
+
+40	5	proposals/type-aliases.md
+Ilya Gorbunov,2016-06-08 01:55:38 +0900,Add discussion link, change title
+
+2	2	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-06-04 11:35:53 +0900,Restructure proposal, add usage examples
+
+52	35	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-06-04 11:09:32 +0900,rx alternative example.
+
+16	2	proposals/stdlib/group-and-fold.md
+Ilya Gorbunov,2016-06-04 05:52:15 +0900,Group-and-fold operation proposal.
+
+111	0	proposals/stdlib/group-and-fold.md
+Stanislav Erokhin,2016-06-04 00:26:40 +0900,Proposal: Sealed class inheritance
+
+43	0	proposals/sealed-class-inheritance.md
+Andrey Breslav,2016-06-03 13:10:35 +0900,Merge pull request #8 from Kotlin/bound-callable-references
+Andrey Breslav,2016-06-03 01:43:10 +0900,Proposal: Destructuring in lambda parameters
+
+156	0	proposals/destructuring-in-parameters.md
+Ilya Gorbunov,2016-06-02 02:34:59 +0900,Elaborate alternatives, add discussion link, minor formatting.
+
+49	9	proposals/stdlib/occurrences-of.md
+Christian Brüggemann,2016-05-25 05:22:57 +0900,Add use cases for occurrencesOf
+
+8	2	proposals/stdlib/occurrences-of.md
+Christian Brüggemann,2016-05-25 04:29:49 +0900,Initial occurrencesOf proposal
+
+51	0	proposals/stdlib/occurrences-of.md
+Ilya Gorbunov,2016-06-02 00:23:38 +0900,Change title, add discussion link, add motivation, improve use-cases, minor edits.
+
+19	13	proposals/stdlib/string-to-number.md
+Daniil,2016-06-01 01:08:28 +0900,added links to KT issues, added use cases
+
+18	0	proposals/stdlib/string-to-number.md
+Ilya Gorbunov,2016-05-31 23:30:57 +0900,String to nullable number conversions: proposal draft.
+
+77	0	proposals/stdlib/string-to-number.md
+Andrey Breslav,2016-05-26 16:03:52 +0900,Merge pull request #15 from Kotlin/readme-link-to-issues
+Dmitry Petrov,2016-05-24 19:22:37 +0900,#4: Proposal for type aliases: - remove confusing comment regarding visibility - generic type aliases and companion objects
+
+14	4	proposals/type-aliases.md
+Dmitry Petrov,2016-03-31 23:24:28 +0900,#4: Proposal for type aliases: - type aliases and declaration conflicts - nested types & overrides - type projections in arguments of generic type aliases - metadata - minor fixes and clarifications
+
+159	39	proposals/type-aliases.md
+ilya-g,2016-05-24 05:31:08 +0900,Update README: link to issues instead of manual listing
+
+7	3	README.md
+ilya-g,2016-05-24 05:08:06 +0900,Update list of unresolved questions
+
+4	1	proposals/stdlib/window-sliding.md
+ilya-g,2016-05-20 11:35:19 +0900,Rename template to be first in the folder.
+
+0	0	proposals/stdlib/{proposal-template.md => TEMPLATE.md}
+Ilya Gorbunov,2016-05-19 00:55:45 +0900,Propose extensions to copy map contents
+
+113	0	proposals/stdlib/map-copying.md
+Ilya Gorbunov,2016-05-19 00:44:54 +0900,Merge branch 'cy/window-sliding'
+Ilya Gorbunov,2016-05-19 00:36:15 +0900,Proposal for slidingWindow: Minor fixes
+
+2	2	proposals/stdlib/window-sliding.md
+Ilya Gorbunov,2016-05-18 02:54:30 +0900,Clarifications about: compatibility and contracts, reference implemetation, dependencies.
+
+21	12	proposals/stdlib/proposal-template.md
+Ilya Gorbunov,2016-05-18 02:03:33 +0900,Add required template attributes, change heading level in the template.
+
+27	14	proposals/stdlib/proposal-template.md
+Ilya Gorbunov,2016-05-18 01:42:38 +0900,Provide proposal template to introduce new API in the standard library
+
+101	0	proposals/stdlib/proposal-template.md
+Sergey Mashkov,2016-05-18 04:39:49 +0900,Update proposal for slidingWindow
+
+1	0	proposals/stdlib/window-sliding.md
+Sergey Mashkov,2016-05-18 02:33:33 +0900,Proposal for sliding window extensions
+
+138	0	proposals/stdlib/window-sliding.md
+Zalim Bashorov,2016-05-18 02:04:28 +0900,Add ".gitignore"
+
+1	0	.gitignore
+Alexander Udalov,2016-05-14 02:08:41 +0900,Add "restrictions" section, restrict calls to generic properties on LHS (#5)
+
+18	1	proposals/bound-callable-references.md
+Alexander Udalov,2016-05-14 01:51:36 +0900,Replace unhelpful "description" section with something more useful (#5)
+
+16	4	proposals/bound-callable-references.md
+Alexander Udalov,2016-05-13 17:34:56 +0900,Address review comments, other minor clarifications (#5)
+
+9	3	proposals/bound-callable-references.md
+Alexander Udalov,2016-05-12 20:59:53 +0900,Document another option for "unbind" (#5)
+
+1	0	proposals/bound-callable-references.md
+Alexander Udalov,2016-05-12 03:19:23 +0900,Note about inlining on JVM; bound member extension references (#5)
+
+25	5	proposals/bound-callable-references.md
+Alexander Udalov,2016-05-11 21:21:23 +0900,Expand on the future use of empty LHS (#5)
+
+27	3	proposals/bound-callable-references.md
+Alexander Udalov,2016-05-11 20:37:27 +0900,Explain parsing, add examples, reserve syntax for nullable references (#5)
+
+77	1	proposals/bound-callable-references.md
+Alexander Udalov,2016-04-21 00:09:10 +0900,Elaborate on problems with "unbind", add hyperlinks to YT issues (#5)
+
+15	5	proposals/bound-callable-references.md
+Alexander Udalov,2016-04-20 23:56:22 +0900,Fix another hyperlink and a few typos
+
+3	3	README.md
+Alexander Udalov,2016-04-20 23:39:13 +0900,Fix repo address in hyperlinks
+
+2	2	README.md
+1	1	proposals/bound-callable-references.md
+1	1	proposals/type-aliases.md
+Andrey Breslav,2016-04-20 21:16:14 +0900,Minor. Wording
+
+1	1	README.md
+Andrey Breslav,2016-04-20 20:57:28 +0900,Adjust formatting + add references for the new proposal
+
+2	1	README.md
+18	6	spec-bound-calref.md => proposals/bound-callable-references.md
+Alexander Udalov,2016-04-01 20:52:28 +0900,Bound callable references
+
+115	0	spec-bound-calref.md
+Andrey Breslav,2016-04-20 20:50:07 +0900,Add a link to the coroutines proposal
+
+2	1	README.md
+Andrey Breslav,2016-04-20 20:47:39 +0900,Mention discussions in issues
+
+4	2	README.md
+Andrey Breslav,2016-04-20 20:44:16 +0900,Discussion section
+
+3	1	proposals/type-aliases.md
+Andrey Breslav,2016-04-20 20:42:38 +0900,Discussion link
+
+3	1	proposals/type-aliases.md
+Andrey Breslav,2016-04-20 20:41:26 +0900,Link to discussion and proposal separately
+
+3	1	README.md
+Andrey Breslav,2016-04-20 20:34:11 +0900,Add type-aliases.md to "Current KEEPs"
+
+4	0	README.md
+Dmitry Petrov,2016-03-31 23:24:28 +0900,Proposal for type aliases
+
+348	0	proposals/type-aliases.md
+Andrey Breslav,2016-04-12 23:12:59 +0900,README.md
+
+19	2	README.md
+Andrey Breslav,2016-03-21 21:54:24 +0900,Initial commit
+
+2	0	README.md
