@@ -1,0 +1,3444 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d501" for="node" attr.name="metric_tag_sendingcollector" attr.type="float" />
+  <key id="d500" for="node" attr.name="metric_tag_sendchannel" attr.type="float" />
+  <key id="d499" for="node" attr.name="metric_tag_nopcollector" attr.type="float" />
+  <key id="d498" for="node" attr.name="metric_tag_channellimitedflowmerge" attr.type="float" />
+  <key id="d497" for="node" attr.name="metric_tag_flows" attr.type="float" />
+  <key id="d496" for="node" attr.name="metric_tag_channelflowmerge" attr.type="float" />
+  <key id="d495" for="node" attr.name="metric_tag_concurrency" attr.type="float" />
+  <key id="d494" for="node" attr.name="metric_tag_channelflowtransformlatest" attr.type="float" />
+  <key id="d493" for="node" attr.name="metric_tag_previousflow" attr.type="float" />
+  <key id="d492" for="node" attr.name="metric_tag_collectcontextsize" attr.type="float" />
+  <key id="d491" for="node" attr.name="metric_tag_releaseintercepted" attr.type="float" />
+  <key id="d490" for="node" attr.name="metric_tag_resumewith" attr.type="float" />
+  <key id="d489" for="node" attr.name="metric_tag_stackframecontinuation" attr.type="float" />
+  <key id="d488" for="node" attr.name="metric_tag_countorelement" attr.type="float" />
+  <key id="d487" for="node" attr.name="metric_tag_withcontextundispatched" attr.type="float" />
+  <key id="d486" for="node" attr.name="metric_tag_emitref" attr.type="float" />
+  <key id="d485" for="node" attr.name="metric_tag_emitcontext" attr.type="float" />
+  <key id="d484" for="node" attr.name="metric_tag_channelflowoperatorimpl" attr.type="float" />
+  <key id="d483" for="node" attr.name="metric_tag_collectwithcontextundispatched" attr.type="float" />
+  <key id="d482" for="node" attr.name="metric_tag_originalcontextcollector" attr.type="float" />
+  <key id="d481" for="node" attr.name="metric_tag_collectcontext" attr.type="float" />
+  <key id="d480" for="node" attr.name="metric_tag_flowcollect" attr.type="float" />
+  <key id="d479" for="node" attr.name="metric_tag_newcontext" attr.type="float" />
+  <key id="d478" for="node" attr.name="metric_tag_newcapacity" attr.type="float" />
+  <key id="d477" for="node" attr.name="metric_tag_newoverflow" attr.type="float" />
+  <key id="d476" for="node" attr.name="metric_tag_flowcoroutine" attr.type="float" />
+  <key id="d475" for="node" attr.name="metric_tag_increment" attr.type="float" />
+  <key id="d474" for="node" attr.name="metric_tag_subscriptioncountstateflow" attr.type="float" />
+  <key id="d473" for="node" attr.name="metric_tag_tryemit" attr.type="float" />
+  <key id="d472" for="node" attr.name="metric_tag_lastreplayedlocked" attr.type="float" />
+  <key id="d471" for="node" attr.name="metric_tag_initialvalue" attr.type="float" />
+  <key id="d470" for="node" attr.name="metric_tag_nextindex" attr.type="float" />
+  <key id="d469" for="node" attr.name="metric_tag_ncollectors" attr.type="float" />
+  <key id="d468" for="node" attr.name="metric_tag_slots" attr.type="float" />
+  <key id="d467" for="node" attr.name="metric_tag_slot" attr.type="float" />
+  <key id="d466" for="node" attr.name="metric_tag_after" attr.type="float" />
+  <key id="d465" for="node" attr.name="metric_tag_abstractsharedflowslot" attr.type="float" />
+  <key id="d464" for="node" attr.name="metric_tag_allocatelocked" attr.type="float" />
+  <key id="d463" for="node" attr.name="metric_tag_freelocked" attr.type="float" />
+  <key id="d462" for="node" attr.name="metric_tag_returns" attr.type="float" />
+  <key id="d461" for="node" attr.name="metric_tag_continuations" attr.type="float" />
+  <key id="d460" for="node" attr.name="metric_tag_has" attr.type="float" />
+  <key id="d459" for="node" attr.name="metric_tag_childcancelledexception" attr.type="float" />
+  <key id="d458" for="node" attr.name="metric_tag_overflow" attr.type="float" />
+  <key id="d457" for="node" attr.name="metric_tag_arithmeticexception" attr.type="float" />
+  <key id="d456" for="node" attr.name="metric_tag_checkindexoverflow" attr.type="float" />
+  <key id="d455" for="node" attr.name="metric_tag_happened" attr.type="float" />
+  <key id="d454" for="node" attr.name="metric_tag_abortflowexception" attr.type="float" />
+  <key id="d453" for="node" attr.name="metric_tag_areequivalent" attr.type="float" />
+  <key id="d452" for="node" attr.name="metric_tag_keyselector" attr.type="float" />
+  <key id="d451" for="node" attr.name="metric_tag_previouskey" attr.type="float" />
+  <key id="d450" for="node" attr.name="metric_tag_cancellableflow" attr.type="float" />
+  <key id="d449" for="node" attr.name="metric_tag_currentcoroutinecontext" attr.type="float" />
+  <key id="d448" for="node" attr.name="metric_tag_cancellableflowimpl" attr.type="float" />
+  <key id="d447" for="node" attr.name="metric_tag_throwingcollector" attr.type="float" />
+  <key id="d446" for="node" attr.name="metric_tag_onsubscription" attr.type="float" />
+  <key id="d445" for="node" attr.name="metric_tag_subscribedflowcollector" attr.type="float" />
+  <key id="d444" for="node" attr.name="metric_tag_subscribedsharedflow" attr.type="float" />
+  <key id="d443" for="node" attr.name="metric_tag_fusestateflow" attr.type="float" />
+  <key id="d442" for="node" attr.name="metric_tag_readonlystateflow" attr.type="float" />
+  <key id="d441" for="node" attr.name="metric_tag_strong" attr.type="float" />
+  <key id="d440" for="node" attr.name="metric_tag_unused" attr.type="float" />
+  <key id="d439" for="node" attr.name="metric_tag_readonlysharedflow" attr.type="float" />
+  <key id="d438" for="node" attr.name="metric_tag_sharedflow" attr.type="float" />
+  <key id="d437" for="node" attr.name="metric_tag_defaultextracapacity" attr.type="float" />
+  <key id="d436" for="node" attr.name="metric_tag_extrabuffercapacity" attr.type="float" />
+  <key id="d435" for="node" attr.name="metric_tag_sharingconfig" attr.type="float" />
+  <key id="d434" for="node" attr.name="metric_tag_replay" attr.type="float" />
+  <key id="d433" for="node" attr.name="metric_tag_upstream" attr.type="float" />
+  <key id="d432" for="node" attr.name="metric_tag_newmincollectorindex" attr.type="float" />
+  <key id="d431" for="node" attr.name="metric_tag_newreplayindex" attr.type="float" />
+  <key id="d430" for="node" attr.name="metric_tag_newbufferendindex" attr.type="float" />
+  <key id="d429" for="node" attr.name="metric_tag_emitter" attr.type="float" />
+  <key id="d428" for="node" attr.name="metric_tag_mincollectorindex" attr.type="float" />
+  <key id="d427" for="node" attr.name="metric_tag_replayindex" attr.type="float" />
+  <key id="d426" for="node" attr.name="metric_tag_buffer" attr.type="float" />
+  <key id="d425" for="node" attr.name="metric_tag_resumes" attr.type="float" />
+  <key id="d424" for="node" attr.name="metric_tag_free" attr.type="float" />
+  <key id="d423" for="node" attr.name="metric_tag_oldindex" attr.type="float" />
+  <key id="d422" for="node" attr.name="metric_tag_sharedflowimpl" attr.type="float" />
+  <key id="d421" for="node" attr.name="metric_tag_safecollector" attr.type="float" />
+  <key id="d420" for="node" attr.name="metric_tag_callbackflow" attr.type="float" />
+  <key id="d419" for="node" attr.name="metric_tag_callbackflowbuilder" attr.type="float" />
+  <key id="d418" for="node" attr.name="metric_tag_channelflow" attr.type="float" />
+  <key id="d417" for="node" attr.name="metric_tag_producerscope" attr.type="float" />
+  <key id="d416" for="node" attr.name="metric_tag_channelflowbuilder" attr.type="float" />
+  <key id="d415" for="node" attr.name="metric_tag_collect" attr.type="float" />
+  <key id="d414" for="node" attr.name="metric_tag_emptyflow" attr.type="float" />
+  <key id="d413" for="node" attr.name="metric_tag_nothing" attr.type="float" />
+  <key id="d412" for="node" attr.name="metric_tag_collector" attr.type="float" />
+  <key id="d411" for="node" attr.name="metric_tag_abstractflow" attr.type="float" />
+  <key id="d410" for="node" attr.name="metric_tag_collectsafely" attr.type="float" />
+  <key id="d409" for="node" attr.name="metric_tag_safeflow" attr.type="float" />
+  <key id="d408" for="node" attr.name="metric_tag_flowcollector" attr.type="float" />
+  <key id="d407" for="node" attr.name="metric_tag_emit" attr.type="float" />
+  <key id="d406" for="node" attr.name="metric_tag_ms" attr.type="float" />
+  <key id="d405" for="node" attr.name="metric_tag_stoptimeout" attr.type="float" />
+  <key id="d404" for="node" attr.name="metric_tag_replayexpiration" attr.type="float" />
+  <key id="d403" for="node" attr.name="metric_tag_startedlazily" attr.type="float" />
+  <key id="d402" for="node" attr.name="metric_tag_flow" attr.type="float" />
+  <key id="d401" for="node" attr.name="metric_tag_count" attr.type="float" />
+  <key id="d400" for="node" attr.name="metric_tag_started" attr.type="float" />
+  <key id="d399" for="node" attr.name="metric_tag_stateflow" attr.type="float" />
+  <key id="d398" for="node" attr.name="metric_tag_subscriptioncount" attr.type="float" />
+  <key id="d397" for="node" attr.name="metric_tag_command" attr.type="float" />
+  <key id="d396" for="node" attr.name="metric_tag_sharingstarted" attr.type="float" />
+  <key id="d395" for="node" attr.name="metric_tag_flowof" attr.type="float" />
+  <key id="d394" for="node" attr.name="metric_tag_startedeagerly" attr.type="float" />
+  <key id="d393" for="node" attr.name="metric_tag_start" attr.type="float" />
+  <key id="d392" for="node" attr.name="metric_tag_sharingcommand" attr.type="float" />
+  <key id="d391" for="node" attr.name="metric_tag_stop" attr.type="float" />
+  <key id="d390" for="node" attr.name="metric_tag_scope" attr.type="float" />
+  <key id="d389" for="node" attr.name="metric_tag_channelasflow" attr.type="float" />
+  <key id="d388" for="node" attr.name="metric_tag_markconsumed" attr.type="float" />
+  <key id="d387" for="node" attr.name="metric_tag_consume" attr.type="float" />
+  <key id="d386" for="node" attr.name="metric_tag_newstate" attr.type="float" />
+  <key id="d385" for="node" attr.name="metric_tag_oldstate" attr.type="float" />
+  <key id="d384" for="node" attr.name="metric_tag_cursequence" attr.type="float" />
+  <key id="d383" for="node" attr.name="metric_tag_sequence" attr.type="float" />
+  <key id="d382" for="node" attr.name="metric_tag_stateflowimpl" attr.type="float" />
+  <key id="d381" for="node" attr.name="metric_tag_none" attr.type="float" />
+  <key id="d380" for="node" attr.name="metric_tag_pending" attr.type="float" />
+  <key id="d379" for="node" attr.name="metric_tag_suspend" attr.type="float" />
+  <key id="d378" for="node" attr.name="metric_tag_bufferoverflow" attr.type="float" />
+  <key id="d377" for="node" attr.name="metric_tag_buffered" attr.type="float" />
+  <key id="d376" for="node" attr.name="metric_tag_conflated" attr.type="float" />
+  <key id="d375" for="node" attr.name="metric_tag_rendezvous" attr.type="float" />
+  <key id="d374" for="node" attr.name="metric_tag_factory" attr.type="float" />
+  <key id="d373" for="node" attr.name="metric_tag_systemprop" attr.type="float" />
+  <key id="d372" for="node" attr.name="metric_tag_unlimited" attr.type="float" />
+  <key id="d371" for="node" attr.name="metric_tag_hashcode" attr.type="float" />
+  <key id="d370" for="node" attr.name="metric_tag_equals" attr.type="float" />
+  <key id="d369" for="node" attr.name="metric_tag_other" attr.type="float" />
+  <key id="d368" for="node" attr.name="metric_tag_channelresult" attr.type="float" />
+  <key id="d367" for="node" attr.name="metric_tag_failed" attr.type="float" />
+  <key id="d366" for="node" attr.name="metric_tag_onbufferoverflow" attr.type="float" />
+  <key id="d365" for="node" attr.name="metric_tag_conflatedbufferedchannel" attr.type="float" />
+  <key id="d364" for="node" attr.name="metric_tag_subscriberconflated" attr.type="float" />
+  <key id="d363" for="node" attr.name="metric_tag_bufferedchannel" attr.type="float" />
+  <key id="d362" for="node" attr.name="metric_tag_cancelimpl" attr.type="float" />
+  <key id="d361" for="node" attr.name="metric_tag_removesubscriber" attr.type="float" />
+  <key id="d360" for="node" attr.name="metric_tag_subscriberbuffered" attr.type="float" />
+  <key id="d359" for="node" attr.name="metric_tag_subscribers" attr.type="float" />
+  <key id="d358" for="node" attr.name="metric_tag_capacity" attr.type="float" />
+  <key id="d357" for="node" attr.name="metric_tag_isclosedforsend" attr.type="float" />
+  <key id="d356" for="node" attr.name="metric_tag_lastconflatedelement" attr.type="float" />
+  <key id="d355" for="node" attr.name="metric_tag_valueornull" attr.type="float" />
+  <key id="d354" for="node" attr.name="metric_tag_conflatedbroadcastchannel" attr.type="float" />
+  <key id="d353" for="node" attr.name="metric_tag_broadcast" attr.type="float" />
+  <key id="d352" for="node" attr.name="metric_tag_broadcastchannelimpl" attr.type="float" />
+  <key id="d351" for="node" attr.name="metric_tag_channelcoroutine" attr.type="float" />
+  <key id="d350" for="node" attr.name="metric_tag_producercoroutine" attr.type="float" />
+  <key id="d349" for="node" attr.name="metric_tag_processed" attr.type="float" />
+  <key id="d348" for="node" attr.name="metric_tag_waitereb" attr.type="float" />
+  <key id="d347" for="node" attr.name="metric_tag_issender" attr.type="float" />
+  <key id="d346" for="node" attr.name="metric_tag_data" attr.type="float" />
+  <key id="d345" for="node" attr.name="metric_tag_closecause" attr.type="float" />
+  <key id="d344" for="node" attr.name="metric_tag_recoverstacktrace" attr.type="float" />
+  <key id="d343" for="node" attr.name="metric_tag_hasnextonnowaitersuspend" attr.type="float" />
+  <key id="d342" for="node" attr.name="metric_tag_onclosedhasnext" attr.type="float" />
+  <key id="d341" for="node" attr.name="metric_tag_onnowaitersuspend" attr.type="float" />
+  <key id="d340" for="node" attr.name="metric_tag_onrendezvousorbuffered" attr.type="float" />
+  <key id="d339" for="node" attr.name="metric_tag_sendbroadcast" attr.type="float" />
+  <key id="d338" for="node" attr.name="metric_tag_sendimpl" attr.type="float" />
+  <key id="d337" for="node" attr.name="metric_tag_segm" attr.type="float" />
+  <key id="d336" for="node" attr.name="metric_tag_channelsegment" attr.type="float" />
+  <key id="d335" for="node" attr.name="metric_tag_onclosed" attr.type="float" />
+  <key id="d334" for="node" attr.name="metric_tag_broadcastcoroutine" attr.type="float" />
+  <key id="d333" for="node" attr.name="metric_tag_opensubscription" attr.type="float" />
+  <key id="d332" for="node" attr.name="metric_tag_lazybroadcastcoroutine" attr.type="float" />
+  <key id="d331" for="node" attr.name="metric_tag_subscription" attr.type="float" />
+  <key id="d330" for="node" attr.name="metric_tag_suppression" attr.type="float" />
+  <key id="d329" for="node" attr.name="metric_tag_defaultcancellationexception" attr.type="float" />
+  <key id="d328" for="node" attr.name="metric_tag_cancelinternal" attr.type="float" />
+  <key id="d327" for="node" attr.name="metric_tag_channel" attr.type="float" />
+  <key id="d326" for="node" attr.name="metric_tag_cancel" attr.type="float" />
+  <key id="d325" for="node" attr.name="metric_tag_trysendimpl" attr.type="float" />
+  <key id="d324" for="node" attr.name="metric_tag_onundeliveredelement" attr.type="float" />
+  <key id="d323" for="node" attr.name="metric_tag_issendop" attr.type="float" />
+  <key id="d322" for="node" attr.name="metric_tag_semaphoresegment" attr.type="float" />
+  <key id="d321" for="node" attr.name="metric_tag_acquirers" attr.type="float" />
+  <key id="d320" for="node" attr.name="metric_tag_acquire" attr.type="float" />
+  <key id="d319" for="node" attr.name="metric_tag_createnewsegment" attr.type="float" />
+  <key id="d318" for="node" attr.name="metric_tag_permit" attr.type="float" />
+  <key id="d317" for="node" attr.name="metric_tag_permits" attr.type="float" />
+  <key id="d316" for="node" attr.name="metric_tag_waiter" attr.type="float" />
+  <key id="d315" for="node" attr.name="metric_tag_success" attr.type="float" />
+  <key id="d314" for="node" attr.name="metric_tag_selectinstanceinternal" attr.type="float" />
+  <key id="d313" for="node" attr.name="metric_tag_assert" attr.type="float" />
+  <key id="d312" for="node" attr.name="metric_tag_owner" attr.type="float" />
+  <key id="d311" for="node" attr.name="metric_tag_unbox" attr.type="float" />
+  <key id="d310" for="node" attr.name="metric_tag_contextscope" attr.type="float" />
+  <key id="d309" for="node" attr.name="metric_tag_recoverresult" attr.type="float" />
+  <key id="d308" for="node" attr.name="metric_tag_removeatimpl" attr.type="float" />
+  <key id="d307" for="node" attr.name="metric_tag_siftupfrom" attr.type="float" />
+  <key id="d306" for="node" attr.name="metric_tag_synchronized" attr.type="float" />
+  <key id="d305" for="node" attr.name="metric_tag_swap" attr.type="float" />
+  <key id="d304" for="node" attr.name="metric_tag_index" attr.type="float" />
+  <key id="d303" for="node" attr.name="metric_tag_size" attr.type="float" />
+  <key id="d302" for="node" attr.name="metric_tag_fatalexception" attr.type="float" />
+  <key id="d301" for="node" attr.name="metric_tag_finallyexception" attr.type="float" />
+  <key id="d300" for="node" attr.name="metric_tag_class" attr.type="float" />
+  <key id="d299" for="node" attr.name="metric_tag_commonthreadlocal" attr.type="float" />
+  <key id="d298" for="node" attr.name="metric_tag_inline" attr.type="float" />
+  <key id="d297" for="node" attr.name="metric_tag_synchronizedimpl" attr.type="float" />
+  <key id="d296" for="node" attr.name="metric_tag_lock" attr.type="float" />
+  <key id="d295" for="node" attr.name="metric_tag_synchronizedobject" attr.type="float" />
+  <key id="d294" for="node" attr.name="metric_tag_failure" attr.type="float" />
+  <key id="d293" for="node" attr.name="metric_tag_current" attr.type="float" />
+  <key id="d292" for="node" attr.name="metric_tag_prepare" attr.type="float" />
+  <key id="d291" for="node" attr.name="metric_tag_opdescriptor" attr.type="float" />
+  <key id="d290" for="node" attr.name="metric_tag_affected" attr.type="float" />
+  <key id="d289" for="node" attr.name="metric_tag_perform" attr.type="float" />
+  <key id="d288" for="node" attr.name="metric_tag_atomicop" attr.type="float" />
+  <key id="d287" for="node" attr.name="metric_tag_isclosed" attr.type="float" />
+  <key id="d286" for="node" attr.name="metric_tag_does" attr.type="float" />
+  <key id="d285" for="node" attr.name="metric_tag_contain" attr.type="float" />
+  <key id="d284" for="node" attr.name="metric_tag_segmentorclosed" attr.type="float" />
+  <key id="d283" for="node" attr.name="metric_tag_closed" attr.type="float" />
+  <key id="d282" for="node" attr.name="metric_tag_segment" attr.type="float" />
+  <key id="d281" for="node" attr.name="metric_tag_pointers" attr.type="float" />
+  <key id="d280" for="node" attr.name="metric_tag_numberofslots" attr.type="float" />
+  <key id="d279" for="node" attr.name="metric_tag_istail" attr.type="float" />
+  <key id="d278" for="node" attr.name="metric_tag_prev" attr.type="float" />
+  <key id="d277" for="node" attr.name="metric_tag_unlock" attr.type="float" />
+  <key id="d276" for="node" attr.name="metric_tag_reentrantlock" attr.type="float" />
+  <key id="d275" for="node" attr.name="metric_tag_trylock" attr.type="float" />
+  <key id="d274" for="node" attr.name="metric_tag_inlinelist" attr.type="float" />
+  <key id="d273" for="node" attr.name="metric_tag_holder" attr.type="float" />
+  <key id="d272" for="node" attr.name="metric_tag_handlecoroutineexception" attr.type="float" />
+  <key id="d271" for="node" attr.name="metric_tag_fairnesscounter" attr.type="float" />
+  <key id="d270" for="node" attr.name="metric_tag_currenttask" attr.type="float" />
+  <key id="d269" for="node" attr.name="metric_tag_obtaintaskordeallocateworker" attr.type="float" />
+  <key id="d268" for="node" attr.name="metric_tag_dispatchinternal" attr.type="float" />
+  <key id="d267" for="node" attr.name="metric_tag_workerallocationlock" attr.type="float" />
+  <key id="d266" for="node" attr.name="metric_tag_parallelism" attr.type="float" />
+  <key id="d265" for="node" attr.name="metric_tag_worker" attr.type="float" />
+  <key id="d264" for="node" attr.name="metric_tag_callerframe" attr.type="float" />
+  <key id="d263" for="node" attr.name="metric_tag_getstacktraceelement" attr.type="float" />
+  <key id="d262" for="node" attr.name="metric_tag_coroutinestackframe" attr.type="float" />
+  <key id="d261" for="node" attr.name="metric_tag_stacktraceelement" attr.type="float" />
+  <key id="d260" for="node" attr.name="metric_tag_shr" attr.type="float" />
+  <key id="d259" for="node" attr.name="metric_tag_wo" attr.type="float" />
+  <key id="d258" for="node" attr.name="metric_tag_shl" attr.type="float" />
+  <key id="d257" for="node" attr.name="metric_tag_element" attr.type="float" />
+  <key id="d256" for="node" attr.name="metric_tag_tail" attr.type="float" />
+  <key id="d255" for="node" attr.name="metric_tag_head" attr.type="float" />
+  <key id="d254" for="node" attr.name="metric_tag_mask" attr.type="float" />
+  <key id="d253" for="node" attr.name="metric_tag_next" attr.type="float" />
+  <key id="d252" for="node" attr.name="metric_tag_move" attr.type="float" />
+  <key id="d251" for="node" attr.name="metric_tag_singleconsumer" attr.type="float" />
+  <key id="d250" for="node" attr.name="metric_tag_transform" attr.type="float" />
+  <key id="d249" for="node" attr.name="metric_tag_cur" attr.type="float" />
+  <key id="d248" for="node" attr.name="metric_tag_decrementandget" attr.type="float" />
+  <key id="d247" for="node" attr.name="metric_tag_localatomicint" attr.type="float" />
+  <key id="d246" for="node" attr.name="metric_tag_shuffleandregisterclauses" attr.type="float" />
+  <key id="d245" for="node" attr.name="metric_tag_clausestoregister" attr.type="float" />
+  <key id="d244" for="node" attr.name="metric_tag_unbiasedselectimplementation" attr.type="float" />
+  <key id="d243" for="node" attr.name="metric_tag_initselectresult" attr.type="float" />
+  <key id="d242" for="node" attr.name="metric_tag_unbiasedselectbuilderimpl" attr.type="float" />
+  <key id="d241" for="node" attr.name="metric_tag_getresult" attr.type="float" />
+  <key id="d240" for="node" attr.name="metric_tag_doselect" attr.type="float" />
+  <key id="d239" for="node" attr.name="metric_tag_handlebuilderexception" attr.type="float" />
+  <key id="d238" for="node" attr.name="metric_tag_later" attr.type="float" />
+  <key id="d237" for="node" attr.name="metric_tag_selectbuilderimpl" attr.type="float" />
+  <key id="d236" for="node" attr.name="metric_tag_thrown" attr.type="float" />
+  <key id="d235" for="node" attr.name="metric_tag_cancelled" attr.type="float" />
+  <key id="d234" for="node" attr.name="metric_tag_reregister" attr.type="float" />
+  <key id="d233" for="node" attr.name="metric_tag_successful" attr.type="float" />
+  <key id="d232" for="node" attr.name="metric_tag_tryselectdetailedresult" attr.type="float" />
+  <key id="d231" for="node" attr.name="metric_tag_disposablehandleorsegment" attr.type="float" />
+  <key id="d230" for="node" attr.name="metric_tag_indexinsegment" attr.type="float" />
+  <key id="d229" for="node" attr.name="metric_tag_param" attr.type="float" />
+  <key id="d228" for="node" attr.name="metric_tag_clausedata" attr.type="float" />
+  <key id="d227" for="node" attr.name="metric_tag_clauses" attr.type="float" />
+  <key id="d226" for="node" attr.name="metric_tag_clause" attr.type="float" />
+  <key id="d225" for="node" attr.name="metric_tag_curstate" attr.type="float" />
+  <key id="d224" for="node" attr.name="metric_tag_internalresult" attr.type="float" />
+  <key id="d223" for="node" attr.name="metric_tag_selectinregistrationphase" attr.type="float" />
+  <key id="d222" for="node" attr.name="metric_tag_interface" attr.type="float" />
+  <key id="d221" for="node" attr.name="metric_tag_clauseobject" attr.type="float" />
+  <key id="d220" for="node" attr.name="metric_tag_regfunc" attr.type="float" />
+  <key id="d219" for="node" attr.name="metric_tag_processresfunc" attr.type="float" />
+  <key id="d218" for="node" attr.name="metric_tag_registrationfunction" attr.type="float" />
+  <key id="d217" for="node" attr.name="metric_tag_processresultfunction" attr.type="float" />
+  <key id="d216" for="node" attr.name="metric_tag_oncancellationconstructor" attr.type="float" />
+  <key id="d215" for="node" attr.name="metric_tag_action" attr.type="float" />
+  <key id="d214" for="node" attr.name="metric_tag_register" attr.type="float" />
+  <key id="d213" for="node" attr.name="metric_tag_ontimeout" attr.type="float" />
+  <key id="d212" for="node" attr.name="metric_tag_timemillis" attr.type="float" />
+  <key id="d211" for="node" attr.name="metric_tag_installed" attr.type="float" />
+  <key id="d210" for="node" attr.name="metric_tag_cancelcause" attr.type="float" />
+  <key id="d209" for="node" attr.name="metric_tag_via" attr.type="float" />
+  <key id="d208" for="node" attr.name="metric_tag_invokeoncancellation" attr.type="float" />
+  <key id="d207" for="node" attr.name="metric_tag_clashes" attr.type="float" />
+  <key id="d206" for="node" attr.name="metric_tag_invokeoncancel" attr.type="float" />
+  <key id="d205" for="node" attr.name="metric_tag_tostring" attr.type="float" />
+  <key id="d204" for="node" attr.name="metric_tag_resumemode" attr.type="float" />
+  <key id="d203" for="node" attr.name="metric_tag_idempotent" attr.type="float" />
+  <key id="d202" for="node" attr.name="metric_tag_final" attr.type="float" />
+  <key id="d201" for="node" attr.name="metric_tag_scopecoroutine" attr.type="float" />
+  <key id="d200" for="node" attr.name="metric_tag_supervisorcoroutine" attr.type="float" />
+  <key id="d199" for="node" attr.name="metric_tag_jobimpl" attr.type="float" />
+  <key id="d198" for="node" attr.name="metric_tag_supervisorjobimpl" attr.type="float" />
+  <key id="d197" for="node" attr.name="metric_tag_nondisposablehandle" attr.type="float" />
+  <key id="d196" for="node" attr.name="metric_tag_undispatched" attr.type="float" />
+  <key id="d195" for="node" attr.name="metric_tag_lazy" attr.type="float" />
+  <key id="d194" for="node" attr.name="metric_tag_receiver" attr.type="float" />
+  <key id="d193" for="node" attr.name="metric_tag_completion" attr.type="float" />
+  <key id="d192" for="node" attr.name="metric_tag_companion" attr.type="float" />
+  <key id="d191" for="node" attr.name="metric_tag_dispatcherwasunconfined" attr.type="float" />
+  <key id="d190" for="node" attr.name="metric_tag_isdispatchneeded" attr.type="float" />
+  <key id="d189" for="node" attr.name="metric_tag_supported" attr.type="float" />
+  <key id="d188" for="node" attr.name="metric_tag_key" attr.type="float" />
+  <key id="d187" for="node" attr.name="metric_tag_limitedparallelism" attr.type="float" />
+  <key id="d186" for="node" attr.name="metric_tag_yieldcontext" attr.type="float" />
+  <key id="d185" for="node" attr.name="metric_tag_constructor" attr.type="float" />
+  <key id="d184" for="node" attr.name="metric_tag_coroutine" attr.type="float" />
+  <key id="d183" for="node" attr.name="metric_tag_cancelcoroutine" attr.type="float" />
+  <key id="d182" for="node" attr.name="metric_tag_unintercepted" attr.type="float" />
+  <key id="d181" for="node" attr.name="metric_tag_timeoutcancellationexception" attr.type="float" />
+  <key id="d180" for="node" attr.name="metric_tag_timeoutcoroutine" attr.type="float" />
+  <key id="d179" for="node" attr.name="metric_tag_time" attr.type="float" />
+  <key id="d178" for="node" attr.name="metric_tag_childcontinuation" attr.type="float" />
+  <key id="d177" for="node" attr.name="metric_tag_childcancelled" attr.type="float" />
+  <key id="d176" for="node" attr.name="metric_tag_childhandle" attr.type="float" />
+  <key id="d175" for="node" attr.name="metric_tag_childjob" attr.type="float" />
+  <key id="d174" for="node" attr.name="metric_tag_invokeoncancelling" attr.type="float" />
+  <key id="d173" for="node" attr.name="metric_tag_atomicfu" attr.type="float" />
+  <key id="d172" for="node" attr.name="metric_tag_migration" attr.type="float" />
+  <key id="d171" for="node" attr.name="metric_tag_recent" attr.type="float" />
+  <key id="d170" for="node" attr.name="metric_tag_replace" attr.type="float" />
+  <key id="d169" for="node" attr.name="metric_tag_todo" attr.type="float" />
+  <key id="d168" for="node" attr.name="metric_tag_jobcancellingnode" attr.type="float" />
+  <key id="d167" for="node" attr.name="metric_tag_disposeoncompletion" attr.type="float" />
+  <key id="d166" for="node" attr.name="metric_tag_cancellablecontinuationimpl" attr.type="float" />
+  <key id="d165" for="node" attr.name="metric_tag_resumeawaitoncompletion" attr.type="float" />
+  <key id="d164" for="node" attr.name="metric_tag_resumeoncompletion" attr.type="float" />
+  <key id="d163" for="node" attr.name="metric_tag_handler" attr.type="float" />
+  <key id="d162" for="node" attr.name="metric_tag_completionhandler" attr.type="float" />
+  <key id="d161" for="node" attr.name="metric_tag_invokeoncompletion" attr.type="float" />
+  <key id="d160" for="node" attr.name="metric_tag_debug" attr.type="float" />
+  <key id="d159" for="node" attr.name="metric_tag_inactivenodelist" attr.type="float" />
+  <key id="d158" for="node" attr.name="metric_tag_node" attr.type="float" />
+  <key id="d157" for="node" attr.name="metric_tag_getstring" attr.type="float" />
+  <key id="d156" for="node" attr.name="metric_tag_first" attr.type="float" />
+  <key id="d155" for="node" attr.name="metric_tag_append" attr.type="float" />
+  <key id="d154" for="node" attr.name="metric_tag_dispose" attr.type="float" />
+  <key id="d153" for="node" attr.name="metric_tag_parentjob" attr.type="float" />
+  <key id="d152" for="node" attr.name="metric_tag_handlesexception" attr.type="float" />
+  <key id="d151" for="node" attr.name="metric_tag_list" attr.type="float" />
+  <key id="d150" for="node" attr.name="metric_tag_new" attr.type="float" />
+  <key id="d149" for="node" attr.name="metric_tag_nodelist" attr.type="float" />
+  <key id="d148" for="node" attr.name="metric_tag_isactive" attr.type="float" />
+  <key id="d147" for="node" attr.name="metric_tag_empty" attr.type="float" />
+  <key id="d146" for="node" attr.name="metric_tag_symbol" attr.type="float" />
+  <key id="d145" for="node" attr.name="metric_tag_selectonawaitcompletionhandler" attr.type="float" />
+  <key id="d144" for="node" attr.name="metric_tag_result" attr.type="float" />
+  <key id="d143" for="node" attr.name="metric_tag_namestring" attr.type="float" />
+  <key id="d142" for="node" attr.name="metric_tag_getcontinuationcancellationcause" attr.type="float" />
+  <key id="d141" for="node" attr.name="metric_tag_delegate" attr.type="float" />
+  <key id="d140" for="node" attr.name="metric_tag_awaitcontinuation" attr.type="float" />
+  <key id="d139" for="node" attr.name="metric_tag_jobsupport" attr.type="float" />
+  <key id="d138" for="node" attr.name="metric_tag_childhandlenode" attr.type="float" />
+  <key id="d137" for="node" attr.name="metric_tag_finishing" attr.type="float" />
+  <key id="d136" for="node" attr.name="metric_tag_childcompletion" attr.type="float" />
+  <key id="d135" for="node" attr.name="metric_tag_child" attr.type="float" />
+  <key id="d134" for="node" attr.name="metric_tag_arraylist" attr.type="float" />
+  <key id="d133" for="node" attr.name="metric_tag_eh" attr.type="float" />
+  <key id="d132" for="node" attr.name="metric_tag_exceptionsholder" attr.type="float" />
+  <key id="d131" for="node" attr.name="metric_tag_selectinstance" attr.type="float" />
+  <key id="d130" for="node" attr.name="metric_tag_jobnode" attr.type="float" />
+  <key id="d129" for="node" attr.name="metric_tag_select" attr.type="float" />
+  <key id="d128" for="node" attr.name="metric_tag_selectonjoincompletionhandler" attr.type="float" />
+  <key id="d127" for="node" attr.name="metric_tag_proposedupdate" attr.type="float" />
+  <key id="d126" for="node" attr.name="metric_tag_rootcause" attr.type="float" />
+  <key id="d125" for="node" attr.name="metric_tag_finalstate" attr.type="float" />
+  <key id="d124" for="node" attr.name="metric_tag_level" attr.type="float" />
+  <key id="d123" for="node" attr.name="metric_tag_was" attr.type="float" />
+  <key id="d122" for="node" attr.name="metric_tag_cancelledcontinuation" attr.type="float" />
+  <key id="d121" for="node" attr.name="metric_tag_normally" attr.type="float" />
+  <key id="d120" for="node" attr.name="metric_tag_makeresumed" attr.type="float" />
+  <key id="d119" for="node" attr.name="metric_tag_atomic" attr.type="float" />
+  <key id="d118" for="node" attr.name="metric_tag_oncancellation" attr.type="float" />
+  <key id="d117" for="node" attr.name="metric_tag_makehandled" attr.type="float" />
+  <key id="d116" for="node" attr.name="metric_tag_handled" attr.type="float" />
+  <key id="d115" for="node" attr.name="metric_tag_completabledeferred" attr.type="float" />
+  <key id="d114" for="node" attr.name="metric_tag_completabledeferredimpl" attr.type="float" />
+  <key id="d113" for="node" attr.name="metric_tag_parent" attr.type="float" />
+  <key id="d112" for="node" attr.name="metric_tag_makecompleting" attr.type="float" />
+  <key id="d111" for="node" attr.name="metric_tag_task" attr.type="float" />
+  <key id="d110" for="node" attr.name="metric_tag_enqueue" attr.type="float" />
+  <key id="d109" for="node" attr.name="metric_tag_createeventloop" attr.type="float" />
+  <key id="d108" for="node" attr.name="metric_tag_defaultexecutor" attr.type="float" />
+  <key id="d107" for="node" attr.name="metric_tag_crossinline" attr.type="float" />
+  <key id="d106" for="node" attr.name="metric_tag_platformautoreleasepool" attr.type="float" />
+  <key id="d105" for="node" attr.name="metric_tag_timenow" attr.type="float" />
+  <key id="d104" for="node" attr.name="metric_tag_long" attr.type="float" />
+  <key id="d103" for="node" attr.name="metric_tag_runnable" attr.type="float" />
+  <key id="d102" for="node" attr.name="metric_tag_delayedrunnabletask" attr.type="float" />
+  <key id="d101" for="node" attr.name="metric_tag_run" attr.type="float" />
+  <key id="d100" for="node" attr.name="metric_tag_unit" attr.type="float" />
+  <key id="d99" for="node" attr.name="metric_tag_delayedresumetask" attr.type="float" />
+  <key id="d98" for="node" attr.name="metric_tag_resumeundispatched" attr.type="float" />
+  <key id="d97" for="node" attr.name="metric_tag_cont" attr.type="float" />
+  <key id="d96" for="node" attr.name="metric_tag_threadsafeheap" attr.type="float" />
+  <key id="d95" for="node" attr.name="metric_tag_dtime" attr.type="float" />
+  <key id="d94" for="node" attr.name="metric_tag_firsttime" attr.type="float" />
+  <key id="d93" for="node" attr.name="metric_tag_mintime" attr.type="float" />
+  <key id="d92" for="node" attr.name="metric_tag_nanotime" attr.type="float" />
+  <key id="d91" for="node" attr.name="metric_tag_heap" attr.type="float" />
+  <key id="d90" for="node" attr.name="metric_tag_queue" attr.type="float" />
+  <key id="d89" for="node" attr.name="metric_tag_now" attr.type="float" />
+  <key id="d88" for="node" attr.name="metric_tag_delayedtask" attr.type="float" />
+  <key id="d87" for="node" attr.name="metric_tag_eventloopimplplatform" attr.type="float" />
+  <key id="d86" for="node" attr.name="metric_tag_reschedule" attr.type="float" />
+  <key id="d85" for="node" attr.name="metric_tag_unpark" attr.type="float" />
+  <key id="d84" for="node" attr.name="metric_tag_protected" attr.type="float" />
+  <key id="d83" for="node" attr.name="metric_tag_threadlocaleventloop" attr.type="float" />
+  <key id="d82" for="node" attr.name="metric_tag_eventloop" attr.type="float" />
+  <key id="d81" for="node" attr.name="metric_tag_shared" attr.type="float" />
+  <key id="d80" for="node" attr.name="metric_tag_open" attr.type="float" />
+  <key id="d79" for="node" attr.name="metric_tag_delta" attr.type="float" />
+  <key id="d78" for="node" attr.name="metric_tag_unconfinedqueue" attr.type="float" />
+  <key id="d77" for="node" attr.name="metric_tag_usecount" attr.type="float" />
+  <key id="d76" for="node" attr.name="metric_tag_emptycoroutinecontext" attr.type="float" />
+  <key id="d75" for="node" attr.name="metric_tag_coroutinescope" attr.type="float" />
+  <key id="d74" for="node" attr.name="metric_tag_coroutinecontext" attr.type="float" />
+  <key id="d73" for="node" attr.name="metric_tag_globalscope" attr.type="float" />
+  <key id="d72" for="node" attr.name="metric_tag_jobcancellationexception" attr.type="float" />
+  <key id="d71" for="node" attr.name="metric_tag_internal" attr.type="float" />
+  <key id="d70" for="node" attr.name="metric_tag_job" attr.type="float" />
+  <key id="d69" for="node" attr.name="metric_tag_expect" attr.type="float" />
+  <key id="d68" for="node" attr.name="metric_tag_cancellationexception" attr.type="float" />
+  <key id="d67" for="node" attr.name="metric_tag_message" attr.type="float" />
+  <key id="d66" for="node" attr.name="metric_tag_disposablehandle" attr.type="float" />
+  <key id="d65" for="node" attr.name="metric_tag_handle" attr.type="float" />
+  <key id="d64" for="node" attr.name="metric_tag_disposeoncancel" attr.type="float" />
+  <key id="d63" for="node" attr.name="metric_tag_logging" attr.type="float" />
+  <key id="d62" for="node" attr.name="metric_tag_logic" attr.type="float" />
+  <key id="d61" for="node" attr.name="metric_tag_such" attr.type="float" />
+  <key id="d60" for="node" attr.name="metric_tag_text" attr.type="float" />
+  <key id="d59" for="node" attr.name="metric_tag_withcontext" attr.type="float" />
+  <key id="d58" for="node" attr.name="metric_tag_abstractcoroutinecontextelement" attr.type="float" />
+  <key id="d57" for="node" attr.name="metric_tag_name" attr.type="float" />
+  <key id="d56" for="node" attr.name="metric_tag_coroutinename" attr.type="float" />
+  <key id="d55" for="node" attr.name="metric_tag_value" attr.type="float" />
+  <key id="d54" for="node" attr.name="metric_tag_cancelhandler" attr.type="float" />
+  <key id="d53" for="node" attr.name="metric_tag_disposeall" attr.type="float" />
+  <key id="d52" for="node" attr.name="metric_tag_array" attr.type="float" />
+  <key id="d51" for="node" attr.name="metric_tag_token" attr.type="float" />
+  <key id="d50" for="node" attr.name="metric_tag_awaitallnode" attr.type="float" />
+  <key id="d49" for="node" attr.name="metric_tag_nodes" attr.type="float" />
+  <key id="d48" for="node" attr.name="metric_tag_deferreds" attr.type="float" />
+  <key id="d47" for="node" attr.name="metric_tag_disposer" attr.type="float" />
+  <key id="d46" for="node" attr.name="metric_tag_disposehandlersoncancel" attr.type="float" />
+  <key id="d45" for="node" attr.name="metric_tag_close" attr.type="float" />
+  <key id="d44" for="node" attr.name="metric_tag_closeablecoroutinedispatcher" attr.type="float" />
+  <key id="d43" for="node" attr.name="metric_tag_ucont" attr.type="float" />
+  <key id="d42" for="node" attr.name="metric_tag_resumed" attr.type="float" />
+  <key id="d41" for="node" attr.name="metric_tag_decision" attr.type="float" />
+  <key id="d40" for="node" attr.name="metric_tag_suspended" attr.type="float" />
+  <key id="d39" for="node" attr.name="metric_tag_state" attr.type="float" />
+  <key id="d38" for="node" attr.name="metric_tag_undecided" attr.type="float" />
+  <key id="d37" for="node" attr.name="metric_tag_lazystandalonecoroutine" attr.type="float" />
+  <key id="d36" for="node" attr.name="metric_tag_initparentjob" attr.type="float" />
+  <key id="d35" for="node" attr.name="metric_tag_abstractcoroutine" attr.type="float" />
+  <key id="d34" for="node" attr.name="metric_tag_handlejobexception" attr.type="float" />
+  <key id="d33" for="node" attr.name="metric_tag_standalonecoroutine" attr.type="float" />
+  <key id="d32" for="node" attr.name="metric_tag_exception" attr.type="float" />
+  <key id="d31" for="node" attr.name="metric_tag_block" attr.type="float" />
+  <key id="d30" for="node" attr.name="metric_tag_onstart" attr.type="float" />
+  <key id="d29" for="node" attr.name="metric_tag_lazydeferredcoroutine" attr.type="float" />
+  <key id="d28" for="node" attr.name="metric_tag_onawaitinternal" attr.type="float" />
+  <key id="d27" for="node" attr.name="metric_tag_deferred" attr.type="float" />
+  <key id="d26" for="node" attr.name="metric_tag_deferredcoroutine" attr.type="float" />
+  <key id="d25" for="node" attr.name="metric_tag_onawait" attr.type="float" />
+  <key id="d24" for="node" attr.name="metric_tag_parentcontext" attr.type="float" />
+  <key id="d23" for="node" attr.name="metric_tag_active" attr.type="float" />
+  <key id="d22" for="node" attr.name="metric_tag_context" attr.type="float" />
+  <key id="d21" for="node" attr.name="metric_tag_operator" attr.type="float" />
+  <key id="d20" for="node" attr.name="metric_tag_continuation" attr.type="float" />
+  <key id="d19" for="node" attr.name="metric_tag_cancelhandlerbase" attr.type="float" />
+  <key id="d18" for="node" attr.name="metric_tag_throwable" attr.type="float" />
+  <key id="d17" for="node" attr.name="metric_tag_cause" attr.type="float" />
+  <key id="d16" for="node" attr.name="metric_tag_invoke" attr.type="float" />
+  <key id="d15" for="node" attr.name="metric_tag_completionhandlerbase" attr.type="float" />
+  <key id="d14" for="node" attr.name="metric_tag_lockfreelinkedlistnode" attr.type="float" />
+  <key id="d13" for="node" attr.name="metric_entity_result_dependency_graph_louvain-modularity-in-entity" attr.type="long" />
+  <key id="d12" for="node" attr.name="metric_fan-out-dependency-graph" attr.type="long" />
+  <key id="d11" for="node" attr.name="metric_fan-in-dependency-graph" attr.type="long" />
+  <key id="d10" for="node" attr.name="metric_tag_default" attr.type="float" />
+  <key id="d9" for="node" attr.name="metric_tag_unconfined" attr.type="float" />
+  <key id="d8" for="node" attr.name="metric_tag_maincoroutinedispatcher" attr.type="float" />
+  <key id="d7" for="node" attr.name="metric_tag_dispatchers" attr.type="float" />
+  <key id="d6" for="node" attr.name="metric_tag_main" attr.type="float" />
+  <key id="d5" for="node" attr.name="metric_tag_coroutinedispatcher" attr.type="float" />
+  <key id="d4" for="node" attr.name="metric_tag_public" attr.type="float" />
+  <key id="d3" for="node" attr.name="metric_sloc-in-entity" attr.type="long" />
+  <key id="d2" for="node" attr.name="metric_number-of-methods-in-entity" attr.type="long" />
+  <key id="d1" for="node" attr.name="display_name" attr.type="string" />
+  <key id="d0" for="node" attr.name="absolute_name" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="kotlinx.coroutines.Dispatchers">
+      <data key="d0">src/Dispatchers.common.kt/Dispatchers</data>
+      <data key="d1">Dispatchers</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d4">0.4495119012665148</data>
+      <data key="d5">0.5289137121894424</data>
+      <data key="d6">0.33945009239254464</data>
+      <data key="d7">0.3130420968840583</data>
+      <data key="d8">0.37954219899098096</data>
+      <data key="d9">0.31885845491535014</data>
+      <data key="d10">0.2434021794170251</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">11</data>
+    </node>
+    <node id="kotlinx.coroutines.CompletionHandlerBase">
+      <data key="d0">src/CompletionHandler.common.kt/CompletionHandlerBase</data>
+      <data key="d1">CompletionHandlerBase</data>
+      <data key="d2">0</data>
+      <data key="d3">2</data>
+      <data key="d14">0.6251492140415252</data>
+      <data key="d15">0.5985341941605203</data>
+      <data key="d16">0.3446934318845635</data>
+      <data key="d17">0.24485692613625512</data>
+      <data key="d18">0.2287766214432942</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">12</data>
+    </node>
+    <node id="kotlinx.coroutines.CancelHandlerBase">
+      <data key="d0">src/CompletionHandler.common.kt/CancelHandlerBase</data>
+      <data key="d1">CancelHandlerBase</data>
+      <data key="d2">0</data>
+      <data key="d3">2</data>
+      <data key="d19">0.7668547864835179</data>
+      <data key="d16">0.4416285831101866</data>
+      <data key="d17">0.3137159207329609</data>
+      <data key="d18">0.29311349109365553</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">13</data>
+    </node>
+    <node id="kotlinx.coroutines.CoroutineDispatcher">
+      <data key="d0">src/CoroutineDispatcher.kt/CoroutineDispatcher</data>
+      <data key="d1">CoroutineDispatcher</data>
+      <data key="d2">5</data>
+      <data key="d3">25</data>
+      <data key="d5">0.45045827699136304</data>
+      <data key="d4">0.29776007840968677</data>
+      <data key="d20">0.3755862361327747</data>
+      <data key="d21">0.2034769282799325</data>
+      <data key="d22">0.22756183556908127</data>
+      <data key="d11">0</data>
+      <data key="d12">2</data>
+      <data key="d13">5</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.*">
+      <data key="d1">kotlinx.coroutines.internal.*</data>
+      <data key="d11">28</data>
+      <data key="d12">0</data>
+      <data key="d13">5</data>
+    </node>
+    <node id="kotlin.coroutines.*">
+      <data key="d1">kotlin.coroutines.*</data>
+      <data key="d11">26</data>
+      <data key="d12">0</data>
+      <data key="d13">8</data>
+    </node>
+    <node id="kotlinx.coroutines.DeferredCoroutine">
+      <data key="d0">src/Builders.common.kt/DeferredCoroutine</data>
+      <data key="d1">DeferredCoroutine</data>
+      <data key="d2">2</data>
+      <data key="d3">7</data>
+      <data key="d23">0.4827027737245207</data>
+      <data key="d24">0.42553976441712615</data>
+      <data key="d25">0.2541418723362676</data>
+      <data key="d26">0.2845200407471665</data>
+      <data key="d27">0.2612083421059731</data>
+      <data key="d28">0.2541418723362676</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">15</data>
+    </node>
+    <node id="kotlinx.coroutines.LazyDeferredCoroutine">
+      <data key="d0">src/Builders.common.kt/LazyDeferredCoroutine</data>
+      <data key="d1">LazyDeferredCoroutine</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d24">0.6068990685672447</data>
+      <data key="d29">0.4280507204537718</data>
+      <data key="d26">0.4057786419905732</data>
+      <data key="d30">0.32746144034387453</data>
+      <data key="d23">0.229474726973715</data>
+      <data key="d31">0.21193292886106477</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">16</data>
+    </node>
+    <node id="kotlinx.coroutines.StandaloneCoroutine">
+      <data key="d0">src/Builders.common.kt/StandaloneCoroutine</data>
+      <data key="d1">StandaloneCoroutine</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d23">0.5305052123591358</data>
+      <data key="d24">0.46768130488970566</data>
+      <data key="d32">0.3063144491930864</data>
+      <data key="d33">0.2993835958167921</data>
+      <data key="d34">0.2993835958167921</data>
+      <data key="d35">0.24237801415831792</data>
+      <data key="d36">0.23795675046740355</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">17</data>
+    </node>
+    <node id="kotlinx.coroutines.LazyStandaloneCoroutine">
+      <data key="d0">src/Builders.common.kt/LazyStandaloneCoroutine</data>
+      <data key="d1">LazyStandaloneCoroutine</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d24">0.6044487931984823</data>
+      <data key="d37">0.4263225218269639</data>
+      <data key="d33">0.38693454560378215</data>
+      <data key="d30">0.3261393577389559</data>
+      <data key="d23">0.22854825286891106</data>
+      <data key="d31">0.2089303366444498</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">18</data>
+    </node>
+    <node id="kotlinx.coroutines.UndispatchedCoroutine">
+      <data key="d0">src/Builders.common.kt/UndispatchedCoroutine</data>
+      <data key="d1">UndispatchedCoroutine</data>
+      <data key="d2">5</data>
+      <data key="d3">46</data>
+      <data key="d38">0.5410423828117283</data>
+      <data key="d39">0.3544620192125894</data>
+      <data key="d40">0.2542498537049167</data>
+      <data key="d41">0.3491972051271796</data>
+      <data key="d42">0.2637846277203206</data>
+      <data key="d43">0.25729466499332576</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">19</data>
+    </node>
+    <node id="kotlinx.coroutines.DispatchedCoroutine">
+      <data key="d0">src/Builders.common.kt/DispatchedCoroutine</data>
+      <data key="d1">DispatchedCoroutine</data>
+      <data key="d2">5</data>
+      <data key="d3">38</data>
+      <data key="d38">0.5135894587724678</data>
+      <data key="d39">0.40377159879426044</data>
+      <data key="d41">0.3977743909542139</data>
+      <data key="d40">0.2172141111585593</data>
+      <data key="d42">0.225359985906072</data>
+      <data key="d43">0.21981539477001388</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">20</data>
+    </node>
+    <node id="kotlinx.coroutines.CloseableCoroutineDispatcher">
+      <data key="d0">src/CloseableCoroutineDispatcher.kt/CloseableCoroutineDispatcher</data>
+      <data key="d1">CloseableCoroutineDispatcher</data>
+      <data key="d2">0</data>
+      <data key="d3">2</data>
+      <data key="d44">0.7058350099776064</data>
+      <data key="d45">0.48439529230234246</data>
+      <data key="d5">0.43015456978901406</data>
+      <data key="d4">0.243719147437649</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">21</data>
+    </node>
+    <node id="kotlinx.coroutines.AwaitAll">
+      <data key="d0">src/Await.kt/AwaitAll</data>
+      <data key="d1">AwaitAll</data>
+      <data key="d2">5</data>
+      <data key="d3">43</data>
+      <data key="d46">0.4691363273626082</data>
+      <data key="d47">0.3919979298631785</data>
+      <data key="d48">0.310135217081396</data>
+      <data key="d49">0.2712549479200531</data>
+      <data key="d50">0.2814817964175649</data>
+      <data key="d51">0.2198580277788912</data>
+      <data key="d52">0.20314542245516137</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">22</data>
+    </node>
+    <node id="kotlinx.coroutines.DisposeHandlersOnCancel">
+      <data key="d0">src/Await.kt/DisposeHandlersOnCancel</data>
+      <data key="d1">DisposeHandlersOnCancel</data>
+      <data key="d2">3</data>
+      <data key="d3">6</data>
+      <data key="d53">0.5946050591565818</data>
+      <data key="d46">0.5692904220821964</data>
+      <data key="d49">0.27430342878054587</data>
+      <data key="d50">0.2846452110410982</data>
+      <data key="d54">0.2262423539628317</data>
+      <data key="d52">0.2131017688519275</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">23</data>
+    </node>
+    <node id="kotlinx.coroutines.AwaitAllNode">
+      <data key="d0">src/Await.kt/AwaitAllNode</data>
+      <data key="d1">AwaitAllNode</data>
+      <data key="d2">1</data>
+      <data key="d3">17</data>
+      <data key="d51">0.5193026729714614</data>
+      <data key="d47">0.4629477823342245</data>
+      <data key="d46">0.44323830473441095</data>
+      <data key="d17">0.27198939484651913</data>
+      <data key="d55">0.21083630740356643</data>
+      <data key="d50">0.22161915236720547</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">24</data>
+    </node>
+    <node id="kotlinx.coroutines.CoroutineName">
+      <data key="d0">src/CoroutineName.kt/CoroutineName</data>
+      <data key="d1">CoroutineName</data>
+      <data key="d2">1</data>
+      <data key="d3">5</data>
+      <data key="d56">0.9103021187500326</data>
+      <data key="d57">0.24243344280347426</data>
+      <data key="d58">0.2056047684158942</data>
+      <data key="d11">0</data>
+      <data key="d12">2</data>
+      <data key="d13">9</data>
+    </node>
+    <node id="kotlin.coroutines.AbstractCoroutineContextElement">
+      <data key="d1">kotlin.coroutines.AbstractCoroutineContextElement</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">9</data>
+    </node>
+    <node id="kotlin.coroutines.CoroutineContext">
+      <data key="d1">kotlin.coroutines.CoroutineContext</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">9</data>
+    </node>
+    <node id="kotlinx.coroutines.MainCoroutineDispatcher">
+      <data key="d0">src/MainCoroutineDispatcher.kt/MainCoroutineDispatcher</data>
+      <data key="d1">MainCoroutineDispatcher</data>
+      <data key="d2">0</data>
+      <data key="d3">6</data>
+      <data key="d59">0.3416607496993765</data>
+      <data key="d60">0.4559921560396643</data>
+      <data key="d61">0.2844950465292326</data>
+      <data key="d62">0.3751005423812671</data>
+      <data key="d63">0.4559921560396643</data>
+      <data key="d8">0.3988264528695204</data>
+      <data key="d5">0.2778937101952903</data>
+      <data key="d11">0</data>
+      <data key="d12">1</data>
+      <data key="d13">5</data>
+    </node>
+    <node id="kotlinx.coroutines.DisposeOnCancel">
+      <data key="d0">src/CancellableContinuation.kt/DisposeOnCancel</data>
+      <data key="d1">DisposeOnCancel</data>
+      <data key="d2">2</data>
+      <data key="d3">3</data>
+      <data key="d64">0.8140897279695514</data>
+      <data key="d65">0.26036243119227875</data>
+      <data key="d54">0.2936375134067451</data>
+      <data key="d66">0.2327775513357623</data>
+      <data key="d16">0.21275782886200365</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">25</data>
+    </node>
+    <node id="kotlinx.coroutines.CompletionHandlerException">
+      <data key="d0">src/Exceptions.common.kt/CompletionHandlerException</data>
+      <data key="d1">CompletionHandlerException</data>
+      <data key="d2">0</data>
+      <data key="d3">9</data>
+      <data key="d67">0.5426041001587915</data>
+      <data key="d68">0.4131263174627168</data>
+      <data key="d69">0.33744828128636994</data>
+      <data key="d70">0.3463430678592807</data>
+      <data key="d17">0.30064645296114584</data>
+      <data key="d18">0.21067674348454055</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">26</data>
+    </node>
+    <node id="kotlinx.coroutines.CancellationException">
+      <data key="d0">src/Exceptions.common.kt/CancellationException</data>
+      <data key="d1">CancellationException</data>
+      <data key="d2">0</data>
+      <data key="d3">8</data>
+      <data key="d68">0.5498107604072334</data>
+      <data key="d67">0.4332760615309544</data>
+      <data key="d70">0.46093201389589566</data>
+      <data key="d69">0.29939623514611324</data>
+      <data key="d71">0.20445057706017916</data>
+      <data key="d72">0.22161243767914074</data>
+      <data key="d17">0.2000582484450688</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">27</data>
+    </node>
+    <node id="kotlinx.coroutines.JobCancellationException">
+      <data key="d0">src/Exceptions.common.kt/JobCancellationException</data>
+      <data key="d1">JobCancellationException</data>
+      <data key="d2">0</data>
+      <data key="d3">6</data>
+      <data key="d70">0.800213534212536</data>
+      <data key="d72">0.384736287856832</data>
+      <data key="d67">0.2507335558064033</data>
+      <data key="d68">0.23862847365214862</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">28</data>
+    </node>
+    <node id="kotlinx.coroutines.GlobalScope">
+      <data key="d0">src/CoroutineScope.kt/GlobalScope</data>
+      <data key="d1">GlobalScope</data>
+      <data key="d2">0</data>
+      <data key="d3">3</data>
+      <data key="d73">0.6424388988645339</data>
+      <data key="d74">0.5162314047181225</data>
+      <data key="d75">0.3875579884853578</data>
+      <data key="d76">0.4130087209365714</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">29</data>
+    </node>
+    <node id="kotlinx.coroutines.EventLoop">
+      <data key="d0">src/EventLoop.common.kt/EventLoop</data>
+      <data key="d1">EventLoop</data>
+      <data key="d2">6</data>
+      <data key="d3">51</data>
+      <data key="d77">0.5056819830054234</data>
+      <data key="d9">0.42465268963474656</data>
+      <data key="d78">0.43344169971893437</data>
+      <data key="d79">0.25273536446476585</data>
+      <data key="d80">0.21686008862459605</data>
+      <data key="d81">0.20264703366943732</data>
+      <data key="d11">0</data>
+      <data key="d12">4</data>
+      <data key="d13">5</data>
+    </node>
+    <node id="kotlinx.atomicfu.*">
+      <data key="d1">kotlinx.atomicfu.*</data>
+      <data key="d11">23</data>
+      <data key="d12">0</data>
+      <data key="d13">7</data>
+    </node>
+    <node id="kotlin.jvm.*">
+      <data key="d1">kotlin.jvm.*</data>
+      <data key="d11">27</data>
+      <data key="d12">0</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.coroutines.ThreadLocalEventLoop">
+      <data key="d0">src/EventLoop.common.kt/ThreadLocalEventLoop</data>
+      <data key="d1">ThreadLocalEventLoop</data>
+      <data key="d2">3</data>
+      <data key="d3">12</data>
+      <data key="d82">0.8529689220208005</data>
+      <data key="d83">0.304137413216974</data>
+      <data key="d71">0.20712434217799533</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">31</data>
+    </node>
+    <node id="kotlinx.coroutines.EventLoopImplPlatform">
+      <data key="d0">src/EventLoop.common.kt/EventLoopImplPlatform</data>
+      <data key="d1">EventLoopImplPlatform</data>
+      <data key="d2">0</data>
+      <data key="d3">3</data>
+      <data key="d84">0.4566184642134575</data>
+      <data key="d85">0.3992313683002238</data>
+      <data key="d86">0.3992313683002238</data>
+      <data key="d87">0.37845880109060265</data>
+      <data key="d82">0.31990422285392894</data>
+      <data key="d88">0.3380508032359499</data>
+      <data key="d89">0.2461341786405953</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">32</data>
+    </node>
+    <node id="kotlinx.coroutines.EventLoopImplBase">
+      <data key="d0">src/EventLoop.common.kt/EventLoopImplBase</data>
+      <data key="d1">EventLoopImplBase</data>
+      <data key="d2">1</data>
+      <data key="d3">37</data>
+      <data key="d90">0.8556649525321819</data>
+      <data key="d11">0</data>
+      <data key="d12">4</data>
+      <data key="d13">7</data>
+    </node>
+    <node id="kotlinx.coroutines.DelayedTask">
+      <data key="d0">src/EventLoop.common.kt/DelayedTask</data>
+      <data key="d1">DelayedTask</data>
+      <data key="d2">5</data>
+      <data key="d3">44</data>
+      <data key="d91">0.47628248624927</data>
+      <data key="d89">0.3097547162757092</data>
+      <data key="d92">0.35452488835377854</data>
+      <data key="d93">0.25121216382705763</data>
+      <data key="d94">0.25121216382705763</data>
+      <data key="d95">0.25121216382705763</data>
+      <data key="d96">0.21971881509318603</data>
+      <data key="d11">0</data>
+      <data key="d12">5</data>
+      <data key="d13">5</data>
+    </node>
+    <node id="kotlin.concurrent.Volatile">
+      <data key="d1">kotlin.concurrent.Volatile</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">5</data>
+    </node>
+    <node id="kotlinx.coroutines.DelayedResumeTask">
+      <data key="d0">src/EventLoop.common.kt/DelayedResumeTask</data>
+      <data key="d1">DelayedResumeTask</data>
+      <data key="d2">2</data>
+      <data key="d3">6</data>
+      <data key="d92">0.5790984768578842</data>
+      <data key="d97">0.3731473903567558</data>
+      <data key="d98">0.34195197154313745</data>
+      <data key="d99">0.34195197154313745</data>
+      <data key="d100">0.23614652657073718</data>
+      <data key="d88">0.2895492384289421</data>
+      <data key="d101">0.21334499018545733</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">33</data>
+    </node>
+    <node id="kotlinx.coroutines.DelayedRunnableTask">
+      <data key="d0">src/EventLoop.common.kt/DelayedRunnableTask</data>
+      <data key="d1">DelayedRunnableTask</data>
+      <data key="d2">2</data>
+      <data key="d3">6</data>
+      <data key="d92">0.6856340358107276</data>
+      <data key="d102">0.40486017434318594</data>
+      <data key="d88">0.3428170179053638</data>
+      <data key="d101">0.2525936304210876</data>
+      <data key="d103">0.26237143049505157</data>
+      <data key="d104">0.215188562416693</data>
+      <data key="d31">0.20684711006475767</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">34</data>
+    </node>
+    <node id="kotlinx.coroutines.DelayedTaskQueue">
+      <data key="d0">src/EventLoop.common.kt/DelayedTaskQueue</data>
+      <data key="d1">DelayedTaskQueue</data>
+      <data key="d2">0</data>
+      <data key="d3">10</data>
+      <data key="d69">0.5231007846136767</data>
+      <data key="d71">0.320556170846425</data>
+      <data key="d104">0.25018252638710864</data>
+      <data key="d105">0.2353492679006023</data>
+      <data key="d106">0.2353492679006023</data>
+      <data key="d107">0.2021168511719786</data>
+      <data key="d108">0.22310371588895778</data>
+      <data key="d109">0.22310371588895778</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">35</data>
+    </node>
+    <node id="kotlinx.coroutines.DefaultExecutor">
+      <data key="d0">src/EventLoop.common.kt/DefaultExecutor</data>
+      <data key="d1">DefaultExecutor</data>
+      <data key="d2">0</data>
+      <data key="d3">2</data>
+      <data key="d108">0.5882428878437197</data>
+      <data key="d110">0.5254362698406326</data>
+      <data key="d111">0.46494378900586225</data>
+      <data key="d103">0.4021371710027752</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">36</data>
+    </node>
+    <node id="kotlinx.coroutines.CompletableDeferredImpl">
+      <data key="d0">src/CompletableDeferred.kt/CompletableDeferredImpl</data>
+      <data key="d1">CompletableDeferredImpl</data>
+      <data key="d2">4</data>
+      <data key="d3">12</data>
+      <data key="d112">0.4357550264933726</data>
+      <data key="d32">0.23132604788843858</data>
+      <data key="d113">0.3036247474991514</data>
+      <data key="d114">0.24910693937952103</data>
+      <data key="d115">0.2260919267940668</data>
+      <data key="d25">0.21291650007132176</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">37</data>
+    </node>
+    <node id="kotlinx.coroutines.CompletedWithCancellation">
+      <data key="d0">src/CompletionState.kt/CompletedWithCancellation</data>
+      <data key="d1">CompletedWithCancellation</data>
+      <data key="d2">2</data>
+      <data key="d3">12</data>
+      <data key="d116">0.656044419874152</data>
+      <data key="d117">0.3240931890218477</data>
+      <data key="d17">0.25388006659259665</data>
+      <data key="d18">0.2372071919849721</data>
+      <data key="d118">0.22155800073036946</data>
+      <data key="d80">0.20169289428182666</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">38</data>
+    </node>
+    <node id="kotlinx.coroutines.CompletedExceptionally">
+      <data key="d0">src/CompletionState.kt/CompletedExceptionally</data>
+      <data key="d1">CompletedExceptionally</data>
+      <data key="d2">2</data>
+      <data key="d3">8</data>
+      <data key="d116">0.8023494052987149</data>
+      <data key="d117">0.39636946766946946</data>
+      <data key="d119">0.20239804413295256</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">39</data>
+    </node>
+    <node id="kotlinx.coroutines.CancelledContinuation">
+      <data key="d0">src/CompletionState.kt/CancelledContinuation</data>
+      <data key="d1">CancelledContinuation</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d116">0.4641764057747246</data>
+      <data key="d20">0.47409779366698457</data>
+      <data key="d120">0.362841561066046</data>
+      <data key="d121">0.22637807565541765</data>
+      <data key="d122">0.3293185965301676</data>
+      <data key="d17">0.26944472029364713</data>
+      <data key="d123">0.22111993588392664</data>
+      <data key="d11">0</data>
+      <data key="d12">4</data>
+      <data key="d13">8</data>
+    </node>
+    <node id="kotlinx.coroutines.NonCancellable">
+      <data key="d0">src/NonCancellable.kt/NonCancellable</data>
+      <data key="d1">NonCancellable</data>
+      <data key="d2">8</data>
+      <data key="d3">38</data>
+      <data key="d67">0.8064856108503914</data>
+      <data key="d124">0.4435480220244642</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">40</data>
+    </node>
+    <node id="kotlinx.coroutines.JobSupport">
+      <data key="d0">src/JobSupport.kt/JobSupport</data>
+      <data key="d1">JobSupport</data>
+      <data key="d2">68</data>
+      <data key="d3">717</data>
+      <data key="d39">0.6447076394679242</data>
+      <data key="d125">0.285744082722212</data>
+      <data key="d126">0.23701686567850414</data>
+      <data key="d127">0.21087136797749853</data>
+      <data key="d11">0</data>
+      <data key="d12">7</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.*">
+      <data key="d1">kotlinx.coroutines.selects.*</data>
+      <data key="d11">11</data>
+      <data key="d12">0</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlin.coroutines.intrinsics.*">
+      <data key="d1">kotlin.coroutines.intrinsics.*</data>
+      <data key="d11">7</data>
+      <data key="d12">0</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlin.js.*">
+      <data key="d1">kotlin.js.*</data>
+      <data key="d11">8</data>
+      <data key="d12">0</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlinx.coroutines.SelectOnJoinCompletionHandler">
+      <data key="d0">src/JobSupport.kt/SelectOnJoinCompletionHandler</data>
+      <data key="d1">SelectOnJoinCompletionHandler</data>
+      <data key="d2">1</data>
+      <data key="d3">6</data>
+      <data key="d128">0.5661218056668469</data>
+      <data key="d129">0.3449481172742206</data>
+      <data key="d130">0.4163865374891801</data>
+      <data key="d131">0.37259177902949964</data>
+      <data key="d16">0.3121470261450723</data>
+      <data key="d100">0.24061371526335595</data>
+      <data key="d17">0.2217372141574553</data>
+      <data key="d18">0.20717523291524992</data>
+      <data key="d11">0</data>
+      <data key="d12">7</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlinx.coroutines.Finishing">
+      <data key="d0">src/JobSupport.kt/Finishing</data>
+      <data key="d1">Finishing</data>
+      <data key="d2">4</data>
+      <data key="d3">56</data>
+      <data key="d126">0.6356233807629584</data>
+      <data key="d132">0.3422587434877469</data>
+      <data key="d133">0.3422587434877469</data>
+      <data key="d32">0.24168669731006387</data>
+      <data key="d134">0.21577173730820684</data>
+      <data key="d18">0.20218625870073975</data>
+      <data key="d11">0</data>
+      <data key="d12">7</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlinx.coroutines.ChildCompletion">
+      <data key="d0">src/JobSupport.kt/ChildCompletion</data>
+      <data key="d1">ChildCompletion</data>
+      <data key="d2">1</data>
+      <data key="d3">9</data>
+      <data key="d127">0.551201997375268</data>
+      <data key="d135">0.41981708711028626</data>
+      <data key="d39">0.3095297614762779</data>
+      <data key="d136">0.29870889484830215</data>
+      <data key="d137">0.24648849249624022</data>
+      <data key="d138">0.275600998687634</data>
+      <data key="d139">0.23609778928159472</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">41</data>
+    </node>
+    <node id="kotlinx.coroutines.AwaitContinuation">
+      <data key="d0">src/JobSupport.kt/AwaitContinuation</data>
+      <data key="d1">AwaitContinuation</data>
+      <data key="d2">2</data>
+      <data key="d3">12</data>
+      <data key="d140">0.5353161596475902</data>
+      <data key="d39">0.41603117466822603</data>
+      <data key="d141">0.36595517001804095</data>
+      <data key="d70">0.24154022833520133</data>
+      <data key="d142">0.2469522514343421</data>
+      <data key="d137">0.22086599273754626</data>
+      <data key="d143">0.22086599273754626</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">42</data>
+    </node>
+    <node id="kotlinx.coroutines.SelectOnAwaitCompletionHandler">
+      <data key="d0">src/JobSupport.kt/SelectOnAwaitCompletionHandler</data>
+      <data key="d1">SelectOnAwaitCompletionHandler</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d39">0.6026490868724467</data>
+      <data key="d144">0.3478180065275711</data>
+      <data key="d145">0.3877206979224049</data>
+      <data key="d129">0.23624513918703596</data>
+      <data key="d130">0.2851712781680136</data>
+      <data key="d131">0.25517749565449743</data>
+      <data key="d11">0</data>
+      <data key="d12">7</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlinx.coroutines.IncompleteStateBox">
+      <data key="d0">src/JobSupport.kt/IncompleteStateBox</data>
+      <data key="d1">IncompleteStateBox</data>
+      <data key="d2">1</data>
+      <data key="d3">17</data>
+      <data key="d146">0.5160060797274414</data>
+      <data key="d147">0.42828570293000096</data>
+      <data key="d71">0.21076721329572057</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">43</data>
+    </node>
+    <node id="kotlinx.coroutines.Empty">
+      <data key="d0">src/JobSupport.kt/Empty</data>
+      <data key="d1">Empty</data>
+      <data key="d2">1</data>
+      <data key="d3">3</data>
+      <data key="d147">0.5485453223740562</data>
+      <data key="d148">0.5111395890632694</data>
+      <data key="d149">0.34359101404110587</data>
+      <data key="d150">0.22599355583720032</data>
+      <data key="d151">0.24051239248273343</data>
+      <data key="d23">0.22987201930584716</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">44</data>
+    </node>
+    <node id="kotlinx.coroutines.JobImpl">
+      <data key="d0">src/JobSupport.kt/JobImpl</data>
+      <data key="d1">JobImpl</data>
+      <data key="d2">3</data>
+      <data key="d3">15</data>
+      <data key="d152">0.5452786142340459</data>
+      <data key="d153">0.3353975129581835</data>
+      <data key="d112">0.3353975129581835</data>
+      <data key="d138">0.3353975129581835</data>
+      <data key="d32">0.2563179466284065</data>
+      <data key="d113">0.23369778658266524</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">45</data>
+    </node>
+    <node id="kotlinx.coroutines.JobNode">
+      <data key="d0">src/JobSupport.kt/JobNode</data>
+      <data key="d1">JobNode</data>
+      <data key="d2">2</data>
+      <data key="d3">6</data>
+      <data key="d15">0.4060400016593952</data>
+      <data key="d149">0.35847998066764153</data>
+      <data key="d139">0.3352025464865916</data>
+      <data key="d154">0.29802006424149413</data>
+      <data key="d130">0.31192511230554165</data>
+      <data key="d148">0.26664450250137467</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">46</data>
+    </node>
+    <node id="kotlinx.coroutines.NodeList">
+      <data key="d0">src/JobSupport.kt/NodeList</data>
+      <data key="d1">NodeList</data>
+      <data key="d2">2</data>
+      <data key="d3">16</data>
+      <data key="d155">0.7902744337036814</data>
+      <data key="d156">0.22039471480491896</data>
+      <data key="d157">0.29024012229786295</data>
+      <data key="d158">0.22203548306725676</data>
+      <data key="d149">0.2325695026421477</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">47</data>
+    </node>
+    <node id="kotlinx.coroutines.InactiveNodeList">
+      <data key="d0">src/JobSupport.kt/InactiveNodeList</data>
+      <data key="d1">InactiveNodeList</data>
+      <data key="d2">1</data>
+      <data key="d3">5</data>
+      <data key="d159">0.4831068407392666</data>
+      <data key="d160">0.36127713650086163</data>
+      <data key="d149">0.40836127471934064</data>
+      <data key="d150">0.26859554752207443</data>
+      <data key="d148">0.3037471959677401</data>
+      <data key="d151">0.28585132662490764</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">48</data>
+    </node>
+    <node id="kotlinx.coroutines.InvokeOnCompletion">
+      <data key="d0">src/JobSupport.kt/InvokeOnCompletion</data>
+      <data key="d1">InvokeOnCompletion</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d161">0.4541707181318783</data>
+      <data key="d17">0.4408662430761808</data>
+      <data key="d162">0.3847385291662598</data>
+      <data key="d163">0.3538484009749891</data>
+      <data key="d130">0.41393766298516044</data>
+      <data key="d16">0.3103112105626531</data>
+      <data key="d18">0.20595678298934741</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">49</data>
+    </node>
+    <node id="kotlinx.coroutines.ResumeOnCompletion">
+      <data key="d0">src/JobSupport.kt/ResumeOnCompletion</data>
+      <data key="d1">ResumeOnCompletion</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d20">0.48714002079134977</data>
+      <data key="d164">0.5301369973261716</data>
+      <data key="d100">0.38619852601853955</data>
+      <data key="d130">0.38991945991470633</data>
+      <data key="d16">0.29230579975614857</data>
+      <data key="d17">0.2076427718067451</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">50</data>
+    </node>
+    <node id="kotlinx.coroutines.ResumeAwaitOnCompletion">
+      <data key="d0">src/JobSupport.kt/ResumeAwaitOnCompletion</data>
+      <data key="d1">ResumeAwaitOnCompletion</data>
+      <data key="d2">1</data>
+      <data key="d3">13</data>
+      <data key="d39">0.6046817854038878</data>
+      <data key="d165">0.3890284561360053</data>
+      <data key="d130">0.28613314345739715</data>
+      <data key="d166">0.24729595067125532</data>
+      <data key="d16">0.21450167517504995</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">51</data>
+    </node>
+    <node id="kotlinx.coroutines.DisposeOnCompletion">
+      <data key="d0">src/JobSupport.kt/DisposeOnCompletion</data>
+      <data key="d1">DisposeOnCompletion</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d167">0.5128295429872991</data>
+      <data key="d65">0.409367875591841</data>
+      <data key="d130">0.44622969598467227</data>
+      <data key="d66">0.3659961663417502</data>
+      <data key="d16">0.3345191547717957</data>
+      <data key="d17">0.2376295118920375</data>
+      <data key="d18">0.2220238477372192</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">52</data>
+    </node>
+    <node id="kotlinx.coroutines.JobCancellingNode">
+      <data key="d0">src/JobSupport.kt/JobCancellingNode</data>
+      <data key="d1">JobCancellingNode</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d168">0.516269531487848</data>
+      <data key="d119">0.2951340042764317</data>
+      <data key="d169">0.2507722662186514</data>
+      <data key="d170">0.26909802964518065</data>
+      <data key="d171">0.2507722662186514</data>
+      <data key="d172">0.26663414768506777</data>
+      <data key="d173">0.26663414768506777</data>
+      <data key="d174">0.2766867828666462</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">53</data>
+    </node>
+    <node id="kotlinx.coroutines.InvokeOnCancelling">
+      <data key="d0">src/JobSupport.kt/InvokeOnCancelling</data>
+      <data key="d1">InvokeOnCancelling</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d119">0.3425769965868289</data>
+      <data key="d169">0.29108407890536875</data>
+      <data key="d170">0.30204466935212926</data>
+      <data key="d171">0.29108407890536875</data>
+      <data key="d172">0.3094957686267999</data>
+      <data key="d173">0.3094957686267999</data>
+      <data key="d174">0.321164371764318</data>
+      <data key="d168">0.29963010524660133</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">54</data>
+    </node>
+    <node id="kotlinx.coroutines.ChildHandleNode">
+      <data key="d0">src/JobSupport.kt/ChildHandleNode</data>
+      <data key="d1">ChildHandleNode</data>
+      <data key="d2">2</data>
+      <data key="d3">6</data>
+      <data key="d175">0.5351531000060624</data>
+      <data key="d70">0.4173996257470273</data>
+      <data key="d17">0.36232778592565923</data>
+      <data key="d138">0.2845013383113208</data>
+      <data key="d168">0.2754324116263166</data>
+      <data key="d176">0.26064718896289857</data>
+      <data key="d177">0.24372240065460904</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">55</data>
+    </node>
+    <node id="kotlinx.coroutines.ChildContinuation">
+      <data key="d0">src/JobSupport.kt/ChildContinuation</data>
+      <data key="d1">ChildContinuation</data>
+      <data key="d2">1</data>
+      <data key="d3">6</data>
+      <data key="d178">0.5148548334195173</data>
+      <data key="d168">0.4803335036098504</data>
+      <data key="d135">0.37788658729106767</data>
+      <data key="d166">0.34183391778179384</data>
+      <data key="d16">0.29650282504349934</data>
+      <data key="d70">0.24263789854008325</data>
+      <data key="d17">0.2106241767762515</data>
+      <data key="d11">0</data>
+      <data key="d12">7</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlinx.coroutines.TimeoutCoroutine">
+      <data key="d0">src/Timeout.kt/TimeoutCoroutine</data>
+      <data key="d1">TimeoutCoroutine</data>
+      <data key="d2">2</data>
+      <data key="d3">9</data>
+      <data key="d179">0.4013868394333482</data>
+      <data key="d43">0.4155764018138689</data>
+      <data key="d180">0.3330454814137518</data>
+      <data key="d20">0.29011033073703396</data>
+      <data key="d181">0.27396423175547324</data>
+      <data key="d182">0.27396423175547324</data>
+      <data key="d183">0.26686945056521294</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">56</data>
+    </node>
+    <node id="kotlinx.coroutines.TimeoutCancellationException">
+      <data key="d0">src/Timeout.kt/TimeoutCancellationException</data>
+      <data key="d1">TimeoutCancellationException</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d181">0.672952543809789</data>
+      <data key="d67">0.5482059709597149</data>
+      <data key="d184">0.26696830351788847</data>
+      <data key="d185">0.2650791740449664</data>
+      <data key="d71">0.20892320572754974</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">57</data>
+    </node>
+    <node id="kotlinx.coroutines.Unconfined">
+      <data key="d0">src/Unconfined.kt/Unconfined</data>
+      <data key="d1">Unconfined</data>
+      <data key="d2">3</data>
+      <data key="d3">13</data>
+      <data key="d186">0.4470463500523538</data>
+      <data key="d187">0.38529712634110846</data>
+      <data key="d188">0.32354790262986305</data>
+      <data key="d5">0.30017510372826184</data>
+      <data key="d189">0.20645236569266148</data>
+      <data key="d190">0.2235231750261769</data>
+      <data key="d191">0.23346258000124429</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">58</data>
+    </node>
+    <node id="kotlinx.coroutines.YieldContext">
+      <data key="d0">src/Unconfined.kt/YieldContext</data>
+      <data key="d1">YieldContext</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d186">0.6835044192023317</data>
+      <data key="d188">0.4946834287882198</data>
+      <data key="d191">0.35694890503085586</data>
+      <data key="d58">0.2880560741126646</data>
+      <data key="d192">0.2669336623123168</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">59</data>
+    </node>
+    <node id="kotlinx.coroutines.CoroutineStart">
+      <data key="d0">src/CoroutineStart.kt/CoroutineStart</data>
+      <data key="d1">CoroutineStart</data>
+      <data key="d2">0</data>
+      <data key="d3">16</data>
+      <data key="d193">0.4260197338531698</data>
+      <data key="d194">0.4643927103424459</data>
+      <data key="d195">0.481238785189274</data>
+      <data key="d196">0.2765111059820362</data>
+      <data key="d10">0.23087697966104823</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">60</data>
+    </node>
+    <node id="kotlinx.coroutines.Key">
+      <data key="d0">src/Job.kt/Key</data>
+      <data key="d1">Key</data>
+      <data key="d2">4</data>
+      <data key="d3">65</data>
+      <data key="d4">0.5933665848735744</data>
+      <data key="d70">0.36751892410422105</data>
+      <data key="d124">0.2171418327612135</data>
+      <data key="d66">0.210585598039894</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">61</data>
+    </node>
+    <node id="kotlinx.coroutines.NonDisposableHandle">
+      <data key="d0">src/Job.kt/NonDisposableHandle</data>
+      <data key="d1">NonDisposableHandle</data>
+      <data key="d2">2</data>
+      <data key="d3">5</data>
+      <data key="d197">0.6709910569027103</data>
+      <data key="d176">0.34366840417062755</data>
+      <data key="d177">0.3213527405642823</data>
+      <data key="d154">0.28570655381634597</data>
+      <data key="d113">0.26137595680922887</data>
+      <data key="d66">0.24526925201411803</data>
+      <data key="d70">0.2034555827306292</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">62</data>
+    </node>
+    <node id="kotlinx.coroutines.SupervisorJobImpl">
+      <data key="d0">src/Supervisor.kt/SupervisorJobImpl</data>
+      <data key="d1">SupervisorJobImpl</data>
+      <data key="d2">1</data>
+      <data key="d3">2</data>
+      <data key="d113">0.5983527107856961</data>
+      <data key="d198">0.4653715976966104</data>
+      <data key="d199">0.4156839316490737</data>
+      <data key="d177">0.36782702927682137</data>
+      <data key="d70">0.20998051327715558</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">63</data>
+    </node>
+    <node id="kotlinx.coroutines.SupervisorCoroutine">
+      <data key="d0">src/Supervisor.kt/SupervisorCoroutine</data>
+      <data key="d1">SupervisorCoroutine</data>
+      <data key="d2">1</data>
+      <data key="d3">5</data>
+      <data key="d43">0.569216167749349</data>
+      <data key="d200">0.45617333368577767</data>
+      <data key="d22">0.33706009440080004</data>
+      <data key="d201">0.3233859424715213</data>
+      <data key="d177">0.34179650047837556</data>
+      <data key="d20">0.20266135506381577</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">64</data>
+    </node>
+    <node id="kotlinx.coroutines.AbstractCoroutine">
+      <data key="d0">src/AbstractCoroutine.kt/AbstractCoroutine</data>
+      <data key="d1">AbstractCoroutine</data>
+      <data key="d2">6</data>
+      <data key="d3">38</data>
+      <data key="d39">0.4646628972807648</data>
+      <data key="d202">0.26788063566269643</data>
+      <data key="d84">0.2705132873843787</data>
+      <data key="d36">0.2559294762163015</data>
+      <data key="d24">0.2515024918634846</data>
+      <data key="d4">0.20826240003588506</data>
+      <data key="d80">0.20225376525731256</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">65</data>
+    </node>
+    <node id="kotlinx.coroutines.CancellableContinuationImpl">
+      <data key="d0">src/CancellableContinuationImpl.kt/CancellableContinuationImpl</data>
+      <data key="d1">CancellableContinuationImpl</data>
+      <data key="d2">36</data>
+      <data key="d3">356</data>
+      <data key="d39">0.4859551462107242</data>
+      <data key="d163">0.316697949679753</data>
+      <data key="d203">0.21965541376083736</data>
+      <data key="d204">0.22608189806473322</data>
+      <data key="d17">0.2245023063967081</data>
+      <data key="d54">0.21148202125357943</data>
+      <data key="d127">0.2083311195410485</data>
+      <data key="d11">0</data>
+      <data key="d12">5</data>
+      <data key="d13">8</data>
+    </node>
+    <node id="kotlinx.coroutines.Active">
+      <data key="d0">src/CancellableContinuationImpl.kt/Active</data>
+      <data key="d1">Active</data>
+      <data key="d2">1</data>
+      <data key="d3">2</data>
+      <data key="d23">0.7454914467449079</data>
+      <data key="d205">0.3124369418960599</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">66</data>
+    </node>
+    <node id="kotlinx.coroutines.CancelHandler">
+      <data key="d0">src/CancellableContinuationImpl.kt/CancelHandler</data>
+      <data key="d1">CancelHandler</data>
+      <data key="d2">2</data>
+      <data key="d3">8</data>
+      <data key="d206">0.5632643138658651</data>
+      <data key="d54">0.4476950228889434</data>
+      <data key="d207">0.28163215693293253</data>
+      <data key="d19">0.28163215693293253</data>
+      <data key="d17">0.2304282192078973</data>
+      <data key="d208">0.2280066238575762</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">67</data>
+    </node>
+    <node id="kotlinx.coroutines.InvokeOnCancel">
+      <data key="d0">src/CancellableContinuationImpl.kt/InvokeOnCancel</data>
+      <data key="d1">InvokeOnCancel</data>
+      <data key="d2">2</data>
+      <data key="d3">7</data>
+      <data key="d206">0.6790030476533678</data>
+      <data key="d207">0.3395015238266839</data>
+      <data key="d17">0.27777627528656124</data>
+      <data key="d208">0.27485709403794617</data>
+      <data key="d54">0.2698433732420226</data>
+      <data key="d162">0.2424119271308475</data>
+      <data key="d163">0.22294900637686982</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">68</data>
+    </node>
+    <node id="kotlinx.coroutines.CompletedContinuation">
+      <data key="d0">src/CancellableContinuationImpl.kt/CompletedContinuation</data>
+      <data key="d1">CompletedContinuation</data>
+      <data key="d2">1</data>
+      <data key="d3">12</data>
+      <data key="d54">0.4665980590463981</data>
+      <data key="d209">0.24186520090876776</data>
+      <data key="d210">0.4087675032872187</data>
+      <data key="d211">0.29146553161956357</data>
+      <data key="d17">0.320210126194453</data>
+      <data key="d118">0.27944342510004344</data>
+      <data key="d18">0.22438590561432453</data>
+      <data key="d11">0</data>
+      <data key="d12">5</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.OnTimeout">
+      <data key="d0">src/selects/OnTimeout.kt/OnTimeout</data>
+      <data key="d1">OnTimeout</data>
+      <data key="d2">1</data>
+      <data key="d3">23</data>
+      <data key="d212">0.5402490046606206</data>
+      <data key="d213">0.3707402267518241</data>
+      <data key="d214">0.33494795582123177</data>
+      <data key="d215">0.25818205012990153</data>
+      <data key="d129">0.2529008237810736</data>
+      <data key="d66">0.2503866746374945</data>
+      <data key="d11">0</data>
+      <data key="d12">2</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.*">
+      <data key="d1">kotlinx.coroutines.*</data>
+      <data key="d11">21</data>
+      <data key="d12">0</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlin.time.*">
+      <data key="d1">kotlin.time.*</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.SelectClause0Impl">
+      <data key="d0">src/selects/Select.kt/SelectClause0Impl</data>
+      <data key="d1">SelectClause0Impl</data>
+      <data key="d2">0</data>
+      <data key="d3">6</data>
+      <data key="d216">0.6785835859933689</data>
+      <data key="d217">0.33929179299668444</data>
+      <data key="d218">0.3279327905894003</data>
+      <data key="d219">0.3279327905894003</data>
+      <data key="d220">0.3179134403882073</data>
+      <data key="d221">0.3133141496559437</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">71</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.SelectClause1Impl">
+      <data key="d0">src/selects/Select.kt/SelectClause1Impl</data>
+      <data key="d1">SelectClause1Impl</data>
+      <data key="d2">0</data>
+      <data key="d3">19</data>
+      <data key="d4">0.3678827836089455</data>
+      <data key="d216">0.512390429103272</data>
+      <data key="d221">0.35486970558975</data>
+      <data key="d222">0.27160860190829267</data>
+      <data key="d217">0.256195214551636</data>
+      <data key="d218">0.24761816636215872</data>
+      <data key="d219">0.24761816636215872</data>
+      <data key="d220">0.24005267368757552</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">72</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.SelectClause2Impl">
+      <data key="d0">src/selects/Select.kt/SelectClause2Impl</data>
+      <data key="d1">SelectClause2Impl</data>
+      <data key="d2">0</data>
+      <data key="d3">12</data>
+      <data key="d4">0.4652241548416876</data>
+      <data key="d216">0.3887810165891269</data>
+      <data key="d221">0.3590142647988716</data>
+      <data key="d66">0.30820140109988575</data>
+      <data key="d222">0.20070345641314413</data>
+      <data key="d223">0.22166448543409348</data>
+      <data key="d167">0.21592409731214982</data>
+      <data key="d224">0.21078914515852645</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">73</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.SelectImplementation">
+      <data key="d0">src/selects/Select.kt/SelectImplementation</data>
+      <data key="d1">SelectImplementation</data>
+      <data key="d2">21</data>
+      <data key="d3">201</data>
+      <data key="d221">0.43372384057511787</data>
+      <data key="d225">0.40305233367553556</data>
+      <data key="d224">0.33953814301657403</data>
+      <data key="d226">0.2236594982045944</data>
+      <data key="d227">0.23512674232999253</data>
+      <data key="d31">0.21495902471475783</data>
+      <data key="d228">0.21693751382001825</data>
+      <data key="d11">0</data>
+      <data key="d12">9</data>
+      <data key="d13">6</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.*">
+      <data key="d1">kotlinx.coroutines.channels.*</data>
+      <data key="d11">9</data>
+      <data key="d12">0</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.TrySelectDetailedResult.*">
+      <data key="d1">kotlinx.coroutines.selects.TrySelectDetailedResult.*</data>
+      <data key="d11">5</data>
+      <data key="d12">0</data>
+      <data key="d13">6</data>
+    </node>
+    <node id="kotlin.contracts.*">
+      <data key="d1">kotlin.contracts.*</data>
+      <data key="d11">7</data>
+      <data key="d12">0</data>
+      <data key="d13">6</data>
+    </node>
+    <node id="kotlin.internal.*">
+      <data key="d1">kotlin.internal.*</data>
+      <data key="d11">3</data>
+      <data key="d12">0</data>
+      <data key="d13">6</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.ClauseData">
+      <data key="d0">src/selects/Select.kt/ClauseData</data>
+      <data key="d1">ClauseData</data>
+      <data key="d2">5</data>
+      <data key="d3">39</data>
+      <data key="d229">0.49270526228700917</data>
+      <data key="d31">0.3912512454220743</data>
+      <data key="d129">0.2688795177267156</data>
+      <data key="d216">0.25185489410507444</data>
+      <data key="d221">0.2325717969370106</data>
+      <data key="d230">0.2112462976938139</data>
+      <data key="d231">0.2112462976938139</data>
+      <data key="d11">0</data>
+      <data key="d12">9</data>
+      <data key="d13">6</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.of">
+      <data key="d0">src/selects/Select.kt/of</data>
+      <data key="d1">of</data>
+      <data key="d2">5</data>
+      <data key="d3">38</data>
+      <data key="d229">0.5031346358993497</data>
+      <data key="d31">0.39953308393108405</data>
+      <data key="d129">0.2745710440036246</data>
+      <data key="d216">0.2571860504530417</data>
+      <data key="d230">0.21571786869479317</data>
+      <data key="d231">0.21571786869479317</data>
+      <data key="d11">0</data>
+      <data key="d12">9</data>
+      <data key="d13">6</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.TrySelectDetailedResult">
+      <data key="d0">src/selects/Select.kt/TrySelectDetailedResult</data>
+      <data key="d1">TrySelectDetailedResult</data>
+      <data key="d2">0</data>
+      <data key="d3">2</data>
+      <data key="d232">0.5972340605801256</data>
+      <data key="d233">0.45448533493505305</data>
+      <data key="d234">0.5718074967471629</data>
+      <data key="d235">0.3027949951257005</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">74</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.SelectBuilderImpl">
+      <data key="d0">src/selects/SelectOld.kt/SelectBuilderImpl</data>
+      <data key="d1">SelectBuilderImpl</data>
+      <data key="d2">2</data>
+      <data key="d3">22</data>
+      <data key="d144">0.25379991460817775</data>
+      <data key="d236">0.25530424682331887</data>
+      <data key="d237">0.29844509376769623</data>
+      <data key="d238">0.25530424682331887</data>
+      <data key="d20">0.25997051361350915</data>
+      <data key="d71">0.23915073802731113</data>
+      <data key="d209">0.236264023376577</data>
+      <data key="d239">0.2829165775715212</data>
+      <data key="d182">0.2455018470395647</data>
+      <data key="d240">0.2455018470395647</data>
+      <data key="d241">0.2391441488999583</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">75</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.UnbiasedSelectBuilderImpl">
+      <data key="d0">src/selects/SelectOld.kt/UnbiasedSelectBuilderImpl</data>
+      <data key="d1">UnbiasedSelectBuilderImpl</data>
+      <data key="d2">2</data>
+      <data key="d3">22</data>
+      <data key="d144">0.26579332741641415</data>
+      <data key="d242">0.3125482317284585</data>
+      <data key="d243">0.3125482317284585</data>
+      <data key="d20">0.27225552045659496</data>
+      <data key="d71">0.26850256777606774</data>
+      <data key="d244">0.2836718724238598</data>
+      <data key="d239">0.2962859095129724</data>
+      <data key="d182">0.25710313146582486</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">76</data>
+    </node>
+    <node id="kotlinx.coroutines.selects.UnbiasedSelectImplementation">
+      <data key="d0">src/selects/SelectUnbiased.kt/UnbiasedSelectImplementation</data>
+      <data key="d1">UnbiasedSelectImplementation</data>
+      <data key="d2">2</data>
+      <data key="d3">22</data>
+      <data key="d245">0.4940739858004477</data>
+      <data key="d228">0.4321341334537299</data>
+      <data key="d31">0.3114505566739708</data>
+      <data key="d216">0.26731449552480263</data>
+      <data key="d219">0.25836518976249717</data>
+      <data key="d220">0.25047134263798276</data>
+      <data key="d246">0.24703699290022385</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">77</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.LocalAtomicInt">
+      <data key="d0">src/internal/LocalAtomics.common.kt/LocalAtomicInt</data>
+      <data key="d1">LocalAtomicInt</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d247">0.6045366031737951</data>
+      <data key="d248">0.637717961841941</data>
+      <data key="d55">0.45749304090885</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">78</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.LockFreeTaskQueue">
+      <data key="d0">src/internal/LockFreeTaskQueue.kt/LockFreeTaskQueue</data>
+      <data key="d1">LockFreeTaskQueue</data>
+      <data key="d2">4</data>
+      <data key="d3">31</data>
+      <data key="d249">0.6741250942578504</data>
+      <data key="d250">0.23249185859467592</data>
+      <data key="d251">0.27289514283735194</data>
+      <data key="d252">0.24654910271741737</data>
+      <data key="d144">0.2055544022010807</data>
+      <data key="d253">0.20355474222339384</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">79</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.LockFreeTaskQueueCore">
+      <data key="d0">src/internal/LockFreeTaskQueue.kt/LockFreeTaskQueueCore</data>
+      <data key="d1">LockFreeTaskQueueCore</data>
+      <data key="d2">14</data>
+      <data key="d3">162</data>
+      <data key="d254">0.5239503707925738</data>
+      <data key="d255">0.45808601615263894</data>
+      <data key="d256">0.39034021647520056</data>
+      <data key="d39">0.28184926567578406</data>
+      <data key="d257">0.22191043625691975</data>
+      <data key="d11">0</data>
+      <data key="d12">3</data>
+      <data key="d13">7</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.Placeholder">
+      <data key="d0">src/internal/LockFreeTaskQueue.kt/Placeholder</data>
+      <data key="d1">Placeholder</data>
+      <data key="d2">4</data>
+      <data key="d3">28</data>
+      <data key="d258">0.7373600457630054</data>
+      <data key="d256">0.3160114481841452</data>
+      <data key="d255">0.3090475505882576</data>
+      <data key="d259">0.2553072004580156</data>
+      <data key="d260">0.23555682683673188</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">80</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.StackTraceElement">
+      <data key="d0">src/internal/StackTraceRecovery.common.kt/StackTraceElement</data>
+      <data key="d1">StackTraceElement</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d261">0.5747309155967163</data>
+      <data key="d262">0.5747309155967163</data>
+      <data key="d4">0.25940962029978376</data>
+      <data key="d222">0.20137671751735572</data>
+      <data key="d263">0.28736545779835815</data>
+      <data key="d264">0.28736545779835815</data>
+      <data key="d69">0.20872869432623134</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">81</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.LimitedDispatcher">
+      <data key="d0">src/internal/LimitedDispatcher.kt/LimitedDispatcher</data>
+      <data key="d1">LimitedDispatcher</data>
+      <data key="d2">6</data>
+      <data key="d3">67</data>
+      <data key="d265">0.5279997130772793</data>
+      <data key="d266">0.3734525167462834</data>
+      <data key="d103">0.360953468873191</data>
+      <data key="d31">0.20063135647871252</data>
+      <data key="d267">0.23870578775948703</data>
+      <data key="d268">0.23870578775948703</data>
+      <data key="d269">0.22628559131883397</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">82</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.Worker">
+      <data key="d0">src/internal/LimitedDispatcher.kt/Worker</data>
+      <data key="d1">Worker</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d270">0.5974896678167286</data>
+      <data key="d103">0.4084584950953817</data>
+      <data key="d265">0.2987448339083643</data>
+      <data key="d269">0.2987448339083643</data>
+      <data key="d271">0.2987448339083643</data>
+      <data key="d101">0.2267807662564042</data>
+      <data key="d272">0.21301551892817072</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">83</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.InlineList">
+      <data key="d0">src/internal/InlineList.kt/InlineList</data>
+      <data key="d1">InlineList</data>
+      <data key="d2">1</data>
+      <data key="d3">29</data>
+      <data key="d273">0.6920686283484402</data>
+      <data key="d274">0.45177677743378103</data>
+      <data key="d134">0.33228497152143577</data>
+      <data key="d257">0.2470714958971949</data>
+      <data key="d151">0.26731352213964926</data>
+      <data key="d215">0.22152279699304528</data>
+      <data key="d11">0</data>
+      <data key="d12">2</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.coroutines.assert">
+      <data key="d1">kotlinx.coroutines.assert</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.ReentrantLock">
+      <data key="d0">src/internal/Concurrent.common.kt/ReentrantLock</data>
+      <data key="d1">ReentrantLock</data>
+      <data key="d2">0</data>
+      <data key="d3">3</data>
+      <data key="d275">0.5788929888572705</data>
+      <data key="d276">0.5788929888572705</data>
+      <data key="d277">0.5578605421105804</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">84</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.ConcurrentLinkedListNode">
+      <data key="d0">src/internal/ConcurrentLinkedList.kt/ConcurrentLinkedListNode</data>
+      <data key="d1">ConcurrentLinkedListNode</data>
+      <data key="d2">4</data>
+      <data key="d3">45</data>
+      <data key="d278">0.520129329441022</data>
+      <data key="d249">0.4840100446724579</data>
+      <data key="d253">0.27402890627063364</data>
+      <data key="d279">0.32903157977097575</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">85</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.Segment">
+      <data key="d0">src/internal/ConcurrentLinkedList.kt/Segment</data>
+      <data key="d1">Segment</data>
+      <data key="d2">3</data>
+      <data key="d3">14</data>
+      <data key="d280">0.6164728581716981</data>
+      <data key="d279">0.4140967746419721</data>
+      <data key="d258">0.34170421935674467</data>
+      <data key="d281">0.23955594708132777</data>
+      <data key="d278">0.21819980305855755</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">86</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.SegmentOrClosed">
+      <data key="d0">src/internal/ConcurrentLinkedList.kt/SegmentOrClosed</data>
+      <data key="d1">SegmentOrClosed</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d282">0.629507346923853</data>
+      <data key="d55">0.4454106471878634</data>
+      <data key="d283">0.35862668285931076</data>
+      <data key="d284">0.3104379134850456</data>
+      <data key="d285">0.2326014797657723</data>
+      <data key="d286">0.24010005883294483</data>
+      <data key="d287">0.24875399916758764</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">87</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.OpDescriptor">
+      <data key="d0">src/internal/Atomic.kt/OpDescriptor</data>
+      <data key="d1">OpDescriptor</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d288">0.7383544434742586</data>
+      <data key="d289">0.2979242677218058</data>
+      <data key="d290">0.3691772217371293</data>
+      <data key="d291">0.34061794863909206</data>
+      <data key="d160">0.27607824663885594</data>
+      <data key="d11">0</data>
+      <data key="d12">3</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.atomicfu.atomic">
+      <data key="d1">kotlinx.atomicfu.atomic</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.AtomicOp">
+      <data key="d0">src/internal/Atomic.kt/AtomicOp</data>
+      <data key="d1">AtomicOp</data>
+      <data key="d2">3</data>
+      <data key="d3">21</data>
+      <data key="d41">0.7178886906521182</data>
+      <data key="d290">0.4464997742284947</data>
+      <data key="d292">0.28260415447700227</data>
+      <data key="d288">0.2678998645370968</data>
+      <data key="d293">0.23522395983897046</data>
+      <data key="d294">0.21511791785229595</data>
+      <data key="d11">0</data>
+      <data key="d12">3</data>
+      <data key="d13">4</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.SynchronizedObject">
+      <data key="d0">src/internal/Synchronized.common.kt/SynchronizedObject</data>
+      <data key="d1">SynchronizedObject</data>
+      <data key="d2">0</data>
+      <data key="d3">10</data>
+      <data key="d295">0.48093760068613667</data>
+      <data key="d296">0.4575264349635697</data>
+      <data key="d31">0.37356318984266257</data>
+      <data key="d297">0.44445542847536357</data>
+      <data key="d298">0.2248321106039691</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">88</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.CommonThreadLocal">
+      <data key="d0">src/internal/ThreadLocal.common.kt/CommonThreadLocal</data>
+      <data key="d1">CommonThreadLocal</data>
+      <data key="d2">0</data>
+      <data key="d3">3</data>
+      <data key="d299">0.908503213783292</data>
+      <data key="d55">0.35904847458318717</data>
+      <data key="d300">0.21378985814326312</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">89</data>
+    </node>
+    <node id="kotlinx.coroutines.DispatchedTask">
+      <data key="d0">src/internal/DispatchedTask.kt/DispatchedTask</data>
+      <data key="d1">DispatchedTask</data>
+      <data key="d2">3</data>
+      <data key="d3">52</data>
+      <data key="d32">0.35597475265788714</data>
+      <data key="d39">0.3765552392812149</data>
+      <data key="d301">0.4259297498075765</data>
+      <data key="d71">0.20304734237348393</data>
+      <data key="d302">0.25555784988454583</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">90</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.ThreadSafeHeap">
+      <data key="d0">src/internal/ThreadSafeHeap.kt/ThreadSafeHeap</data>
+      <data key="d1">ThreadSafeHeap</data>
+      <data key="d2">11</data>
+      <data key="d3">120</data>
+      <data key="d303">0.48366715340414734</data>
+      <data key="d304">0.3445966033898819</data>
+      <data key="d158">0.2990820202784376</data>
+      <data key="d305">0.27925267022173395</data>
+      <data key="d306">0.26043615952531013</data>
+      <data key="d4">0.23016561690620166</data>
+      <data key="d307">0.22340213617738713</data>
+      <data key="d308">0.22340213617738713</data>
+      <data key="d11">0</data>
+      <data key="d12">2</data>
+      <data key="d13">7</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.ScopeCoroutine">
+      <data key="d0">src/internal/Scopes.kt/ScopeCoroutine</data>
+      <data key="d1">ScopeCoroutine</data>
+      <data key="d2">3</data>
+      <data key="d3">13</data>
+      <data key="d43">0.47001933575801996</data>
+      <data key="d262">0.4322396333102373</data>
+      <data key="d39">0.37001267526935533</data>
+      <data key="d202">0.3199714176700834</data>
+      <data key="d309">0.31895227677319216</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">91</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.ContextScope">
+      <data key="d0">src/internal/Scopes.kt/ContextScope</data>
+      <data key="d1">ContextScope</data>
+      <data key="d2">1</data>
+      <data key="d3">3</data>
+      <data key="d75">0.5511881766773711</data>
+      <data key="d74">0.5506414301164575</data>
+      <data key="d310">0.4568409577566207</data>
+      <data key="d22">0.3560807738345687</data>
+      <data key="d205">0.2165511127788992</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">92</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.DispatchedContinuation">
+      <data key="d0">src/internal/DispatchedContinuation.kt/DispatchedContinuation</data>
+      <data key="d1">DispatchedContinuation</data>
+      <data key="d2">14</data>
+      <data key="d3">146</data>
+      <data key="d39">0.738069839789952</data>
+      <data key="d71">0.2293801844129126</data>
+      <data key="d144">0.21716040618985039</data>
+      <data key="d20">0.20312033718116088</data>
+      <data key="d11">0</data>
+      <data key="d12">4</data>
+      <data key="d13">8</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.Symbol">
+      <data key="d0">src/internal/Symbol.kt/Symbol</data>
+      <data key="d1">Symbol</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d146">0.6082996318893803</data>
+      <data key="d55">0.5308690326986718</data>
+      <data key="d311">0.4933331399096999</data>
+      <data key="d298">0.21101501605459722</data>
+      <data key="d205">0.2216815905523862</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">93</data>
+    </node>
+    <node id="kotlinx.coroutines.sync.MutexImpl">
+      <data key="d0">src/sync/Mutex.kt/MutexImpl</data>
+      <data key="d1">MutexImpl</data>
+      <data key="d2">12</data>
+      <data key="d3">122</data>
+      <data key="d312">0.8667761065205801</data>
+      <data key="d11">0</data>
+      <data key="d12">6</data>
+      <data key="d13">7</data>
+    </node>
+    <node id="kotlinx.coroutines.sync.CancellableContinuationWithOwner">
+      <data key="d0">src/sync/Mutex.kt/CancellableContinuationWithOwner</data>
+      <data key="d1">CancellableContinuationWithOwner</data>
+      <data key="d2">0</data>
+      <data key="d3">24</data>
+      <data key="d312">0.7165717602035577</data>
+      <data key="d100">0.2711170983740919</data>
+      <data key="d51">0.27831185167039124</data>
+      <data key="d313">0.25709723666462503</data>
+      <data key="d55">0.2154934401585743</data>
+      <data key="d277">0.22891580714777895</data>
+      <data key="d203">0.21152264775662297</data>
+      <data key="d97">0.2142031034894007</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">94</data>
+    </node>
+    <node id="kotlinx.coroutines.sync.SelectInstanceWithOwner">
+      <data key="d0">src/sync/Mutex.kt/SelectInstanceWithOwner</data>
+      <data key="d1">SelectInstanceWithOwner</data>
+      <data key="d2">2</data>
+      <data key="d3">17</data>
+      <data key="d312">0.5263443591810999</data>
+      <data key="d314">0.3923402388886411</data>
+      <data key="d315">0.30784562508812763</data>
+      <data key="d224">0.3508962394540666</data>
+      <data key="d221">0.2988217332860007</data>
+      <data key="d129">0.2591039990350663</data>
+      <data key="d144">0.22869698244251957</data>
+      <data key="d313">0.2203202839231873</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">95</data>
+    </node>
+    <node id="kotlinx.coroutines.sync.SemaphoreImpl">
+      <data key="d0">src/sync/Semaphore.kt/SemaphoreImpl</data>
+      <data key="d1">SemaphoreImpl</data>
+      <data key="d2">11</data>
+      <data key="d3">148</data>
+      <data key="d316">0.4313943605355055</data>
+      <data key="d317">0.404742275047356</data>
+      <data key="d318">0.23990203033417154</data>
+      <data key="d319">0.2302097805850484</data>
+      <data key="d320">0.21240092454937168</data>
+      <data key="d11">0</data>
+      <data key="d12">8</data>
+      <data key="d13">3</data>
+    </node>
+    <node id="kotlin.math.*">
+      <data key="d1">kotlin.math.*</data>
+      <data key="d11">3</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.sync.SemaphoreSegment">
+      <data key="d0">src/sync/Semaphore.kt/SemaphoreSegment</data>
+      <data key="d1">SemaphoreSegment</data>
+      <data key="d2">6</data>
+      <data key="d3">18</data>
+      <data key="d304">0.5846070865838071</data>
+      <data key="d321">0.5211264335992495</data>
+      <data key="d322">0.39520919634406987</data>
+      <data key="d55">0.22431080609681353</data>
+      <data key="d298">0.22452909637947896</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">97</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ConflatedBufferedChannel">
+      <data key="d0">src/channels/ConflatedBufferedChannel.kt/ConflatedBufferedChannel</data>
+      <data key="d1">ConflatedBufferedChannel</data>
+      <data key="d2">8</data>
+      <data key="d3">68</data>
+      <data key="d257">0.5907342369583884</data>
+      <data key="d323">0.44312370493604963</data>
+      <data key="d324">0.3043501424663003</data>
+      <data key="d325">0.2532135456777427</data>
+      <data key="d11">0</data>
+      <data key="d12">8</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.BufferOverflow.*">
+      <data key="d1">kotlinx.coroutines.channels.BufferOverflow.*</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ChannelResult.Companion.closed">
+      <data key="d1">kotlinx.coroutines.channels.ChannelResult.Companion.closed</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ChannelResult.Companion.success">
+      <data key="d1">kotlinx.coroutines.channels.ChannelResult.Companion.success</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.OnUndeliveredElement">
+      <data key="d1">kotlinx.coroutines.internal.OnUndeliveredElement</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ChannelCoroutine">
+      <data key="d0">src/channels/ChannelCoroutine.kt/ChannelCoroutine</data>
+      <data key="d1">ChannelCoroutine</data>
+      <data key="d2">4</data>
+      <data key="d3">27</data>
+      <data key="d326">0.3272795784863758</data>
+      <data key="d327">0.3825859161589365</data>
+      <data key="d328">0.40633188987750707</data>
+      <data key="d32">0.22280878469053395</data>
+      <data key="d329">0.3047489174081303</data>
+      <data key="d330">0.20316594493875353</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">99</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.BroadcastCoroutine">
+      <data key="d0">src/channels/Broadcast.kt/BroadcastCoroutine</data>
+      <data key="d1">BroadcastCoroutine</data>
+      <data key="d2">6</data>
+      <data key="d3">39</data>
+      <data key="d17">0.4423537801431584</data>
+      <data key="d326">0.2600113939095783</data>
+      <data key="d328">0.302639532132546</data>
+      <data key="d24">0.25337256317327933</data>
+      <data key="d32">0.21342243831947436</data>
+      <data key="d330">0.201759688088364</data>
+      <data key="d329">0.201759688088364</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">100</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.LazyBroadcastCoroutine">
+      <data key="d0">src/channels/Broadcast.kt/LazyBroadcastCoroutine</data>
+      <data key="d1">LazyBroadcastCoroutine</data>
+      <data key="d2">2</data>
+      <data key="d3">14</data>
+      <data key="d331">0.46737323620088717</data>
+      <data key="d24">0.4134850067941574</data>
+      <data key="d327">0.31001495882463687</data>
+      <data key="d332">0.29163425060597364</data>
+      <data key="d333">0.24694250125738032</data>
+      <data key="d334">0.2764601121179767</data>
+      <data key="d30">0.22310199981862242</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">101</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.BufferedChannel">
+      <data key="d0">src/channels/BufferedChannel.kt/BufferedChannel</data>
+      <data key="d1">BufferedChannel</data>
+      <data key="d2">28</data>
+      <data key="d3">527</data>
+      <data key="d257">0.3880768584358433</data>
+      <data key="d282">0.3670805662781908</data>
+      <data key="d316">0.27377186844373574</data>
+      <data key="d335">0.28585120502007155</data>
+      <data key="d336">0.28242565270689307</data>
+      <data key="d11">0</data>
+      <data key="d12">16</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ChannelResult.Companion.failure">
+      <data key="d1">kotlinx.coroutines.channels.ChannelResult.Companion.failure</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.*">
+      <data key="d1">kotlinx.coroutines.flow.internal.*</data>
+      <data key="d11">7</data>
+      <data key="d12">0</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlin.random.*">
+      <data key="d1">kotlin.random.*</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlin.reflect.*">
+      <data key="d1">kotlin.reflect.*</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.SendBroadcast">
+      <data key="d0">src/channels/BufferedChannel.kt/SendBroadcast</data>
+      <data key="d1">SendBroadcast</data>
+      <data key="d2">0</data>
+      <data key="d3">14</data>
+      <data key="d337">0.4229141376210105</data>
+      <data key="d336">0.4368390685523064</data>
+      <data key="d316">0.3327137894435878</data>
+      <data key="d97">0.2725085855077905</data>
+      <data key="d338">0.2184195342761532</data>
+      <data key="d339">0.2184195342761532</data>
+      <data key="d340">0.21519943704416428</data>
+      <data key="d341">0.22665438308929875</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">102</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.BufferedChannelIterator">
+      <data key="d0">src/channels/BufferedChannel.kt/BufferedChannelIterator</data>
+      <data key="d1">BufferedChannelIterator</data>
+      <data key="d2">2</data>
+      <data key="d3">32</data>
+      <data key="d17">0.3164766503731809</data>
+      <data key="d342">0.3232011973117625</data>
+      <data key="d343">0.3232011973117625</data>
+      <data key="d344">0.2608218339767455</data>
+      <data key="d345">0.29819859499462464</data>
+      <data key="d337">0.2886930467549245</data>
+      <data key="d316">0.22711976031863423</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">103</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ChannelSegment">
+      <data key="d0">src/channels/BufferedChannel.kt/ChannelSegment</data>
+      <data key="d1">ChannelSegment</data>
+      <data key="d2">11</data>
+      <data key="d3">59</data>
+      <data key="d304">0.7671788349790539</data>
+      <data key="d249">0.3278152032181619</data>
+      <data key="d346">0.20532905833509807</data>
+      <data key="d347">0.2564524828173726</data>
+      <data key="d11">0</data>
+      <data key="d12">13</data>
+      <data key="d13">2</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.WaiterEB">
+      <data key="d0">src/channels/BufferedChannel.kt/WaiterEB</data>
+      <data key="d1">WaiterEB</data>
+      <data key="d2">1</data>
+      <data key="d3">2</data>
+      <data key="d348">0.7999543588713852</data>
+      <data key="d316">0.5621434690338121</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">104</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ProducerCoroutine">
+      <data key="d0">src/channels/Produce.kt/ProducerCoroutine</data>
+      <data key="d1">ProducerCoroutine</data>
+      <data key="d2">2</data>
+      <data key="d3">12</data>
+      <data key="d327">0.4121481561678063</data>
+      <data key="d349">0.3798502596030694</data>
+      <data key="d116">0.33066179175666405</data>
+      <data key="d24">0.3664706670915687</data>
+      <data key="d17">0.2879134081889669</data>
+      <data key="d350">0.2584746644018606</data>
+      <data key="d351">0.2345941668571225</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">105</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ConflatedBroadcastChannel">
+      <data key="d0">src/channels/BroadcastChannel.kt/ConflatedBroadcastChannel</data>
+      <data key="d1">ConflatedBroadcastChannel</data>
+      <data key="d2">0</data>
+      <data key="d3">9</data>
+      <data key="d185">0.4733549453203444</data>
+      <data key="d4">0.33627967908346984</data>
+      <data key="d352">0.4616131013471584</data>
+      <data key="d353">0.4005663788638903</data>
+      <data key="d55">0.2619999934867024</data>
+      <data key="d354">0.2209802231395012</data>
+      <data key="d355">0.2308065506735792</data>
+      <data key="d11">0</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Channel.Factory.CONFLATED">
+      <data key="d1">kotlinx.coroutines.channels.Channel.Factory.CONFLATED</data>
+      <data key="d11">3</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.BroadcastChannelImpl">
+      <data key="d0">src/channels/BroadcastChannel.kt/BroadcastChannelImpl</data>
+      <data key="d1">BroadcastChannelImpl</data>
+      <data key="d2">10</data>
+      <data key="d3">117</data>
+      <data key="d356">0.5409939419256821</data>
+      <data key="d357">0.31246184000329724</data>
+      <data key="d257">0.2549719528072535</data>
+      <data key="d358">0.2900227267138473</data>
+      <data key="d296">0.23626232560140611</data>
+      <data key="d359">0.2022833052095224</data>
+      <data key="d129">0.20624595641495908</data>
+      <data key="d11">0</data>
+      <data key="d12">7</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Channel.Factory.CHANNEL">
+      <data key="d1">kotlinx.coroutines.channels.Channel.Factory.CHANNEL</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlin.native.concurrent.*">
+      <data key="d1">kotlin.native.concurrent.*</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.SubscriberBuffered">
+      <data key="d0">src/channels/BroadcastChannel.kt/SubscriberBuffered</data>
+      <data key="d1">SubscriberBuffered</data>
+      <data key="d2">1</data>
+      <data key="d3">5</data>
+      <data key="d358">0.4827685673719832</data>
+      <data key="d360">0.4268382323565784</data>
+      <data key="d361">0.4086660779573109</data>
+      <data key="d362">0.3522182105985282</data>
+      <data key="d363">0.3522182105985282</data>
+      <data key="d17">0.3343659247576759</data>
+      <data key="d4">0.21865124099625102</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">107</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.SubscriberConflated">
+      <data key="d0">src/channels/BroadcastChannel.kt/SubscriberConflated</data>
+      <data key="d1">SubscriberConflated</data>
+      <data key="d2">1</data>
+      <data key="d3">5</data>
+      <data key="d364">0.4484411567934248</data>
+      <data key="d361">0.4293492823489901</data>
+      <data key="d365">0.3891363780318363</data>
+      <data key="d362">0.37004450358740176</data>
+      <data key="d17">0.35128868672985564</data>
+      <data key="d366">0.2732431981876304</data>
+      <data key="d358">0.2536011050609675</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">108</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.ChannelResult">
+      <data key="d0">src/channels/Channel.kt/ChannelResult</data>
+      <data key="d1">ChannelResult</data>
+      <data key="d2">8</data>
+      <data key="d3">40</data>
+      <data key="d273">0.647038091393728</data>
+      <data key="d367">0.43446216746317945</data>
+      <data key="d283">0.3369134053851985</data>
+      <data key="d368">0.36352249460932123</data>
+      <data key="d4">0.246159767871292</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">109</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Failed">
+      <data key="d0">src/channels/Channel.kt/Failed</data>
+      <data key="d1">Failed</data>
+      <data key="d2">1</data>
+      <data key="d3">2</data>
+      <data key="d367">0.9258373253552308</data>
+      <data key="d205">0.34132860289966566</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">110</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Closed">
+      <data key="d0">src/channels/Channel.kt/Closed</data>
+      <data key="d1">Closed</data>
+      <data key="d2">3</data>
+      <data key="d3">4</data>
+      <data key="d283">0.6785871369810729</data>
+      <data key="d369">0.36611498622758915</data>
+      <data key="d370">0.3221342042733202</data>
+      <data key="d371">0.3221342042733202</data>
+      <data key="d367">0.23865353176517068</data>
+      <data key="d17">0.29080319383731223</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">111</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Factory">
+      <data key="d0">src/channels/Channel.kt/Factory</data>
+      <data key="d1">Factory</data>
+      <data key="d2">0</data>
+      <data key="d3">10</data>
+      <data key="d4">0.5863372863746219</data>
+      <data key="d372">0.5196201514148108</data>
+      <data key="d373">0.2875731728053328</data>
+      <data key="d374">0.27213623360545036</data>
+      <data key="d71">0.2460388927810953</data>
+      <data key="d375">0.24075887039650828</data>
+      <data key="d376">0.2449967439227307</data>
+      <data key="d377">0.24075887039650828</data>
+      <data key="d11">0</data>
+      <data key="d12">5</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Channel.Factory.BUFFERED">
+      <data key="d1">kotlinx.coroutines.channels.Channel.Factory.BUFFERED</data>
+      <data key="d11">3</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Channel.Factory.RENDEZVOUS">
+      <data key="d1">kotlinx.coroutines.channels.Channel.Factory.RENDEZVOUS</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.Channel.Factory.UNLIMITED">
+      <data key="d1">kotlinx.coroutines.channels.Channel.Factory.UNLIMITED</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.channels.BufferOverflow">
+      <data key="d0">src/channels/BufferOverflow.kt/BufferOverflow</data>
+      <data key="d1">BufferOverflow</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d378">0.8208628383287753</data>
+      <data key="d379">0.4857165805757738</data>
+      <data key="d300">0.30043901877852824</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">113</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.StateFlowSlot">
+      <data key="d0">src/flow/StateFlow.kt/StateFlowSlot</data>
+      <data key="d1">StateFlowSlot</data>
+      <data key="d2">5</data>
+      <data key="d3">40</data>
+      <data key="d380">0.630811194044667</data>
+      <data key="d39">0.4260105005648714</data>
+      <data key="d381">0.4137969057454641</data>
+      <data key="d382">0.2242459515666855</data>
+      <data key="d11">0</data>
+      <data key="d12">6</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.StateFlowImpl">
+      <data key="d0">src/flow/StateFlow.kt/StateFlowImpl</data>
+      <data key="d1">StateFlowImpl</data>
+      <data key="d2">9</data>
+      <data key="d3">81</data>
+      <data key="d383">0.4041476376694402</data>
+      <data key="d384">0.41461604392547924</data>
+      <data key="d385">0.3627890384347943</data>
+      <data key="d386">0.3627890384347943</data>
+      <data key="d55">0.2132970779812256</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">114</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.ChannelAsFlow">
+      <data key="d0">src/flow/Channels.kt/ChannelAsFlow</data>
+      <data key="d1">ChannelAsFlow</data>
+      <data key="d2">7</data>
+      <data key="d3">35</data>
+      <data key="d387">0.43078333568797156</data>
+      <data key="d327">0.43905793921009717</data>
+      <data key="d358">0.2952270035447667</data>
+      <data key="d388">0.27535087029261573</data>
+      <data key="d389">0.27535087029261573</data>
+      <data key="d390">0.21423938374540324</data>
+      <data key="d366">0.21206209024083866</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">115</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SharingCommand">
+      <data key="d0">src/flow/SharingStarted.kt/SharingCommand</data>
+      <data key="d1">SharingCommand</data>
+      <data key="d2">0</data>
+      <data key="d3">4</data>
+      <data key="d391">0.63467877859617</data>
+      <data key="d392">0.6555763021578696</data>
+      <data key="d393">0.37652975792032045</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">116</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.StartedEagerly">
+      <data key="d0">src/flow/SharingStarted.kt/StartedEagerly</data>
+      <data key="d1">StartedEagerly</data>
+      <data key="d2">2</data>
+      <data key="d3">4</data>
+      <data key="d394">0.4277934386219266</data>
+      <data key="d395">0.3205323271905755</data>
+      <data key="d396">0.37416288290625105</data>
+      <data key="d397">0.37416288290625105</data>
+      <data key="d398">0.3519041911770823</data>
+      <data key="d392">0.37416288290625105</data>
+      <data key="d399">0.2935829546806792</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">117</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.StartedLazily">
+      <data key="d0">src/flow/SharingStarted.kt/StartedLazily</data>
+      <data key="d1">StartedLazily</data>
+      <data key="d2">2</data>
+      <data key="d3">11</data>
+      <data key="d400">0.5540068389292707</data>
+      <data key="d401">0.43814599944892446</data>
+      <data key="d402">0.2697045543234797</data>
+      <data key="d403">0.2923823399741742</data>
+      <data key="d396">0.2557276698493182</data>
+      <data key="d397">0.2557276698493182</data>
+      <data key="d398">0.20765720903603282</data>
+      <data key="d392">0.2557276698493182</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">118</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.StartedWhileSubscribed">
+      <data key="d0">src/flow/SharingStarted.kt/StartedWhileSubscribed</data>
+      <data key="d1">StartedWhileSubscribed</data>
+      <data key="d2">4</data>
+      <data key="d3">37</data>
+      <data key="d404">0.615678507642989</data>
+      <data key="d405">0.5387186941876154</data>
+      <data key="d406">0.2793979574102193</data>
+      <data key="d407">0.20569204114162595</data>
+      <data key="d11">0</data>
+      <data key="d12">3</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.internal.IgnoreJreRequirement">
+      <data key="d1">kotlinx.coroutines.internal.IgnoreJreRequirement</data>
+      <data key="d11">1</data>
+      <data key="d12">0</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SafeFlow">
+      <data key="d0">src/flow/Builders.kt/SafeFlow</data>
+      <data key="d1">SafeFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d408">0.47402464960893376</data>
+      <data key="d409">0.4216195362595043</data>
+      <data key="d410">0.4216195362595043</data>
+      <data key="d411">0.4216195362595043</data>
+      <data key="d379">0.3208026499709949</data>
+      <data key="d412">0.2557604806312287</data>
+      <data key="d31">0.21694952786633856</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">119</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.EmptyFlow">
+      <data key="d0">src/flow/Builders.kt/EmptyFlow</data>
+      <data key="d1">EmptyFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">2</data>
+      <data key="d413">0.6092249551659671</data>
+      <data key="d414">0.5049435452062755</data>
+      <data key="d415">0.29326539193137424</data>
+      <data key="d412">0.29326539193137424</data>
+      <data key="d408">0.27176799228246834</data>
+      <data key="d402">0.24567220278000498</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">120</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.ChannelFlowBuilder">
+      <data key="d0">src/flow/Builders.kt/ChannelFlowBuilder</data>
+      <data key="d1">ChannelFlowBuilder</data>
+      <data key="d2">3</data>
+      <data key="d3">12</data>
+      <data key="d366">0.43625697607330155</data>
+      <data key="d358">0.40489663404823134</data>
+      <data key="d31">0.31740254269986756</data>
+      <data key="d416">0.3579880200259805</data>
+      <data key="d22">0.27903069772974803</data>
+      <data key="d390">0.263590720953304</data>
+      <data key="d417">0.2591619619891821</data>
+      <data key="d418">0.24806175157793187</data>
+      <data key="d11">0</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.CallbackFlowBuilder">
+      <data key="d0">src/flow/Builders.kt/CallbackFlowBuilder</data>
+      <data key="d1">CallbackFlowBuilder</data>
+      <data key="d2">2</data>
+      <data key="d3">20</data>
+      <data key="d366">0.40440089242032756</data>
+      <data key="d358">0.37533052564775315</data>
+      <data key="d419">0.3500614294885213</data>
+      <data key="d420">0.3061757891229963</data>
+      <data key="d22">0.25865549289375017</data>
+      <data key="d31">0.22066902977628325</data>
+      <data key="d390">0.23442892688238295</data>
+      <data key="d417">0.24023759952945367</data>
+      <data key="d11">0</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.AbstractFlow">
+      <data key="d0">src/flow/Flow.kt/AbstractFlow</data>
+      <data key="d1">AbstractFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">10</data>
+      <data key="d421">0.5969008186683245</data>
+      <data key="d410">0.4390559070403896</data>
+      <data key="d412">0.3995064512600562</data>
+      <data key="d408">0.24681413525090382</data>
+      <data key="d4">0.22146691826569956</data>
+      <data key="d411">0.2195279535201948</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">121</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SharedFlowSlot">
+      <data key="d0">src/flow/SharedFlow.kt/SharedFlowSlot</data>
+      <data key="d1">SharedFlowSlot</data>
+      <data key="d2">2</data>
+      <data key="d3">17</data>
+      <data key="d304">0.6283527848220615</data>
+      <data key="d422">0.39493543505850176</data>
+      <data key="d423">0.29049840482519523</data>
+      <data key="d424">0.25647192916985617</data>
+      <data key="d20">0.20910548970286766</data>
+      <data key="d11">0</data>
+      <data key="d12">6</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SharedFlowImpl">
+      <data key="d0">src/flow/SharedFlow.kt/SharedFlowImpl</data>
+      <data key="d1">SharedFlowImpl</data>
+      <data key="d2">25</data>
+      <data key="d3">304</data>
+      <data key="d255">0.31960645179620034</data>
+      <data key="d425">0.24908634213000663</data>
+      <data key="d426">0.21895114741531957</data>
+      <data key="d304">0.23433738503495916</data>
+      <data key="d427">0.2534688114144453</data>
+      <data key="d428">0.2534688114144453</data>
+      <data key="d429">0.21225560511886243</data>
+      <data key="d11">0</data>
+      <data key="d12">6</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.resumes">
+      <data key="d0">src/flow/SharedFlow.kt/resumes</data>
+      <data key="d1">resumes</data>
+      <data key="d2">12</data>
+      <data key="d3">135</data>
+      <data key="d304">0.3918372018005099</data>
+      <data key="d425">0.2620989366139989</data>
+      <data key="d430">0.31368774330300814</data>
+      <data key="d431">0.2788335496026739</data>
+      <data key="d432">0.20912516220200544</data>
+      <data key="d11">0</data>
+      <data key="d12">6</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.Emitter">
+      <data key="d0">src/flow/SharedFlow.kt/Emitter</data>
+      <data key="d1">Emitter</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d429">0.4369584025959374</data>
+      <data key="d422">0.4244955093378169</data>
+      <data key="d154">0.34376265304044673</data>
+      <data key="d304">0.28945013548936044</data>
+      <data key="d97">0.28155813585941203</data>
+      <data key="d104">0.2742817467610996</data>
+      <data key="d66">0.29510841685422795</data>
+      <data key="d11">0</data>
+      <data key="d12">6</data>
+      <data key="d13">1</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SharingConfig">
+      <data key="d0">src/flow/operators/Share.kt/SharingConfig</data>
+      <data key="d1">SharingConfig</data>
+      <data key="d2">0</data>
+      <data key="d3">35</data>
+      <data key="d433">0.36984614978203345</data>
+      <data key="d434">0.45116058698445427</data>
+      <data key="d435">0.3753570508449317</data>
+      <data key="d436">0.2668700233560735</data>
+      <data key="d437">0.28151778813369877</data>
+      <data key="d366">0.2710144448071258</data>
+      <data key="d358">0.2515325656647326</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">122</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.ReadonlySharedFlow">
+      <data key="d0">src/flow/operators/Share.kt/ReadonlySharedFlow</data>
+      <data key="d1">ReadonlySharedFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d438">0.36680853232730126</data>
+      <data key="d70">0.3375382627054286</data>
+      <data key="d366">0.30387608924486553</data>
+      <data key="d358">0.2820319500915273</data>
+      <data key="d402">0.2426419166541907</data>
+      <data key="d439">0.2630441727064103</data>
+      <data key="d440">0.2183622129681228</data>
+      <data key="d441">0.230067497782505</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">123</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.ReadonlyStateFlow">
+      <data key="d0">src/flow/operators/Share.kt/ReadonlyStateFlow</data>
+      <data key="d1">ReadonlyStateFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d399">0.36046582895147605</data>
+      <data key="d70">0.33700140642993953</data>
+      <data key="d366">0.303392772822678</data>
+      <data key="d358">0.281583376880652</data>
+      <data key="d402">0.24225599348622623</data>
+      <data key="d442">0.2626257996493341</data>
+      <data key="d440">0.22198181767583594</data>
+      <data key="d443">0.2383617783448706</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">124</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SubscribedSharedFlow">
+      <data key="d0">src/flow/operators/Share.kt/SubscribedSharedFlow</data>
+      <data key="d1">SubscribedSharedFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">6</data>
+      <data key="d438">0.7441982787927649</data>
+      <data key="d215">0.31469624870311574</data>
+      <data key="d412">0.2938257541366921</data>
+      <data key="d408">0.27228727793866964</data>
+      <data key="d444">0.26683815031857605</data>
+      <data key="d445">0.21950187867662702</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">125</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.SubscribedFlowCollector">
+      <data key="d0">src/flow/operators/Share.kt/SubscribedFlowCollector</data>
+      <data key="d1">SubscribedFlowCollector</data>
+      <data key="d2">1</data>
+      <data key="d3">13</data>
+      <data key="d412">0.5570817509293049</data>
+      <data key="d421">0.41616668785460015</data>
+      <data key="d408">0.3871842531184698</data>
+      <data key="d445">0.41616668785460015</data>
+      <data key="d446">0.23979545662669527</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">126</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.ThrowingCollector">
+      <data key="d0">src/flow/operators/Emitters.kt/ThrowingCollector</data>
+      <data key="d1">ThrowingCollector</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d447">0.7080149654647734</data>
+      <data key="d407">0.4009534662906308</data>
+      <data key="d408">0.36123670370237837</data>
+      <data key="d55">0.25396173460748117</data>
+      <data key="d379">0.2444718685201598</data>
+      <data key="d18">0.24562034788944048</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">127</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.CancellableFlowImpl">
+      <data key="d0">src/flow/operators/Context.kt/CancellableFlowImpl</data>
+      <data key="d1">CancellableFlowImpl</data>
+      <data key="d2">1</data>
+      <data key="d3">7</data>
+      <data key="d402">0.4609246275752987</data>
+      <data key="d448">0.49968092493000305</data>
+      <data key="d449">0.37439538632592745</data>
+      <data key="d450">0.37439538632592745</data>
+      <data key="d415">0.2751089460408711</data>
+      <data key="d412">0.2751089460408711</data>
+      <data key="d408">0.2549424786609975</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">128</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.DistinctFlowImpl">
+      <data key="d0">src/flow/operators/Distinct.kt/DistinctFlowImpl</data>
+      <data key="d1">DistinctFlowImpl</data>
+      <data key="d2">1</data>
+      <data key="d3">16</data>
+      <data key="d451">0.6940201911750118</data>
+      <data key="d188">0.3419153776374769</data>
+      <data key="d452">0.3470100955875059</data>
+      <data key="d453">0.3470100955875059</data>
+      <data key="d55">0.21975078155538405</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">129</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.AbortFlowException">
+      <data key="d0">src/flow/internal/FlowExceptions.common.kt/AbortFlowException</data>
+      <data key="d1">AbortFlowException</data>
+      <data key="d2">0</data>
+      <data key="d3">2</data>
+      <data key="d312">0.7187604810652619</data>
+      <data key="d408">0.46880385917979045</data>
+      <data key="d454">0.41697592280720935</data>
+      <data key="d68">0.23440192958989522</data>
+      <data key="d4">0.20646100029128103</data>
+      <data key="d11">0</data>
+      <data key="d12">2</data>
+      <data key="d13">10</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.*">
+      <data key="d1">kotlinx.coroutines.flow.*</data>
+      <data key="d11">2</data>
+      <data key="d12">0</data>
+      <data key="d13">10</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChildCancelledException">
+      <data key="d0">src/flow/internal/FlowExceptions.common.kt/ChildCancelledException</data>
+      <data key="d1">ChildCancelledException</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d304">0.7306086457049676</data>
+      <data key="d455">0.239275532038424</data>
+      <data key="d456">0.2955514320116854</data>
+      <data key="d457">0.3256370702909928</data>
+      <data key="d458">0.2349108613169505</data>
+      <data key="d459">0.2678700501044876</data>
+      <data key="d460">0.22397600672342388</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">130</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot">
+      <data key="d0">src/flow/internal/AbstractSharedFlow.kt/AbstractSharedFlowSlot</data>
+      <data key="d1">AbstractSharedFlowSlot</data>
+      <data key="d2">0</data>
+      <data key="d3">3</data>
+      <data key="d402">0.3835326542453384</data>
+      <data key="d461">0.36365686232961786</data>
+      <data key="d462">0.3311174766149197</data>
+      <data key="d463">0.3520647290815236</data>
+      <data key="d464">0.3520647290815236</data>
+      <data key="d465">0.34202316651532766</data>
+      <data key="d466">0.2855002873107931</data>
+      <data key="d296">0.28533951658530615</data>
+      <data key="d52">0.2594075072622797</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">131</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.AbstractSharedFlow">
+      <data key="d0">src/flow/internal/AbstractSharedFlow.kt/AbstractSharedFlow</data>
+      <data key="d1">AbstractSharedFlow</data>
+      <data key="d2">2</data>
+      <data key="d3">61</data>
+      <data key="d467">0.529495248582745</data>
+      <data key="d468">0.4044943196750538</data>
+      <data key="d398">0.3308383393432606</data>
+      <data key="d469">0.2512604078207747</data>
+      <data key="d84">0.22999814229029744</data>
+      <data key="d304">0.22558825721704934</data>
+      <data key="d470">0.22981981112889496</data>
+      <data key="d11">0</data>
+      <data key="d12">5</data>
+      <data key="d13">10</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.SubscriptionCountStateFlow">
+      <data key="d0">src/flow/internal/AbstractSharedFlow.kt/SubscriptionCountStateFlow</data>
+      <data key="d1">SubscriptionCountStateFlow</data>
+      <data key="d2">1</data>
+      <data key="d3">9</data>
+      <data key="d471">0.43437889259142426</data>
+      <data key="d472">0.43437889259142426</data>
+      <data key="d79">0.41859695862060553</data>
+      <data key="d473">0.40525352357446903</data>
+      <data key="d306">0.3188198821451018</data>
+      <data key="d474">0.21718944629571213</data>
+      <data key="d475">0.21042786589168375</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">132</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.FlowCoroutine">
+      <data key="d0">src/flow/internal/FlowCoroutine.kt/FlowCoroutine</data>
+      <data key="d1">FlowCoroutine</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d43">0.4651270993939074</data>
+      <data key="d17">0.41521039802884563</data>
+      <data key="d476">0.372755714857956</data>
+      <data key="d459">0.3066299912553188</data>
+      <data key="d22">0.2754239828604377</data>
+      <data key="d362">0.2915860590391803</data>
+      <data key="d201">0.27042846670986453</data>
+      <data key="d177">0.2792942714172878</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">133</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChannelFlow">
+      <data key="d0">src/flow/internal/ChannelFlow.kt/ChannelFlow</data>
+      <data key="d1">ChannelFlow</data>
+      <data key="d2">6</data>
+      <data key="d3">57</data>
+      <data key="d358">0.553304816843677</data>
+      <data key="d477">0.34403574430458184</data>
+      <data key="d478">0.34403574430458184</data>
+      <data key="d366">0.27820789498912396</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">134</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChannelFlowOperator">
+      <data key="d0">src/flow/internal/ChannelFlow.kt/ChannelFlowOperator</data>
+      <data key="d1">ChannelFlowOperator</data>
+      <data key="d2">4</data>
+      <data key="d3">25</data>
+      <data key="d479">0.5320618023468491</data>
+      <data key="d412">0.34595268740803325</data>
+      <data key="d480">0.36638702985418464</data>
+      <data key="d481">0.28515040961901933</data>
+      <data key="d482">0.20945151767909037</data>
+      <data key="d483">0.20945151767909037</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">135</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChannelFlowOperatorImpl">
+      <data key="d0">src/flow/internal/ChannelFlow.kt/ChannelFlowOperatorImpl</data>
+      <data key="d1">ChannelFlowOperatorImpl</data>
+      <data key="d2">3</data>
+      <data key="d3">11</data>
+      <data key="d402">0.5074226845752677</data>
+      <data key="d366">0.4236520578940683</data>
+      <data key="d358">0.39319782068102144</data>
+      <data key="d484">0.3207510308965322</data>
+      <data key="d22">0.2709685708016348</data>
+      <data key="d378">0.21400089875238357</data>
+      <data key="d412">0.20190794994701702</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">136</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.UndispatchedContextCollector">
+      <data key="d0">src/flow/internal/ChannelFlow.kt/UndispatchedContextCollector</data>
+      <data key="d1">UndispatchedContextCollector</data>
+      <data key="d2">1</data>
+      <data key="d3">8</data>
+      <data key="d485">0.5506192470212838</data>
+      <data key="d486">0.36707949801418926</data>
+      <data key="d487">0.3331649901016357</data>
+      <data key="d488">0.32106037828727174</data>
+      <data key="d379">0.2126147131407002</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">70</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.StackFrameContinuation">
+      <data key="d0">src/flow/internal/ChannelFlow.kt/StackFrameContinuation</data>
+      <data key="d1">StackFrameContinuation</data>
+      <data key="d2">2</data>
+      <data key="d3">9</data>
+      <data key="d262">0.6388652342265785</data>
+      <data key="d144">0.3550923794654464</data>
+      <data key="d43">0.34735247521199064</data>
+      <data key="d489">0.27837040751666425</data>
+      <data key="d20">0.24248379125052377</data>
+      <data key="d490">0.21775368383512334</data>
+      <data key="d261">0.21295507807552616</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">14</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.SafeCollector">
+      <data key="d0">src/flow/internal/SafeCollector.common.kt/SafeCollector</data>
+      <data key="d1">SafeCollector</data>
+      <data key="d2">0</data>
+      <data key="d3">9</data>
+      <data key="d481">0.5188051508431809</data>
+      <data key="d408">0.43746744759305206</data>
+      <data key="d71">0.29196285902206465</data>
+      <data key="d412">0.3147146735912617</data>
+      <data key="d491">0.28580844325898996</data>
+      <data key="d492">0.28580844325898996</data>
+      <data key="d4">0.25599359550168577</data>
+      <data key="d421">0.23510689967716766</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">106</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChannelFlowTransformLatest">
+      <data key="d0">src/flow/internal/Merge.kt/ChannelFlowTransformLatest</data>
+      <data key="d1">ChannelFlowTransformLatest</data>
+      <data key="d2">2</data>
+      <data key="d3">24</data>
+      <data key="d493">0.44588107403890503</data>
+      <data key="d366">0.34339630907662355</data>
+      <data key="d358">0.31871125807819506</data>
+      <data key="d402">0.2741984037420761</data>
+      <data key="d494">0.2817875048717035</data>
+      <data key="d250">0.2144356743614546</data>
+      <data key="d22">0.2196368584908789</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">112</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChannelFlowMerge">
+      <data key="d0">src/flow/internal/Merge.kt/ChannelFlowMerge</data>
+      <data key="d1">ChannelFlowMerge</data>
+      <data key="d2">4</data>
+      <data key="d3">29</data>
+      <data key="d495">0.4136124733267743</data>
+      <data key="d358">0.3623083426628552</data>
+      <data key="d366">0.31229608484697596</data>
+      <data key="d390">0.23662687902302487</data>
+      <data key="d402">0.24936519612047878</data>
+      <data key="d22">0.24968137827118286</data>
+      <data key="d496">0.2562669784275261</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">30</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.ChannelLimitedFlowMerge">
+      <data key="d0">src/flow/internal/Merge.kt/ChannelLimitedFlowMerge</data>
+      <data key="d1">ChannelLimitedFlowMerge</data>
+      <data key="d2">3</data>
+      <data key="d3">17</data>
+      <data key="d358">0.4459909546455223</data>
+      <data key="d366">0.38442733056955714</data>
+      <data key="d390">0.2912807552115165</data>
+      <data key="d22">0.3073504613058171</data>
+      <data key="d497">0.24451801656502817</data>
+      <data key="d498">0.3154571421485885</data>
+      <data key="d418">0.21859069815651486</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">96</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.NopCollector">
+      <data key="d0">src/flow/internal/NopCollector.kt/NopCollector</data>
+      <data key="d1">NopCollector</data>
+      <data key="d2">1</data>
+      <data key="d3">3</data>
+      <data key="d499">0.7060039625452508</data>
+      <data key="d407">0.4405137250660496</data>
+      <data key="d408">0.39687828976934314</data>
+      <data key="d55">0.2790189863456262</data>
+      <data key="d379">0.26859279824160887</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">98</data>
+    </node>
+    <node id="kotlinx.coroutines.flow.internal.SendingCollector">
+      <data key="d0">src/flow/internal/SendingCollector.kt/SendingCollector</data>
+      <data key="d1">SendingCollector</data>
+      <data key="d2">1</data>
+      <data key="d3">4</data>
+      <data key="d500">0.4470653442952486</data>
+      <data key="d55">0.4280447066337056</data>
+      <data key="d501">0.45645526762943534</data>
+      <data key="d407">0.33789737874763415</data>
+      <data key="d327">0.31713736567684564</data>
+      <data key="d408">0.3044266867616844</data>
+      <data key="d379">0.21082612549672286</data>
+      <data key="d100">0.20602491434909076</data>
+      <data key="d11">0</data>
+      <data key="d12">0</data>
+      <data key="d13">69</data>
+    </node>
+    <edge source="kotlinx.coroutines.CoroutineDispatcher" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.CoroutineDispatcher" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.CoroutineName" target="kotlin.coroutines.AbstractCoroutineContextElement" />
+    <edge source="kotlinx.coroutines.CoroutineName" target="kotlin.coroutines.CoroutineContext" />
+    <edge source="kotlinx.coroutines.MainCoroutineDispatcher" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.EventLoop" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.EventLoop" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.EventLoop" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.EventLoop" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.EventLoopImplBase" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.EventLoopImplBase" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.EventLoopImplBase" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.EventLoopImplBase" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.DelayedTask" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.DelayedTask" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.DelayedTask" target="kotlin.concurrent.Volatile" />
+    <edge source="kotlinx.coroutines.DelayedTask" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.DelayedTask" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.CancelledContinuation" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.CancelledContinuation" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.CancelledContinuation" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.CancelledContinuation" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.JobSupport" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.SelectOnJoinCompletionHandler" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.Finishing" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.SelectOnAwaitCompletionHandler" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.ChildContinuation" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.CancellableContinuationImpl" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.CancellableContinuationImpl" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.CancellableContinuationImpl" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.CancellableContinuationImpl" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.CancellableContinuationImpl" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.CompletedContinuation" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.CompletedContinuation" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.CompletedContinuation" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.CompletedContinuation" target="kotlin.coroutines.intrinsics.*" />
+    <edge source="kotlinx.coroutines.CompletedContinuation" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.selects.OnTimeout" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.OnTimeout" target="kotlin.time.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlinx.coroutines.selects.TrySelectDetailedResult.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlin.internal.*" />
+    <edge source="kotlinx.coroutines.selects.SelectImplementation" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlinx.coroutines.selects.TrySelectDetailedResult.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlin.internal.*" />
+    <edge source="kotlinx.coroutines.selects.ClauseData" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlinx.coroutines.selects.TrySelectDetailedResult.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlin.internal.*" />
+    <edge source="kotlinx.coroutines.selects.of" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.internal.LockFreeTaskQueueCore" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.internal.LockFreeTaskQueueCore" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.internal.LockFreeTaskQueueCore" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.internal.InlineList" target="kotlinx.coroutines.assert" />
+    <edge source="kotlinx.coroutines.internal.InlineList" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.internal.OpDescriptor" target="kotlinx.atomicfu.atomic" />
+    <edge source="kotlinx.coroutines.internal.OpDescriptor" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.internal.OpDescriptor" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.internal.AtomicOp" target="kotlinx.atomicfu.atomic" />
+    <edge source="kotlinx.coroutines.internal.AtomicOp" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.internal.AtomicOp" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.internal.ThreadSafeHeap" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.internal.ThreadSafeHeap" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.internal.DispatchedContinuation" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.internal.DispatchedContinuation" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.internal.DispatchedContinuation" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.internal.DispatchedContinuation" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.sync.MutexImpl" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.sync.MutexImpl" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.sync.MutexImpl" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.sync.MutexImpl" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.sync.MutexImpl" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.sync.MutexImpl" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.sync.SemaphoreImpl" target="kotlin.math.*" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.coroutines.channels.BufferOverflow.*" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.coroutines.channels.ChannelResult.Companion.closed" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.coroutines.channels.ChannelResult.Companion.success" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.coroutines.internal.OnUndeliveredElement" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBufferedChannel" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.channels.ChannelResult.Companion.closed" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.channels.ChannelResult.Companion.failure" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.channels.ChannelResult.Companion.success" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlinx.coroutines.selects.TrySelectDetailedResult.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.math.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.random.*" />
+    <edge source="kotlinx.coroutines.channels.BufferedChannel" target="kotlin.reflect.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlinx.coroutines.selects.TrySelectDetailedResult.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.contracts.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.js.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.math.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.random.*" />
+    <edge source="kotlinx.coroutines.channels.ChannelSegment" target="kotlin.reflect.*" />
+    <edge source="kotlinx.coroutines.channels.ConflatedBroadcastChannel" target="kotlinx.coroutines.channels.Channel.Factory.CONFLATED" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlinx.coroutines.channels.BufferOverflow.*" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlinx.coroutines.channels.Channel.Factory.CHANNEL" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlinx.coroutines.channels.Channel.Factory.CONFLATED" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlinx.coroutines.selects.*" />
+    <edge source="kotlinx.coroutines.channels.BroadcastChannelImpl" target="kotlin.native.concurrent.*" />
+    <edge source="kotlinx.coroutines.channels.Factory" target="kotlinx.coroutines.channels.Channel.Factory.BUFFERED" />
+    <edge source="kotlinx.coroutines.channels.Factory" target="kotlinx.coroutines.channels.Channel.Factory.CHANNEL" />
+    <edge source="kotlinx.coroutines.channels.Factory" target="kotlinx.coroutines.channels.Channel.Factory.CONFLATED" />
+    <edge source="kotlinx.coroutines.channels.Factory" target="kotlinx.coroutines.channels.Channel.Factory.RENDEZVOUS" />
+    <edge source="kotlinx.coroutines.channels.Factory" target="kotlinx.coroutines.channels.Channel.Factory.UNLIMITED" />
+    <edge source="kotlinx.coroutines.flow.StateFlowSlot" target="kotlinx.atomicfu.*" />
+    <edge source="kotlinx.coroutines.flow.StateFlowSlot" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.StateFlowSlot" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.flow.StateFlowSlot" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.flow.StateFlowSlot" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.flow.StateFlowSlot" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.StartedWhileSubscribed" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.StartedWhileSubscribed" target="kotlinx.coroutines.internal.IgnoreJreRequirement" />
+    <edge source="kotlinx.coroutines.flow.StartedWhileSubscribed" target="kotlin.time.*" />
+    <edge source="kotlinx.coroutines.flow.ChannelFlowBuilder" target="kotlinx.coroutines.channels.Channel.Factory.BUFFERED" />
+    <edge source="kotlinx.coroutines.flow.CallbackFlowBuilder" target="kotlinx.coroutines.channels.Channel.Factory.BUFFERED" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowSlot" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowSlot" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowSlot" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowSlot" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowSlot" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowSlot" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowImpl" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowImpl" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowImpl" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowImpl" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowImpl" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.SharedFlowImpl" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.flow.resumes" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.resumes" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.flow.resumes" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.flow.resumes" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.flow.resumes" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.resumes" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.flow.Emitter" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.Emitter" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.flow.Emitter" target="kotlinx.coroutines.flow.internal.*" />
+    <edge source="kotlinx.coroutines.flow.Emitter" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.flow.Emitter" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.Emitter" target="kotlin.jvm.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbortFlowException" target="kotlinx.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbortFlowException" target="kotlinx.coroutines.flow.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbstractSharedFlow" target="kotlinx.coroutines.channels.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbstractSharedFlow" target="kotlinx.coroutines.flow.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbstractSharedFlow" target="kotlinx.coroutines.internal.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbstractSharedFlow" target="kotlin.coroutines.*" />
+    <edge source="kotlinx.coroutines.flow.internal.AbstractSharedFlow" target="kotlin.jvm.*" />
+  </graph>
+</graphml>

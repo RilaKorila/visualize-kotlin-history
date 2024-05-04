@@ -1,0 +1,2227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d321" for="node" attr.name="metric_tag_nosuchelementexception" attr.type="float" />
+  <key id="d320" for="node" attr.name="metric_tag_result" attr.type="float" />
+  <key id="d319" for="node" attr.name="metric_tag_returns" attr.type="float" />
+  <key id="d318" for="node" attr.name="metric_tag_matching" attr.type="float" />
+  <key id="d317" for="node" attr.name="metric_tag_suspend" attr.type="float" />
+  <key id="d316" for="node" attr.name="metric_tag_collect" attr.type="float" />
+  <key id="d315" for="node" attr.name="metric_tag_elements" attr.type="float" />
+  <key id="d314" for="node" attr.name="metric_tag_collects" attr.type="float" />
+  <key id="d313" for="node" attr.name="metric_tag_destination" attr.type="float" />
+  <key id="d312" for="node" attr.name="metric_tag_collection" attr.type="float" />
+  <key id="d311" for="node" attr.name="metric_tag_sendchannel" attr.type="float" />
+  <key id="d310" for="node" attr.name="metric_tag_sendingcollector" attr.type="float" />
+  <key id="d309" for="node" attr.name="metric_tag_sends" attr.type="float" />
+  <key id="d308" for="node" attr.name="metric_tag_does" attr.type="float" />
+  <key id="d307" for="node" attr.name="metric_tag_nothing" attr.type="float" />
+  <key id="d306" for="node" attr.name="metric_tag_nopcollector" attr.type="float" />
+  <key id="d305" for="node" attr.name="metric_tag_collector" attr.type="float" />
+  <key id="d304" for="node" attr.name="metric_tag_collectelement" attr.type="float" />
+  <key id="d303" for="node" attr.name="metric_tag_collectjob" attr.type="float" />
+  <key id="d302" for="node" attr.name="metric_tag_onbufferoverflow" attr.type="float" />
+  <key id="d301" for="node" attr.name="metric_tag_done" attr.type="float" />
+  <key id="d300" for="node" attr.name="metric_tag_indicate" attr.type="float" />
+  <key id="d299" for="node" attr.name="metric_tag_never" attr.type="float" />
+  <key id="d298" for="node" attr.name="metric_tag_uninitialized" attr.type="float" />
+  <key id="d297" for="node" attr.name="metric_tag_outside" attr.type="float" />
+  <key id="d296" for="node" attr.name="metric_tag_leak" attr.type="float" />
+  <key id="d295" for="node" attr.name="metric_tag_flowcoroutine" attr.type="float" />
+  <key id="d294" for="node" attr.name="metric_tag_flowscope" attr.type="float" />
+  <key id="d293" for="node" attr.name="metric_tag_latestvalues" attr.type="float" />
+  <key id="d292" for="node" attr.name="metric_tag_ncollectors" attr.type="float" />
+  <key id="d291" for="node" attr.name="metric_tag_subscriptioncount" attr.type="float" />
+  <key id="d290" for="node" attr.name="metric_tag_slots" attr.type="float" />
+  <key id="d289" for="node" attr.name="metric_tag_slot" attr.type="float" />
+  <key id="d288" for="node" attr.name="metric_tag_count" attr.type="float" />
+  <key id="d287" for="node" attr.name="metric_tag_areequivalent" attr.type="float" />
+  <key id="d286" for="node" attr.name="metric_tag_keyselector" attr.type="float" />
+  <key id="d285" for="node" attr.name="metric_tag_flows" attr.type="float" />
+  <key id="d284" for="node" attr.name="metric_tag_concurrency" attr.type="float" />
+  <key id="d283" for="node" attr.name="metric_tag_ioexception" attr.type="float" />
+  <key id="d282" for="node" attr.name="metric_tag_fromdownstream" attr.type="float" />
+  <key id="d281" for="node" attr.name="metric_tag_predicate" attr.type="float" />
+  <key id="d280" for="node" attr.name="metric_tag_retry" attr.type="float" />
+  <key id="d279" for="node" attr.name="metric_tag_retries" attr.type="float" />
+  <key id="d278" for="node" attr.name="metric_tag_sharedflow" attr.type="float" />
+  <key id="d277" for="node" attr.name="metric_tag_operator" attr.type="float" />
+  <key id="d276" for="node" attr.name="metric_tag_args" attr.type="float" />
+  <key id="d275" for="node" attr.name="metric_tag_flowcollector" attr.type="float" />
+  <key id="d274" for="node" attr.name="metric_tag_action" attr.type="float" />
+  <key id="d273" for="node" attr.name="metric_tag_timeoutmillis" attr.type="float" />
+  <key id="d272" for="node" attr.name="metric_tag_emit" attr.type="float" />
+  <key id="d271" for="node" attr.name="metric_tag_lastvalue" attr.type="float" />
+  <key id="d270" for="node" attr.name="metric_tag_upstream" attr.type="float" />
+  <key id="d269" for="node" attr.name="metric_tag_initial" attr.type="float" />
+  <key id="d268" for="node" attr.name="metric_tag_transform" attr.type="float" />
+  <key id="d267" for="node" attr.name="metric_tag_accumulator" attr.type="float" />
+  <key id="d266" for="node" attr.name="metric_tag_replay" attr.type="float" />
+  <key id="d265" for="node" attr.name="metric_tag_shared" attr.type="float" />
+  <key id="d264" for="node" attr.name="metric_tag_command" attr.type="float" />
+  <key id="d263" for="node" attr.name="metric_tag_cache" attr.type="float" />
+  <key id="d262" for="node" attr.name="metric_tag_sharingstarted" attr.type="float" />
+  <key id="d261" for="node" attr.name="metric_tag_stoptimeout" attr.type="float" />
+  <key id="d260" for="node" attr.name="metric_tag_replayexpiration" attr.type="float" />
+  <key id="d259" for="node" attr.name="metric_tag_sharing" attr.type="float" />
+  <key id="d258" for="node" attr.name="metric_tag_emitted" attr.type="float" />
+  <key id="d257" for="node" attr.name="metric_tag_println" attr.type="float" />
+  <key id="d256" for="node" attr.name="metric_tag_noimpl" attr.type="float" />
+  <key id="d255" for="node" attr.name="metric_tag_analogue" attr.type="float" />
+  <key id="d254" for="node" attr.name="metric_tag_replacewith" attr.type="float" />
+  <key id="d253" for="node" attr.name="metric_tag_consume" attr.type="float" />
+  <key id="d252" for="node" attr.name="metric_tag_pending" attr.type="float" />
+  <key id="d251" for="node" attr.name="metric_tag_flow" attr.type="float" />
+  <key id="d250" for="node" attr.name="metric_tag_drop" attr.type="float" />
+  <key id="d249" for="node" attr.name="metric_tag_overflow" attr.type="float" />
+  <key id="d248" for="node" attr.name="metric_tag_buffer" attr.type="float" />
+  <key id="d247" for="node" attr.name="metric_tag_deprecated" attr.type="float" />
+  <key id="d246" for="node" attr.name="metric_tag_favour" attr.type="float" />
+  <key id="d245" for="node" attr.name="metric_tag_binary" attr.type="float" />
+  <key id="d244" for="node" attr.name="metric_tag_compatibility" attr.type="float" />
+  <key id="d243" for="node" attr.name="metric_tag_receivechannel" attr.type="float" />
+  <key id="d242" for="node" attr.name="metric_tag_closed" attr.type="float" />
+  <key id="d241" for="node" attr.name="metric_tag_sent" attr.type="float" />
+  <key id="d240" for="node" attr.name="metric_tag_broadcast" attr.type="float" />
+  <key id="d239" for="node" attr.name="metric_tag_producerscope" attr.type="float" />
+  <key id="d238" for="node" attr.name="metric_tag_capacity" attr.type="float" />
+  <key id="d237" for="node" attr.name="metric_tag_oncompletion" attr.type="float" />
+  <key id="d236" for="node" attr.name="metric_tag_cell" attr.type="float" />
+  <key id="d235" for="node" attr.name="metric_tag_start" attr.type="float" />
+  <key id="d234" for="node" attr.name="metric_tag_broadcastchannel" attr.type="float" />
+  <key id="d233" for="node" attr.name="metric_tag_suppression" attr.type="float" />
+  <key id="d232" for="node" attr.name="metric_tag_defaultcancellationexception" attr.type="float" />
+  <key id="d231" for="node" attr.name="metric_tag_cancel" attr.type="float" />
+  <key id="d230" for="node" attr.name="metric_tag_cancelinternal" attr.type="float" />
+  <key id="d229" for="node" attr.name="metric_tag_channel" attr.type="float" />
+  <key id="d228" for="node" attr.name="metric_tag_issendop" attr.type="float" />
+  <key id="d227" for="node" attr.name="metric_tag_semaphore" attr.type="float" />
+  <key id="d226" for="node" attr.name="metric_tag_number" attr.type="float" />
+  <key id="d225" for="node" attr.name="metric_tag_permit" attr.type="float" />
+  <key id="d224" for="node" attr.name="metric_tag_permits" attr.type="float" />
+  <key id="d223" for="node" attr.name="metric_tag_locked" attr.type="float" />
+  <key id="d222" for="node" attr.name="metric_tag_mutex" attr.type="float" />
+  <key id="d221" for="node" attr.name="metric_tag_owner" attr.type="float" />
+  <key id="d220" for="node" attr.name="metric_tag_so" attr.type="float" />
+  <key id="d219" for="node" attr.name="metric_tag_fatalcompletion" attr.type="float" />
+  <key id="d218" for="node" attr.name="metric_tag_runsafely" attr.type="float" />
+  <key id="d217" for="node" attr.name="metric_tag_receiver" attr.type="float" />
+  <key id="d216" for="node" attr.name="metric_tag_actualcompletion" attr.type="float" />
+  <key id="d215" for="node" attr.name="metric_tag_onundeliveredelement" attr.type="float" />
+  <key id="d214" for="node" attr.name="metric_tag_ex" attr.type="float" />
+  <key id="d213" for="node" attr.name="metric_tag_undeliveredelementexception" attr.type="float" />
+  <key id="d212" for="node" attr.name="metric_tag_exceptionsuccessfullyprocessed" attr.type="float" />
+  <key id="d211" for="node" attr.name="metric_tag_propagateexceptionfinalresort" attr.type="float" />
+  <key id="d210" for="node" attr.name="metric_tag_platformexceptionhandlers" attr.type="float" />
+  <key id="d209" for="node" attr.name="metric_tag_governed" attr.type="float" />
+  <key id="d208" for="node" attr.name="metric_tag_jetbrains" attr.type="float" />
+  <key id="d207" for="node" attr.name="metric_tag_source" attr.type="float" />
+  <key id="d206" for="node" attr.name="metric_tag_threadcontextelements" attr.type="float" />
+  <key id="d205" for="node" attr.name="metric_tag_unstable" attr.type="float" />
+  <key id="d204" for="node" attr.name="metric_tag_define" attr.type="float" />
+  <key id="d203" for="node" attr.name="metric_tag_unique" attr.type="float" />
+  <key id="d202" for="node" attr.name="metric_tag_constants" attr.type="float" />
+  <key id="d201" for="node" attr.name="metric_tag_unbox" attr.type="float" />
+  <key id="d200" for="node" attr.name="metric_tag_symbol" attr.type="float" />
+  <key id="d199" for="node" attr.name="metric_tag_ignore" attr.type="float" />
+  <key id="d198" for="node" attr.name="metric_tag_dependency" attr.type="float" />
+  <key id="d197" for="node" attr.name="metric_tag_compileonly" attr.type="float" />
+  <key id="d196" for="node" attr.name="metric_tag_ignorejrerequirement" attr.type="float" />
+  <key id="d195" for="node" attr.name="metric_tag_jre" attr.type="float" />
+  <key id="d194" for="node" attr.name="metric_tag_requirements" attr.type="float" />
+  <key id="d193" for="node" attr.name="metric_tag_cc" attr.type="float" />
+  <key id="d192" for="node" attr.name="metric_tag_recoverresult" attr.type="float" />
+  <key id="d191" for="node" attr.name="metric_tag_final" attr.type="float" />
+  <key id="d190" for="node" attr.name="metric_tag_coroutinestackframe" attr.type="float" />
+  <key id="d189" for="node" attr.name="metric_tag_siftupfrom" attr.type="float" />
+  <key id="d188" for="node" attr.name="metric_tag_swap" attr.type="float" />
+  <key id="d187" for="node" attr.name="metric_tag_synchronized" attr.type="float" />
+  <key id="d186" for="node" attr.name="metric_tag_size" attr.type="float" />
+  <key id="d185" for="node" attr.name="metric_tag_undispatched" attr.type="float" />
+  <key id="d184" for="node" attr.name="metric_tag_delegate" attr.type="float" />
+  <key id="d183" for="node" attr.name="metric_tag_mode" attr.type="float" />
+  <key id="d182" for="node" attr.name="metric_tag_inline" attr.type="float" />
+  <key id="d181" for="node" attr.name="metric_tag_completion" attr.type="float" />
+  <key id="d180" for="node" attr.name="metric_tag_probecoroutinecreated" attr.type="float" />
+  <key id="d179" for="node" attr.name="metric_tag_same" attr.type="float" />
+  <key id="d178" for="node" attr.name="metric_tag_they" attr.type="float" />
+  <key id="d177" for="node" attr.name="metric_tag_share" attr.type="float" />
+  <key id="d176" for="node" attr.name="metric_tag_commonthreadlocal" attr.type="float" />
+  <key id="d175" for="node" attr.name="metric_tag_should" attr.type="float" />
+  <key id="d174" for="node" attr.name="metric_tag_synchronizedimpl" attr.type="float" />
+  <key id="d173" for="node" attr.name="metric_tag_lock" attr.type="float" />
+  <key id="d172" for="node" attr.name="metric_tag_synchronizedobject" attr.type="float" />
+  <key id="d171" for="node" attr.name="metric_tag_lockfreelinkedlistnode" attr.type="float" />
+  <key id="d170" for="node" attr.name="metric_tag_system" attr.type="float" />
+  <key id="d169" for="node" attr.name="metric_tag_systemprop" attr.type="float" />
+  <key id="d168" for="node" attr.name="metric_tag_property" attr.type="float" />
+  <key id="d167" for="node" attr.name="metric_tag_defaultvalue" attr.type="float" />
+  <key id="d166" for="node" attr.name="metric_tag_propertyname" attr.type="float" />
+  <key id="d165" for="node" attr.name="metric_tag_operation" attr.type="float" />
+  <key id="d164" for="node" attr.name="metric_tag_affected" attr.type="float" />
+  <key id="d163" for="node" attr.name="metric_tag_atomicop" attr.type="float" />
+  <key id="d162" for="node" attr.name="metric_tag_decision" attr.type="float" />
+  <key id="d161" for="node" attr.name="metric_tag_prev" attr.type="float" />
+  <key id="d160" for="node" attr.name="metric_tag_node" attr.type="float" />
+  <key id="d159" for="node" attr.name="metric_tag_next" attr.type="float" />
+  <key id="d158" for="node" attr.name="metric_tag_cur" attr.type="float" />
+  <key id="d157" for="node" attr.name="metric_tag_allfactories" attr.type="float" />
+  <key id="d156" for="node" attr.name="metric_tag_maindispatcherfactory" attr.type="float" />
+  <key id="d155" for="node" attr.name="metric_tag_list" attr.type="float" />
+  <key id="d154" for="node" attr.name="metric_tag_arraylist" attr.type="float" />
+  <key id="d153" for="node" attr.name="metric_tag_inlinelist" attr.type="float" />
+  <key id="d152" for="node" attr.name="metric_tag_holder" attr.type="float" />
+  <key id="d151" for="node" attr.name="metric_tag_worker" attr.type="float" />
+  <key id="d150" for="node" attr.name="metric_tag_tries" attr.type="float" />
+  <key id="d149" for="node" attr.name="metric_tag_recoverstacktrace" attr.type="float" />
+  <key id="d148" for="node" attr.name="metric_tag_array" attr.type="float" />
+  <key id="d147" for="node" attr.name="metric_tag_placeholder" attr.type="float" />
+  <key id="d146" for="node" attr.name="metric_tag_element" attr.type="float" />
+  <key id="d145" for="node" attr.name="metric_tag_tail" attr.type="float" />
+  <key id="d144" for="node" attr.name="metric_tag_head" attr.type="float" />
+  <key id="d143" for="node" attr.name="metric_tag_mask" attr.type="float" />
+  <key id="d142" for="node" attr.name="metric_tag_prefix" attr.type="float" />
+  <key id="d141" for="node" attr.name="metric_tag_localatomicint" attr.type="float" />
+  <key id="d140" for="node" attr.name="metric_tag_decrementandget" attr.type="float" />
+  <key id="d139" for="node" attr.name="metric_tag_variables" attr.type="float" />
+  <key id="d138" for="node" attr.name="metric_tag_afu" attr.type="float" />
+  <key id="d137" for="node" attr.name="metric_tag_atomics" attr.type="float" />
+  <key id="d136" for="node" attr.name="metric_tag_selection" attr.type="float" />
+  <key id="d135" for="node" attr.name="metric_tag_statement" attr.type="float" />
+  <key id="d134" for="node" attr.name="metric_tag_dsl" attr.type="float" />
+  <key id="d133" for="node" attr.name="metric_tag_while" attr.type="float" />
+  <key id="d132" for="node" attr.name="metric_tag_select" attr.type="float" />
+  <key id="d131" for="node" attr.name="metric_tag_whileselect" attr.type="float" />
+  <key id="d130" for="node" attr.name="metric_tag_shuffleandregisterclauses" attr.type="float" />
+  <key id="d129" for="node" attr.name="metric_tag_clausedata" attr.type="float" />
+  <key id="d128" for="node" attr.name="metric_tag_clausestoregister" attr.type="float" />
+  <key id="d127" for="node" attr.name="metric_tag_we" attr.type="float" />
+  <key id="d126" for="node" attr.name="metric_tag_ucont" attr.type="float" />
+  <key id="d125" for="node" attr.name="metric_tag_selectbuilderimpl" attr.type="float" />
+  <key id="d124" for="node" attr.name="metric_tag_doselect" attr.type="float" />
+  <key id="d123" for="node" attr.name="metric_tag_builder" attr.type="float" />
+  <key id="d122" for="node" attr.name="metric_tag_phase" attr.type="float" />
+  <key id="d121" for="node" attr.name="metric_tag_clauses" attr.type="float" />
+  <key id="d120" for="node" attr.name="metric_tag_registration" attr.type="float" />
+  <key id="d119" for="node" attr.name="metric_tag_clause" attr.type="float" />
+  <key id="d118" for="node" attr.name="metric_tag_ontimeout" attr.type="float" />
+  <key id="d117" for="node" attr.name="metric_tag_cancelhandler" attr.type="float" />
+  <key id="d116" for="node" attr.name="metric_tag_facilities" attr.type="float" />
+  <key id="d115" for="node" attr.name="metric_tag_coroutinecontext" attr.type="float" />
+  <key id="d114" for="node" attr.name="metric_tag_countorelement" attr.type="float" />
+  <key id="d113" for="node" attr.name="metric_tag_invoked" attr.type="float" />
+  <key id="d112" for="node" attr.name="metric_tag_child" attr.type="float" />
+  <key id="d111" for="node" attr.name="metric_tag_supervisor" attr.type="float" />
+  <key id="d110" for="node" attr.name="metric_tag_supervisorjob" attr.type="float" />
+  <key id="d109" for="node" attr.name="metric_tag_parent" attr.type="float" />
+  <key id="d108" for="node" attr.name="metric_tag_its" attr.type="float" />
+  <key id="d107" for="node" attr.name="metric_tag_default" attr.type="float" />
+  <key id="d106" for="node" attr.name="metric_tag_lazy" attr.type="float" />
+  <key id="d105" for="node" attr.name="metric_tag_installs" attr.type="float" />
+  <key id="d104" for="node" attr.name="metric_tag_easier" attr.type="float" />
+  <key id="d103" for="node" attr.name="metric_tag_primitives" attr.type="float" />
+  <key id="d102" for="node" attr.name="metric_tag_interface" attr.type="float" />
+  <key id="d101" for="node" attr.name="metric_tag_index" attr.type="float" />
+  <key id="d100" for="node" attr.name="metric_tag_waiter" attr.type="float" />
+  <key id="d99" for="node" attr.name="metric_tag_segment" attr.type="float" />
+  <key id="d98" for="node" attr.name="metric_tag_isdispatchneeded" attr.type="float" />
+  <key id="d97" for="node" attr.name="metric_tag_yield" attr.type="float" />
+  <key id="d96" for="node" attr.name="metric_tag_timeoutcancellationexception" attr.type="float" />
+  <key id="d95" for="node" attr.name="metric_tag_inside" attr.type="float" />
+  <key id="d94" for="node" attr.name="metric_tag_timeout" attr.type="float" />
+  <key id="d93" for="node" attr.name="metric_tag_was" attr.type="float" />
+  <key id="d92" for="node" attr.name="metric_tag_transitions" attr.type="float" />
+  <key id="d91" for="node" attr.name="metric_tag_children" attr.type="float" />
+  <key id="d90" for="node" attr.name="metric_tag_state" attr.type="float" />
+  <key id="d89" for="node" attr.name="metric_tag_not" attr.type="float" />
+  <key id="d88" for="node" attr.name="metric_tag_level" attr.type="float" />
+  <key id="d87" for="node" attr.name="metric_tag_general" attr.type="float" />
+  <key id="d86" for="node" attr.name="metric_tag_always" attr.type="float" />
+  <key id="d85" for="node" attr.name="metric_tag_oncancellation" attr.type="float" />
+  <key id="d84" for="node" attr.name="metric_tag_exceptional" attr.type="float" />
+  <key id="d83" for="node" attr.name="metric_tag_handled" attr.type="float" />
+  <key id="d82" for="node" attr.name="metric_tag_completedexceptionally" attr.type="float" />
+  <key id="d81" for="node" attr.name="metric_tag_completed" attr.type="float" />
+  <key id="d80" for="node" attr.name="metric_tag_complete" attr.type="float" />
+  <key id="d79" for="node" attr.name="metric_tag_completabledeferred" attr.type="float" />
+  <key id="d78" for="node" attr.name="metric_tag_event" attr.type="float" />
+  <key id="d77" for="node" attr.name="metric_tag_now" attr.type="float" />
+  <key id="d76" for="node" attr.name="metric_tag_delayedtask" attr.type="float" />
+  <key id="d75" for="node" attr.name="metric_tag_queue" attr.type="float" />
+  <key id="d74" for="node" attr.name="metric_tag_coroutinescope" attr.type="float" />
+  <key id="d73" for="node" attr.name="metric_tag_scope" attr.type="float" />
+  <key id="d72" for="node" attr.name="metric_tag_declaration" attr.type="float" />
+  <key id="d71" for="node" attr.name="metric_tag_annotation" attr.type="float" />
+  <key id="d70" for="node" attr.name="metric_tag_marks" attr.type="float" />
+  <key id="d69" for="node" attr.name="metric_tag_preview" attr.type="float" />
+  <key id="d68" for="node" attr.name="metric_tag_api" attr.type="float" />
+  <key id="d67" for="node" attr.name="metric_tag_declarations" attr.type="float" />
+  <key id="d66" for="node" attr.name="metric_tag_yieldcontext" attr.type="float" />
+  <key id="d65" for="node" attr.name="metric_tag_unconfined" attr.type="float" />
+  <key id="d64" for="node" attr.name="metric_tag_throwable" attr.type="float" />
+  <key id="d63" for="node" attr.name="metric_tag_cancellationexception" attr.type="float" />
+  <key id="d62" for="node" attr.name="metric_tag_job" attr.type="float" />
+  <key id="d61" for="node" attr.name="metric_tag_message" attr.type="float" />
+  <key id="d60" for="node" attr.name="metric_tag_cancellation" attr.type="float" />
+  <key id="d59" for="node" attr.name="metric_tag_continuation" attr.type="float" />
+  <key id="d58" for="node" attr.name="metric_tag_resource" attr.type="float" />
+  <key id="d57" for="node" attr.name="metric_tag_callback" attr.type="float" />
+  <key id="d56" for="node" attr.name="metric_tag_immediate" attr.type="float" />
+  <key id="d55" for="node" attr.name="metric_tag_key" attr.type="float" />
+  <key id="d54" for="node" attr.name="metric_tag_debugging" attr.type="float" />
+  <key id="d53" for="node" attr.name="metric_tag_name" attr.type="float" />
+  <key id="d52" for="node" attr.name="metric_tag_coroutinename" attr.type="float" />
+  <key id="d51" for="node" attr.name="metric_tag_schedulertask" attr.type="float" />
+  <key id="d50" for="node" attr.name="metric_tag_schedulertaskcontext" attr.type="float" />
+  <key id="d49" for="node" attr.name="metric_tag_disposer" attr.type="float" />
+  <key id="d48" for="node" attr.name="metric_tag_deferreds" attr.type="float" />
+  <key id="d47" for="node" attr.name="metric_tag_dispatchers" attr.type="float" />
+  <key id="d46" for="node" attr.name="metric_tag_stable" attr.type="float" />
+  <key id="d45" for="node" attr.name="metric_tag_new" attr.type="float" />
+  <key id="d44" for="node" attr.name="metric_tag_tasks" attr.type="float" />
+  <key id="d43" for="node" attr.name="metric_tag_close" attr.type="float" />
+  <key id="d42" for="node" attr.name="metric_tag_block" attr.type="float" />
+  <key id="d41" for="node" attr.name="metric_tag_newcontext" attr.type="float" />
+  <key id="d40" for="node" attr.name="metric_tag_function" attr.type="float" />
+  <key id="d39" for="node" attr.name="metric_tag_value" attr.type="float" />
+  <key id="d38" for="node" attr.name="metric_tag_deferred" attr.type="float" />
+  <key id="d37" for="node" attr.name="metric_tag_exceptions" attr.type="float" />
+  <key id="d36" for="node" attr.name="metric_tag_context" attr.type="float" />
+  <key id="d35" for="node" attr.name="metric_tag_coroutineexceptionhandler" attr.type="float" />
+  <key id="d34" for="node" attr.name="metric_tag_exception" attr.type="float" />
+  <key id="d33" for="node" attr.name="metric_tag_coroutinedispatcher" attr.type="float" />
+  <key id="d32" for="node" attr.name="metric_tag_coroutine" attr.type="float" />
+  <key id="d31" for="node" attr.name="metric_tag_parallelism" attr.type="float" />
+  <key id="d30" for="node" attr.name="metric_tag_method" attr.type="float" />
+  <key id="d29" for="node" attr.name="metric_tag_public" attr.type="float" />
+  <key id="d28" for="node" attr.name="metric_tag_task" attr.type="float" />
+  <key id="d27" for="node" attr.name="metric_tag_runnable" attr.type="float" />
+  <key id="d26" for="node" attr.name="metric_tag_type" attr.type="float" />
+  <key id="d25" for="node" attr.name="metric_tag_cause" attr.type="float" />
+  <key id="d24" for="node" attr.name="metric_tag_internal" attr.type="float" />
+  <key id="d23" for="node" attr.name="metric_tag_completionhandler" attr.type="float" />
+  <key id="d22" for="node" attr.name="metric_tag_handler" attr.type="float" />
+  <key id="d21" for="node" attr.name="metric_tag_expect" attr.type="float" />
+  <key id="d20" for="node" attr.name="metric_tag_be" attr.type="float" />
+  <key id="d19" for="node" attr.name="metric_tag_copyablethrowable" attr.type="float" />
+  <key id="d18" for="node" attr.name="metric_tag_recovery" attr.type="float" />
+  <key id="d17" for="node" attr.name="metric_tag_copy" attr.type="float" />
+  <key id="d16" for="node" attr.name="metric_tag_stacktrace" attr.type="float" />
+  <key id="d15" for="node" attr.name="metric_tag_badresponsecodeexception" attr.type="float" />
+  <key id="d14" for="node" attr.name="metric_tag_awaitcancellation" attr.type="float" />
+  <key id="d13" for="node" attr.name="metric_tag_timemillis" attr.type="float" />
+  <key id="d12" for="node" attr.name="metric_tag_delay" attr.type="float" />
+  <key id="d11" for="node" attr.name="metric_file_result_dependency_graph_louvain-modularity-in-file" attr.type="long" />
+  <key id="d10" for="node" attr.name="metric_fan-out-dependency-graph" attr.type="long" />
+  <key id="d9" for="node" attr.name="metric_fan-in-dependency-graph" attr.type="long" />
+  <key id="d8" for="node" attr.name="metric_tag_thread" attr.type="float" />
+  <key id="d7" for="node" attr.name="metric_tag_main" attr.type="float" />
+  <key id="d6" for="node" attr.name="metric_tag_dispatcher" attr.type="float" />
+  <key id="d5" for="node" attr.name="metric_sloc-in-file" attr.type="long" />
+  <key id="d4" for="node" attr.name="metric_number-of-methods-in-file" attr.type="long" />
+  <key id="d3" for="node" attr.name="result_name" attr.type="string" />
+  <key id="d2" for="node" attr.name="display_name" attr.type="string" />
+  <key id="d1" for="node" attr.name="file" attr.type="boolean" />
+  <key id="d0" for="node" attr.name="directory" attr.type="boolean" />
+  <graph edgedefault="directed">
+    <node id="src">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src</data>
+    </node>
+    <node id="src/selects">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/selects</data>
+    </node>
+    <node id="src/internal">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/internal</data>
+    </node>
+    <node id="src/intrinsics">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/intrinsics</data>
+    </node>
+    <node id="src/sync">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/sync</data>
+    </node>
+    <node id="src/channels">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/channels</data>
+    </node>
+    <node id="src/flow">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/flow</data>
+    </node>
+    <node id="src/Dispatchers.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Dispatchers.common.kt</data>
+      <data key="d3">src/Dispatchers.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">7</data>
+      <data key="d6">0.438255685339242</data>
+      <data key="d7">0.3029028412124807</data>
+      <data key="d8">0.2509414405109031</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/Delay.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Delay.kt</data>
+      <data key="d3">src/Delay.kt</data>
+      <data key="d4">8</data>
+      <data key="d5">38</data>
+      <data key="d12">0.48000613483852667</data>
+      <data key="d13">0.3527467495067361</data>
+      <data key="d14">0.23013233721319482</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/Debug.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Debug.common.kt</data>
+      <data key="d3">src/Debug.common.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">9</data>
+      <data key="d15">0.36383433163231066</data>
+      <data key="d16">0.28702917881301626</data>
+      <data key="d17">0.27884255510636446</data>
+      <data key="d18">0.24100383252700316</data>
+      <data key="d19">0.24100383252700316</data>
+      <data key="d20">0.21381752108814145</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">13</data>
+    </node>
+    <node id="src/CompletionHandler.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CompletionHandler.common.kt</data>
+      <data key="d3">src/CompletionHandler.common.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">13</data>
+      <data key="d21">0.320676419016658</data>
+      <data key="d22">0.286639668639429</data>
+      <data key="d23">0.2493301068122288</data>
+      <data key="d24">0.22926226834614077</data>
+      <data key="d25">0.21427778700958194</data>
+      <data key="d26">0.20118947135866683</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/Runnable.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Runnable.common.kt</data>
+      <data key="d3">src/Runnable.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">6</data>
+      <data key="d27">0.7559702360378455</data>
+      <data key="d28">0.3496156946075163</data>
+      <data key="d21">0.2592780377524298</data>
+      <data key="d29">0.24167454866186866</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">14</data>
+    </node>
+    <node id="src/CoroutineDispatcher.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineDispatcher.kt</data>
+      <data key="d3">src/CoroutineDispatcher.kt</data>
+      <data key="d4">6</data>
+      <data key="d5">34</data>
+      <data key="d6">0.31075022267167235</data>
+      <data key="d30">0.2530456087404681</data>
+      <data key="d31">0.2346300470432466</data>
+      <data key="d32">0.22587394665125943</data>
+      <data key="d20">0.21622588617133406</data>
+      <data key="d33">0.20107367349343508</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/CoroutineExceptionHandler.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineExceptionHandler.kt</data>
+      <data key="d3">src/CoroutineExceptionHandler.kt</data>
+      <data key="d4">3</data>
+      <data key="d5">32</data>
+      <data key="d34">0.46553876050585813</data>
+      <data key="d35">0.40784291163560443</data>
+      <data key="d22">0.2390397704112569</data>
+      <data key="d36">0.2370688818762597</data>
+      <data key="d32">0.2265131096619241</data>
+      <data key="d37">0.20264684252604456</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/Deferred.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Deferred.kt</data>
+      <data key="d3">src/Deferred.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">10</data>
+      <data key="d38">0.6183736277160411</data>
+      <data key="d39">0.23024733907012834</data>
+      <data key="d40">0.20602981634815473</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/Builders.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Builders.common.kt</data>
+      <data key="d3">src/Builders.common.kt</data>
+      <data key="d4">10</data>
+      <data key="d5">148</data>
+      <data key="d32">0.3870649127616298</data>
+      <data key="d36">0.36079448906377315</data>
+      <data key="d41">0.2611363993649689</data>
+      <data key="d42">0.23760599605771293</data>
+      <data key="d9">0</data>
+      <data key="d10">8</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/CloseableCoroutineDispatcher.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CloseableCoroutineDispatcher.kt</data>
+      <data key="d3">src/CloseableCoroutineDispatcher.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">5</data>
+      <data key="d43">0.3848461135989078</data>
+      <data key="d44">0.35613033293734986</data>
+      <data key="d45">0.22166709246644947</data>
+      <data key="d46">0.21008648226235832</data>
+      <data key="d47">0.20226915033049458</data>
+      <data key="d20">0.20212819387607023</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">16</data>
+    </node>
+    <node id="src/Await.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Await.kt</data>
+      <data key="d3">src/Await.kt</data>
+      <data key="d4">6</data>
+      <data key="d5">53</data>
+      <data key="d40">0.2903660852354995</data>
+      <data key="d48">0.2871931207389704</data>
+      <data key="d38">0.2689810987988931</data>
+      <data key="d49">0.23821880290047265</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/SchedulerTask.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SchedulerTask.common.kt</data>
+      <data key="d3">src/SchedulerTask.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">7</data>
+      <data key="d21">0.5635462343345277</data>
+      <data key="d50">0.5442794928946912</data>
+      <data key="d24">0.4316764290140848</data>
+      <data key="d51">0.2403537953935908</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">17</data>
+    </node>
+    <node id="src/CoroutineName.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineName.kt</data>
+      <data key="d3">src/CoroutineName.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">9</data>
+      <data key="d52">0.7251867188295947</data>
+      <data key="d53">0.3582816169629746</data>
+      <data key="d54">0.2471278987759109</data>
+      <data key="d32">0.24185148189608532</data>
+      <data key="d55">0.22502863342292415</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">11</data>
+    </node>
+    <node id="src/MainCoroutineDispatcher.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">MainCoroutineDispatcher.kt</data>
+      <data key="d3">src/MainCoroutineDispatcher.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">31</data>
+      <data key="d56">0.42101028678195135</data>
+      <data key="d7">0.38893572652612</data>
+      <data key="d6">0.3030098437595035</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/CancellableContinuation.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CancellableContinuation.kt</data>
+      <data key="d3">src/CancellableContinuation.kt</data>
+      <data key="d4">6</data>
+      <data key="d5">62</data>
+      <data key="d57">0.3053450662402591</data>
+      <data key="d58">0.25445422186688255</data>
+      <data key="d59">0.25303974290058195</data>
+      <data key="d60">0.24084198255278833</data>
+      <data key="d32">0.2074382038870607</data>
+      <data key="d20">0.20218811639051953</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/Exceptions.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Exceptions.common.kt</data>
+      <data key="d3">src/Exceptions.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">15</data>
+      <data key="d61">0.5023035167440688</data>
+      <data key="d21">0.37188707278163036</data>
+      <data key="d25">0.29819644070172663</data>
+      <data key="d62">0.28626722262461246</data>
+      <data key="d24">0.2734708864018363</data>
+      <data key="d63">0.2731731268055563</data>
+      <data key="d64">0.23217767516540852</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">18</data>
+    </node>
+    <node id="src/Yield.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Yield.kt</data>
+      <data key="d3">src/Yield.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">18</data>
+      <data key="d6">0.5379267578903612</data>
+      <data key="d65">0.4127352951665538</data>
+      <data key="d66">0.21848901226793652</data>
+      <data key="d40">0.2163464166147588</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/Annotations.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Annotations.kt</data>
+      <data key="d3">src/Annotations.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">50</data>
+      <data key="d67">0.40738575277711175</data>
+      <data key="d68">0.2588607512458743</data>
+      <data key="d20">0.23941174378633848</data>
+      <data key="d69">0.22487690871029906</data>
+      <data key="d70">0.22487690871029906</data>
+      <data key="d71">0.22487690871029906</data>
+      <data key="d72">0.20369287638855588</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/CoroutineScope.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineScope.kt</data>
+      <data key="d3">src/CoroutineScope.kt</data>
+      <data key="d4">12</data>
+      <data key="d5">47</data>
+      <data key="d73">0.4676081109501013</data>
+      <data key="d74">0.2927737036595056</data>
+      <data key="d62">0.2380227640108954</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/EventLoop.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">EventLoop.common.kt</data>
+      <data key="d3">src/EventLoop.common.kt</data>
+      <data key="d4">35</data>
+      <data key="d5">336</data>
+      <data key="d75">0.5338321517943934</data>
+      <data key="d28">0.2874997409037065</data>
+      <data key="d76">0.2668866557705389</data>
+      <data key="d77">0.2196657382577863</data>
+      <data key="d78">0.20967016639283162</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/CompletableDeferred.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CompletableDeferred.kt</data>
+      <data key="d3">src/CompletableDeferred.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">27</data>
+      <data key="d38">0.5255695187045051</data>
+      <data key="d79">0.3978979472330788</data>
+      <data key="d80">0.23266369861423997</data>
+      <data key="d81">0.2213125060334061</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/CompletionState.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CompletionState.kt</data>
+      <data key="d3">src/CompletionState.kt</data>
+      <data key="d4">3</data>
+      <data key="d5">42</data>
+      <data key="d82">0.3484398621516619</data>
+      <data key="d25">0.3072550391738023</data>
+      <data key="d83">0.29406266748320314</data>
+      <data key="d84">0.24125798032442194</data>
+      <data key="d59">0.24027841160246435</data>
+      <data key="d85">0.23834460493214502</data>
+      <data key="d24">0.2191609568272493</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/NonCancellable.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">NonCancellable.kt</data>
+      <data key="d3">src/NonCancellable.kt</data>
+      <data key="d4">9</data>
+      <data key="d5">47</data>
+      <data key="d61">0.5167941304838973</data>
+      <data key="d86">0.297898884199017</data>
+      <data key="d87">0.29005125528916326</data>
+      <data key="d88">0.28422455563501425</data>
+      <data key="d68">0.2629863747294556</data>
+      <data key="d89">0.24698794375325994</data>
+      <data key="d20">0.23578165981424798</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/JobSupport.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">JobSupport.kt</data>
+      <data key="d3">src/JobSupport.kt</data>
+      <data key="d4">88</data>
+      <data key="d5">850</data>
+      <data key="d90">0.6199600547277908</data>
+      <data key="d9">0</data>
+      <data key="d10">7</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/CompletableJob.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CompletableJob.kt</data>
+      <data key="d3">src/CompletableJob.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">5</data>
+      <data key="d62">0.43113890430826957</data>
+      <data key="d81">0.3044316542185274</data>
+      <data key="d91">0.2703034216219502</data>
+      <data key="d92">0.2551238745888496</data>
+      <data key="d34">0.21600348471209754</data>
+      <data key="d93">0.2064161650585739</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">19</data>
+    </node>
+    <node id="src/Timeout.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Timeout.kt</data>
+      <data key="d3">src/Timeout.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">80</data>
+      <data key="d94">0.613488828848935</data>
+      <data key="d95">0.2865625578351089</data>
+      <data key="d96">0.28314869023796996</data>
+      <data key="d42">0.2651987888144828</data>
+      <data key="d9">0</data>
+      <data key="d10">9</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/Unconfined.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Unconfined.kt</data>
+      <data key="d3">src/Unconfined.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">27</data>
+      <data key="d66">0.5270283891733963</data>
+      <data key="d97">0.42667699953432164</data>
+      <data key="d65">0.25600619972059296</data>
+      <data key="d6">0.2123280523856231</data>
+      <data key="d98">0.21081135566935852</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/Waiter.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Waiter.kt</data>
+      <data key="d3">src/Waiter.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">6</data>
+      <data key="d99">0.45396655262138885</data>
+      <data key="d100">0.2982659771228443</data>
+      <data key="d101">0.25114167209989474</data>
+      <data key="d102">0.24003105495528368</data>
+      <data key="d103">0.22387098431248373</data>
+      <data key="d104">0.22387098431248373</data>
+      <data key="d105">0.20318752389061234</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/CoroutineStart.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineStart.kt</data>
+      <data key="d3">src/CoroutineStart.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">21</data>
+      <data key="d32">0.5181145264268712</data>
+      <data key="d106">0.23056741194733552</data>
+      <data key="d107">0.21373760157404925</data>
+      <data key="d108">0.20643679271218043</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/Job.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Job.kt</data>
+      <data key="d3">src/Job.kt</data>
+      <data key="d4">12</data>
+      <data key="d5">123</data>
+      <data key="d62">0.6097099044180982</data>
+      <data key="d108">0.25675456745773667</data>
+      <data key="d109">0.23239199392768484</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/Supervisor.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Supervisor.kt</data>
+      <data key="d3">src/Supervisor.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">33</data>
+      <data key="d109">0.3924785952361611</data>
+      <data key="d62">0.34433226169298153</data>
+      <data key="d110">0.2726603266184667</data>
+      <data key="d111">0.26833874828644966</data>
+      <data key="d91">0.2619341800616491</data>
+      <data key="d108">0.23550251667259298</data>
+      <data key="d112">0.21450654501754238</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/AbstractCoroutine.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">AbstractCoroutine.kt</data>
+      <data key="d3">src/AbstractCoroutine.kt</data>
+      <data key="d4">8</data>
+      <data key="d5">45</data>
+      <data key="d32">0.35925854997439777</data>
+      <data key="d90">0.34812536514308223</data>
+      <data key="d113">0.2161342912179461</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/CoroutineContext.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineContext.common.kt</data>
+      <data key="d3">src/CoroutineContext.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">12</data>
+      <data key="d21">0.5060277771437501</data>
+      <data key="d114">0.341359211931584</data>
+      <data key="d115">0.24774810503211794</data>
+      <data key="d116">0.2275728079543893</data>
+      <data key="d24">0.22149559395808963</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/CancellableContinuationImpl.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CancellableContinuationImpl.kt</data>
+      <data key="d3">src/CancellableContinuationImpl.kt</data>
+      <data key="d4">41</data>
+      <data key="d5">402</data>
+      <data key="d90">0.4454759300255256</data>
+      <data key="d22">0.31978641689973936</data>
+      <data key="d117">0.21195554104472572</data>
+      <data key="d25">0.20395708270115182</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/selects/OnTimeout.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">OnTimeout.kt</data>
+      <data key="d3">src/selects/OnTimeout.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">34</data>
+      <data key="d94">0.5123925496123184</data>
+      <data key="d13">0.4483434809107785</data>
+      <data key="d118">0.32964752431939365</data>
+      <data key="d42">0.26176908247660674</data>
+      <data key="d119">0.22467344728323826</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/selects/Select.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Select.kt</data>
+      <data key="d3">src/selects/Select.kt</data>
+      <data key="d4">22</data>
+      <data key="d5">305</data>
+      <data key="d119">0.5108719031385714</data>
+      <data key="d120">0.2914811062904798</data>
+      <data key="d121">0.23694035819117043</data>
+      <data key="d122">0.2082878046734436</data>
+      <data key="d9">0</data>
+      <data key="d10">9</data>
+      <data key="d11">10</data>
+    </node>
+    <node id="src/selects/SelectOld.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SelectOld.kt</data>
+      <data key="d3">src/selects/SelectOld.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">93</data>
+      <data key="d123">0.30680061011167487</data>
+      <data key="d124">0.2841396820654301</data>
+      <data key="d125">0.2302768664261127</data>
+      <data key="d126">0.2155057722839564</data>
+      <data key="d127">0.20090302924869974</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/selects/SelectUnbiased.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SelectUnbiased.kt</data>
+      <data key="d3">src/selects/SelectUnbiased.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">38</data>
+      <data key="d128">0.4030156354116434</data>
+      <data key="d129">0.2819930899130647</data>
+      <data key="d124">0.26521751557127904</data>
+      <data key="d130">0.24180938124698603</data>
+      <data key="d121">0.22922770049064678</data>
+      <data key="d42">0.20323991564772106</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/selects/WhileSelect.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">WhileSelect.kt</data>
+      <data key="d3">src/selects/WhileSelect.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">5</data>
+      <data key="d131">0.43737993246859613</data>
+      <data key="d132">0.37895527781112504</data>
+      <data key="d133">0.30259187276896393</data>
+      <data key="d123">0.29136324506792033</data>
+      <data key="d134">0.23472740686923846</data>
+      <data key="d135">0.21868996623429807</data>
+      <data key="d136">0.20731122101942917</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/internal/LocalAtomics.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">LocalAtomics.common.kt</data>
+      <data key="d3">src/internal/LocalAtomics.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">9</data>
+      <data key="d39">0.3635894773380387</data>
+      <data key="d137">0.2719946806722075</data>
+      <data key="d138">0.2719946806722075</data>
+      <data key="d139">0.25341100268385003</data>
+      <data key="d140">0.25341100268385003</data>
+      <data key="d141">0.24022567331627084</data>
+      <data key="d142">0.22999833730171154</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">20</data>
+    </node>
+    <node id="src/internal/LockFreeTaskQueue.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">LockFreeTaskQueue.kt</data>
+      <data key="d3">src/internal/LockFreeTaskQueue.kt</data>
+      <data key="d4">18</data>
+      <data key="d5">200</data>
+      <data key="d143">0.38924585081453655</data>
+      <data key="d144">0.3686743986267346</data>
+      <data key="d145">0.3189846786120275</data>
+      <data key="d146">0.24984504372148333</data>
+      <data key="d90">0.21849130226683156</data>
+      <data key="d147">0.2108530537509992</data>
+      <data key="d148">0.20815868676445218</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/internal/StackTraceRecovery.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">StackTraceRecovery.common.kt</data>
+      <data key="d3">src/internal/StackTraceRecovery.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">15</data>
+      <data key="d34">0.38290663660248037</data>
+      <data key="d16">0.3808904266909458</data>
+      <data key="d21">0.2916097632619157</data>
+      <data key="d149">0.286765189851318</data>
+      <data key="d150">0.22035146131038327</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/internal/LimitedDispatcher.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">LimitedDispatcher.kt</data>
+      <data key="d3">src/internal/LimitedDispatcher.kt</data>
+      <data key="d4">7</data>
+      <data key="d5">73</data>
+      <data key="d151">0.4415659217614296</data>
+      <data key="d31">0.32793407977745587</data>
+      <data key="d27">0.24149217849692</data>
+      <data key="d44">0.23665199081577978</data>
+      <data key="d75">0.2352171022478167</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/internal/InlineList.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">InlineList.kt</data>
+      <data key="d3">src/internal/InlineList.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">35</data>
+      <data key="d152">0.6573133418610426</data>
+      <data key="d153">0.4290888088062551</data>
+      <data key="d154">0.31559781231838957</data>
+      <data key="d155">0.3046670298838515</data>
+      <data key="d146">0.2346637081850585</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/internal/Concurrent.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Concurrent.common.kt</data>
+      <data key="d3">src/internal/Concurrent.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">11</data>
+      <data key="d71">0.44152437559276136</data>
+      <data key="d21">0.34507380924961145</data>
+      <data key="d24">0.21146123692805685</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">21</data>
+    </node>
+    <node id="src/internal/MainDispatcherFactory.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">MainDispatcherFactory.kt</data>
+      <data key="d3">src/internal/MainDispatcherFactory.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">8</data>
+      <data key="d156">0.32084729810458906</data>
+      <data key="d157">0.32084729810458906</data>
+      <data key="d30">0.27019934347583585</data>
+      <data key="d29">0.20643336549322225</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/internal/ConcurrentLinkedList.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ConcurrentLinkedList.kt</data>
+      <data key="d3">src/internal/ConcurrentLinkedList.kt</data>
+      <data key="d4">7</data>
+      <data key="d5">132</data>
+      <data key="d99">0.536812585754043</data>
+      <data key="d158">0.35917670573992466</data>
+      <data key="d159">0.23046651139549876</data>
+      <data key="d160">0.22988421099449943</data>
+      <data key="d161">0.22515517121763617</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/internal/Atomic.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Atomic.kt</data>
+      <data key="d3">src/internal/Atomic.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">35</data>
+      <data key="d162">0.5579821303416272</data>
+      <data key="d163">0.37480741839565407</data>
+      <data key="d164">0.37480741839565407</data>
+      <data key="d165">0.23825598202098655</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/internal/SystemProps.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SystemProps.common.kt</data>
+      <data key="d3">src/internal/SystemProps.common.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">33</data>
+      <data key="d166">0.4527299920318735</data>
+      <data key="d167">0.4206681484368915</data>
+      <data key="d168">0.41567857496707705</data>
+      <data key="d169">0.2715262525497475</data>
+      <data key="d170">0.2494078056645906</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/internal/LockFreeLinkedList.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">LockFreeLinkedList.common.kt</data>
+      <data key="d3">src/internal/LockFreeLinkedList.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">18</data>
+      <data key="d171">0.7427693775481308</data>
+      <data key="d29">0.4058240231689185</data>
+      <data key="d160">0.2247792623664794</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/internal/Synchronized.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Synchronized.common.kt</data>
+      <data key="d3">src/internal/Synchronized.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">15</data>
+      <data key="d172">0.3597942650677402</data>
+      <data key="d173">0.34228013609651203</data>
+      <data key="d174">0.3325015844373979</data>
+      <data key="d87">0.3232186883739836</data>
+      <data key="d42">0.27946638639617566</data>
+      <data key="d68">0.27212615114279964</data>
+      <data key="d175">0.22269614662151374</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/internal/ThreadLocal.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ThreadLocal.common.kt</data>
+      <data key="d3">src/internal/ThreadLocal.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">6</data>
+      <data key="d176">0.5140805496471698</data>
+      <data key="d53">0.3949232403887654</data>
+      <data key="d177">0.3579601128906971</data>
+      <data key="d178">0.25154552557224574</data>
+      <data key="d21">0.20982305826622902</data>
+      <data key="d179">0.2007034374841662</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">22</data>
+    </node>
+    <node id="src/internal/ProbesSupport.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ProbesSupport.common.kt</data>
+      <data key="d3">src/internal/ProbesSupport.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">3</data>
+      <data key="d180">0.5282580018524811</data>
+      <data key="d59">0.4601566818482588</data>
+      <data key="d181">0.31832860915702543</data>
+      <data key="d21">0.2935341351520503</data>
+      <data key="d182">0.2259535427972148</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/internal/DispatchedTask.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">DispatchedTask.kt</data>
+      <data key="d3">src/internal/DispatchedTask.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">121</data>
+      <data key="d34">0.3154008551155294</data>
+      <data key="d183">0.29937267301228215</data>
+      <data key="d184">0.2641294855964795</data>
+      <data key="d24">0.2313052277758104</data>
+      <data key="d90">0.21686312955482226</data>
+      <data key="d185">0.212547786639724</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/internal/ThreadSafeHeap.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ThreadSafeHeap.kt</data>
+      <data key="d3">src/internal/ThreadSafeHeap.kt</data>
+      <data key="d4">11</data>
+      <data key="d5">130</data>
+      <data key="d186">0.4465020383068905</data>
+      <data key="d101">0.3470374985794421</data>
+      <data key="d160">0.3155434020757656</data>
+      <data key="d187">0.27477048511193264</data>
+      <data key="d188">0.25779481938989357</data>
+      <data key="d29">0.23143763774710807</data>
+      <data key="d189">0.20623585551191484</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/internal/Scopes.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Scopes.kt</data>
+      <data key="d3">src/internal/Scopes.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">23</data>
+      <data key="d126">0.34734457707683003</data>
+      <data key="d190">0.31942535382264153</data>
+      <data key="d74">0.3183772314416636</data>
+      <data key="d36">0.30851898427806784</data>
+      <data key="d90">0.2734395937078376</data>
+      <data key="d191">0.23645907368480523</data>
+      <data key="d192">0.2357059279376383</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/internal/DispatchedContinuation.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">DispatchedContinuation.kt</data>
+      <data key="d3">src/internal/DispatchedContinuation.kt</data>
+      <data key="d4">14</data>
+      <data key="d5">185</data>
+      <data key="d90">0.5363883859641857</data>
+      <data key="d59">0.2753784102468339</data>
+      <data key="d193">0.24519635866351738</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">8</data>
+    </node>
+    <node id="src/internal/InternalAnnotations.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">InternalAnnotations.common.kt</data>
+      <data key="d3">src/internal/InternalAnnotations.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">11</data>
+      <data key="d194">0.36711392122691594</data>
+      <data key="d195">0.36711392122691594</data>
+      <data key="d196">0.36711392122691594</data>
+      <data key="d197">0.36711392122691594</data>
+      <data key="d198">0.34203134652264766</data>
+      <data key="d71">0.32423497655380284</data>
+      <data key="d199">0.28961644951932936</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">23</data>
+    </node>
+    <node id="src/internal/Symbol.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Symbol.kt</data>
+      <data key="d3">src/internal/Symbol.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">7</data>
+      <data key="d200">0.5461552281825176</data>
+      <data key="d39">0.3177566695632444</data>
+      <data key="d201">0.29528920669189473</data>
+      <data key="d202">0.27992489572004153</data>
+      <data key="d203">0.2680074102662691</data>
+      <data key="d204">0.2582701156493993</data>
+      <data key="d205">0.23661533557875697</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/internal/ThreadContext.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ThreadContext.common.kt</data>
+      <data key="d3">src/internal/ThreadContext.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">3</data>
+      <data key="d206">0.561124139077156</data>
+      <data key="d21">0.3682257585845308</data>
+      <data key="d115">0.2523935112802765</data>
+      <data key="d36">0.2448212354503473</data>
+      <data key="d207">0.23207106509331554</data>
+      <data key="d208">0.23207106509331554</data>
+      <data key="d209">0.23207106509331554</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/internal/CoroutineExceptionHandlerImpl.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">CoroutineExceptionHandlerImpl.common.kt</data>
+      <data key="d3">src/internal/CoroutineExceptionHandlerImpl.common.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">24</data>
+      <data key="d34">0.5111840565079211</data>
+      <data key="d210">0.2780446844052366</data>
+      <data key="d35">0.25329820489696414</data>
+      <data key="d211">0.2085335133039275</data>
+      <data key="d212">0.2085335133039275</data>
+      <data key="d37">0.20451840637686133</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/internal/OnUndeliveredElement.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">OnUndeliveredElement.kt</data>
+      <data key="d3">src/internal/OnUndeliveredElement.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">27</data>
+      <data key="d213">0.570754726466224</data>
+      <data key="d214">0.4992017516091593</data>
+      <data key="d215">0.3920108095737708</data>
+      <data key="d146">0.29589812286873957</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/intrinsics/Undispatched.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Undispatched.kt</data>
+      <data key="d3">src/intrinsics/Undispatched.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">64</data>
+      <data key="d216">0.3700623214016218</data>
+      <data key="d32">0.297499565494953</data>
+      <data key="d181">0.27701816583377303</data>
+      <data key="d42">0.2656361790981741</data>
+      <data key="d217">0.22647756657085513</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/intrinsics/Cancellable.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Cancellable.kt</data>
+      <data key="d3">src/intrinsics/Cancellable.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">31</data>
+      <data key="d181">0.4720470600129538</data>
+      <data key="d218">0.3057440114096875</data>
+      <data key="d32">0.26813776624795294</data>
+      <data key="d34">0.2314567129588225</data>
+      <data key="d219">0.22930800855726566</data>
+      <data key="d220">0.20391381544039727</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/sync/Mutex.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Mutex.kt</data>
+      <data key="d3">src/sync/Mutex.kt</data>
+      <data key="d4">12</data>
+      <data key="d5">163</data>
+      <data key="d221">0.6982561563907211</data>
+      <data key="d222">0.43389367507617904</data>
+      <data key="d223">0.3516428086790228</data>
+      <data key="d173">0.20419626351669054</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/sync/Semaphore.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Semaphore.kt</data>
+      <data key="d3">src/sync/Semaphore.kt</data>
+      <data key="d4">18</data>
+      <data key="d5">205</data>
+      <data key="d224">0.4728772359056551</data>
+      <data key="d225">0.41375776937116643</data>
+      <data key="d226">0.2835089865123189</data>
+      <data key="d227">0.20679736278466915</data>
+      <data key="d9">0</data>
+      <data key="d10">8</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/channels/ConflatedBufferedChannel.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ConflatedBufferedChannel.kt</data>
+      <data key="d3">src/channels/ConflatedBufferedChannel.kt</data>
+      <data key="d4">8</data>
+      <data key="d5">78</data>
+      <data key="d146">0.6287664725507729</data>
+      <data key="d228">0.3395898599163889</data>
+      <data key="d215">0.23324011127001146</data>
+      <data key="d229">0.23206695813198044</data>
+      <data key="d9">0</data>
+      <data key="d10">8</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/channels/ChannelCoroutine.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ChannelCoroutine.kt</data>
+      <data key="d3">src/channels/ChannelCoroutine.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">31</data>
+      <data key="d230">0.40277003139997747</data>
+      <data key="d229">0.3792322121479987</data>
+      <data key="d231">0.3244106834520593</data>
+      <data key="d232">0.3020775235499831</data>
+      <data key="d34">0.22085566858424632</data>
+      <data key="d233">0.20138501569998873</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/channels/Broadcast.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Broadcast.kt</data>
+      <data key="d3">src/channels/Broadcast.kt</data>
+      <data key="d4">8</data>
+      <data key="d5">95</data>
+      <data key="d229">0.3539816021386964</data>
+      <data key="d32">0.34330496232642327</data>
+      <data key="d234">0.3396567427393746</data>
+      <data key="d235">0.23896878264806476</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">6</data>
+    </node>
+    <node id="src/channels/BufferedChannel.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">BufferedChannel.kt</data>
+      <data key="d3">src/channels/BufferedChannel.kt</data>
+      <data key="d4">86</data>
+      <data key="d5">1556</data>
+      <data key="d236">0.4626519612535318</data>
+      <data key="d99">0.38670091375993715</data>
+      <data key="d101">0.27526912496955436</data>
+      <data key="d146">0.22631144620867016</data>
+      <data key="d100">0.21132443885153154</data>
+      <data key="d90">0.20508168903646506</data>
+      <data key="d9">0</data>
+      <data key="d10">16</data>
+      <data key="d11">0</data>
+    </node>
+    <node id="src/channels/Produce.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Produce.kt</data>
+      <data key="d3">src/channels/Produce.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">63</data>
+      <data key="d229">0.4559512093565238</data>
+      <data key="d32">0.3028101891675714</data>
+      <data key="d36">0.23769111997702372</data>
+      <data key="d237">0.21169754436948354</data>
+      <data key="d238">0.20694569136274105</data>
+      <data key="d239">0.20604828668813013</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/channels/BroadcastChannel.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">BroadcastChannel.kt</data>
+      <data key="d3">src/channels/BroadcastChannel.kt</data>
+      <data key="d4">10</data>
+      <data key="d5">161</data>
+      <data key="d240">0.366367661109337</data>
+      <data key="d241">0.3469540442347696</data>
+      <data key="d146">0.24936945768671975</data>
+      <data key="d229">0.2272543323591282</data>
+      <data key="d238">0.2005606494980431</data>
+      <data key="d9">0</data>
+      <data key="d10">9</data>
+      <data key="d11">6</data>
+    </node>
+    <node id="src/channels/Channel.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Channel.kt</data>
+      <data key="d3">src/channels/Channel.kt</data>
+      <data key="d4">13</data>
+      <data key="d5">209</data>
+      <data key="d229">0.6103137485799202</data>
+      <data key="d242">0.2731026997573012</data>
+      <data key="d9">0</data>
+      <data key="d10">11</data>
+      <data key="d11">6</data>
+    </node>
+    <node id="src/channels/Deprecated.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Deprecated.kt</data>
+      <data key="d3">src/channels/Deprecated.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">411</data>
+      <data key="d243">0.6377363197051613</data>
+      <data key="d244">0.29748348503157707</data>
+      <data key="d245">0.29348714353786565</data>
+      <data key="d88">0.259631144845997</data>
+      <data key="d61">0.2360384581259178</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/channels/Channels.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Channels.common.kt</data>
+      <data key="d3">src/channels/Channels.common.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">56</data>
+      <data key="d243">0.5400155838767501</data>
+      <data key="d246">0.245994910297995</data>
+      <data key="d229">0.23161900523034387</data>
+      <data key="d247">0.22224589187052737</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">5</data>
+    </node>
+    <node id="src/channels/BufferOverflow.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">BufferOverflow.kt</data>
+      <data key="d3">src/channels/BufferOverflow.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">6</data>
+      <data key="d248">0.7112950476178768</data>
+      <data key="d249">0.3524722420055896</data>
+      <data key="d250">0.267950593676716</data>
+      <data key="d39">0.2044693890603106</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">12</data>
+    </node>
+    <node id="src/flow/operators">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/flow/operators</data>
+    </node>
+    <node id="src/flow/internal">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/flow/internal</data>
+    </node>
+    <node id="src/flow/terminal">
+      <data key="d0">True</data>
+      <data key="d1">False</data>
+      <data key="d2">src/flow/terminal</data>
+    </node>
+    <node id="src/flow/StateFlow.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">StateFlow.kt</data>
+      <data key="d3">src/flow/StateFlow.kt</data>
+      <data key="d4">15</data>
+      <data key="d5">179</data>
+      <data key="d90">0.3531169497939717</data>
+      <data key="d39">0.3418476489092224</data>
+      <data key="d251">0.24676810147300637</data>
+      <data key="d252">0.21735780856768397</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/Channels.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Channels.kt</data>
+      <data key="d3">src/flow/Channels.kt</data>
+      <data key="d4">7</data>
+      <data key="d5">77</data>
+      <data key="d229">0.5597612130347529</data>
+      <data key="d251">0.4047758342665755</data>
+      <data key="d253">0.25172207650529377</data>
+      <data key="d9">0</data>
+      <data key="d10">7</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/Migration.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Migration.kt</data>
+      <data key="d3">src/flow/Migration.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">235</data>
+      <data key="d251">0.6071173957798472</data>
+      <data key="d254">0.47501583570195355</data>
+      <data key="d255">0.3221792282047421</data>
+      <data key="d256">0.2577433825637937</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/flow/FlowCollector.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">FlowCollector.kt</data>
+      <data key="d3">src/flow/FlowCollector.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">4</data>
+      <data key="d251">0.3615595948372311</data>
+      <data key="d257">0.33930733869788177</data>
+      <data key="d102">0.252152700602612</data>
+      <data key="d89">0.2249513367228035</data>
+      <data key="d258">0.2032095998879585</data>
+      <data key="d9">0</data>
+      <data key="d10">0</data>
+      <data key="d11">15</data>
+    </node>
+    <node id="src/flow/SharingStarted.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SharingStarted.kt</data>
+      <data key="d3">src/flow/SharingStarted.kt</data>
+      <data key="d4">9</data>
+      <data key="d5">83</data>
+      <data key="d259">0.35682639630930835</data>
+      <data key="d260">0.2760351880434653</data>
+      <data key="d261">0.25094108003951393</data>
+      <data key="d262">0.24142988745834953</data>
+      <data key="d263">0.23788426420620556</data>
+      <data key="d264">0.21948171587122683</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/flow/Builders.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Builders.kt</data>
+      <data key="d3">src/flow/Builders.kt</data>
+      <data key="d4">18</data>
+      <data key="d5">118</data>
+      <data key="d251">0.6539461679408552</data>
+      <data key="d42">0.21168539171311132</data>
+      <data key="d9">0</data>
+      <data key="d10">7</data>
+      <data key="d11">6</data>
+    </node>
+    <node id="src/flow/Flow.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Flow.kt</data>
+      <data key="d3">src/flow/Flow.kt</data>
+      <data key="d4">3</data>
+      <data key="d5">19</data>
+      <data key="d251">0.5304932912872138</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/SharedFlow.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SharedFlow.kt</data>
+      <data key="d3">src/flow/SharedFlow.kt</data>
+      <data key="d4">28</data>
+      <data key="d5">370</data>
+      <data key="d248">0.29506781321643516</data>
+      <data key="d265">0.27833803110907224</data>
+      <data key="d266">0.24311002286934721</data>
+      <data key="d144">0.22527215139239265</data>
+      <data key="d251">0.21401249100814543</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Transform.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Transform.kt</data>
+      <data key="d3">src/flow/operators/Transform.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">59</data>
+      <data key="d251">0.5736567025697468</data>
+      <data key="d39">0.40734485106778723</data>
+      <data key="d267">0.3332148883613339</data>
+      <data key="d268">0.2535710706036157</data>
+      <data key="d269">0.20104097011822752</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Share.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Share.kt</data>
+      <data key="d3">src/flow/operators/Share.kt</data>
+      <data key="d4">4</data>
+      <data key="d5">175</data>
+      <data key="d270">0.3439246609063296</data>
+      <data key="d251">0.33807513941774947</data>
+      <data key="d259">0.32616082488609394</data>
+      <data key="d266">0.21576342608705545</data>
+      <data key="d73">0.20077607742244555</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/operators/Delay.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Delay.kt</data>
+      <data key="d3">src/flow/operators/Delay.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">132</data>
+      <data key="d271">0.40761551100799576</data>
+      <data key="d94">0.3667262577130801</data>
+      <data key="d251">0.35792573656757853</data>
+      <data key="d272">0.3272709834744938</data>
+      <data key="d273">0.31900344339756187</data>
+      <data key="d12">0.25347504164190965</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">7</data>
+    </node>
+    <node id="src/flow/operators/Emitters.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Emitters.kt</data>
+      <data key="d3">src/flow/operators/Emitters.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">85</data>
+      <data key="d251">0.42221491817411233</data>
+      <data key="d274">0.3398797054770129</data>
+      <data key="d272">0.2880086005521533</data>
+      <data key="d257">0.2690448025289936</data>
+      <data key="d275">0.22488239014046701</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Zip.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Zip.kt</data>
+      <data key="d3">src/flow/operators/Zip.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">165</data>
+      <data key="d251">0.526402362922734</data>
+      <data key="d268">0.5031530638323127</data>
+      <data key="d276">0.4083423010935752</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Context.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Context.kt</data>
+      <data key="d3">src/flow/operators/Context.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">59</data>
+      <data key="d248">0.39354032172962483</data>
+      <data key="d251">0.3532644472279301</data>
+      <data key="d238">0.3019211284542819</data>
+      <data key="d277">0.2480594668050211</data>
+      <data key="d9">0</data>
+      <data key="d10">7</data>
+      <data key="d11">6</data>
+    </node>
+    <node id="src/flow/operators/Lint.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Lint.kt</data>
+      <data key="d3">src/flow/operators/Lint.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">116</data>
+      <data key="d278">0.4926533604084662</data>
+      <data key="d254">0.4753833127313433</data>
+      <data key="d88">0.20832642166685386</data>
+      <data key="d251">0.20054622101483657</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">9</data>
+    </node>
+    <node id="src/flow/operators/Errors.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Errors.kt</data>
+      <data key="d3">src/flow/operators/Errors.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">77</data>
+      <data key="d279">0.38208392228968446</data>
+      <data key="d251">0.2895114275029401</data>
+      <data key="d280">0.27563097530702485</data>
+      <data key="d281">0.2714182308822047</data>
+      <data key="d282">0.23434498182796304</data>
+      <data key="d283">0.2183336698798197</data>
+      <data key="d34">0.21542116276983037</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Merge.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Merge.kt</data>
+      <data key="d3">src/flow/operators/Merge.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">48</data>
+      <data key="d251">0.5377053439410218</data>
+      <data key="d268">0.29053427574953417</data>
+      <data key="d284">0.27566928065230895</data>
+      <data key="d277">0.2450788045393973</data>
+      <data key="d285">0.218055479073156</data>
+      <data key="d248">0.21159813518876533</data>
+      <data key="d9">0</data>
+      <data key="d10">6</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Distinct.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Distinct.kt</data>
+      <data key="d3">src/flow/operators/Distinct.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">41</data>
+      <data key="d286">0.503729510855585</data>
+      <data key="d287">0.503729510855585</data>
+      <data key="d251">0.2904119979443915</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/operators/Limit.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Limit.kt</data>
+      <data key="d3">src/flow/operators/Limit.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">81</data>
+      <data key="d251">0.48673581436197544</data>
+      <data key="d288">0.38071804507219564</data>
+      <data key="d281">0.29901111148395737</data>
+      <data key="d39">0.29442015286203016</data>
+      <data key="d272">0.2877512898581116</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/internal/FlowExceptions.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">FlowExceptions.common.kt</data>
+      <data key="d3">src/flow/internal/FlowExceptions.common.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">18</data>
+      <data key="d221">0.5589674346153667</data>
+      <data key="d101">0.3206454082238144</data>
+      <data key="d34">0.26542557364119246</data>
+      <data key="d275">0.21874832916395515</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/AbstractSharedFlow.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">AbstractSharedFlow.kt</data>
+      <data key="d3">src/flow/internal/AbstractSharedFlow.kt</data>
+      <data key="d4">3</data>
+      <data key="d5">84</data>
+      <data key="d289">0.46810215071789363</data>
+      <data key="d290">0.3099153517113096</data>
+      <data key="d291">0.25348163202766383</data>
+      <data key="d292">0.23101276000154877</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/Combine.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Combine.kt</data>
+      <data key="d3">src/flow/internal/Combine.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">91</data>
+      <data key="d251">0.31441604298937287</data>
+      <data key="d148">0.311900674453885</data>
+      <data key="d186">0.2724737778766115</data>
+      <data key="d293">0.24389968499032394</data>
+      <data key="d9">0</data>
+      <data key="d10">4</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/FlowCoroutine.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">FlowCoroutine.kt</data>
+      <data key="d3">src/flow/internal/FlowCoroutine.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">27</data>
+      <data key="d294">0.47210622967685995</data>
+      <data key="d126">0.29454867150604175</data>
+      <data key="d251">0.2721804270898824</data>
+      <data key="d42">0.24800224303095714</data>
+      <data key="d295">0.23605311483842997</data>
+      <data key="d74">0.20248824239921276</data>
+      <data key="d9">0</data>
+      <data key="d10">8</data>
+      <data key="d11">1</data>
+    </node>
+    <node id="src/flow/internal/NullSurrogate.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">NullSurrogate.kt</data>
+      <data key="d3">src/flow/internal/NullSurrogate.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">9</data>
+      <data key="d200">0.48014713553354527</data>
+      <data key="d296">0.3574730127104715</data>
+      <data key="d297">0.35011929281405196</data>
+      <data key="d298">0.31152081188106</data>
+      <data key="d299">0.25727066398942583</data>
+      <data key="d300">0.24962172599797597</data>
+      <data key="d301">0.21378822613825377</data>
+      <data key="d9">0</data>
+      <data key="d10">2</data>
+      <data key="d11">3</data>
+    </node>
+    <node id="src/flow/internal/ChannelFlow.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">ChannelFlow.kt</data>
+      <data key="d3">src/flow/internal/ChannelFlow.kt</data>
+      <data key="d4">16</data>
+      <data key="d5">149</data>
+      <data key="d238">0.3834977639888338</data>
+      <data key="d41">0.35895229973002535</data>
+      <data key="d302">0.24485967734114408</data>
+      <data key="d36">0.2447072853616259</data>
+      <data key="d9">0</data>
+      <data key="d10">7</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/SafeCollector.common.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SafeCollector.common.kt</data>
+      <data key="d3">src/flow/internal/SafeCollector.common.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">61</data>
+      <data key="d303">0.45777559130495243</data>
+      <data key="d288">0.29399744769617236</data>
+      <data key="d62">0.2237781350318913</data>
+      <data key="d304">0.21057693029080726</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/Merge.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Merge.kt</data>
+      <data key="d3">src/flow/internal/Merge.kt</data>
+      <data key="d4">9</data>
+      <data key="d5">79</data>
+      <data key="d238">0.4272913237198981</data>
+      <data key="d302">0.39461673872094444</data>
+      <data key="d36">0.2944637869655109</data>
+      <data key="d251">0.26258115620146594</data>
+      <data key="d305">0.21941503910933555</data>
+      <data key="d9">0</data>
+      <data key="d10">5</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/NopCollector.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">NopCollector.kt</data>
+      <data key="d3">src/flow/internal/NopCollector.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">6</data>
+      <data key="d306">0.5080999441978142</data>
+      <data key="d307">0.3201464822590156</data>
+      <data key="d272">0.31703079727415157</data>
+      <data key="d275">0.2856270610127098</data>
+      <data key="d308">0.27495912204368417</data>
+      <data key="d39">0.20080557463338145</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/internal/SendingCollector.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">SendingCollector.kt</data>
+      <data key="d3">src/flow/internal/SendingCollector.kt</data>
+      <data key="d4">1</data>
+      <data key="d5">10</data>
+      <data key="d229">0.39175201531194</data>
+      <data key="d309">0.31205017622543857</data>
+      <data key="d310">0.28192400257210964</data>
+      <data key="d311">0.27612443149044064</data>
+      <data key="d312">0.2707893432665494</data>
+      <data key="d39">0.26437656772086454</data>
+      <data key="d87">0.23882434898579824</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">2</data>
+    </node>
+    <node id="src/flow/terminal/Collection.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Collection.kt</data>
+      <data key="d3">src/flow/terminal/Collection.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">12</data>
+      <data key="d313">0.8323530571158688</data>
+      <data key="d251">0.2699787081461973</data>
+      <data key="d314">0.2478276091726705</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/flow/terminal/Count.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Count.kt</data>
+      <data key="d3">src/flow/terminal/Count.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">20</data>
+      <data key="d281">0.4094125527191098</data>
+      <data key="d226">0.3565103405157978</data>
+      <data key="d315">0.3380173187134972</data>
+      <data key="d316">0.2946511639718132</data>
+      <data key="d317">0.277187685483809</data>
+      <data key="d318">0.25366478184698116</data>
+      <data key="d319">0.2501711406547232</data>
+      <data key="d9">0</data>
+      <data key="d10">1</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/flow/terminal/Reduce.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Reduce.kt</data>
+      <data key="d3">src/flow/terminal/Reduce.kt</data>
+      <data key="d4">0</data>
+      <data key="d5">110</data>
+      <data key="d320">0.4423887292516487</data>
+      <data key="d251">0.39517847688274294</data>
+      <data key="d267">0.37710770766739066</data>
+      <data key="d321">0.290082852051839</data>
+      <data key="d281">0.21068593772548758</data>
+      <data key="d146">0.20623584500511652</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">4</data>
+    </node>
+    <node id="src/flow/terminal/Collect.kt">
+      <data key="d0">False</data>
+      <data key="d1">True</data>
+      <data key="d2">Collect.kt</data>
+      <data key="d3">src/flow/terminal/Collect.kt</data>
+      <data key="d4">2</data>
+      <data key="d5">27</data>
+      <data key="d251">0.5412881245953828</data>
+      <data key="d39">0.2862569976866965</data>
+      <data key="d274">0.24913658188829302</data>
+      <data key="d316">0.23261397095783265</data>
+      <data key="d9">0</data>
+      <data key="d10">3</data>
+      <data key="d11">1</data>
+    </node>
+    <edge source="src" target="src/selects" />
+    <edge source="src" target="src/internal" />
+    <edge source="src" target="src/intrinsics" />
+    <edge source="src" target="src/sync" />
+    <edge source="src" target="src/channels" />
+    <edge source="src" target="src/flow" />
+    <edge source="src" target="src/Dispatchers.common.kt" />
+    <edge source="src" target="src/Delay.kt" />
+    <edge source="src" target="src/Debug.common.kt" />
+    <edge source="src" target="src/CompletionHandler.common.kt" />
+    <edge source="src" target="src/Runnable.common.kt" />
+    <edge source="src" target="src/CoroutineDispatcher.kt" />
+    <edge source="src" target="src/CoroutineExceptionHandler.kt" />
+    <edge source="src" target="src/Deferred.kt" />
+    <edge source="src" target="src/Builders.common.kt" />
+    <edge source="src" target="src/CloseableCoroutineDispatcher.kt" />
+    <edge source="src" target="src/Await.kt" />
+    <edge source="src" target="src/SchedulerTask.common.kt" />
+    <edge source="src" target="src/CoroutineName.kt" />
+    <edge source="src" target="src/MainCoroutineDispatcher.kt" />
+    <edge source="src" target="src/CancellableContinuation.kt" />
+    <edge source="src" target="src/Exceptions.common.kt" />
+    <edge source="src" target="src/Yield.kt" />
+    <edge source="src" target="src/Annotations.kt" />
+    <edge source="src" target="src/CoroutineScope.kt" />
+    <edge source="src" target="src/EventLoop.common.kt" />
+    <edge source="src" target="src/CompletableDeferred.kt" />
+    <edge source="src" target="src/CompletionState.kt" />
+    <edge source="src" target="src/NonCancellable.kt" />
+    <edge source="src" target="src/JobSupport.kt" />
+    <edge source="src" target="src/CompletableJob.kt" />
+    <edge source="src" target="src/Timeout.kt" />
+    <edge source="src" target="src/Unconfined.kt" />
+    <edge source="src" target="src/Waiter.kt" />
+    <edge source="src" target="src/CoroutineStart.kt" />
+    <edge source="src" target="src/Job.kt" />
+    <edge source="src" target="src/Supervisor.kt" />
+    <edge source="src" target="src/AbstractCoroutine.kt" />
+    <edge source="src" target="src/CoroutineContext.common.kt" />
+    <edge source="src" target="src/CancellableContinuationImpl.kt" />
+    <edge source="src/selects" target="src/selects/OnTimeout.kt" />
+    <edge source="src/selects" target="src/selects/Select.kt" />
+    <edge source="src/selects" target="src/selects/SelectOld.kt" />
+    <edge source="src/selects" target="src/selects/SelectUnbiased.kt" />
+    <edge source="src/selects" target="src/selects/WhileSelect.kt" />
+    <edge source="src/internal" target="src/internal/LocalAtomics.common.kt" />
+    <edge source="src/internal" target="src/internal/LockFreeTaskQueue.kt" />
+    <edge source="src/internal" target="src/internal/StackTraceRecovery.common.kt" />
+    <edge source="src/internal" target="src/internal/LimitedDispatcher.kt" />
+    <edge source="src/internal" target="src/internal/InlineList.kt" />
+    <edge source="src/internal" target="src/internal/Concurrent.common.kt" />
+    <edge source="src/internal" target="src/internal/MainDispatcherFactory.kt" />
+    <edge source="src/internal" target="src/internal/ConcurrentLinkedList.kt" />
+    <edge source="src/internal" target="src/internal/Atomic.kt" />
+    <edge source="src/internal" target="src/internal/SystemProps.common.kt" />
+    <edge source="src/internal" target="src/internal/LockFreeLinkedList.common.kt" />
+    <edge source="src/internal" target="src/internal/Synchronized.common.kt" />
+    <edge source="src/internal" target="src/internal/ThreadLocal.common.kt" />
+    <edge source="src/internal" target="src/internal/ProbesSupport.common.kt" />
+    <edge source="src/internal" target="src/internal/DispatchedTask.kt" />
+    <edge source="src/internal" target="src/internal/ThreadSafeHeap.kt" />
+    <edge source="src/internal" target="src/internal/Scopes.kt" />
+    <edge source="src/internal" target="src/internal/DispatchedContinuation.kt" />
+    <edge source="src/internal" target="src/internal/InternalAnnotations.common.kt" />
+    <edge source="src/internal" target="src/internal/Symbol.kt" />
+    <edge source="src/internal" target="src/internal/ThreadContext.common.kt" />
+    <edge source="src/internal" target="src/internal/CoroutineExceptionHandlerImpl.common.kt" />
+    <edge source="src/internal" target="src/internal/OnUndeliveredElement.kt" />
+    <edge source="src/intrinsics" target="src/intrinsics/Undispatched.kt" />
+    <edge source="src/intrinsics" target="src/intrinsics/Cancellable.kt" />
+    <edge source="src/sync" target="src/sync/Mutex.kt" />
+    <edge source="src/sync" target="src/sync/Semaphore.kt" />
+    <edge source="src/channels" target="src/channels/ConflatedBufferedChannel.kt" />
+    <edge source="src/channels" target="src/channels/ChannelCoroutine.kt" />
+    <edge source="src/channels" target="src/channels/Broadcast.kt" />
+    <edge source="src/channels" target="src/channels/BufferedChannel.kt" />
+    <edge source="src/channels" target="src/channels/Produce.kt" />
+    <edge source="src/channels" target="src/channels/BroadcastChannel.kt" />
+    <edge source="src/channels" target="src/channels/Channel.kt" />
+    <edge source="src/channels" target="src/channels/Deprecated.kt" />
+    <edge source="src/channels" target="src/channels/Channels.common.kt" />
+    <edge source="src/channels" target="src/channels/BufferOverflow.kt" />
+    <edge source="src/flow" target="src/flow/operators" />
+    <edge source="src/flow" target="src/flow/internal" />
+    <edge source="src/flow" target="src/flow/terminal" />
+    <edge source="src/flow" target="src/flow/StateFlow.kt" />
+    <edge source="src/flow" target="src/flow/Channels.kt" />
+    <edge source="src/flow" target="src/flow/Migration.kt" />
+    <edge source="src/flow" target="src/flow/FlowCollector.kt" />
+    <edge source="src/flow" target="src/flow/SharingStarted.kt" />
+    <edge source="src/flow" target="src/flow/Builders.kt" />
+    <edge source="src/flow" target="src/flow/Flow.kt" />
+    <edge source="src/flow" target="src/flow/SharedFlow.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Transform.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Share.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Delay.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Emitters.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Zip.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Context.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Lint.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Errors.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Merge.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Distinct.kt" />
+    <edge source="src/flow/operators" target="src/flow/operators/Limit.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/FlowExceptions.common.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/AbstractSharedFlow.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/Combine.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/FlowCoroutine.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/NullSurrogate.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/ChannelFlow.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/SafeCollector.common.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/Merge.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/NopCollector.kt" />
+    <edge source="src/flow/internal" target="src/flow/internal/SendingCollector.kt" />
+    <edge source="src/flow/terminal" target="src/flow/terminal/Collection.kt" />
+    <edge source="src/flow/terminal" target="src/flow/terminal/Count.kt" />
+    <edge source="src/flow/terminal" target="src/flow/terminal/Reduce.kt" />
+    <edge source="src/flow/terminal" target="src/flow/terminal/Collect.kt" />
+  </graph>
+</graphml>
