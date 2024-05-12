@@ -1,0 +1,14 @@
+Changes from 2019-10-01 to 2019-11-01:
+   4 README.md
+   2 gradle/native_mpp.gradle
+   1 runtime/nativeMain/src/kotlinx/serialization/Platform.kt
+   1 runtime/commonTest/src/kotlinx/serialization/SerializerResolvingTest.kt
+   1 runtime/build.gradle
+   1 integration-test/src/jvmTest/kotlin/sample/SampleTestsJVM.kt
+   1 gradle/teamcity.gradle
+   1 gradle/targets.gradle
+   1 gradle.properties
+   1 formats/README.md
+   1 docs/building.md
+   1 build.gradle
+   1 CONTRIBUTING.md

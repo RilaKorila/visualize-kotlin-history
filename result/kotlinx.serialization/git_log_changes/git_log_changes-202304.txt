@@ -1,0 +1,25 @@
+Changes from 2023-04-01 to 2023-05-01:
+   1 gradle.properties
+   1 formats/properties/commonTest/src/kotlinx/serialization/properties/SealedClassSerializationFromPropertiesTest.kt
+   1 formats/properties/commonMain/src/kotlinx/serialization/properties/Properties.kt
+   1 formats/json/nativeMain/src/kotlinx/serialization/json/JsonSchemaCache.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/internal/lexer/JsonLexer.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/internal/TreeJsonEncoder.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/internal/TreeJsonDecoder.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/internal/JsonIterator.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/JsonContentPolymorphicSerializer.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/Json.kt
+   1 formats/json-tests/jvmTest/src/kotlinx/serialization/features/JsonLazySequenceTest.kt
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/json/JsonCustomSerializersTest.kt
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/features/inline/ValueClassesInSealedHierarchyTest.kt
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/features/inline/InlineClassesTest.kt
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/features/PartiallyCustomSerializerTest.kt
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/features/MetaSerializableJsonTest.kt
+   1 formats/json-tests/build.gradle.kts
+   1 core/jvmTest/src/kotlinx/serialization/CachingTest.kt
+   1 core/jvmMain/src/kotlinx/serialization/internal/Caching.kt
+   1 core/commonTest/src/kotlinx/serialization/features/SchemaTest.kt
+   1 core/commonTest/src/kotlinx/serialization/MetaSerializableTest.kt
+   1 core/commonMain/src/kotlinx/serialization/internal/Tagged.kt
+   1 core/commonMain/src/kotlinx/serialization/descriptors/SerialDescriptors.kt
+   1 core/api/kotlinx-serialization-core.api

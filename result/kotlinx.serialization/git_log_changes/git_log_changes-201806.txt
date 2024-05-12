@@ -1,0 +1,20 @@
+Changes from 2018-06-01 to 2018-07-01:
+   2 build.gradle
+   2 README.md
+   1 settings.gradle
+   1 runtime/jvm/src/test/kotlin/kotlinx/serialization/features/SealedPolymorphismTest.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/internal/Polymorphic.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 runtime/js/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 runtime/common/src/test/kotlin/kotlinx/serialization/protobuf/AutoAssignIdsTest.kt
+   1 runtime/common/src/test/kotlin/kotlinx/serialization/GenericTest.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/protobuf/ProtoBuf.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/Shorthands.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/Collections.kt
+   1 gradle.properties
+   1 example-jvm/pom.xml
+   1 example-jvm/build.gradle
+   1 example-js/build.gradle
+   1 benchmark/src/jmh/kotlin/kotlinx/benchmarks/SampleBenchmark.kt
+   1 benchmark/build.gradle
+   1 CHANGELOG.md

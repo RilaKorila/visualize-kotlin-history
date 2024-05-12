@@ -1,0 +1,14 @@
+Changes from 2022-12-01 to 2023-01-01:
+   2 rules/common.pro
+   1 rules/r8.pro
+   1 integration-test/src/jsTest/kotlin/sample/SampleTestsJS.kt
+   1 integration-test/src/commonTest/kotlin/sample/MultiFileHierarchyTest.kt
+   1 integration-test/src/commonTest/kotlin/sample/MultiFileHierarchyModuleB.kt
+   1 integration-test/gradle.properties
+   1 core/jvmMain/src/kotlinx/serialization/internal/Caching.kt
+   1 core/commonTest/src/kotlinx/serialization/PrimitiveSerialDescriptorTest.kt
+   1 core/commonTest/src/kotlinx/serialization/EnumDescriptorsTest.kt
+   1 core/commonMain/src/kotlinx/serialization/internal/Primitives.kt
+   1 core/commonMain/src/kotlinx/serialization/internal/Enums.kt
+   1 core/build.gradle
+   1 README.md

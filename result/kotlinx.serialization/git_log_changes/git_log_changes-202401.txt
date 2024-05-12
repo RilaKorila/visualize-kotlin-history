@@ -1,0 +1,11 @@
+Changes from 2024-01-01 to 2024-02-01:
+   1 formats/protobuf/jvmTest/src/kotlinx/serialization/protobuf/schema/GenerationTest.kt
+   1 formats/protobuf/jvmTest/resources/common/schema.proto
+   1 formats/protobuf/jvmTest/resources/OptionalClass.proto
+   1 formats/protobuf/commonMain/src/kotlinx/serialization/protobuf/schema/ProtoBufSchemaGenerator.kt
+   1 formats/json/commonMain/src/kotlinx/serialization/json/JsonNamingStrategy.kt
+   1 formats/json/api/kotlinx-serialization-json.api
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/features/JsonNamingStrategyTest.kt
+   1 formats/hocon/src/main/kotlin/kotlinx/serialization/hocon/Hocon.kt
+   1 core/commonMain/src/kotlinx/serialization/internal/Platform.common.kt
+   1 core/commonMain/src/kotlinx/serialization/Serializers.kt

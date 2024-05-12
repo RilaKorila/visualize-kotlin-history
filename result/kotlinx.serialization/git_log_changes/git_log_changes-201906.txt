@@ -1,0 +1,25 @@
+Changes from 2019-06-01 to 2019-07-01:
+   4 gradle.properties
+   2 gradle/publishing.gradle
+   2 docs/custom_serializers.md
+   2 build.gradle
+   1 settings.gradle
+   1 runtime/commonTest/src/kotlinx/serialization/features/SealedPolymorphismTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/features/ContextAndPolymorphicTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/features/BinaryPayloadExampleTest.kt
+   1 runtime/commonMain/src/kotlinx/serialization/json/Json.kt
+   1 runtime/commonMain/src/kotlinx/serialization/Annotations.kt
+   1 runtime/build.gradle
+   1 license/NOTICE.txt
+   1 license/LICENSE.txt
+   1 integration-test/src/commonTest/kotlin/sample/JsonTest.kt
+   1 integration-test/src/commonMain/kotlin/sample/GeoCoordinate.kt
+   1 integration-test/gradle.properties
+   1 formats/config/build.gradle
+   1 docs/runtime_usage.md
+   1 docs/examples.md
+   1 benchmark/build.gradle
+   1 RELEASING.md
+   1 README.md
+   1 LICENSE.txt
+   1 CHANGELOG.md

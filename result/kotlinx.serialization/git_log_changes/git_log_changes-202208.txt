@@ -1,0 +1,15 @@
+Changes from 2022-08-01 to 2022-09-01:
+   2 gradle/dokka.gradle
+   2 gradle.properties
+   1 integration-test/gradle.properties
+   1 formats/json/commonMain/src/kotlinx/serialization/json/internal/lexer/JsonLexer.kt
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/json/JsonHugeDataSerializationTest.kt
+   1 formats/json-okio/commonMain/src/kotlinx/serialization/json/okio/internal/OkioJsonStreams.kt
+   1 formats/hocon/build.gradle
+   1 dokka-templates/README.md
+   1 core/commonMain/src/kotlinx/serialization/descriptors/SerialDescriptors.kt
+   1 core/commonMain/src/kotlinx/serialization/descriptors/SerialDescriptor.kt
+   1 build.gradle
+   1 RELEASING.md
+   1 README.md
+   1 CHANGELOG.md

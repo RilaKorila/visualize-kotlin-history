@@ -1,0 +1,20 @@
+Changes from 2019-05-01 to 2019-06-01:
+   1 runtime/commonTest/src/kotlinx/serialization/test/TestHelpers.kt
+   1 runtime/commonTest/src/kotlinx/serialization/json/serializers/JsonPrimitiveSerializerTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/json/serializers/JsonNullSerializerTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/json/serializers/JsonNativePrimitivesTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/json/JsonTestBase.kt
+   1 runtime/commonTest/src/kotlinx/serialization/features/SchemaTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/SampleClasses.kt
+   1 runtime/commonMain/src/kotlinx/serialization/json/internal/TreeJsonOutput.kt
+   1 runtime/commonMain/src/kotlinx/serialization/json/internal/TreeJsonInput.kt
+   1 runtime/commonMain/src/kotlinx/serialization/json/JsonElementSerializer.kt
+   1 runtime/commonMain/src/kotlinx/serialization/internal/Enums.kt
+   1 runtime/commonMain/src/kotlinx/serialization/Tagged.kt
+   1 runtime/commonMain/src/kotlinx/serialization/Annotations.kt
+   1 gradle/compilerVersion.gradle
+   1 gradle.properties
+   1 docs/examples.md
+   1 docs/custom_serializers.md
+   1 build.gradle
+   1 README.md

@@ -1,0 +1,6 @@
+Changes from 2018-05-01 to 2018-06-01:
+   4 runtime/common/src/test/kotlin/kotlinx/serialization/CustomSerializersTest.kt
+   2 runtime/common/src/test/kotlin/kotlinx/serialization/protobuf/CustomSerializersProtobufTest.kt
+   2 runtime/common/src/main/kotlin/kotlinx/serialization/json/JSON.kt
+   1 runtime/jvm/src/test/kotlin/kotlinx/serialization/features/ResolvingTest.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt

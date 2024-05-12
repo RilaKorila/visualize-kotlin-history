@@ -1,0 +1,19 @@
+Changes from 2016-12-01 to 2017-01-01:
+   6 README.md
+   4 pom.xml
+   3 kotlinx-coroutines-rx-example/src/main/kotlin/main.kt
+   3 kotlinx-coroutines-generate/src/main/kotlin/generate.kt
+   3 kotlinx-coroutines-async/src/main/kotlin/async.kt
+   3 kotlinx-coroutines-async-common/src/main/kotlin/runWithCurrentContinuation.kt
+   2 kotlinx-coroutines-rx/src/main/kotlin/asyncRx.kt
+   2 kotlinx-coroutines-rx/pom.xml
+   2 kotlinx-coroutines-rx-example/pom.xml
+   2 kotlinx-coroutines-generate/src/test/kotlin/GenerateTest.kt
+   2 kotlinx-coroutines-async/src/test/kotlin/AsyncTest.kt
+   2 kotlinx-coroutines-async/pom.xml
+   2 kotlinx-coroutines-async-example-ui/src/main/kotlin/main.kt
+   2 kotlinx-coroutines-async-example-ui/pom.xml
+   1 kotlinx-coroutines-rx/src/test/kotlin/AsyncRxTest.kt
+   1 kotlinx-coroutines-async/src/test/kotlin/AsyncIOTest.kt
+   1 kotlinx-coroutines-async-common/src/main/test/kotlin/RunWithCCTest.kt
+   1 kotlinx-coroutines-async-common/pom.xml

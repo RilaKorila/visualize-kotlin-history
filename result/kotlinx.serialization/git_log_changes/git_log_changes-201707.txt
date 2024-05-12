@@ -1,0 +1,27 @@
+Changes from 2017-07-01 to 2017-08-01:
+   3 build.gradle
+   2 src/test/kotlin/kotlinx/serialization/TransientTests.kt
+   2 src/test/kotlin/kotlinx/serialization/OptionalTests.kt
+   2 src/test/kotlin/kotlinx/serialization/InternalInheritanceTest.kt
+   1 src/test/kotlin/kotlinx/serialization/SerializeZooTest.kt
+   1 src/test/kotlin/kotlinx/serialization/SerializeRecTest.kt
+   1 src/test/kotlin/kotlinx/serialization/SerializeFlatTest.kt
+   1 src/test/kotlin/kotlinx/serialization/SerializationCasesTest.kt
+   1 src/test/kotlin/kotlinx/cbor/SampleClasses.kt
+   1 src/test/kotlin/kotlinx/cbor/CBORWriterTest.kt
+   1 src/test/kotlin/kotlinx/cbor/CBORReaderTest.kt
+   1 src/main/kotlin/kotlinx/serialization/internal/SerialClassDescImpl.kt
+   1 src/main/kotlin/kotlinx/serialization/internal/Polymorphic.kt
+   1 src/main/kotlin/kotlinx/serialization/internal/CollectionSerializers.kt
+   1 src/main/kotlin/kotlinx/serialization/internal/BuiltinSerializers.kt
+   1 src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 src/main/kotlin/kotlinx/serialization/JSON.kt
+   1 src/main/kotlin/kotlinx/serialization/CBOR.kt
+   1 settings.gradle
+   1 gradlew.bat
+   1 gradlew
+   1 gradle/wrapper/gradle-wrapper.properties
+   1 gradle/wrapper/gradle-wrapper.jar
+   1 README.md
+   1 DOC.md
+   1 .gitignore

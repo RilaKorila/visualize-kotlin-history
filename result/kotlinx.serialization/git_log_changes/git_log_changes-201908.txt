@@ -1,0 +1,24 @@
+Changes from 2019-08-01 to 2019-09-01:
+   4 runtime/build.gradle
+   3 gradle.properties
+   2 runtime/commonMain/src/kotlinx/serialization/SerializerResolving.kt
+   2 integration-test/gradle.properties
+   2 README.md
+   1 runtime/nativeTest/src/kotlinx/serialization/NativeTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/features/PolymorphismTest.kt
+   1 runtime/commonTest/src/kotlinx/serialization/SerializerResolvingTest.kt
+   1 runtime/commonMain/src/kotlinx/serialization/internal/SerialClassDescImpl.kt
+   1 integration-test/src/commonTest/kotlin/sample/MultiFileHierarchyTest.kt
+   1 integration-test/src/commonTest/kotlin/sample/JsonTest.kt
+   1 integration-test/src/commonMain/kotlin/sample/Data.kt
+   1 integration-test/build.gradle
+   1 examples/settings.gradle
+   1 examples/gradle.properties
+   1 examples/example-visitors/src/main/kotlin/App.kt
+   1 examples/example-native/src/App.kt
+   1 examples/example-native/build.gradle
+   1 examples/example-jvm/src/WithDemo.kt
+   1 docs/runtime_usage.md
+   1 docs/polymorphism.md
+   1 benchmark/build.gradle
+   1 CHANGELOG.md

@@ -1,0 +1,11 @@
+Changes from 2022-04-01 to 2022-05-01:
+   2 formats/protobuf/commonMain/src/kotlinx/serialization/protobuf/schema/ProtoBufSchemaGenerator.kt
+   1 formats/protobuf/jvmTest/src/kotlinx/serialization/protobuf/schema/GenerationTest.kt
+   1 formats/protobuf/jvmTest/resources/common/schema.proto
+   1 formats/protobuf/jvmTest/resources/PackedListClass.proto
+   1 formats/protobuf/commonTest/src/kotlinx/serialization/protobuf/schema/SchemaValidationsTest.kt
+   1 formats/json/commonTest/src/kotlinx/serialization/features/ObjectSerialization.kt
+   1 core/commonMain/src/kotlinx/serialization/internal/ObjectSerializer.kt
+   1 core/commonMain/src/kotlinx/serialization/internal/AbstractPolymorphicSerializer.kt
+   1 core/commonMain/src/kotlinx/serialization/encoding/Encoding.kt
+   1 core/commonMain/src/kotlinx/serialization/encoding/Decoding.kt

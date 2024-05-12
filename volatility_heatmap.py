@@ -2,14 +2,16 @@ import csv
 import re
 from collections import defaultdict
 
-start_year = 2017
-start_month = 7
-end_year = 2024
-end_month = 4
+start_year = 2011
+start_month = 1
+end_year = 2016
+end_month = 6
 file_names = []
 
-BASE_PATH = "./result/kotlinx.serialization/git_log_changes/"
-output_csv_fname = "./result/kotlinx.serialization/git_hisitory_logs.csv"
+BASE_PATH = "./result/kotlin/git_log_changes/"
+output_csv_fname = (
+    "./result/kotlin/git_hisitory_logs_each_month_only_kt_before201606.csv"
+)
 
 # 開始年月から終了年月までの各年月のファイル名を生成
 for year in range(start_year, end_year + 1):
@@ -47,9 +49,9 @@ with open(output_csv_fname, "w") as f:
     writer.writerow(csv_columns)
 
     for file, records in changed_files.items():
-        # if file.split(".")[-1] != "kt":
-        #     # 拡張子がkt以外はskip
-        #     continue
+        if file.split(".")[-1] != "kt":
+            # 拡張子がkt以外はskip
+            continue
         padded_record = [file]
         changed_dates = set(records.keys())
         for date in csv_columns:

@@ -1,0 +1,12 @@
+Changes from 2024-02-01 to 2024-03-01:
+   2 buildSrc/src/main/kotlin/Java9Modularity.kt
+   1 integration-test/gradle.properties
+   1 gradle/native-targets.gradle
+   1 gradle.properties
+   1 formats/json/commonMain/src/kotlinx/serialization/json/Json.kt
+   1 docs/polymorphism.md
+   1 docs/json.md
+   1 core/commonMain/src/kotlinx/serialization/Annotations.kt
+   1 core/api/kotlinx-serialization-core.api
+   1 README.md
+   1 CHANGELOG.md

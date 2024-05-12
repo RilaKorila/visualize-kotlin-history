@@ -1,0 +1,14 @@
+Changes from 2023-11-01 to 2023-12-01:
+   2 integration-test/gradle.properties
+   2 gradle/configure-source-sets.gradle
+   2 gradle.properties
+   2 build.gradle
+   2 README.md
+   2 CHANGELOG.md
+   1 integration-test/src/wasmWasiTest/kotlin/sample/SampleTestsWasm.kt
+   1 integration-test/src/wasmWasiMain/kotlin/sample/SampleWasm.kt
+   1 integration-test/src/wasmJsTest/kotlin/sample/SampleTestsWasm.kt
+   1 integration-test/src/wasmJsMain/kotlin/sample/SampleWasm.kt
+   1 integration-test/build.gradle
+   1 gradle/native-targets.gradle
+   1 formats/json/build.gradle

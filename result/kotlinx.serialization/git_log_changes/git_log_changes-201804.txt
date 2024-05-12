@@ -1,0 +1,26 @@
+Changes from 2018-04-01 to 2018-05-01:
+   5 runtime/common/src/main/kotlin/kotlinx/serialization/json/JSON.kt
+   2 runtime/common/src/main/kotlin/kotlinx/serialization/json/JSONBuffers.kt
+   2 build.gradle
+   2 README.md
+   1 runtime/jvm/src/test/kotlin/kotlinx/serialization/SerializeRecTest.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 runtime/jvm/build.gradle
+   1 runtime/js/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 runtime/js/src/main/kotlin/kotlinx/serialization/DynamicObjectParser.kt
+   1 runtime/js/src/main/kotlin/kotlinx/io/Streams.kt
+   1 runtime/js/src/main/kotlin/kotlinx/io/Buffers.kt
+   1 runtime/common/src/test/kotlin/kotlinx/serialization/TransientTests.kt
+   1 runtime/common/src/test/kotlin/kotlinx/serialization/SerializeZooTest.kt
+   1 runtime/common/src/test/kotlin/kotlinx/serialization/JSONTest.kt
+   1 runtime/common/src/test/kotlin/kotlinx/serialization/HierarchyTest.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/protobuf/ProtoBuf.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/internal/Util.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/internal/CollectionSerializers.kt
+   1 runtime/common/src/main/kotlin/kotlinx/serialization/Scope.kt
+   1 runtime/common/src/main/kotlin/kotlinx/io/Streams.kt
+   1 gradle.properties
+   1 example-jvm/pom.xml
+   1 example-jvm/build.gradle
+   1 example-js/build.gradle
+   1 CHANGELOG.md

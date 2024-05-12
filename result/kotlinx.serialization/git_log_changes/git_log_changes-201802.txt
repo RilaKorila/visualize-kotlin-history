@@ -1,0 +1,9 @@
+Changes from 2018-02-01 to 2018-03-01:
+   3 README.md
+   2 runtime/common/src/test/kotlin/kotlinx/serialization/MapperTest.kt
+   2 runtime/common/src/main/kotlin/kotlinx/serialization/Tagged.kt
+   1 runtime/jvm/src/test/kotlin/kotlinx/serialization/privateclasstest/PrivateDataOutOfKotlinXSerializationPackageTest.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 formats/README.md
+   1 example-jvm/build.gradle
+   1 build.gradle

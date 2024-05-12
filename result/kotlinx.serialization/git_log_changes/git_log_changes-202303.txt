@@ -1,0 +1,19 @@
+Changes from 2023-03-01 to 2023-04-01:
+   2 formats/json/commonMain/src/kotlinx/serialization/json/JsonElement.kt
+   2 formats/README.md
+   1 gradle/native-targets.gradle
+   1 formats/json/jvmMain/src/kotlinx/serialization/json/internal/CharsetReader.kt
+   1 formats/json/jsMain/src/kotlinx/serialization/json/internal/DynamicDecoders.kt
+   1 formats/json/api/kotlinx-serialization-json.api
+   1 formats/json-tests/commonTest/src/kotlinx/serialization/json/serializers/JsonPrimitiveSerializerTest.kt
+   1 formats/json-okio/commonMain/src/kotlinx/serialization/json/okio/internal/OkioJsonStreams.kt
+   1 formats/json-okio/commonMain/src/kotlinx/serialization/json/okio/OkioStreams.kt
+   1 docs/serializers.md
+   1 core/jvmMain/src/kotlinx/serialization/internal/Caching.kt
+   1 README.md
+   1 .idea/vcs.xml
+   1 .idea/copyright/profiles_settings.xml
+   1 .idea/copyright/kotlinx_serialization.xml
+   1 .idea/codeStyles/codeStyleConfig.xml
+   1 .idea/codeStyles/Project.xml
+   1 .gitignore

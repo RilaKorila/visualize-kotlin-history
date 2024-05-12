@@ -1,0 +1,14 @@
+Changes from 2020-05-01 to 2020-06-01:
+   1 runtime/commonTest/src/kotlinx/serialization/SerialDescriptorSpecificationTest.kt
+   1 runtime/commonMain/src/kotlinx/serialization/internal/CollectionDescriptors.kt
+   1 runtime/commonMain/src/kotlinx/serialization/SerialDescriptor.kt
+   1 integration-test/build.gradle
+   1 gradle/wrapper/gradle-wrapper.properties
+   1 gradle/publishing.gradle
+   1 gradle/publish-mpp-root-module-in-platform.gradle
+   1 gradle/native_mpp.gradle
+   1 gradle/bintray.gradle
+   1 gradle.properties
+   1 examples/example-multiplatform/build.gradle
+   1 build.gradle
+   1 README.md

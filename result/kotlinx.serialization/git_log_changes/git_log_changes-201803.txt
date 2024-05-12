@@ -1,0 +1,20 @@
+Changes from 2018-03-01 to 2018-04-01:
+   3 runtime/common/src/main/kotlin/kotlinx/serialization/json/JSON.kt
+   2 runtime/jvm/src/main/kotlin/kotlinx/serialization/internal/Strings.kt
+   2 runtime/js/src/main/kotlin/kotlinx/serialization/internal/Strings.kt
+   2 runtime/common/src/main/kotlin/kotlinx/serialization/internal/CommonStrings.kt
+   2 example-js/gradle/wrapper/gradle-wrapper.properties
+   1 runtime/jvm/build.gradle
+   1 runtime/js/src/test/kotlin/kotlinx/serialization/StringTest.kt
+   1 runtime/js/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 runtime/js/.gitignore
+   1 gradle/wrapper/gradle-wrapper.properties
+   1 example-jvm/settings.gradle
+   1 example-jvm/pom.xml
+   1 example-jvm/gradle/wrapper/gradle-wrapper.properties
+   1 example-jvm/build.gradle
+   1 example-js/build.gradle
+   1 docs/runtime_usage.md
+   1 build.gradle
+   1 README.md
+   1 .gitignore

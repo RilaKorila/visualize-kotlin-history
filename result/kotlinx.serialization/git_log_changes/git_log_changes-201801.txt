@@ -1,0 +1,11 @@
+Changes from 2018-01-01 to 2018-02-01:
+   1 settings.gradle
+   1 runtime/jvm/src/test/kotlin/kotlinx/serialization/features/ResolvingTest.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 runtime/jvm/src/main/kotlin/kotlinx/serialization/Resolving.kt
+   1 runtime/js/src/main/kotlin/kotlinx/serialization/Serialization.kt
+   1 formats/config/src/test/kotlin/org/jetbrains/kotlinx/serialization/config/ConfigParserValuesTest.kt
+   1 formats/config/src/test/kotlin/org/jetbrains/kotlinx/serialization/config/ConfigParserObjectsTest.kt
+   1 formats/config/src/main/kotlin/org/jetbrains/kotlinx/serialization/config/ConfigReader.kt
+   1 formats/config/build.gradle
+   1 build.gradle
