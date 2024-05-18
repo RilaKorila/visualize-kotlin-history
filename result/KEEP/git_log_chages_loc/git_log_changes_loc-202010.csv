@@ -1,0 +1,3 @@
+filename,add_lines,del_lines
+proposals/jdk-dependent-built-ins.md,4,4
+proposals/stdlib/locale-agnostic-string-conversions.md,106,2

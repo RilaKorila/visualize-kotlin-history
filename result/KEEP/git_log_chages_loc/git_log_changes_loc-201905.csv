@@ -1,0 +1,4 @@
+filename,add_lines,del_lines
+proposals/stdlib/random.md,2,2
+proposals/stdlib/result.md,1,1
+proposals/unsigned-types.md,21,5

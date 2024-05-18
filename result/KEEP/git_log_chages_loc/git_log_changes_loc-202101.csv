@@ -1,0 +1,7 @@
+filename,add_lines,del_lines
+proposals/inline-classes.md,91,0
+proposals/jvm-records.md,165,0
+proposals/stdlib/char-int-conversions.md,185,0
+proposals/stdlib/locale-agnostic-string-conversions.md,3,2
+proposals/stdlib/runningFold-and-runningReduce.md,133,0
+proposals/stdlib/scan-and-scanReduce.md,1,211

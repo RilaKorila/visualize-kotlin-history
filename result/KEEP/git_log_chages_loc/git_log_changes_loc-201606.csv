@@ -1,0 +1,9 @@
+filename,add_lines,del_lines
+proposals/data-class-inheritance.md,118,4
+proposals/destructuring-in-parameters.md,156,0
+proposals/script-definition-template.md,138,12
+proposals/sealed-class-inheritance.md,120,2
+proposals/stdlib/group-and-fold.md,181,39
+proposals/stdlib/occurrences-of.md,109,12
+proposals/stdlib/string-to-number.md,19,13
+proposals/type-aliases.md,40,5

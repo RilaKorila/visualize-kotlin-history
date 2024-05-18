@@ -1,0 +1,15 @@
+filename,add_lines,del_lines
+proposals/experimental.md,420,221
+proposals/functional-types-with-big-arity-on-jvm.md,133,41
+proposals/inline-classes.md,102,1
+proposals/stdlib/abstract-collections.md,1,1
+proposals/stdlib/bignumber-operations.md,1,1
+proposals/stdlib/group-and-fold.md,1,1
+proposals/stdlib/map-copying.md,1,1
+proposals/stdlib/on-each.md,1,1
+proposals/stdlib/random.md,266,2
+proposals/stdlib/string-to-number.md,1,1
+proposals/stdlib/success-or-failure.md,834,111
+proposals/stdlib/window-sliding.md,1,1
+proposals/unsigned-types.md,498,106
+proposals/val-in-when-subject.md,150,9

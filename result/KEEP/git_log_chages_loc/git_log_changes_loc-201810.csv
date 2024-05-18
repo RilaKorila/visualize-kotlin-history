@@ -1,0 +1,6 @@
+filename,add_lines,del_lines
+README.md,0,1
+proposals/coroutines.md,1970,0
+proposals/inline-classes.md,92,13
+proposals/jvm-field-annotation-in-interface-companion.md,12,11
+proposals/jvm-static-annotation-in-interface-companion.md,4,4

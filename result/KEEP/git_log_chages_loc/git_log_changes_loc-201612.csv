@@ -1,0 +1,8 @@
+filename,add_lines,del_lines
+proposals/bound-callable-references.md,10,26
+proposals/stdlib/abstract-collections.md,1,1
+proposals/stdlib/group-and-fold.md,4,4
+proposals/stdlib/map-copying.md,1,1
+proposals/stdlib/on-each.md,1,1
+proposals/stdlib/string-to-number.md,5,1
+proposals/stdlib/window-sliding.md,7,1

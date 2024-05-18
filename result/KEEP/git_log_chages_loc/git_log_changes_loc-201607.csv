@@ -1,0 +1,13 @@
+filename,add_lines,del_lines
+TargetDependentBuiltIns.md,202,202
+proposals/data-class-inheritance.md,5,0
+proposals/generic-values-and-valueof-for-enums.md,98,0
+proposals/inline-properties.md,56,4
+proposals/jdk-dependent-built-ins.md,294,146
+proposals/local-delegated-properties.md,67,5
+proposals/opening-classes-for-frameworks.md,113,0
+proposals/scope-control-for-implicit-receivers.md,103,0
+proposals/sealed-class-inheritance.md,12,14
+proposals/stdlib/group-and-fold.md,116,51
+proposals/stdlib/map-copying.md,1,1
+proposals/stdlib/string-to-number.md,3,2

@@ -1,0 +1,4 @@
+filename,add_lines,del_lines
+proposals/denotable-nullability-flexible-types.md,1,1
+proposals/jsr-305-custom-nullability-qualifiers.md,193,64
+proposals/local-and-top-level-lateinit-vars.md,46,0

@@ -1,0 +1,4 @@
+filename,add_lines,del_lines
+proposals/coroutines.md,1,1
+proposals/extensions/serialization.md,147,157
+proposals/stdlib/durations-and-time-measurement.md,4,2

@@ -1,0 +1,5 @@
+filename,add_lines,del_lines
+proposals/stdlib/bignumber-operations.md,6,12
+proposals/stdlib/group-and-fold.md,16,14
+proposals/stdlib/map-copying.md,1,1
+proposals/stdlib/on-each.md,1,1

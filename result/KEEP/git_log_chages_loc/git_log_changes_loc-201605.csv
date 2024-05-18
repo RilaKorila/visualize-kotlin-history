@@ -1,0 +1,10 @@
+filename,add_lines,del_lines
+.gitignore,1,0
+README.md,7,3
+proposals/bound-callable-references.md,173,17
+proposals/stdlib/map-copying.md,113,0
+proposals/stdlib/proposal-template.md,149,149
+proposals/stdlib/string-to-number.md,95,0
+proposals/stdlib/window-sliding.md,145,3
+proposals/stdlib/{proposal-template.md,,
+proposals/type-aliases.md,173,43

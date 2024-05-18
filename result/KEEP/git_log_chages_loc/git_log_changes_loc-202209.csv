@@ -1,0 +1,5 @@
+filename,add_lines,del_lines
+proposals/annotation-instantiation.md,4,5
+proposals/context-receivers.md,6,6
+proposals/coroutines.md,1,1
+proposals/subclass-opt-in-required.md,133,0

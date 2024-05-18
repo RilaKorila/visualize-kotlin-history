@@ -1,0 +1,6 @@
+filename,add_lines,del_lines
+proposals/experimental.md,1,200
+proposals/opt-in.md,342,44
+proposals/repeatable-annotations.md,10,5
+proposals/scripting-support.md,43,39
+proposals/unsigned-types.md,1,1

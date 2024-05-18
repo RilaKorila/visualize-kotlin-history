@@ -1,0 +1,6 @@
+filename,add_lines,del_lines
+README.md,9,0
+proposals/bound-callable-references.md,88,24
+proposals/stdlib/group-and-fold.md,66,38
+proposals/stdlib/map-copying.md,8,4
+proposals/stdlib/peek.md,91,0

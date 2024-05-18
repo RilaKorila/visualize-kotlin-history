@@ -1,0 +1,10 @@
+filename,add_lines,del_lines
+proposals/extensions/serialization.md,468,1
+proposals/inline-classes.md,221,11
+proposals/jvm-field-annotation-in-interface-companion.md,42,0
+proposals/jvm-static-annotation-in-interface-companion.md,36,0
+proposals/scripting-support.md,184,230
+proposals/stdlib/random.md,10,7
+proposals/stdlib/result.md,729,1
+proposals/stdlib/{success-or-failure.md,,
+proposals/unsigned-types.md,6,6

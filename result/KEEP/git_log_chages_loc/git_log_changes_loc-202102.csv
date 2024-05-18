@@ -1,0 +1,5 @@
+filename,add_lines,del_lines
+README.md,10,3
+notes/value-classes.md,1240,1
+proposals/sealed-class-inheritance.md,1,2
+proposals/sealed-interface-freedom.md,186,0

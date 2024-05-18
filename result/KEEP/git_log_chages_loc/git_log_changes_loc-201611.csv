@@ -1,0 +1,11 @@
+filename,add_lines,del_lines
+proposals/destructuring-in-parameters.md,6,3
+proposals/generic-values-and-valueof-for-enums.md,7,10
+proposals/jdk-dependent-built-ins.md,1,0
+proposals/scope-control-for-implicit-receivers.md,39,11
+proposals/script-definition-template.md,3,0
+proposals/stdlib/window-sliding.md,1,0
+proposals/stdlib/{peek.md,,
+proposals/type-aliases.md,73,7
+proposals/underscore-for-unused-parameters.md,1,2
+proposals/underscores-in-numeric-literals.md,3,6

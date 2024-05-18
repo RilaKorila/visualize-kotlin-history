@@ -1,0 +1,10 @@
+filename,add_lines,del_lines
+proposals/bound-callable-references.md,23,23
+proposals/data-class-inheritance.md,2,2
+proposals/destructuring-in-parameters.md,3,2
+proposals/js/JsName.md,225,12
+proposals/js/_Glossary.md,5,1
+proposals/stdlib/abstract-collections.md,103,0
+proposals/type-aliases.md,138,58
+proposals/underscore-for-unused-parameters.md,114,0
+proposals/underscores-in-numeric-literals.md,81,0
