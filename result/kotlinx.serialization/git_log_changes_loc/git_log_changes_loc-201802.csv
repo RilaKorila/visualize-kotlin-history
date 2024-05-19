@@ -1,0 +1,14 @@
+filename,add_lines,del_lines
+README.md,11,4
+build.gradle,11,9
+example-jvm/build.gradle,2,2
+formats/README.md,18,0
+formats/config/build.gradle,27,0
+formats/config/src/main/kotlin/org/jetbrains/kotlinx/serialization/config/ConfigReader.kt,159,0
+formats/config/src/test/kotlin/org/jetbrains/kotlinx/serialization/config/ConfigParserObjectsTest.kt,156,0
+formats/config/src/test/kotlin/org/jetbrains/kotlinx/serialization/config/ConfigParserValuesTest.kt,87,0
+runtime/common/src/main/kotlin/kotlinx/serialization/Tagged.kt,5,1
+runtime/common/src/test/kotlin/kotlinx/serialization/MapperTest.kt,53,2
+runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt,1,1
+runtime/jvm/src/test/kotlin/kotlinx/serialization/privateclasstest/PrivateDataOutOfKotlinXSerializationPackageTest.kt,48,0
+settings.gradle,2,0

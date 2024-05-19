@@ -1,0 +1,14 @@
+filename,add_lines,del_lines
+CONTRIBUTING.md,33,0
+README.md,11,7
+build.gradle,5,7
+docs/building.md,6,5
+formats/README.md,12,4
+gradle.properties,2,2
+gradle/native_mpp.gradle,69,7
+gradle/targets.gradle,26,0
+gradle/teamcity.gradle,14,0
+integration-test/src/jvmTest/kotlin/sample/SampleTestsJVM.kt,11,0
+runtime/build.gradle,2,15
+runtime/commonTest/src/kotlinx/serialization/SerializerResolvingTest.kt,10,16
+runtime/nativeMain/src/kotlinx/serialization/Platform.kt,2,2

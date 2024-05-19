@@ -1,0 +1,5 @@
+filename,add_lines,del_lines
+runtime/js/src/main/kotlin/kotlinx/serialization/Serialization.kt,2,2
+runtime/jvm/src/main/kotlin/kotlinx/serialization/Resolving.kt,1,4
+runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt,14,5
+runtime/jvm/src/test/kotlin/kotlinx/serialization/features/ResolvingTest.kt,16,0

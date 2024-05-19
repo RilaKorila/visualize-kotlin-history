@@ -1,0 +1,14 @@
+filename,add_lines,del_lines
+README.md,2,10
+build.gradle,0,1
+examples/example-multiplatform/build.gradle,1,6
+gradle.properties,10,3
+gradle/bintray.gradle,12,18
+gradle/native_mpp.gradle,1,1
+gradle/publish-mpp-root-module-in-platform.gradle,40,0
+gradle/publishing.gradle,36,25
+gradle/wrapper/gradle-wrapper.properties,1,1
+integration-test/build.gradle,3,17
+runtime/commonMain/src/kotlinx/serialization/SerialDescriptor.kt,11,15
+runtime/commonMain/src/kotlinx/serialization/internal/CollectionDescriptors.kt,12,11
+runtime/commonTest/src/kotlinx/serialization/SerialDescriptorSpecificationTest.kt,8,3

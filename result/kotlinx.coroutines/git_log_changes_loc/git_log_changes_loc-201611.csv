@@ -1,0 +1,12 @@
+filename,add_lines,del_lines
+kotlinx-coroutines-async-common/pom.xml,35,0
+kotlinx-coroutines-async-common/src/main/kotlin/runWithCurrentContinuation.kt,35,0
+kotlinx-coroutines-async-common/src/main/test/kotlin/RunWithCCTest.kt,5,0
+kotlinx-coroutines-async/pom.xml,7,0
+kotlinx-coroutines-async/src/main/kotlin/async.kt,65,67
+kotlinx-coroutines-async/src/test/kotlin/AsyncIOTest.kt,2,1
+kotlinx-coroutines-async/src/test/kotlin/AsyncTest.kt,1,1
+kotlinx-coroutines-generate/src/main/kotlin/generate.kt,3,1
+kotlinx-coroutines-rx/pom.xml,7,0
+kotlinx-coroutines-rx/src/main/kotlin/asyncRx.kt,6,13
+pom.xml,1,0

@@ -1,0 +1,6 @@
+filename,add_lines,del_lines
+runtime/common/src/main/kotlin/kotlinx/serialization/json/JSON.kt,13,18
+runtime/common/src/test/kotlin/kotlinx/serialization/CustomSerializersTest.kt,275,24
+runtime/common/src/test/kotlin/kotlinx/serialization/protobuf/CustomSerializersProtobufTest.kt,238,11
+runtime/jvm/src/main/kotlin/kotlinx/serialization/Serialization.kt,17,7
+runtime/jvm/src/test/kotlin/kotlinx/serialization/features/ResolvingTest.kt,12,0

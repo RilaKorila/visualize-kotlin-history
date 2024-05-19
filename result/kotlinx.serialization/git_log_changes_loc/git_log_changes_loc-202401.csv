@@ -1,0 +1,11 @@
+filename,add_lines,del_lines
+core/commonMain/src/kotlinx/serialization/Serializers.kt,1,2
+core/commonMain/src/kotlinx/serialization/internal/Platform.common.kt,10,4
+formats/hocon/src/main/kotlin/kotlinx/serialization/hocon/Hocon.kt,6,4
+formats/json-tests/commonTest/src/kotlinx/serialization/features/JsonNamingStrategyTest.kt,46,0
+formats/json/api/kotlinx-serialization-json.api,1,0
+formats/json/commonMain/src/kotlinx/serialization/json/JsonNamingStrategy.kt,69,25
+formats/protobuf/commonMain/src/kotlinx/serialization/protobuf/schema/ProtoBufSchemaGenerator.kt,12,7
+formats/protobuf/jvmTest/resources/OptionalClass.proto,15,3
+formats/protobuf/jvmTest/resources/common/schema.proto,15,3
+formats/protobuf/jvmTest/src/kotlinx/serialization/protobuf/schema/GenerationTest.kt,14,2

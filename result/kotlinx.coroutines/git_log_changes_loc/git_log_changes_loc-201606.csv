@@ -1,0 +1,13 @@
+filename,add_lines,del_lines
+.gitignore,3,0
+README.md,98,7
+kotlinx-coroutines-async-example-ui/pom.xml,43,0
+kotlinx-coroutines-async-example-ui/src/main/kotlin/main.kt,55,7
+kotlinx-coroutines-async/pom.xml,35,0
+kotlinx-coroutines-async/src/main/kotlin/async.kt,167,8
+kotlinx-coroutines-async/src/test/kotlin/AsyncIOTest.kt,100,0
+kotlinx-coroutines-async/src/test/kotlin/AsyncTest.kt,106,0
+kotlinx-coroutines-generate/pom.xml,22,0
+kotlinx-coroutines-generate/src/main/kotlin/generate.kt,39,0
+kotlinx-coroutines-generate/src/test/kotlin/GenerateTest.kt,137,0
+pom.xml,172,0

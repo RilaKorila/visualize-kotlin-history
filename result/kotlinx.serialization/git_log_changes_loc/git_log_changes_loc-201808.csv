@@ -1,0 +1,14 @@
+filename,add_lines,del_lines
+CHANGELOG.md,8,0
+README.md,8,7
+build.gradle,2,1
+example-ios/build.gradle,4,4
+example-ios/src/main/kotlin/main.kt,20,17
+example-js/build.gradle,2,2
+example-jvm/build.gradle,2,2
+example-jvm/pom.xml,2,2
+example-native/build.gradle,3,3
+gradle.properties,6,6
+json/README.md,2,2
+runtime/common/src/main/kotlin/kotlinx/serialization/Tagged.kt,7,2
+runtime/common/src/test/kotlin/kotlinx/serialization/MapperTest.kt,30,2

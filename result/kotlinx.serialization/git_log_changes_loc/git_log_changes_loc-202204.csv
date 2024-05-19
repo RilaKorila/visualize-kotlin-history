@@ -1,0 +1,11 @@
+filename,add_lines,del_lines
+core/commonMain/src/kotlinx/serialization/encoding/Decoding.kt,4,11
+core/commonMain/src/kotlinx/serialization/encoding/Encoding.kt,9,15
+core/commonMain/src/kotlinx/serialization/internal/AbstractPolymorphicSerializer.kt,1,1
+core/commonMain/src/kotlinx/serialization/internal/ObjectSerializer.kt,8,1
+formats/json/commonTest/src/kotlinx/serialization/features/ObjectSerialization.kt,16,3
+formats/protobuf/commonMain/src/kotlinx/serialization/protobuf/schema/ProtoBufSchemaGenerator.kt,18,5
+formats/protobuf/commonTest/src/kotlinx/serialization/protobuf/schema/SchemaValidationsTest.kt,22,1
+formats/protobuf/jvmTest/resources/PackedListClass.proto,23,0
+formats/protobuf/jvmTest/resources/common/schema.proto,10,0
+formats/protobuf/jvmTest/src/kotlinx/serialization/protobuf/schema/GenerationTest.kt,11,2

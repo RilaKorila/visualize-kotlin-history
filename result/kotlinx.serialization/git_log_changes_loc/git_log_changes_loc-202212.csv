@@ -1,0 +1,14 @@
+filename,add_lines,del_lines
+README.md,42,70
+core/build.gradle,20,0
+core/commonMain/src/kotlinx/serialization/internal/Enums.kt,27,1
+core/commonMain/src/kotlinx/serialization/internal/Primitives.kt,,
+core/commonTest/src/kotlinx/serialization/EnumDescriptorsTest.kt,105,0
+core/commonTest/src/kotlinx/serialization/PrimitiveSerialDescriptorTest.kt,,
+core/jvmMain/src/kotlinx/serialization/internal/Caching.kt,24,24
+integration-test/gradle.properties,4,1
+integration-test/src/commonTest/kotlin/sample/MultiFileHierarchyModuleB.kt,55,56
+integration-test/src/commonTest/kotlin/sample/MultiFileHierarchyTest.kt,45,45
+integration-test/src/jsTest/kotlin/sample/SampleTestsJS.kt,1,1
+rules/common.pro,38,2
+rules/r8.pro,12,0

@@ -1,0 +1,15 @@
+filename,add_lines,del_lines
+README.md,72,9
+build.gradle,8,1
+core/build.gradle,1,1
+core/commonMain/src/kotlinx/serialization/internal/CollectionSerializers.kt,2,2
+docs/polymorphism.md,1,1
+formats/README.md,11,3
+formats/cbor/build.gradle,1,1
+formats/json/build.gradle,1,1
+formats/json/commonMain/src/kotlinx/serialization/json/internal/StreamingJsonDecoder.kt,13,0
+formats/json/commonTest/src/kotlinx/serialization/json/JsonModesTest.kt,17,0
+formats/properties/build.gradle,1,1
+formats/protobuf/build.gradle,1,1
+gradle.properties,3,0
+gradle/kover.gradle,21,0

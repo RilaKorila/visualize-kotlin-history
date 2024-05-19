@@ -1,0 +1,15 @@
+filename,add_lines,del_lines
+CHANGELOG.md,10,0
+README.md,4,4
+RELEASING.md,4,3
+build.gradle,4,0
+core/commonMain/src/kotlinx/serialization/descriptors/SerialDescriptor.kt,1,1
+core/commonMain/src/kotlinx/serialization/descriptors/SerialDescriptors.kt,2,2
+dokka-templates/README.md,12,0
+formats/hocon/build.gradle,1,1
+formats/json-okio/commonMain/src/kotlinx/serialization/json/okio/internal/OkioJsonStreams.kt,1,1
+formats/json-tests/commonTest/src/kotlinx/serialization/json/JsonHugeDataSerializationTest.kt,40,0
+formats/json/commonMain/src/kotlinx/serialization/json/internal/lexer/JsonLexer.kt,30,22
+gradle.properties,3,3
+gradle/dokka.gradle,9,0
+integration-test/gradle.properties,1,1
