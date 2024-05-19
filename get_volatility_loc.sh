@@ -20,7 +20,7 @@ file_changes_in_range() {
 }
 
 main() {
-    start_date="2011-01-01"
+    start_date="2012-05-01"
     end_date="2024-05-01"
 
     one_month_from=$start_date
