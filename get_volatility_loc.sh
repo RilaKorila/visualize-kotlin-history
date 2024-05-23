@@ -20,8 +20,8 @@ file_changes_in_range() {
 }
 
 main() {
-    start_date="2012-05-01"
-    end_date="2024-05-01"
+    start_date="2016-03-01"
+    end_date="2024-06-01"
 
     one_month_from=$start_date
     one_month_to=$(date -j -v+1m -f "%Y-%m-%d" "$start_date" "+%Y-%m-%d")
