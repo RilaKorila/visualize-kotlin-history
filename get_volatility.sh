@@ -1,6 +1,6 @@
 #!/bin/bash
 
-start_date="2010-11-01"
+start_date="2011-01-01"
 end_date="2024-05-01"
 
 one_month_from=$start_date
@@ -13,8 +13,6 @@ output_base_name="git_log_changes"
 
 # 開始日から終了日まで1ヶ月ごとに繰り返す
 while [ "$(date -j -f "%Y-%m-%d" "$one_month_from" "+%Y%m")" -lt "$(date -j -f "%Y-%m-%d" "$end_date" "+%Y%m")" ]; do
-
-    # 現在の期間を表示
     echo "Processing changes from: $one_month_from to: $one_month_to"
 
     # 出力ファイル名を設定
@@ -24,7 +22,6 @@ while [ "$(date -j -f "%Y-%m-%d" "$one_month_from" "+%Y%m")" -lt "$(date -j -f "
     git_log_output=$(git log --since="$one_month_from" --until="$one_month_to" --format=format: --name-only)
 
     # ファイルに書き込む
-    echo "Changes from $one_month_from to $one_month_to:" >> "$output_file"
     echo "$git_log_output" | egrep -v '^$' | sort | uniq -c | sort -r >> "$output_file"
 
     # 調査期間を1ヶ月進める
