@@ -1,4 +1,3 @@
-Changes from 2016-07-01 to 2016-08-01:
   63 translator/src/main/kotlin/org/kotlinnative/translator/FunctionCodegen.kt
   57 translator/src/main/kotlin/org/kotlinnative/translator/llvm/LLVMBuilder.kt
   28 translator/src/main/kotlin/org/kotlinnative/translator/ClassCodegen.kt
@@ -409,6 +408,7 @@ Changes from 2016-07-01 to 2016-08-01:
    2 libraries/stdlib/jre8/src/kotlin/streams/Streams.kt
    2 libraries/stdlib/jre8/src/kotlin/internal/JRE8PlatformImplementations.kt
    2 libraries/stdlib/jre8/src/kotlin/collections/Collections.kt
+   2 libraries/stdlib/jre8/pom.xml
    2 libraries/stdlib/jre7/test/TryWithResourcesCloseableTest.kt
    2 libraries/stdlib/jre7/test/TryWithResourcesAutoCloseableTest.kt
    2 js/js.translator/src/org/jetbrains/kotlin/js/translate/utils/TranslationUtils.java
@@ -993,14 +993,16 @@ Changes from 2016-07-01 to 2016-08-01:
    1 libraries/stdlib/src/kotlin/collections/Maps.kt
    1 libraries/stdlib/src/kotlin/collections/Collections.kt
    1 libraries/stdlib/src/generated/_Collections.kt
+   1 libraries/stdlib/pom.xml
    1 libraries/stdlib/jre8/test/text/RegexTest.kt
    1 libraries/stdlib/jre8/test/collections/MapTest.kt
    1 libraries/stdlib/jre8/test/collections/ListTest.kt
    1 libraries/stdlib/jre8/test/collections/IterableTest.kt
    1 libraries/stdlib/jre8/test/collections/CollectionTest.kt
    1 libraries/stdlib/jre8/src/kotlin/text/RegexExtensions.kt
-   1 libraries/stdlib/jre8/pom.xml
    1 libraries/stdlib/jre7/src/kotlin/internal/JRE7PlatformImplementations.kt
+   1 libraries/stdlib/jre7/pom.xml
+   1 libraries/pom.xml
    1 libraries/build-docs.xml
    1 libraries/ReadMe.md
    1 libraries/.gitignore

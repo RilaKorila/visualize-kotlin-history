@@ -1,4 +1,3 @@
-Changes from 2017-06-01 to 2017-07-01:
    5 kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/Job.kt
    5 kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/CancellableContinuation.kt
    4 kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/CoroutineScope.kt

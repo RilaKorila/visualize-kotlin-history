@@ -1,4 +1,3 @@
-Changes from 2022-10-01 to 2022-11-01:
   48 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
   48 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
   33 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmMultiFieldValueClassLowering.kt
@@ -24,7 +23,7 @@ Changes from 2022-10-01 to 2022-11-01:
   13 compiler/testData/codegen/box/valueClasses/overrides_typeParameters.txt
   13 compiler/testData/codegen/box/valueClasses/overrides.txt
   13 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/MfvcNode.kt
-  12 libraries/tools/binary-compatibility-validator/reference-public-api/kotlin-gradle-plugin-api.txt
+  11 libraries/tools/binary-compatibility-validator/reference-public-api/kotlin-gradle-plugin-api.txt
   11 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBytecodeTextTestGenerated.java
   11 compiler/testData/codegen/box/valueClasses/throwingMFVCReassignments.txt
   11 compiler/testData/codegen/box/valueClasses/equality.txt
@@ -193,7 +192,6 @@ Changes from 2022-10-01 to 2022-11-01:
    4 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/Kotlin2JsSourceSetProcessor.kt
    4 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJsCompilerOptionsDefault.kt
    4 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/KotlinJsLibraryGradlePluginIT.kt
-   4 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/HasKotlinDependencies.kt
    4 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJsCompilerOptions.kt
    4 kotlin-native/runtime/src/gc/stms/cpp/GCImpl.cpp
    4 kotlin-native/runtime/src/gc/noop/cpp/GCImpl.cpp
@@ -260,7 +258,6 @@ Changes from 2022-10-01 to 2022-11-01:
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/native/tasks/KotlinNativeLink.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/metadata/KotlinMetadataTargetPreset.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/jvm/KotlinJvmWithJavaTargetPreset.kt
-   3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/npm/NpmDependencyExtension.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinWasmTargetPreset.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTargetPreset.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsIrTargetConfigurator.kt
@@ -456,6 +453,7 @@ Changes from 2022-10-01 to 2022-11-01:
    2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/testing/mocha/KotlinMocha.kt
    2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/npm/tasks/KotlinPackageJsonTask.kt
    2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/npm/resolver/KotlinProjectNpmResolver.kt
+   2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/npm/NpmDependencyExtension.kt
    2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/ir/KotlinJsBinaryContainer.kt
    2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/dukat/DukatCompilationResolverPlugin.kt
    2 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/dsl/KotlinJsTargetDsl.kt
@@ -506,6 +504,7 @@ Changes from 2022-10-01 to 2022-11-01:
    2 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/mpp/pm20/GradleKpmVariantCompilationData.kt
    2 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinTargetsContainer.kt
    2 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinTargetHierarchyDescriptor.kt
+   2 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/HasKotlinDependencies.kt
    2 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinTargetHierarchyDsl.kt
    2 libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJsOptions.kt
    2 libraries/stdlib/wasm/internal/kotlin/wasm/internal/TypeInfo.kt
@@ -2182,7 +2181,6 @@ Changes from 2022-10-01 to 2022-11-01:
    1 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/unlinked/PartialLinkageSupportImpl.kt
    1 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/unlinked/PartialLinkageSupport.kt
    1 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/unlinked/ImplementedFakeOverrides.kt
-   1 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/IrBodyDeserializer.kt
    1 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/DescriptorByIdSignatureFinderImpl.kt
    1 compiler/ir/ir.tree/tree-generator/src/org/jetbrains/kotlin/ir/generator/IrTree.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/AdditionalIrUtils.kt

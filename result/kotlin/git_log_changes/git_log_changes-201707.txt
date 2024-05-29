@@ -1,4 +1,3 @@
-Changes from 2017-07-01 to 2017-08-01:
   34 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   34 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   34 compiler/tests-ir-jvm/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
@@ -712,7 +711,6 @@ Changes from 2017-07-01 to 2017-08-01:
    2 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/NewOverloadingConflictResolver.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightMethodImpl.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/EnumClassLowering.kt
-   2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/Ir.kt
    2 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/cacheVersions.kt
    2 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/IncrementalJvmCompilerRunner.kt
    2 compiler/frontend/src/org/jetbrains/kotlin/types/expressions/PatternMatchingTypingVisitor.kt
@@ -1188,14 +1186,17 @@ Changes from 2017-07-01 to 2017-08-01:
    1 libraries/stdlib/test/properties/delegation/MapAccessorsTest.kt
    1 libraries/stdlib/test/collections/MapTest.kt
    1 libraries/stdlib/src/kotlin/util/KotlinVersion.kt
+   1 libraries/stdlib/src/kotlin/text/StringsJVM.kt
    1 libraries/stdlib/src/kotlin/coroutines/experimental/CoroutineContextImpl.kt
    1 libraries/stdlib/src/kotlin/coroutines/experimental/CoroutineContext.kt
+   1 libraries/stdlib/src/kotlin/collections/MutableCollections.kt
    1 libraries/stdlib/src/kotlin/collections/Maps.kt
    1 libraries/stdlib/src/generated/_Strings.kt
    1 libraries/stdlib/src/generated/_Sequences.kt
    1 libraries/stdlib/src/generated/_Maps.kt
    1 libraries/stdlib/src/generated/_Collections.kt
    1 libraries/stdlib/src/generated/_Arrays.kt
+   1 libraries/stdlib/samples/test/samples/text/strings.kt
    1 libraries/stdlib/js/build.gradle
    1 libraries/kotlin.test/js/src/main/kotlin/org/junit/junitTest.kt
    1 libraries/kotlin.test/js/src/main/kotlin/kotlin/test/adapters/QUnitAdapter.kt
@@ -4198,6 +4199,7 @@ Changes from 2017-07-01 to 2017-08-01:
    1 core/descriptor.loader.java/src/org/jetbrains/kotlin/load/java/descriptors/JavaMethodDescriptor.java
    1 core/descriptor.loader.java/src/org/jetbrains/kotlin/load/java/JvmAnnotationNames.kt
    1 core/descriptor.loader.java/src/jvm_descriptors.proto
+   1 core/builtins/native/kotlin/Collections.kt
    1 contrib/binaryen.diff
    1 compiler/util/src/org/jetbrains/kotlin/utils/KotlinPathsFromHomeDir.java
    1 compiler/util/src/org/jetbrains/kotlin/utils/KotlinPaths.java
@@ -4565,10 +4567,6 @@ Changes from 2017-07-01 to 2017-08-01:
    1 compiler/javac-wrapper/src/org/jetbrains/kotlin/javac/KotlinClassifiersCache.kt
    1 compiler/javac-wrapper/src/org/jetbrains/kotlin/javac/JavacWrapper.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/SymbolTable.kt
-   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/symbols/impl/IrSymbolBase.kt
-   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/symbols/IrSymbol.kt
-   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/impl/IrBlockImpl.kt
-   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/IrBlock.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrFile.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrDeclarationOrigin.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/Scope.kt
@@ -4580,32 +4578,7 @@ Changes from 2017-07-01 to 2017-08-01:
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/ConstAndJvmFieldPropertiesLowering.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/intrinsics/IrIntrinsicFunction.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/descriptors/SpecialDescriptorsFactory.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/util/IrUtils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/builders/IrBuilders.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/VarargLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/TailrecLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/StringConcatenationLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LowerUtils.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LocalFunctionsLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LocalDeclarationsLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LateinitLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/IrBuildUtils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/DefaultArgumentStubGenerator.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/AbstractClosureAnnotator.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/IrUtils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/descriptors/utils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/descriptors/DescriptorUtils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/Utils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/TailRecursionCallsCollector.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrValidator.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrElementTransformerVoidWithContext.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrCopy.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/DumpIrTreeWithDescriptorsVisitor.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/DeepCopyIrTreeWithDescriptoros.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/DeepCopyIrTreeWithDeclarations.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/CommonBackendContext.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/CheckIrElementVisitor.kt
-   1 compiler/ir/backend.common/backend.common.iml
    1 compiler/incremental-compilation-impl/test/org/jetbrains/kotlin/incremental/KotlinStandaloneIncrementalCompilationTest.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/util/MappedExtensionProvider.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/types/expressions/unqualifiedSuper/unqualifiedSuper.kt

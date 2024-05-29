@@ -1,4 +1,3 @@
-Changes from 2017-01-01 to 2017-02-01:
   12 kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/Job.kt
   10 kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/Builders.kt
    9 pom.xml

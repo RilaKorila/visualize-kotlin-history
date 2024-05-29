@@ -1,4 +1,3 @@
-Changes from 2016-06-01 to 2016-07-01:
    4 kotlinx-coroutines-async/src/main/kotlin/async.kt
    4 README.md
    3 kotlinx-coroutines-async-example-ui/src/main/kotlin/main.kt

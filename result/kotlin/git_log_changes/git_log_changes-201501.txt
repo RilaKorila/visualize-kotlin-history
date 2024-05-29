@@ -1,4 +1,3 @@
-Changes from 2015-01-01 to 2015-02-01:
   26 generators/src/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
   24 js/js.frontend/src/org/jetbrains/kotlin/di/InjectorForTopDownAnalyzerForJs.java
   23 compiler/frontend/src/org/jetbrains/kotlin/di/InjectorForLazyTopDownAnalyzerBasic.java

@@ -1,4 +1,3 @@
-Changes from 2018-09-01 to 2018-10-01:
   42 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
   40 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   40 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java

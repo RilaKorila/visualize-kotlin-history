@@ -1,4 +1,3 @@
-Changes from 2024-04-01 to 2024-05-01:
   59 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   59 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirPreresolvedReversedDiagnosticCompilerFE10TestDataTestGenerated.java
   59 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosticCompilerTestFE10TestdataTestGenerated.java

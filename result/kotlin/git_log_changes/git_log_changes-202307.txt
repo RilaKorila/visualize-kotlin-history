@@ -1,5 +1,4 @@
-Changes from 2023-07-01 to 2023-08-01:
-  59 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
+  57 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   42 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirPsiOldFrontendDiagnosticsTestGenerated.java
   40 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirLightTreeOldFrontendDiagnosticsTestGenerated.java
   40 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirPreresolvedReversedDiagnosticCompilerFE10TestDataTestGenerated.java
@@ -24,8 +23,6 @@ Changes from 2023-07-01 to 2023-08-01:
   18 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/fir/FirJsCodegenBoxTestGenerated.java
   18 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/FirDiagnosticsList.kt
   17 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/diagnostics/KotlinToolingDiagnostics.kt
-  17 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithPsiTestGenerated.java
-  17 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithLightTreeTestGenerated.java
   16 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   16 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrorsDefaultMessages.kt
   15 wasm/wasm.tests/tests-gen/org/jetbrains/kotlin/wasm/test/K1WasmCodegenBoxTestGenerated.java
@@ -34,6 +31,8 @@ Changes from 2023-07-01 to 2023-08-01:
   15 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirExpressionsResolveTransformer.kt
   15 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirDeclarationsResolveTransformer.kt
   15 compiler/fir/checkers/gen/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrors.kt
+  15 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithPsiTestGenerated.java
+  15 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithLightTreeTestGenerated.java
   14 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrDeclarationStorage.kt
   12 gradle/verification-metadata.xml
   12 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/transformers/LLFirBodyLazyResolver.kt
@@ -68,12 +67,10 @@ Changes from 2023-07-01 to 2023-08-01:
    7 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/Fir2Ir.kt
    7 compiler/tests-for-compiler-generator/tests/org/jetbrains/kotlin/test/generators/GenerateJUnit5CompilerTests.kt
    7 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/ScriptLowering.kt
-   7 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/actualizer/IrExpectActualMatchingContext.kt
    7 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/rendering/DefaultErrorMessages.java
    7 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/BuilderConfigurator.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/FirSyntheticCallGenerator.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/ResolveUtils.kt
-   7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/FirCallResolver.kt
    7 compiler/fir/raw-fir/raw-fir.common/src/org/jetbrains/kotlin/fir/builder/AbstractRawFirBuilder.kt
    7 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/FirHelpers.kt
    7 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/transformers/LLFirAnnotationArgumentMappingLazyResolver.kt
@@ -95,10 +92,12 @@ Changes from 2023-07-01 to 2023-08-01:
    6 compiler/tests-compiler-utils/tests/org/jetbrains/kotlin/fir/FirAnalyzerFacade.kt
    6 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/fir/Fir2IrJsResultsConverter.kt
    6 compiler/resolution.common/src/org/jetbrains/kotlin/resolve/calls/mpp/AbstractExpectActualAnnotationMatchChecker.kt
+   6 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/actualizer/IrExpectActualMatchingContext.kt
    6 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/Errors.java
    6 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/ImplementationConfigurator.kt
    6 compiler/fir/tree/src/org/jetbrains/kotlin/fir/renderer/FirRenderer.kt
    6 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/BodyResolveContext.kt
+   6 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/FirCallResolver.kt
    6 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrImplicitCastInserter.kt
    6 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDiagnosticRenderers.kt
    6 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirExpectActualDeclarationChecker.kt
@@ -276,7 +275,6 @@ Changes from 2023-07-01 to 2023-08-01:
    4 compiler/frontend.common-psi/src/org/jetbrains/kotlin/diagnostics/PositioningStrategies.kt
    4 compiler/fir/tree/src/org/jetbrains/kotlin/fir/declarations/utils/FirDeclarationUtil.kt
    4 compiler/fir/semantics/src/org/jetbrains/kotlin/fir/resolve/calls/ResolutionDiagnostic.kt
-   4 compiler/fir/semantics/src/org/jetbrains/kotlin/fir/resolve/DeclarationUtils.kt
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/scopes/ImportingScopes.kt
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirImplicitBodyResolve.kt
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirArrayOfCallTransformer.kt
@@ -286,7 +284,6 @@ Changes from 2023-07-01 to 2023-08-01:
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/tower/TowerGroup.kt
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/tower/FirInvokeResolveTowerExtension.kt
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/FirArgumentsToParametersMapper.kt
-   4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/ConstructorProcessing.kt
    4 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/SamResolution.kt
    4 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/TypeUtils.kt
    4 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/ConeTypeContext.kt
@@ -490,12 +487,14 @@ Changes from 2023-07-01 to 2023-08-01:
    3 compiler/fir/tree/gen/org/jetbrains/kotlin/fir/visitors/FirTransformer.kt
    3 compiler/fir/tree/gen/org/jetbrains/kotlin/fir/visitors/FirDefaultVisitorVoid.kt
    3 compiler/fir/tree/gen/org/jetbrains/kotlin/fir/visitors/FirDefaultVisitor.kt
+   3 compiler/fir/semantics/src/org/jetbrains/kotlin/fir/resolve/DeclarationUtils.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/plugin/FirAnnotationArgumentsResolveTransformer.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/plugin/AbstractFirSpecificAnnotationResolveTransformer.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/mpp/FirExpectActualMatcherTransformer.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/contracts/FirAbstractContractResolveTransformerDispatcher.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/providers/impl/FirProviderImpl.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/ResolutionStages.kt
+   3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/ConstructorProcessing.kt
    3 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/ResolutionMode.kt
    3 compiler/fir/raw-fir/psi2fir/src/org/jetbrains/kotlin/fir/builder/PsiConversionUtils.kt
    3 compiler/fir/raw-fir/light-tree2fir/src/org/jetbrains/kotlin/fir/lightTree/converter/AbstractLightTreeRawFirBuilder.kt
@@ -4637,15 +4636,11 @@ Changes from 2023-07-01 to 2023-08-01:
    1 compiler/testData/diagnostics/tests/multiplatform/checkNoActualForExpectInLastModule.fir.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/withOtherIncomatibilities.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/withOtherIncomatibilities.fir.kt
-   1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/withAnnotationActualTypealias.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/typealiasToJavaLibrary.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/typealias.fir.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/sourceRetentionAnnotationsWhenTypealias.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/sourceRetentionAnnotationsWhenTypealias.fir.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/skippedAnnotations.kt
-   1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/repeatableWithArg.kt
-   1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/repeatableWithArg.fir.kt
-   1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/repeatableNoArg.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/kotlinAnaloguesForJavaAnnotations.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/kclassArgWithExpectClass.kt
    1 compiler/testData/diagnostics/tests/multiplatform/annotationMatching/intrinsicConstEvaluation.kt
@@ -4731,11 +4726,6 @@ Changes from 2023-07-01 to 2023-08-01:
    1 compiler/testData/diagnostics/tests/enum/enumInheritance.fir.kt
    1 compiler/testData/diagnostics/tests/enum/constructorWithDefaultParametersOnly.fir.kt
    1 compiler/testData/diagnostics/tests/emptyLhsClassLiterals.kt
-   1 compiler/testData/diagnostics/tests/deprecated/typealiasUsage.kt
-   1 compiler/testData/diagnostics/tests/deprecated/typealiasUsage.fir.kt
-   1 compiler/testData/diagnostics/tests/deprecated/typealiasConstructor.txt
-   1 compiler/testData/diagnostics/tests/deprecated/typealiasConstructor.kt
-   1 compiler/testData/diagnostics/tests/deprecated/typealiasConstructor.fir.kt
    1 compiler/testData/diagnostics/tests/delegation/kt49477Error.fir.kt
    1 compiler/testData/diagnostics/tests/delegation/kt49477.fir.kt
    1 compiler/testData/diagnostics/tests/delegation/kt44843.fir.kt
@@ -5779,7 +5769,6 @@ Changes from 2023-07-01 to 2023-08-01:
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/collectors/CheckerRunningDiagnosticCollectorVisitor.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/collectors/AbstractDiagnosticCollector.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/type/FirOptInUsageTypeRefChecker.kt
-   1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/type/FirDeprecatedTypeChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/syntax/FirExplicitApiDeclarationChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/extended/UselessCallOnNotNullChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/extended/RedundantReturnUnitType.kt
@@ -5789,7 +5778,6 @@ Changes from 2023-07-01 to 2023-08-01:
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirReceiverAccessBeforeSuperCallChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirNotNullAssertionChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirExhaustiveWhenChecker.kt
-   1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirDeprecationChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirConflictsExpressionChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirClassLiteralChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirBreakOrContinueJumpsAcrossFunctionBoundaryChecker.kt

@@ -1,13 +1,12 @@
-Changes from 2018-11-01 to 2018-12-01:
   27 compiler/fir/tree/src/org/jetbrains/kotlin/fir/FirRenderer.kt
   23 compiler/fir/psi2fir/src/org/jetbrains/kotlin/fir/builder/RawFirBuilder.kt
   22 compiler/tests/org/jetbrains/kotlin/fir/FirResolveTestCaseGenerated.java
-  19 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
-  19 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/IrJsCodegenBoxTestGenerated.java
+  20 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
+  20 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/IrJsCodegenBoxTestGenerated.java
+  20 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
+  20 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  20 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   19 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
-  19 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
-  19 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  19 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   19 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightPsi.kt
   16 idea/tests/org/jetbrains/kotlin/idea/inspections/LocalInspectionTestGenerated.java
   15 idea/tests/org/jetbrains/kotlin/idea/quickfix/QuickFixMultiModuleTestGenerated.java
@@ -103,6 +102,8 @@ Changes from 2018-11-01 to 2018-12-01:
    6 compiler/testData/fir/resolve/multifile/TypeAliasExpansion.txt
    6 compiler/psi/src/org/jetbrains/kotlin/KtNodeTypes.java
    6 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/coroutines/SuspendFunctionsLowering.kt
+   6 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/EnumClassLowering.kt
+   6 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/compiler.kt
    6 compiler/fir/tree/src/org/jetbrains/kotlin/fir/types/impl/FirUserTypeImpl.kt
    6 compiler/fir/tree/src/org/jetbrains/kotlin/fir/types/impl/FirBuiltinType.kt
    6 compiler/fir/tree/src/org/jetbrains/kotlin/fir/declarations/impl/FirResolvedClassImpl.kt
@@ -177,11 +178,9 @@ Changes from 2018-11-01 to 2018-12-01:
    4 compiler/testData/fir/rawBuilder/declarations/simpleClass.kt
    4 compiler/testData/fir/rawBuilder/declarations/functionTypes.txt
    4 compiler/psi/src/org/jetbrains/kotlin/psi/KtProperty.java
-   4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/EnumClassLowering.kt
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/BridgesConstruction.kt
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/BlockDecomposerLowering.kt
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/ir/IrBuilder.kt
-   4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/compiler.kt
    4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LocalDeclarationsLowering.kt
    4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/InlineClassDeclarationLowering.kt
    4 compiler/fir/tree/visitors-generator/src/VisitorsGenerator.kt
@@ -281,12 +280,15 @@ Changes from 2018-11-01 to 2018-12-01:
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/EnumClassLowering.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/ClassLowerWithContext.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmLower.kt
+   3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/EqualityAndComparisonCallsTransformer.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ThrowableSuccessorsLowering.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/SecondaryCtorLowering.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/MultipleCatchesLowering.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/CallableReferenceLowering.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/AutoboxingTransformer.kt
+   3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsIrBackendContext.kt
+   3 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LateinitLowering.kt
    3 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/InnerClassesLowering.kt
    3 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/InitializersLowering.kt
    3 compiler/frontend/src/org/jetbrains/kotlin/resolve/ExposedVisibilityChecker.kt
@@ -630,11 +632,9 @@ Changes from 2018-11-01 to 2018-12-01:
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/FunctionNVarargInvokeLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/CallableReferenceLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/descriptors/JvmDeclarationFactory.kt
-   2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/EnumIntrinsicsTransformer.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsIntrinsics.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/PropertiesLowering.kt
-   2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LateinitLowering.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/IrUtils.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/descriptors/WrappedDescriptors.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrValidator.kt
@@ -1157,6 +1157,8 @@ Changes from 2018-11-01 to 2018-12-01:
    1 js/js.translator/testData/box/expression/if/withEmptyBlocks.kt
    1 js/js.translator/testData/box/coroutines/onlyInlineSuspendFunction.kt
    1 js/js.translator/testData/box/coroutines/inlineLambdaNonLocalReturn.kt
+   1 js/js.translator/testData/box/closure/closureLocalFunctionByInnerFunctionInConstructor.kt
+   1 js/js.translator/testData/box/closure/closureLocalFunctionByInnerFunction.kt
    1 js/js.translator/src/org/jetbrains/kotlin/js/translate/utils/utils.kt
    1 js/js.translator/src/org/jetbrains/kotlin/js/translate/utils/inlineUtils.kt
    1 js/js.translator/src/org/jetbrains/kotlin/js/translate/general/Merger.kt
@@ -3238,6 +3240,7 @@ Changes from 2018-11-01 to 2018-12-01:
    1 compiler/testData/codegen/box/unsignedTypes/boxConstValOfUnsignedType.kt
    1 compiler/testData/codegen/box/toArray/returnToTypedArray.kt
    1 compiler/testData/codegen/box/toArray/kt3177-toTypedArray.kt
+   1 compiler/testData/codegen/box/secondaryConstructors/enums.kt
    1 compiler/testData/codegen/box/regressions/kt5056.kt
    1 compiler/testData/codegen/box/reflection/mapping/types/inlineClassPrimaryVal.kt
    1 compiler/testData/codegen/box/reflection/mapping/inlineClassPrimaryVal.kt
@@ -3247,7 +3250,18 @@ Changes from 2018-11-01 to 2018-12-01:
    1 compiler/testData/codegen/box/reflection/call/inlineClasses/functionsWithInlineClassParameters.kt
    1 compiler/testData/codegen/box/reflection/call/inlineClasses/constructorWithInlineClassParameters.kt
    1 compiler/testData/codegen/box/reflection/annotations/localClassParameterAnnotation.kt
+   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedRead.kt
+   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedMemberAccess.kt
+   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedCapturedRead.kt
+   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedCapturedMemberAccess.kt
+   1 compiler/testData/codegen/box/properties/lateinit/local/kt23260.kt
+   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/topLevelProperty.kt
+   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/simpleIsInitialized.kt
+   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/sideEffects.kt
+   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/propertyImportedFromObject.kt
    1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/nonInlineLambda.kt
+   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/innerSubclass.kt
+   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/emptyLhs.kt
    1 compiler/testData/codegen/box/polymorphicSignature/varargOfObjects_before.kt
    1 compiler/testData/codegen/box/polymorphicSignature/varargOfObjects_after.kt
    1 compiler/testData/codegen/box/polymorphicSignature/invokeExactWithInlineClass.kt
@@ -3268,13 +3282,32 @@ Changes from 2018-11-01 to 2018-12-01:
    1 compiler/testData/codegen/box/inlineClasses/checkBoxingFromReturnTypeForInlineClasses.kt
    1 compiler/testData/codegen/box/inlineClasses/checkBoxUnboxOfArgumentsOnInlinedFunctions.kt
    1 compiler/testData/codegen/box/inlineClasses/boundCallableReferencePassedToInlineFunction.kt
+   1 compiler/testData/codegen/box/functions/localFunctions/parameterAsDefaultValue.kt
+   1 compiler/testData/codegen/box/functions/localFunctions/kt3978.kt
    1 compiler/testData/codegen/box/coroutines/tailCallOptimizations/crossinline.kt
    1 compiler/testData/codegen/box/coroutines/stackUnwinding/rethrowInFinallyWithSuspension.kt
    1 compiler/testData/codegen/box/coroutines/stackUnwinding/rethrowInFinally.kt
    1 compiler/testData/codegen/box/coroutines/noStdLib/crossinline.kt
+   1 compiler/testData/codegen/box/coroutines/featureIntersection/callableReference/function/genericCallableReferencesWithNullableTypes.kt
    1 compiler/testData/codegen/box/coroutines/controlFlow/finallyCatch.kt
    1 compiler/testData/codegen/box/controlStructures/forNullableCharInString.kt
    1 compiler/testData/codegen/box/controlStructures/forInArrayWithIndex/forInArrayOfObjectArrayWithIndex.kt
+   1 compiler/testData/codegen/box/closures/kt5589.kt
+   1 compiler/testData/codegen/box/classLiteral/bound/primitives.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/varargWithDefaultValue.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/simpleEmptyVararg.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/simpleDefaultArgument.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/manyDefaultsAndVararg.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/localFunctionWithDefault.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/innerConstructorWithVararg.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/inline.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/emptyVarargAndDefault.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/defaultWithGenericExpectedType.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/defaultAfterVararg.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/boundReferences.kt
+   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/bothWithCoercionToUnit.kt
+   1 compiler/testData/codegen/box/callableReference/function/genericCallableReferencesWithOverload.kt
+   1 compiler/testData/codegen/box/callableReference/function/genericCallableReferencesWithNullableTypes.kt
    1 compiler/testData/codegen/box/arrays/inlineInitializer.kt
    1 compiler/testData/codegen/box/arrays/arraysOfInlineClass/arrayOfInlineClassOfArrayOfInlineClass.kt
    1 compiler/testData/codegen/box/arrays/arraysOfInlineClass/accessArrayOfUnsigned.kt
@@ -3389,6 +3422,8 @@ Changes from 2018-11-01 to 2018-12-01:
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/DynamicCallsTransformer.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/CallsLoweringUtils.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/TypeOperatorLowering.kt
+   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ExternalEnumLowering.kt
+   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ClassReferenceLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ArrayInlineConstructorLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsSharedVariablesManager.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsDeclarationFactory.kt
@@ -3397,6 +3432,7 @@ Changes from 2018-11-01 to 2018-12-01:
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/SharedVariablesLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/KCallableNamePropertyLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/AbstractValueUsageTransformer.kt
+   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/Ir.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/Utils.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/Lower.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrCopy.kt

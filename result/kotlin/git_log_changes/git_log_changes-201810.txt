@@ -1,13 +1,12 @@
-Changes from 2018-10-01 to 2018-11-01:
-  27 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
-  27 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/IrJsCodegenBoxTestGenerated.java
-  27 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
-  27 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  27 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
+  26 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
+  26 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/IrJsCodegenBoxTestGenerated.java
+  26 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
+  26 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  26 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   23 idea/tests/org/jetbrains/kotlin/idea/inspections/LocalInspectionTestGenerated.java
-  15 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/compiler.kt
   13 idea/src/META-INF/plugin.xml.as33
   13 idea/src/META-INF/plugin.xml
+  13 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/compiler.kt
   12 idea/src/META-INF/plugin.xml.as32
   12 idea/src/META-INF/plugin.xml.as31
   12 idea/src/META-INF/plugin.xml.181
@@ -16,7 +15,6 @@ Changes from 2018-10-01 to 2018-11-01:
   11 idea/src/META-INF/plugin.xml.183
   11 compiler/backend/src/org/jetbrains/kotlin/codegen/ExpressionCodegen.java
   10 gradle.properties
-  10 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsIrBackendContext.kt
    9 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
    9 backend.native/tests/build.gradle
    8 tools/kotlin-native-gradle-plugin/src/test/kotlin/ExperimentalPluginTests.kt
@@ -25,6 +23,7 @@ Changes from 2018-10-01 to 2018-11-01:
    8 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/utils/SimpleNameGenerator.kt
    8 compiler/backend/src/org/jetbrains/kotlin/codegen/FunctionCodegen.java
    8 build.gradle.kts
+   7 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsIrBackendContext.kt
    6 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/IrBoxJsTestGenerated.java
    6 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/BoxJsTestGenerated.java
    6 js/js.tests/test/org/jetbrains/kotlin/js/test/BasicIrBoxTest.kt
@@ -34,7 +33,6 @@ Changes from 2018-10-01 to 2018-11-01:
    6 idea/idea-core/src/org/jetbrains/kotlin/idea/core/psiModificationUtils.kt
    6 idea/idea-android/src/org/jetbrains/kotlin/android/configure/KotlinAndroidGradleMPPModuleDataService.kt.as31
    6 compiler/psi/src/org/jetbrains/kotlin/script/KotlinScriptDefinitionProvider.kt
-   6 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/EnumClassLowering.kt
    6 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/CallableReferenceLowering.kt
    6 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/MethodInliner.kt
    6 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/ir/Ir.kt
@@ -74,6 +72,7 @@ Changes from 2018-10-01 to 2018-11-01:
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrElementToJsExpressionTransformer.kt
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/CallsLowering.kt
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/TypeOperatorLowering.kt
+   4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/EnumClassLowering.kt
    4 compiler/build.gradle.kts
    4 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/InlineCodegen.kt
    4 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/AnonymousObjectTransformer.kt
@@ -181,7 +180,6 @@ Changes from 2018-10-01 to 2018-11-01:
    3 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightPsi.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/ConstAndJvmFieldPropertiesLowering.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ClassCodegen.kt
-   3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/BridgesConstruction.kt
    3 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/BlockDecomposerLowering.kt
    3 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/DefaultArgumentStubGenerator.kt
@@ -551,6 +549,7 @@ Changes from 2018-10-01 to 2018-11-01:
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/descriptors/JvmDeclarationFactory.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/FunctionCodegen.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmLower.kt
+   2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/JsClassGenerator.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/coroutines/StateMachineBuilder.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/NumberOperatorCallsTransformer.kt
@@ -561,7 +560,6 @@ Changes from 2018-10-01 to 2018-11-01:
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ThrowableSuccessorsLowering.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/SecondaryCtorLowering.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/IntrinsicifyCallsLowering.kt
-   2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ExternalEnumLowering.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LocalDeclarationsLowering.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/descriptors/WrappedDescriptors.kt
    2 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/IncrementalJvmCompilerRunner.kt
@@ -1238,8 +1236,6 @@ Changes from 2018-10-01 to 2018-11-01:
    1 js/js.translator/testData/box/coercion/safeCallLetReturningUnit.kt
    1 js/js.translator/testData/box/coercion/ifWithUnit.kt
    1 js/js.translator/testData/box/coercion/derivedFunctionReturningUnit.kt
-   1 js/js.translator/testData/box/closure/closureLocalFunctionByInnerFunctionInConstructor.kt
-   1 js/js.translator/testData/box/closure/closureLocalFunctionByInnerFunction.kt
    1 js/js.translator/testData/box/char/charConstantByUnicodeId.kt
    1 js/js.translator/testData/box/callableReference/property/extensionProperty.kt
    1 js/js.translator/testData/box/callableReference/function/stringNativeExtension.kt
@@ -2900,7 +2896,6 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/testData/codegen/box/specialBuiltins/entrySetSOE.kt
    1 compiler/testData/codegen/box/smartCasts/kt19058.kt
    1 compiler/testData/codegen/box/secondaryConstructors/withoutPrimarySimple.kt
-   1 compiler/testData/codegen/box/secondaryConstructors/enums.kt
    1 compiler/testData/codegen/box/sam/constructors/kt19251_child.kt
    1 compiler/testData/codegen/box/sam/constructors/kt19251.kt
    1 compiler/testData/codegen/box/regressions/resolvedCallForGetOperator.kt
@@ -2936,17 +2931,6 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/testData/codegen/box/ranges/contains/inDoubleRangeLiteralVsComparableRangeLiteral.kt
    1 compiler/testData/codegen/box/properties/protectedJavaPropertyInCompanion.kt
    1 compiler/testData/codegen/box/properties/privateAccessorOfOverriddenProperty.kt
-   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedRead.kt
-   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedMemberAccess.kt
-   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedCapturedRead.kt
-   1 compiler/testData/codegen/box/properties/lateinit/local/uninitializedCapturedMemberAccess.kt
-   1 compiler/testData/codegen/box/properties/lateinit/local/kt23260.kt
-   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/topLevelProperty.kt
-   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/simpleIsInitialized.kt
-   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/sideEffects.kt
-   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/propertyImportedFromObject.kt
-   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/innerSubclass.kt
-   1 compiler/testData/codegen/box/properties/lateinit/isInitializedAndDeinitialize/emptyLhs.kt
    1 compiler/testData/codegen/box/properties/const/constFlags.kt
    1 compiler/testData/codegen/box/properties/classFieldInsideLocalInSetter.kt
    1 compiler/testData/codegen/box/primitiveTypes/kt2275.kt
@@ -3098,8 +3082,6 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/testData/codegen/box/ieee754/comparableTypeCast.kt
    1 compiler/testData/codegen/box/ieee754/asComparableToDouble_properIeeeComparisons.kt
    1 compiler/testData/codegen/box/ieee754/asComparableToDouble.kt
-   1 compiler/testData/codegen/box/functions/localFunctions/parameterAsDefaultValue.kt
-   1 compiler/testData/codegen/box/functions/localFunctions/kt3978.kt
    1 compiler/testData/codegen/box/functions/defaultargs6.kt
    1 compiler/testData/codegen/box/functions/defaultargs4.kt
    1 compiler/testData/codegen/box/fieldRename/delegates.kt
@@ -3165,7 +3147,6 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/testData/codegen/box/coroutines/featureIntersection/tailrec/controlFlowWhen.kt
    1 compiler/testData/codegen/box/coroutines/featureIntersection/tailrec/controlFlowIf.kt
    1 compiler/testData/codegen/box/coroutines/featureIntersection/suspendFunctionIsAs.kt
-   1 compiler/testData/codegen/box/coroutines/featureIntersection/callableReference/function/genericCallableReferencesWithNullableTypes.kt
    1 compiler/testData/codegen/box/coroutines/controlFlow/kt22694_1_3.kt
    1 compiler/testData/codegen/box/controlStructures/tryCatchInExpressions/tryAndContinue.kt
    1 compiler/testData/codegen/box/controlStructures/quicksort.kt
@@ -3176,12 +3157,10 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/testData/codegen/box/constants/kt9532_lv10.kt
    1 compiler/testData/codegen/box/constants/float.kt
    1 compiler/testData/codegen/box/collections/inSetWithSmartCast.kt
-   1 compiler/testData/codegen/box/closures/kt5589.kt
    1 compiler/testData/codegen/box/closures/closureInsideClosure/varAsFunInsideLocalFun.kt
    1 compiler/testData/codegen/box/closures/captureExtensionReceiver.kt
    1 compiler/testData/codegen/box/classes/kt2417.kt
    1 compiler/testData/codegen/box/classes/inheritSetAndHashSet.kt
-   1 compiler/testData/codegen/box/classLiteral/bound/primitives.kt
    1 compiler/testData/codegen/box/checkcastOptimization/kt19246.kt
    1 compiler/testData/codegen/box/casts/unitAsAny.kt
    1 compiler/testData/codegen/box/casts/mutableCollections/safeAsWithMutable.kt
@@ -3193,26 +3172,12 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/testData/codegen/box/casts/literalExpressionAsGenericArgument/labeledExpressionCast.kt
    1 compiler/testData/codegen/box/casts/literalExpressionAsGenericArgument/binaryExpressionCast.kt
    1 compiler/testData/codegen/box/casts/lambdaToUnitCast.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/varargWithDefaultValue.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/simpleEmptyVararg.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/simpleDefaultArgument.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/manyDefaultsAndVararg.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/localFunctionWithDefault.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/innerConstructorWithVararg.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/inline.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/emptyVarargAndDefault.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/defaultWithGenericExpectedType.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/defaultAfterVararg.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/boundReferences.kt
-   1 compiler/testData/codegen/box/callableReference/varargAndDefaults/bothWithCoercionToUnit.kt
    1 compiler/testData/codegen/box/callableReference/property/listOfStringsMapLength.kt
    1 compiler/testData/codegen/box/callableReference/property/kt15447.kt
    1 compiler/testData/codegen/box/callableReference/property/kt14330_2.kt
    1 compiler/testData/codegen/box/callableReference/property/genericProperty.kt
    1 compiler/testData/codegen/box/callableReference/function/overloadedFun.kt
    1 compiler/testData/codegen/box/callableReference/function/genericWithDependentType.kt
-   1 compiler/testData/codegen/box/callableReference/function/genericCallableReferencesWithOverload.kt
-   1 compiler/testData/codegen/box/callableReference/function/genericCallableReferencesWithNullableTypes.kt
    1 compiler/testData/codegen/box/callableReference/function/equalsIntrinsic.kt
    1 compiler/testData/codegen/box/callableReference/function/booleanNotIntrinsic.kt
    1 compiler/testData/codegen/box/callableReference/bound/simpleProperty.kt
@@ -3359,8 +3324,8 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/MethodsOfAnyCallsTransformer.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/ExceptionHelperCallsTransformer.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/DynamicCallsTransformer.kt
+   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ExternalEnumLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ConstLowering.kt
-   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/ClassReferenceLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/ir/IrBuilder.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsDeclarationFactory.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/util/IrTypeUtils.kt
@@ -3369,10 +3334,8 @@ Changes from 2018-10-01 to 2018-11-01:
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/TailrecLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/PropertiesLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LowerUtils.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LateinitLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/InitializersLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/ExpectDeclarationsRemoving.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/Ir.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/CommonBackendContext.kt
    1 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/cacheVersions.kt
    1 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/IncrementalJsCompilerRunner.kt

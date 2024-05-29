@@ -1,4 +1,3 @@
-Changes from 2023-03-01 to 2023-04-01:
   57 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   55 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirPsiOldFrontendDiagnosticsTestGenerated.java
   55 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirLightTreeOldFrontendDiagnosticsTestGenerated.java
@@ -515,6 +514,7 @@ Changes from 2023-03-01 to 2023-04-01:
    2 wasm/wasm.tests/test/org/jetbrains/kotlin/wasm/test/BasicWasmBoxTest.kt
    2 wasm/wasm.frontend/src/org/jetbrains/kotlin/wasm/resolve/diagnostics/ErrorsWasm.java
    2 wasm/wasm.frontend/src/org/jetbrains/kotlin/wasm/resolve/diagnostics/DefaultErrorMessagesWasm.kt
+   2 scripts/update-bootstrap
    2 repo/gradle-settings-conventions/kotlin-daemon-config/build.gradle.kts
    2 repo/gradle-settings-conventions/gradle.properties
    2 plugins/scripting/scripting-compiler-impl/src/org/jetbrains/kotlin/scripting/resolve/LazyScriptDescriptor.kt
@@ -1297,7 +1297,6 @@ Changes from 2023-03-01 to 2023-04-01:
    1 third-party/java8-annotations/javax/annotation/Nullable.java
    1 third-party/java8-annotations/javax/annotation/Nonnull.java
    1 third-party/java8-annotations/javax/annotation/CheckForNull.java
-   1 scripts/update-bootstrap
    1 repo/gradle-settings-conventions/settings.gradle.kts
    1 repo/gradle-settings-conventions/gradle-enterprise/build.gradle.kts
    1 repo/gradle-settings-conventions/Readme.md

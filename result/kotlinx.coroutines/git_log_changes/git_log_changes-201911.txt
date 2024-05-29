@@ -1,4 +1,3 @@
-Changes from 2019-11-01 to 2019-12-01:
    4 kotlinx-coroutines-core/common/src/CoroutineDispatcher.kt
    3 kotlinx-coroutines-core/common/src/Yield.kt
    3 kotlinx-coroutines-core/common/src/Unconfined.kt

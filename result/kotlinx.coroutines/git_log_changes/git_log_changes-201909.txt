@@ -1,4 +1,3 @@
-Changes from 2019-09-01 to 2019-10-01:
    9 kotlinx-coroutines-core/common/src/channels/AbstractChannel.kt
    5 kotlinx-coroutines-core/common/src/channels/ArrayChannel.kt
    4 reactive/kotlinx-coroutines-reactive/src/Channel.kt

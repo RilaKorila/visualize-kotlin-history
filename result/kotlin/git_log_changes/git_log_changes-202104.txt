@@ -1,4 +1,3 @@
-Changes from 2021-04-01 to 2021-05-01:
   62 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/FirDiagnosticsList.kt
   61 compiler/fir/checkers/gen/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrors.kt
   59 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnosticsImpl.kt

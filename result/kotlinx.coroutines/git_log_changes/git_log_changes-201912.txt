@@ -1,4 +1,3 @@
-Changes from 2019-12-01 to 2020-01-01:
    9 kotlinx-coroutines-core/jvm/src/scheduling/CoroutineScheduler.kt
    6 kotlinx-coroutines-core/jvm/src/scheduling/WorkQueue.kt
    6 gradle.properties

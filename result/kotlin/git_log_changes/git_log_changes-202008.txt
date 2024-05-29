@@ -1,4 +1,3 @@
-Changes from 2020-08-01 to 2020-09-01:
   27 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
   27 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   27 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
@@ -10,10 +9,10 @@ Changes from 2020-08-01 to 2020-09-01:
   20 tests/mute-common.csv
   18 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/KtFirAnalysisSession.kt
   18 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/completion/KotlinFirCompletionContributor.kt
-  17 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrDeclarationStorage.kt
   17 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDefaultErrorMessages.kt
   17 compiler/fir/analysis-tests/tests/org/jetbrains/kotlin/fir/FirDiagnosticsWithLightTreeTestGenerated.java
   17 compiler/fir/analysis-tests/tests/org/jetbrains/kotlin/fir/FirDiagnosticsTestGenerated.java
+  16 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrDeclarationStorage.kt
   15 compiler/fir/raw-fir/psi2fir/src/org/jetbrains/kotlin/fir/builder/RawFirBuilder.kt
   15 build.gradle.kts
   14 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/CallAndReferenceGenerator.kt
@@ -79,8 +78,6 @@ Changes from 2020-08-01 to 2020-09-01:
    7 idea/idea-fir/src/org/jetbrains/kotlin/idea/completion/KotlinFirCompletionContributor.kt
    7 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/inference/components/PostponedArgumentInputTypesResolver.kt
    7 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/PostponedArgumentsAnalyzer.kt
-   7 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LocalDeclarationsLowering.kt
-   7 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/IrUtils.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/types/ConeTypeContext.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/providers/impl/FirDependenciesSymbolProviderImpl.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/providers/impl/FirCompositeSymbolProvider.kt
@@ -115,6 +112,7 @@ Changes from 2020-08-01 to 2020-09-01:
    6 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/inference/components/KotlinConstraintSystemCompleter.kt
    6 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/inference/NewConstraintSystem.kt
    6 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/IrUtils.kt
+   6 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LocalDeclarationsLowering.kt
    6 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/Ir.kt
    6 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/FirTreeBuilder.kt
    6 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/types/ConeInferenceContext.kt
@@ -166,8 +164,8 @@ Changes from 2020-08-01 to 2020-09-01:
    5 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/KotlinCallCompleter.kt
    5 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/IrTypeSystemContext.kt
    5 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmSymbols.kt
-   5 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/inline/FunctionInlining.kt
    5 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/SpecialBridgeMethods.kt
+   5 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/IrUtils.kt
    5 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/NodeConfigurator.kt
    5 compiler/fir/tree/src/org/jetbrains/kotlin/fir/symbols/impl/FirVariableSymbol.kt
    5 compiler/fir/tree/gen/org/jetbrains/kotlin/fir/visitors/FirVisitorVoid.kt
@@ -274,7 +272,6 @@ Changes from 2020-08-01 to 2020-09-01:
    4 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/inference/components/ConstraintInjector.kt
    4 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/inference/components/ClassicConstraintSystemUtilContext.kt
    4 compiler/psi/src/org/jetbrains/kotlin/parsing/KotlinParsing.java
-   4 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/DeepCopyIrTreeWithSymbols.kt
    4 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/descriptors/IrFunctionFactory.kt
    4 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/lazy/IrLazyProperty.kt
    4 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/lazy/IrLazyFunction.kt
@@ -289,6 +286,7 @@ Changes from 2020-08-01 to 2020-09-01:
    4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/AddContinuationLowering.kt
    4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/intrinsics/IrIntrinsicMethods.kt
    4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/loops/HeaderInfo.kt
+   4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/inline/FunctionInlining.kt
    4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/RangeContainsLowering.kt
    4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/InlineClassDeclarationLowering.kt
    4 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/tower/PSICallResolver.kt
@@ -502,6 +500,7 @@ Changes from 2020-08-01 to 2020-09-01:
    3 compiler/ir/serialization.js/src/org/jetbrains/kotlin/ir/backend/js/klib.kt
    3 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/IrFileDeserializer.kt
    3 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/overrides/IrOverridingUtil.kt
+   3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/DeepCopyIrTreeWithSymbols.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/irTypePredicates.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/IrTypeUtils.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/impl/IrWhenImpl.kt
@@ -521,7 +520,6 @@ Changes from 2020-08-01 to 2020-09-01:
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/impl/IrBlockImpl.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/IrMemberAccessExpression.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/IrDeclarationReference.kt
-   3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/descriptors/WrappedDescriptors.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/lazy/IrLazyConstructor.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrFunction.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrDeclaration.kt
@@ -589,7 +587,6 @@ Changes from 2020-08-01 to 2020-09-01:
    3 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/declarations/FirJavaConstructor.kt
    3 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/declarations/FirJavaClass.kt
    3 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/fir/Fir2IrTextTestGenerated.java
-   3 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/symbols/Fir2IrBindableSymbol.kt
    3 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/signaturer/FirBasedSignatureComposer.kt
    3 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/DataClassMembersGenerator.kt
    3 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrScopeCache.kt
@@ -1077,7 +1074,6 @@ Changes from 2020-08-01 to 2020-09-01:
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/visitors/IrElementTransformer.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/SymbolTable.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/DeclarationStubGenerator.kt
-   2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/AdditionalIrUtils.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/impl/IrTypeBase.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/impl/IrSimpleTypeImpl.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/impl/IrWhileLoopImpl.kt
@@ -1122,6 +1118,7 @@ Changes from 2020-08-01 to 2020-09-01:
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/IrCall.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/IrBody.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/expressions/IrBlock.kt
+   2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/descriptors/WrappedDescriptors.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/lazy/IrLazyTypeParameter.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/lazy/IrLazyTypeAlias.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/lazy/IrLazyFunctionBase.kt
@@ -1178,7 +1175,6 @@ Changes from 2020-08-01 to 2020-09-01:
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/JvmArgumentNullabilityAssertionsLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/FunctionReferenceLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/FunctionNVarargBridgeLowering.kt
-   2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/CollectionStubMethodLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/AssertionLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/AdditionalClassAnnotationLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/ir/IrInlineReferenceLocator.kt
@@ -1197,10 +1193,8 @@ Changes from 2020-08-01 to 2020-09-01:
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/JsonIntrinsics.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/CallsLowering.kt
    2 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/BlockDecomposerLowering.kt
-   2 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/builders/declarations/declarationBuilders.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/phaser/DumperVerifier.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/StringConcatenationLowering.kt
-   2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/SingleAbstractMethodLowering.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/FlattenStringConcatenationLowering.kt
    2 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/IrInlineUtils.kt
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/diagnostics/KotlinSuppressCache.kt
@@ -1299,6 +1293,7 @@ Changes from 2020-08-01 to 2020-09-01:
    2 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/FirJavaVisibilityChecker.kt
    2 compiler/fir/java/build.gradle.kts
    2 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/fir/AbstractFir2IrTextTest.kt
+   2 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/symbols/Fir2IrBindableSymbol.kt
    2 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/FakeOverrideGenerator.kt
    2 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrLocalStorage.kt
    2 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrComponentsStorage.kt
@@ -3803,9 +3798,9 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/KotlinUtils.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/IrSymbolVisitor.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/ExternalDependenciesGenerator.kt
-   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/ExpectDeclarationRemover.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/DumpIrTree.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/DataClassMembersGenerator.kt
+   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/AdditionalIrUtils.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/symbols/impl/IrPublicSymbolBase.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/symbols/impl/IrPrivateSymbolBase.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/symbols/IrSymbol.kt
@@ -3849,7 +3844,6 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrConstructor.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/declarations/IrPropertyBuilder.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/declarations/IrFunctionBuilder.kt
-   1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/declarations/IrDeclarationBuilder.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/TranslationPluginContext.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/IrElementBase.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/IrElement.kt
@@ -3889,8 +3883,8 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/InterfaceLowering.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/InlineCallableReferenceToLambda.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/GenerateMultifileFacades.kt
-   1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/FileClassLowering.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/FakeInliningLocalVariablesLowering.kt
+   1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/CollectionStubMethodLowering.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/AnonymousObjectSuperConstructorLowering.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/SwitchGenerator.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/IrTypeMapping.kt
@@ -3901,7 +3895,6 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/DeclarationOrigins.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/utils/StableNamesCollector.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/utils/AnnotationUtils.kt
-   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/MultiModuleSupport.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/JsIntrinsicTransformers.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrDeclarationToJsTransformer.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/coroutines/AbstractSuspendFunctionsLowering.kt
@@ -3913,7 +3906,6 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/EnumIntrinsicsTransformer.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/CallsLoweringUtils.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/calls/BuiltInConstructorCalls.kt
-   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/VarargLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/PrimitiveCompanionLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/PrimaryConstructorLowering.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/lower/MultipleCatchesLowering.kt
@@ -3931,9 +3923,9 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/MutableController.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsLoweringPhases.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/Dce.kt
+   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/builders/declarations/declarationBuilders.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/optimizations/PropertyAccessorInlineLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/optimizations/FoldConstantLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/matchers/IrFunctionMatcher.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/loops/handlers/UntilHandler.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/loops/handlers/RangeToHandler.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/loops/handlers/DownToHandler.kt
@@ -3941,13 +3933,12 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/loops/Utils.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/loops/ForLoopsLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/TailrecLowering.kt
+   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/SingleAbstractMethodLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/SharedVariablesLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/ReturnableBlockLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/LowerUtils.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/KotlinNothingValueExceptionLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/InnerClassesLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/ErrorExpressionLowering.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/lower/ArrayConstructorLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/descriptorBasedUtils.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/extensions/IrPluginContextImpl.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/extensions/IrPluginContext.kt
@@ -3956,7 +3947,6 @@ Changes from 2020-08-01 to 2020-09-01:
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/Lower.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrValidator.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/IrElementTransformerVoidWithContext.kt
-   1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/DescriptorsToIrRemapper.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/CommonBackendContext.kt
    1 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/IncrementalJvmCompilerRunner.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/types/expressions/ExpressionTypingUtils.java

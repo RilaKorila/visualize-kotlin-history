@@ -1,4 +1,3 @@
-Changes from 2016-08-01 to 2016-09-01:
   81 translator/src/main/kotlin/org/kotlinnative/translator/BlockCodegen.kt
   59 ChangeLog.md
   41 idea/src/org/jetbrains/kotlin/idea/intentions/loopToCallChain/utils.kt
@@ -10,7 +9,7 @@ Changes from 2016-08-01 to 2016-09-01:
   27 translator/src/main/kotlin/org/kotlinnative/translator/llvm/LLVMBuilder.kt
   26 translator/src/main/kotlin/org/kotlinnative/translator/StructCodegen.kt
   25 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
-  23 server/src/main/java/algorithm/RoomBypassingAlgorithm.kt
+  22 server/src/main/java/algorithm/RoomBypassingAlgorithm.kt
   22 server/src/main/java/DebugClInterface.kt
   22 idea/src/org/jetbrains/kotlin/idea/intentions/loopToCallChain/result/FindAndAssignTransformation.kt
   21 idea/src/org/jetbrains/kotlin/idea/intentions/loopToCallChain/sequence/FilterTransformation.kt
@@ -18,10 +17,10 @@ Changes from 2016-08-01 to 2016-09-01:
   21 car_srv/kotlinSrv/src/control/emulator/ControllerEmulator.kt
   20 translator/src/main/kotlin/org/kotlinnative/translator/ClassCodegen.kt
   19 translator/src/main/kotlin/org/kotlinnative/translator/FunctionCodegen.kt
-  19 server/src/main/java/algorithm/AbstractAlgorithm.kt
   19 idea/testData/findUsages/kotlin/conventions/components/dataClass.results.txt
   19 idea/src/org/jetbrains/kotlin/idea/intentions/loopToCallChain/result/FindAndReturnTransformation.kt
   19 idea/src/META-INF/plugin.xml
+  18 server/src/main/java/algorithm/AbstractAlgorithm.kt
   18 idea/src/org/jetbrains/kotlin/idea/intentions/loopToCallChain/sequence/FlatMapTransformation.kt
   17 translator/src/main/kotlin/org/kotlinnative/translator/llvm/generators.kt
   17 idea/tests/org/jetbrains/kotlin/idea/quickfix/QuickFixTestGenerated.java
@@ -1402,7 +1401,6 @@ Changes from 2016-08-01 to 2016-09-01:
    1 server/src/main/java/WireFormat.kt
    1 server/src/main/java/RoomModel.kt
    1 server/src/main/java/InvalidProtocolBufferException.kt
-   1 server/src/main/java/Exceptions/SonarDataException.kt
    1 server/src/main/java/Exceptions/InactiveCarException.kt
    1 server/src/main/java/CodedOutputStream.kt
    1 server/src/main/java/CodedInputStream.kt

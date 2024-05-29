@@ -1,7 +1,7 @@
 #!/bin/bash
 
-start_date="2011-01-01"
-end_date="2024-05-01"
+start_date="2014-01-01"
+end_date="2024-06-01"
 
 one_month_from=$start_date
 one_month_to=$(date -j -v+1m -f "%Y-%m-%d" "$start_date" "+%Y-%m-%d")

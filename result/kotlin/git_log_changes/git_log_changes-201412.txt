@@ -1,4 +1,3 @@
-Changes from 2014-12-01 to 2015-01-01:
   55 compiler/tests/org/jetbrains/jet/checkers/JetDiagnosticsTestGenerated.java
   18 idea/src/org/jetbrains/jet/plugin/completion/LookupElementFactory.kt
   18 build.xml

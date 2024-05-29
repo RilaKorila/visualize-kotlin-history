@@ -1,4 +1,3 @@
-Changes from 2016-11-01 to 2016-12-01:
   67 backend.native/tests/build.gradle
   56 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/IrToBitcode.kt
   44 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java

@@ -1,1 +1,16 @@
-Changes from 2020-09-01 to 2020-10-01:
+   2 kotlinx-coroutines-core/api/kotlinx-coroutines-core.api
+   1 reactive/kotlinx-coroutines-reactor/test/FluxSingleTest.kt
+   1 reactive/kotlinx-coroutines-reactive/test/IntegrationTest.kt
+   1 reactive/kotlinx-coroutines-reactive/src/Await.kt
+   1 reactive/kotlinx-coroutines-reactive/api/kotlinx-coroutines-reactive.api
+   1 kotlinx-coroutines-core/jvm/resources/META-INF/proguard/coroutines.pro
+   1 kotlinx-coroutines-core/common/test/AwaitCancellationTest.kt
+   1 kotlinx-coroutines-core/common/src/flow/operators/Lint.kt
+   1 kotlinx-coroutines-core/common/src/Delay.kt
+   1 kotlinx-coroutines-core/common/src/CoroutineScope.kt
+   1 kotlinx-coroutines-core/common/src/CancellableContinuationImpl.kt
+   1 buildSrc/src/main/kotlin/CacheRedirector.kt
+   1 buildSrc/build.gradle.kts
+   1 build.gradle
+   1 README.md
+   1 CONTRIBUTING.md

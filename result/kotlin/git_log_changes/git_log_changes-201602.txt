@@ -1,4 +1,3 @@
-Changes from 2016-02-01 to 2016-03-01:
   22 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   15 generators/src/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
   12 libraries/stdlib/src/generated/_Collections.kt

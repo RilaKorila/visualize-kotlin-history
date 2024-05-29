@@ -1,4 +1,3 @@
-Changes from 2014-04-01 to 2014-05-01:
   19 generators/src/org/jetbrains/jet/generators/tests/GenerateTests.kt
   18 idea/src/org/jetbrains/jet/plugin/caches/resolve/KotlinResolveCache.kt
   17 idea/tests/org/jetbrains/jet/plugin/intentions/CodeTransformationTestGenerated.java

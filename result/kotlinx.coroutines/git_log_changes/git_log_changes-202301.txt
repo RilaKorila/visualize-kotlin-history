@@ -1,1 +1,26 @@
-Changes from 2023-01-01 to 2023-02-01:
+   2 kotlinx-coroutines-core/jvm/src/scheduling/WorkQueue.kt
+   2 docs/topics/coroutines-and-channels.md
+   1 reactive/kotlinx-coroutines-reactive/src/Migration.kt
+   1 kotlinx-coroutines-core/native/test/WorkerTest.kt
+   1 kotlinx-coroutines-core/native/src/Builders.kt
+   1 kotlinx-coroutines-core/jvm/test/scheduling/WorkQueueTest.kt
+   1 kotlinx-coroutines-core/jvm/test/scheduling/WorkQueueStressTest.kt
+   1 kotlinx-coroutines-core/jvm/test/scheduling/CoroutineSchedulerOversubscriptionTest.kt
+   1 kotlinx-coroutines-core/jvm/test/jdk8/future/FutureTest.kt
+   1 kotlinx-coroutines-core/jvm/test/flow/SharingReferenceTest.kt
+   1 kotlinx-coroutines-core/jvm/src/scheduling/Dispatcher.kt
+   1 kotlinx-coroutines-core/jvm/src/scheduling/CoroutineScheduler.kt
+   1 kotlinx-coroutines-core/jvm/src/CoroutineContext.kt
+   1 kotlinx-coroutines-core/jdk8/src/future/Future.kt
+   1 kotlinx-coroutines-core/concurrent/src/channels/Channels.kt
+   1 kotlinx-coroutines-core/common/src/intrinsics/Undispatched.kt
+   1 kotlinx-coroutines-core/common/src/flow/operators/Transform.kt
+   1 kotlinx-coroutines-core/common/src/flow/operators/Merge.kt
+   1 kotlinx-coroutines-core/common/src/flow/Flow.kt
+   1 kotlinx-coroutines-core/common/src/flow/Channels.kt
+   1 kotlinx-coroutines-core/common/src/flow/Builders.kt
+   1 kotlinx-coroutines-core/common/src/Job.kt
+   1 gradle.properties
+   1 docs/topics/coroutines-guide.md
+   1 build.gradle
+   1 CHANGES.md

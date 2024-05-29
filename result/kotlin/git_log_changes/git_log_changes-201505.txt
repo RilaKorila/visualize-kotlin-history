@@ -1,4 +1,3 @@
-Changes from 2015-05-01 to 2015-06-01:
   49 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
   43 idea/tests/org/jetbrains/kotlin/idea/quickfix/QuickFixTestGenerated.java
   43 idea/idea-analysis/src/org/jetbrains/kotlin/idea/JetBundle.properties

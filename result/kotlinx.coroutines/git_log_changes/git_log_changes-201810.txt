@@ -1,4 +1,3 @@
-Changes from 2018-10-01 to 2018-11-01:
   15 README.md
   12 common/kotlinx-coroutines-core-common/src/Dispatched.kt
   11 reactive/kotlinx-coroutines-reactive/src/Publish.kt

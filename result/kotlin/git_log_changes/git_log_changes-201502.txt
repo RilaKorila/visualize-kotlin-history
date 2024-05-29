@@ -1,4 +1,3 @@
-Changes from 2015-02-01 to 2015-03-01:
   24 generators/src/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
   19 compiler/tests/org/jetbrains/kotlin/checkers/JetDiagnosticsTestGenerated.java
   18 compiler/frontend.android/src/org/jetbrains/jet/lang/resolve/android/AndroidUIXmlParser.kt

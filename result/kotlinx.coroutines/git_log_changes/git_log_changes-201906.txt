@@ -1,4 +1,3 @@
-Changes from 2019-06-01 to 2019-07-01:
   10 binary-compatibility-validator/reference-public-api/kotlinx-coroutines-core.txt
    6 kotlinx-coroutines-core/common/src/flow/Flow.kt
    5 kotlinx-coroutines-core/common/src/flow/operators/Merge.kt

@@ -1,4 +1,3 @@
-Changes from 2022-07-01 to 2022-08-01:
   22 compiler/fir/tree/src/org/jetbrains/kotlin/fir/renderer/FirRenderer.kt
   20 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
   20 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
@@ -13,9 +12,9 @@ Changes from 2022-07-01 to 2022-08-01:
   13 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsTestGenerated.java
   12 compiler/fir/tree/src/org/jetbrains/kotlin/fir/renderer/FirRendererComponents.kt
   12 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosisCompilerTestFE10TestdataTestGenerated.java
-  10 build.gradle.kts
    9 kotlin-native/backend.native/tests/build.gradle
    9 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDiagnosticRenderers.kt
+   9 build.gradle.kts
    8 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/Kotlin2JsGradlePluginIT.kt
    7 native/native.tests/tests/org/jetbrains/kotlin/konan/blackboxtest/support/group/ExtTestCaseGroupProvider.kt
    7 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/ToplevelPhases.kt
@@ -46,7 +45,6 @@ Changes from 2022-07-01 to 2022-08-01:
    5 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/fir/handlers/FirScopeDumpHandler.kt
    5 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/fir/handlers/FirDumpHandler.kt
    5 compiler/resolution.common/src/org/jetbrains/kotlin/resolve/calls/tower/CandidateApplicability.kt
-   5 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassImpl.kt
    5 compiler/light-classes-base/src/org/jetbrains/kotlin/asJava/lightClassUtils.kt
    5 compiler/fir/semantics/src/org/jetbrains/kotlin/fir/resolve/calls/ResolutionDiagnostic.kt
    5 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/ResolutionStages.kt
@@ -60,7 +58,6 @@ Changes from 2022-07-01 to 2022-08-01:
    5 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/AbstractFirOnAirResolveTest.kt
    5 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/state/LLFirResolvableResolveSession.kt
    5 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/sessions/LLFirSessionProvider.kt
-   4 settings.gradle
    4 plugins/compose/compiler-hosted/integration-tests/src/test/java/androidx/compose/compiler/plugins/kotlin/LambdaMemoizationTransformTests.kt
    4 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/report/HttpReportService.kt
    4 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/statistics/BuildScanStatisticsListener.kt
@@ -83,11 +80,9 @@ Changes from 2022-07-01 to 2022-08-01:
    4 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/ir/IrTextTestGenerated.java
    4 compiler/testData/debug/stepping/anonymousFunctionDirect.kt
    4 compiler/testData/cli/jvm/extraHelp.out
-   4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightUtils.kt
-   4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightClass.kt
+   4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassImpl.kt
    4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForScript.kt
    4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KotlinLightClassFactory.kt
-   4 compiler/light-classes/build.gradle.kts
    4 compiler/light-classes-base/build.gradle.kts
    4 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/FunctionReferenceLowering.kt
    4 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/JvmLower.kt
@@ -112,7 +107,7 @@ Changes from 2022-07-01 to 2022-08-01:
    4 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/project/structure/LLFirBuiltinsSessionFactory.kt
    4 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/components/KtFirCallResolver.kt
    4 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/KtFirAnalysisSession.kt
-   4 analysis/analysis-api-fir/build.gradle.kts
+   3 settings.gradle
    3 plugins/compose/compiler-hosted/src/main/java/androidx/compose/compiler/plugins/kotlin/lower/ComposableFunctionBodyTransformer.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/native/tasks/AdvancedCocoapodsTasks.kt
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/native/cocoapods/CocoapodsExtension.kt
@@ -175,10 +170,9 @@ Changes from 2022-07-01 to 2022-08-01:
    3 compiler/testData/asJava/lightClasses/nullabilityAnnotations/Class.lib.java
    3 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/tower/ImplicitScopeTower.kt
    3 compiler/plugin-api/src/org/jetbrains/kotlin/compiler/plugin/CliOptions.kt
-   3 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightModifierListDescriptorBased.kt
-   3 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightParameters.kt
-   3 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightMethods.kt
+   3 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightClass.kt
    3 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForSourceDeclaration.kt
+   3 compiler/light-classes/build.gradle.kts
    3 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/unlinked/UnlinkedDeclarationsProcessor.kt
    3 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/KotlinIrLinker.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
@@ -191,7 +185,6 @@ Changes from 2022-07-01 to 2022-08-01:
    3 compiler/incremental-compilation-impl/test/org/jetbrains/kotlin/incremental/IncrementalFirJvmCompilerRunnerTestGenerated.java
    3 compiler/incremental-compilation-impl/test/org/jetbrains/kotlin/incremental/IncrementalFirICLightTreeJvmCompilerRunnerTestGenerated.java
    3 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/IncrementalCompilerRunner.kt
-   3 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/callUtil.kt
    3 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/CallResolverUtil.kt
    3 compiler/frontend/src/org/jetbrains/kotlin/resolve/BindingContext.java
    3 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/rendering/DefaultErrorMessages.java
@@ -225,7 +218,6 @@ Changes from 2022-07-01 to 2022-08-01:
    3 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/jvmArguments.kt
    3 compiler/cli/cli-common/src/org/jetbrains/kotlin/cli/common/arguments/K2JVMCompilerArguments.kt
    3 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/KotlinAsJavaFirSupport.kt
-   3 analysis/symbol-light-classes/build.gradle.kts
    3 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/test/base/FirLowLevelCompilerBasedTestConfigurator.kt
    3 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosisCompilerFirTestdataTestGenerated.java
    3 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/AbstractGetOrBuildFirTest.kt
@@ -341,7 +333,6 @@ Changes from 2022-07-01 to 2022-08-01:
    2 compiler/tests-spec/testData/diagnostics/notLinked/dfa/pos/6.fir.kt
    2 compiler/tests-spec/testData/diagnostics/notLinked/dfa/pos/1.fir.kt
    2 compiler/tests-common/tests/org/jetbrains/kotlin/cfg/pseudocodeUtils.kt
-   2 compiler/tests-common/build.gradle.kts
    2 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/services/CompilerConfigurationProvider.kt
    2 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/fir/FirNativeSyntheticNamesProvider.kt
    2 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/fir/FirNativeSessionFactory.kt
@@ -414,13 +405,12 @@ Changes from 2022-07-01 to 2022-08-01:
    2 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/candidate/ResolutionCandidate.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/utils.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/lightClassUtils.kt
-   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/lightAnnotations.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightMethodImpl.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightElements.kt
+   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightUtils.kt
+   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightMethods.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightClassForLocalDeclaration.kt
-   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightAnnotations.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/implUtils.kt
-   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightClassForRepeatableAnnotationContainer.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForFacadeImpl.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/FacadeCache.kt
    2 compiler/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightElements.kt
@@ -449,6 +439,7 @@ Changes from 2022-07-01 to 2022-08-01:
    2 compiler/incremental-compilation-impl/src/org/jetbrains/kotlin/incremental/IncrementalJsCompilerRunner.kt
    2 compiler/frontend/src/org/jetbrains/kotlin/types/expressions/ControlStructureTypingUtils.java
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/resolvedCallUtil.kt
+   2 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/callUtil.kt
    2 compiler/frontend/cfg/src/org/jetbrains/kotlin/cfg/ControlFlowInformationProviderImpl.kt
    2 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/diagnostics/DefaultErrorMessagesJvm.java
    2 compiler/frontend.common/src/org/jetbrains/kotlin/diagnostics/impl/PendingDiagnosticsCollectorWithSuppress.kt
@@ -498,6 +489,7 @@ Changes from 2022-07-01 to 2022-08-01:
    2 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/classes/FirLightClassBase.kt
    2 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/classes/FirLightAnonymousClassForSymbol.kt
    2 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/caches/SymbolLightClassFacadeCache.kt
+   2 analysis/symbol-light-classes/build.gradle.kts
    2 analysis/project-structure/src/org/jetbrains/kotlin/analysis/project/structure/ProjectStructureProvider.kt
    2 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/test/base/AnalysisApiFirTestServiceRegistrar.kt
    2 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/firTestUtils.kt
@@ -510,12 +502,6 @@ Changes from 2022-07-01 to 2022-08-01:
    2 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostics/FileStructureElementDiagnosticsCollector.kt
    2 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostics/FileStructureElementDiagnosticRetriever.kt
    2 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/api/FirDeclarationDesignation.kt
-   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForSourceDeclaration.kt
-   2 analysis/kt-references/kt-references-fe10/build.gradle.kts
-   2 analysis/kt-references/build.gradle.kts
-   2 analysis/decompiled/light-classes-for-decompiled/build.gradle.kts
-   2 analysis/decompiled/light-classes-for-decompiled-fe10/build.gradle.kts
-   2 analysis/decompiled/decompiler-to-psi/build.gradle.kts
    2 analysis/analysis-test-framework/tests/org/jetbrains/kotlin/analysis/test/framework/test/configurators/AnalysisApiTestConfigurator.kt
    2 analysis/analysis-test-framework/tests/org/jetbrains/kotlin/analysis/test/framework/project/structure/TestModuleStructureFactory.kt
    2 analysis/analysis-internal-utils/src/org/jetbrains/kotlin/analysis/utils/errors/errors.kt
@@ -578,6 +564,7 @@ Changes from 2022-07-01 to 2022-08-01:
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/references/FirSimpleNameReference.kt
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/components/KtFirSymbolProviderByJavaPsi.kt
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/FirDeserializedDeclarationSourceProvider.kt
+   2 analysis/analysis-api-fir/build.gradle.kts
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/symbols/Fe10IdeNormalAnalysisSourceModuleSymbolByPsiTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/references/Fe10IdeNormalAnalysisSourceModuleReferenceResolveTestGenerated.java
    2 .space.kts
@@ -2197,6 +2184,7 @@ Changes from 2022-07-01 to 2022-08-01:
    1 compiler/tests-common/tests/org/jetbrains/kotlin/fir/FirResolveBench.kt
    1 compiler/tests-common/tests/org/jetbrains/kotlin/fir/AbstractFirBaseDiagnosticsTest.kt
    1 compiler/tests-common/tests/org/jetbrains/kotlin/cfg/AbstractPseudoValueTest.kt
+   1 compiler/tests-common/build.gradle.kts
    1 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/utils/SteppingTestUtils.kt
    1 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/services/impl/TemporaryDirectoryManagerImpl.kt
    1 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/services/configuration/JsEnvironmentConfigurator.kt
@@ -3360,17 +3348,20 @@ Changes from 2022-07-01 to 2022-08-01:
    1 compiler/psi/src/org/jetbrains/kotlin/psi/KtPsiFactory.kt
    1 compiler/psi/src/org/jetbrains/kotlin/kdoc/psi/impl/KDocName.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/finder/JavaElementFinder.java
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/lightAnnotations.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/PsiElementWithOrigin.kt
-   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtToJvmAnnotationsConverter.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightPsiLiteral.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightPsiClassObjectAccessExpression.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightModifierListDescriptorBased.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightAnnotationsValues.kt
-   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightSupport.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightParameters.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightField.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightClassForScript.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightClassForAnonymousDeclaration.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightAnnotations.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraKtLightClassForFacade.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightElementWithNullabilityAnnotationDescriptorBased.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightClassForRepeatableAnnotationContainer.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightClassForInterfaceDefaultImpls.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClass.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLazyLightClass.kt
@@ -3502,7 +3493,6 @@ Changes from 2022-07-01 to 2022-08-01:
    1 compiler/frontend/cfg/src/org/jetbrains/kotlin/cfg/pseudocode/pseudocodeUtils.kt
    1 compiler/frontend/cfg/src/org/jetbrains/kotlin/cfg/ControlFlowProcessor.kt
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/platform/JvmPlatformConfigurator.kt
-   1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodParameterKind.java
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/extensions/PartialAnalysisHandlerExtension.kt
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/diagnostics/JvmDeclarationOrigin.kt
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/checkers/ProtectedSyntheticExtensionCallChecker.kt
@@ -3518,7 +3508,6 @@ Changes from 2022-07-01 to 2022-08-01:
    1 compiler/frontend.common.jvm/src/org/jetbrains/kotlin/load/kotlin/PackagePartClassUtils.kt
    1 compiler/frontend.common.jvm/src/org/jetbrains/kotlin/fileClasses/JvmFileClassInfo.kt
    1 compiler/frontend.common.jvm/build.gradle.kts
-   1 compiler/frontend.common-psi/src/org/jetbrains/kotlin/resolve/calls/util/psiUtils.kt
    1 compiler/frontend.common-psi/src/org/jetbrains/kotlin/psi/debugText/DebugTextUtil.kt
    1 compiler/frontend.common-psi/src/org/jetbrains/kotlin/diagnostics/PositioningStrategies.kt
    1 compiler/frontend.common-psi/src/org/jetbrains/kotlin/diagnostics/LightTreePositioningStrategies.kt
@@ -3721,17 +3710,7 @@ Changes from 2022-07-01 to 2022-08-01:
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/state/GenerationState.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/binding/CodegenAnnotatingVisitor.java
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/PropertyCodegen.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodSignature.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodParameterSignature.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodParameterKind.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodGenericSignature.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmClassSignature.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/load/kotlin/inlineClassMapping.kt
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/load/kotlin/TypeMappingModeExtensions.kt
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/codegen/signature/JvmSignatureWriter.java
-   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/codegen/signature/BothSignatureWriter.java
    1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/codegen/coroutines/coroutineConstants.kt
-   1 compiler/backend.common.jvm/build.gradle.kts
    1 compiler/backend-common/src/org/jetbrains/kotlin/backend/common/SamTypeFactory.kt
    1 buildSrc/src/main/kotlin/tasks.kt
    1 buildSrc/src/main/kotlin/sourceSets.kt
@@ -3809,50 +3788,13 @@ Changes from 2022-07-01 to 2022-08-01:
    1 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/LLFirResolveSessionDepended.kt
    1 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/LLFirGlobalResolveComponents.kt
    1 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/FirDesignationState.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/lightClassUtils.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/finder/KtLightPackage.java
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/finder/JavaElementFinder.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/utils.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/PsiElementWithOrigin.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/LightVariableBuilder.java
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/LightParameter.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightPsiJavaCodeReferenceElement.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightParameterList.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightModifierList.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightMethodImpl.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightMemberImpl.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightIdentifier.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightElements.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightElementBase.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightAnnotationsValues.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightAbstractAnnotation.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KotlinLightTypeParameterListBuilder.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KotlinLightTypeParameterBuilder.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/FakeFileForLightClass.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/methodIndices.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/lightClassPlatformUtils.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/implUtils.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/LightClassesLazyCreator.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightTypeParameter.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightElementWithNullabilityAnnotation.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForScript.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForFacadeBase.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForFacade.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassBase.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClass.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtFakeLightClass.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinSuperTypeListBuilder.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinLightReferenceListBuilder.java
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinLightClassFactory.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinClassInnerStuffCache.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/builder/LightElementOrigin.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/builder/ClsWrapperStubPsiFactory.java
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/LightClassUtil.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/KotlinAsJavaSupport.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/ImpreciseResolveResult.kt
-   1 analysis/light-classes-base/build.gradle.kts
    1 analysis/kt-references/src/org/jetbrains/kotlin/idea/references/KotlinPsiReferenceProvider.kt
+   1 analysis/kt-references/kt-references-fe10/build.gradle.kts
+   1 analysis/kt-references/build.gradle.kts
    1 analysis/decompiled/light-classes-for-decompiled/src/org/jetbrains/kotlin/analysis/decompiled/light/classes/KtLightMethodForDecompiledDeclaration.kt
+   1 analysis/decompiled/light-classes-for-decompiled/build.gradle.kts
+   1 analysis/decompiled/light-classes-for-decompiled-fe10/build.gradle.kts
+   1 analysis/decompiled/decompiler-to-psi/build.gradle.kts
    1 analysis/analysis-test-framework/tests/org/jetbrains/kotlin/analysis/test/framework/project/structure/KtSourceModuleImpl.kt
    1 analysis/analysis-test-framework/tests/org/jetbrains/kotlin/analysis/test/framework/project/structure/AnalysisApiKtModuleProviderImpl.kt
    1 analysis/analysis-test-framework/tests/org/jetbrains/kotlin/analysis/test/framework/base/AbstractAnalysisApiBasedTest.kt

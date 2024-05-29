@@ -1,4 +1,3 @@
-Changes from 2017-01-01 to 2017-02-01:
   52 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   48 backend.native/tests/build.gradle
   39 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeCodegenTestGenerated.java

@@ -1,4 +1,3 @@
-Changes from 2021-01-01 to 2021-02-01:
   39 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   30 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
   30 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
@@ -6,7 +5,7 @@ Changes from 2021-01-01 to 2021-02-01:
   21 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   21 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
   21 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/es6/semantics/IrJsCodegenBoxES6TestGenerated.java
-  21 build.gradle.kts
+  20 build.gradle.kts
   18 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrors.kt
   17 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/wasm/semantics/IrCodegenBoxWasmTestGenerated.java
   12 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDefaultErrorMessages.kt
@@ -124,10 +123,8 @@ Changes from 2021-01-01 to 2021-02-01:
    3 plugins/compose/compiler-hosted/integration-tests/src/test/java/androidx/compose/compiler/plugins/kotlin/ControlFlowTransformTestsNoSource.kt
    3 plugins/compose/compiler-hosted/integration-tests/src/test/java/androidx/compose/compiler/plugins/kotlin/ClassStabilityTransformTests.kt
    3 plugins/compose/compiler-hosted/integration-tests/src/test/java/androidx/compose/compiler/plugins/kotlin/AbstractCodegenSignatureTest.kt
-   3 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinProperties.kt
    3 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/native/NativePlatformLibsIT.kt
    3 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/AbstractKotlinAndroidGradleTests.kt
-   3 libraries/kotlin.test/build.gradle.kts
    3 kotlin-native/gradle.properties
    3 kotlin-native/build-tools/src/main/kotlin/org/jetbrains/kotlin/testing/native/NativeTest.kt
    3 kotlin-native/build-tools/src/main/kotlin/org/jetbrains/kotlin/bitcode/CompileToBitcode.kt
@@ -332,6 +329,7 @@ Changes from 2021-01-01 to 2021-02-01:
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/tasks/Tasks.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinMultiplatformPlugin.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/ProjectLocalConfigurations.kt
+   2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinProperties.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/kapt/Kapt3KotlinGradleSubplugin.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJvmOptionsBase.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJvmOptions.kt
@@ -1075,7 +1073,6 @@ Changes from 2021-01-01 to 2021-02-01:
    1 libraries/tools/kotlin-maven-plugin-test/src/it/test-apiVersion/verify.bsh
    1 libraries/tools/kotlin-maven-plugin-test/src/it/test-apiVersion/pom.xml
    1 libraries/tools/kotlin-main-kts-test/test/org/jetbrains/kotlin/mainKts/test/mainKtsIT.kt
-   1 libraries/tools/kotlin-gradle-plugin/src/test/kotlin/org/jetbrains/kotlin/gradle/internals/ExposedForIntegrationTests.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/tasks/KotlinJsDce.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/targets/native/tasks/KotlinNativeTasks.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/targets/native/internal/PlatformLibrariesGenerator.kt
@@ -1098,7 +1095,6 @@ Changes from 2021-01-01 to 2021-02-01:
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/mpp/KotlinMetadataTarget.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinTargetConfigurator.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/kapt/KaptWithoutKotlincTask.kt
-   1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/KotlinDependenciesManagement.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/CompilerArgumentsContributor.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinProjectExtension.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinMultiplatformExtension.kt
@@ -1214,7 +1210,6 @@ Changes from 2021-01-01 to 2021-02-01:
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/util/testResolveAllConfigurations.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/util/AGPVersion.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/UpToDateIT.kt
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/KotlinSpecificDependenciesIT.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/Kotlin2JsGradlePluginIT.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/HierarchicalMppIT.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/CoroutinesIT.kt
@@ -1321,13 +1316,6 @@ Changes from 2021-01-01 to 2021-02-01:
    1 libraries/stdlib/api/js-v1/kotlin.text.kt
    1 libraries/kotlinx-metadata/klib/src/kotlinx/metadata/klib/impl/klibWriters.kt
    1 libraries/kotlinx-metadata/klib/src/kotlinx/metadata/klib/KlibModuleMetadata.kt
-   1 libraries/kotlin.test/testng/build.gradle
-   1 libraries/kotlin.test/jvm/build.gradle
-   1 libraries/kotlin.test/junit5/build.gradle
-   1 libraries/kotlin.test/junit/build.gradle
-   1 libraries/kotlin.test/js/build.gradle
-   1 libraries/kotlin.test/common/build.gradle
-   1 libraries/kotlin.test/annotations-common/build.gradle
    1 kotlin-power-assert-plugin/src/test/kotlin/com/bnorm/power/RegexMatchTest.kt
    1 kotlin-power-assert-plugin/src/main/kotlin/com/bnorm/power/PowerAssertCallTransformer.kt
    1 kotlin-power-assert-plugin/src/main/kotlin/com/bnorm/power/IrStackVariable.kt
@@ -4324,9 +4312,7 @@ Changes from 2021-01-01 to 2021-02-01:
    1 compiler/android-tests/tests/org/jetbrains/kotlin/android/tests/CodegenTestsOnAndroidGenerator.kt
    1 compiler/android-tests/tests/org/jetbrains/kotlin/android/tests/AndroidRunner.java
    1 compiler/android-tests/android-module/gradle.properties
-   1 buildSrc/src/main/kotlin/tasks.kt
    1 buildSrc/src/main/kotlin/sourceSets.kt
-   1 buildSrc/src/main/kotlin/plugins/KotlinBuildPublishingPlugin.kt
    1 buildSrc/src/main/kotlin/localDependencies.kt
    1 buildSrc/src/main/kotlin/jdksFinder.kt
    1 buildSrc/settings.gradle

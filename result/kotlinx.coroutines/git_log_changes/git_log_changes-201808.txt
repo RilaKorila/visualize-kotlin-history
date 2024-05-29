@@ -1,4 +1,3 @@
-Changes from 2018-08-01 to 2018-09-01:
   10 binary-compatibility-validator/reference-public-api/kotlinx-coroutines-core.txt
    8 common/kotlinx-coroutines-core-common/src/JobSupport.kt
    6 gradle.properties

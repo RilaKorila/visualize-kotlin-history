@@ -1,4 +1,3 @@
-Changes from 2023-02-01 to 2023-03-01:
   37 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   37 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosisCompilerTestFE10TestdataTestGenerated.java
   31 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java
@@ -124,6 +123,7 @@ Changes from 2023-02-01 to 2023-03-01:
    4 native/native.tests/build.gradle.kts
    4 libraries/tools/kotlin-stdlib-docs/kotlin_big/build.gradle.kts
    4 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/MppIdeDependencyResolutionIT.kt
+   4 libraries/stdlib/wasm/build.gradle.kts
    4 kotlin-native/tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/konan/KonanPlugin.kt
    4 kotlin-native/tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/experimental/internal/KotlinNativePlatform.kt
    4 kotlin-native/build-tools/src/main/kotlin/org/jetbrains/kotlin/KotlinNativeTest.kt
@@ -206,7 +206,6 @@ Changes from 2023-02-01 to 2023-03-01:
    3 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/ide/IdeMultiplatformImportFactory.kt
    3 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/KotlinJsDomApiDependencyIT.kt
    3 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/HierarchicalMppIT.kt
-   3 libraries/stdlib/wasm/build.gradle.kts
    3 libraries/kotlinx-metadata/jvm/api/kotlinx-metadata-jvm.api
    3 libraries/kotlin-dom-api-compat/build.gradle.kts
    3 kotlin-native/tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/konan/tasks/KonanCompilerDownloadTask.kt
@@ -1044,7 +1043,6 @@ Changes from 2023-02-01 to 2023-03-01:
    1 wasm/wasm.frontend/build.gradle.kts
    1 wasm/wasm.config/src/org/jetbrains/kotlin/platform/wasm/WasmPlatform.kt
    1 wasm/wasm.config/build.gradle.kts
-   1 scripts/update-bootstrap
    1 scripts/kotlin-build-env.dockerfile
    1 repo/scripts/cache-redirector.settings.gradle.kts
    1 repo/gradle-settings-conventions/jvm-toolchain-provisioning/src/main/kotlin/jvm-toolchain-provisioning.settings.gradle.kts

@@ -1,4 +1,3 @@
-Changes from 2022-09-01 to 2022-10-01:
   19 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   19 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java
   19 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsTestGenerated.java
@@ -269,8 +268,12 @@ Changes from 2022-09-01 to 2022-10-01:
    3 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/annotations/symbolAnnotationsUtils.kt
    3 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/providers/LLFirProviderHelper.kt
    3 analysis/decompiled/light-classes-for-decompiled/src/org/jetbrains/kotlin/analysis/decompiled/light/classes/origin/KotlinDeclarationInCompiledFileSearcher.kt
+   3 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    3 analysis/analysis-api-providers/src/org/jetbrains/kotlin/analysis/providers/impl/KotlinStaticDeclarationProvider.kt
+   3 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
+   3 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    3 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/evaluate/FirCompileTimeConstantEvaluator.kt
+   3 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    3 .github/workflows/build.yml
    2 wasm/wasm.ir/src/org/jetbrains/kotlin/wasm/ir/convertors/WasmIrToText.kt
    2 prepare/analysis-api-test-framework/build.gradle.kts
@@ -727,15 +730,12 @@ Changes from 2022-09-01 to 2022-10-01:
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/symbols/FirStandaloneNormalAnalysisSourceModuleSymbolByFqNameTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/scopes/FirStandaloneNormalAnalysisSourceModuleMemberScopeByFqNameTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/callResolver/FirStandaloneNormalAnalysisSourceModuleResolveCallTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/annotations/FirStandaloneNormalAnalysisSourceModuleAnalysisApiAnnotationsOnDeclarationsTestGenerated.java
    2 analysis/analysis-api-standalone/src/org/jetbrains/kotlin/analysis/project/structure/impl/KtModuleUtils.kt
    2 analysis/analysis-api-impl-base/tests/org/jetbrains/kotlin/analysis/api/impl/base/test/configurators/AnalysisApiBaseTestServiceRegistrar.kt
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/annotations/FirIdeNormalAnalysisSourceModuleAnalysisApiAnnotationsOnDeclarationsTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/annotations/FirIdeDependentAnalysisSourceModuleAnalysisApiAnnotationsOnDeclarationsTestGenerated.java
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/symbols/KtFirSymbolProvider.kt
@@ -745,7 +745,6 @@ Changes from 2022-09-01 to 2022-10-01:
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/diagnostics/KtFirDiagnostics.kt
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/diagnostics/KtFirDataClassConverters.kt
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/annotations/Fe10IdeNormalAnalysisSourceModuleAnalysisApiAnnotationsOnDeclarationsTestGenerated.java
    1 wasm/wasm.ir/src/org/jetbrains/kotlin/wasm/ir/convertors/WasmIrToBinary.kt
    1 wasm/wasm.ir/src/org/jetbrains/kotlin/wasm/ir/convertors/WasmBinaryToIR.kt
@@ -3273,6 +3272,8 @@ Changes from 2022-09-01 to 2022-10-01:
    1 analysis/analysis-api/testData/scopes/memberScopeByFqName/Int.kt
    1 analysis/analysis-api/testData/components/expressionTypeProvider/expressionType/platformType.txt
    1 analysis/analysis-api/testData/components/expressionTypeProvider/expressionType/platformType.kt
+   1 analysis/analysis-api/testData/components/expressionTypeProvider/declarationReturnType/varargParam.txt
+   1 analysis/analysis-api/testData/components/expressionTypeProvider/declarationReturnType/varargParam.kt
    1 analysis/analysis-api/testData/components/expressionTypeProvider/declarationReturnType/platformType.txt
    1 analysis/analysis-api/testData/components/expressionTypeProvider/declarationReturnType/platformType.kt
    1 analysis/analysis-api/testData/components/compileTimeConstantProvider/evaluate/string_trimIndent.txt
@@ -3304,6 +3305,7 @@ Changes from 2022-09-01 to 2022-10-01:
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/symbols/pointers/KtPsiBasedSymbolPointer.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/symbols/KtSymbolProvider.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/symbols/DebugSymbolRenderer.kt
+   1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/components/KtExpressionTypeProvider.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/annotations/KtAnnotationsList.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/annotations/KtAnnotated.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/KtInitializerValue.kt
@@ -3446,6 +3448,7 @@ Changes from 2022-09-01 to 2022-10-01:
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/annotations/Fe10IdeNormalAnalysisSourceModuleAnalysisApiAnnotationsOnTypesTestGenerated.java
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/annotations/Fe10IdeNormalAnalysisSourceModuleAnalysisApiAnnotationsOnFilesTestGenerated.java
    1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/components/KtFe10SymbolProvider.kt
+   1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/components/KtFe10ExpressionTypeProvider.kt
    1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/annotations/KtFe10AnnotationsList.kt
    1 ReadMe.md
    1 .idea/protoeditor.xml

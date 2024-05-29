@@ -1,4 +1,3 @@
-Changes from 2020-06-01 to 2020-07-01:
   99 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/interpreter/IrInterpreter.kt
   39 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/interpreter/Utils.kt
   29 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/interpreter/stack/State.kt
@@ -61,6 +60,7 @@ Changes from 2020-06-01 to 2020-07-01:
   10 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/ClassMemberGenerator.kt
    9 libraries/stdlib/test/collections/CollectionTest.kt
    9 idea/idea-core/src/org/jetbrains/kotlin/idea/core/script/configuration/DefaultScriptingSupport.kt
+   9 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
    9 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBytecodeListingTestGenerated.java
    9 compiler/tests/org/jetbrains/kotlin/codegen/BytecodeListingTestGenerated.java
    9 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/interpreter/state/State.kt
@@ -83,7 +83,6 @@ Changes from 2020-06-01 to 2020-07-01:
    8 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
    8 idea/resources/META-INF/extensions/ide.xml
    8 idea/idea-gradle/src/org/jetbrains/kotlin/idea/scripting/gradle/GradleImportHelper.kt
-   8 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
    8 compiler/tests-common/tests/org/jetbrains/kotlin/fir/AbstractFirDiagnosticTest.kt
    8 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/KotlinIrLinker.kt
    8 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/AnnotationCodegen.kt
@@ -923,6 +922,7 @@ Changes from 2020-06-01 to 2020-07-01:
    2 jps-plugin/jps-tests/test/org/jetbrains/kotlin/jps/build/KotlinJpsBuildTest.kt.202
    2 jps-plugin/jps-tests/test/org/jetbrains/kotlin/jps/build/IncrementalJvmJpsTestGenerated.java
    2 jps-plugin/jps-tests/test/org/jetbrains/kotlin/jps/build/AbstractLookupTrackerTest.kt
+   2 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/AbstractKotlinNavBarTest.kt
    2 idea/tests/org/jetbrains/kotlin/idea/imports/JvmOptimizeImportsTestGenerated.java
    2 idea/tests/org/jetbrains/kotlin/idea/imports/JsOptimizeImportsTestGenerated.java
    2 idea/tests/org/jetbrains/kotlin/idea/highlighter/AbstractHighlightingTest.java
@@ -934,6 +934,14 @@ Changes from 2020-06-01 to 2020-07-01:
    2 idea/testData/quickfix/addDefaultConstructor/expectAnnotation.kt.after
    2 idea/testData/quickfix/addDefaultConstructor/expectAnnotation.kt
    2 idea/testData/parameterInfo/functionCall/deprecatedSinceKotlinNotApplicable.kt
+   2 idea/testData/navigationToolbar/topLevelProperty.kt.201
+   2 idea/testData/navigationToolbar/topLevelProperty.kt
+   2 idea/testData/navigationToolbar/topLevelFunction.kt
+   2 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt.201
+   2 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt
+   2 idea/testData/navigationToolbar/SeveralClassesInFile.kt
+   2 idea/testData/navigationToolbar/MethodInClass.kt
+   2 idea/testData/navigationToolbar/ClassProperty.kt
    2 idea/testData/multiModuleQuickFix/fixNativeThrowsErrors/addCancellationException4/native/test.kt
    2 idea/testData/multiModuleQuickFix/fixNativeThrowsErrors/addCancellationException3/native/test.kt
    2 idea/testData/indentationOnNewline/elvis/BeforeElvisInBinaryExpression.kt
@@ -1014,6 +1022,8 @@ Changes from 2020-06-01 to 2020-07-01:
    2 idea/testData/gradle/nativeRunConfiguration/customEntryPointWithoutRunGutter/gradle.properties
    2 idea/testData/gradle/nativeRunConfiguration/customEntryPointWithoutRunGutter/build.gradle.kts
    2 idea/src/org/jetbrains/kotlin/idea/quickfix/AddFunctionParametersFix.kt
+   2 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt.201
+   2 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt
    2 idea/src/org/jetbrains/kotlin/idea/intentions/ConvertLambdaToReferenceIntention.kt
    2 idea/src/org/jetbrains/kotlin/idea/intentions/AnonymousFunctionToLambdaIntention.kt
    2 idea/src/org/jetbrains/kotlin/idea/inspections/TrailingCommaInspection.kt
@@ -1325,6 +1335,7 @@ Changes from 2020-06-01 to 2020-07-01:
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/ExpressionHelpers.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/ObsoleteDescriptorBasedAPI.kt
    2 compiler/ir/ir.tree/build.gradle.kts
+   2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/transformations/InsertImplicitCasts.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/PropertyGenerator.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/Psi2IrTranslator.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/KotlinUtils.kt
@@ -2419,8 +2430,9 @@ Changes from 2020-06-01 to 2020-07-01:
    1 idea/tests/org/jetbrains/kotlin/idea/parameterInfo/ParameterInfoTestGenerated.java
    1 idea/tests/org/jetbrains/kotlin/idea/parameterInfo/InlayHintTypeTestUtil.kt.191
    1 idea/tests/org/jetbrains/kotlin/idea/parameterInfo/AbstractParameterInfoTest.kt
+   1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/KotlinNavBarTestGenerated.java
+   1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/AbstractKotlinNavBarTest.kt.201
    1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/AbstractKotlinNavBarTest.kt.193
-   1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/AbstractKotlinNavBarTest.kt
    1 idea/tests/org/jetbrains/kotlin/idea/multiplatform/multiPlatformSetup.kt
    1 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionDescriptionTest.kt.202
    1 idea/tests/org/jetbrains/kotlin/idea/inspections/InspectionDescriptionTest.kt.202
@@ -2711,20 +2723,16 @@ Changes from 2020-06-01 to 2020-07-01:
    1 idea/testData/perfTest/native/_common/gradle.properties.with-commonizer
    1 idea/testData/parameterInfo/functionCall/deprecatedSinceKotlinApplicable.kt
    1 idea/testData/parameterInfo/functionCall/NoSynthesizedParameterNames.kt.191
-   1 idea/testData/navigationToolbar/topLevelProperty.kt.201
    1 idea/testData/navigationToolbar/topLevelProperty.kt.193
-   1 idea/testData/navigationToolbar/topLevelProperty.kt
+   1 idea/testData/navigationToolbar/topLevelFunction.kt.201
    1 idea/testData/navigationToolbar/topLevelFunction.kt.193
-   1 idea/testData/navigationToolbar/topLevelFunction.kt
-   1 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt.201
    1 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt.193
-   1 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt
+   1 idea/testData/navigationToolbar/SeveralClassesInFile.kt.201
    1 idea/testData/navigationToolbar/SeveralClassesInFile.kt.193
-   1 idea/testData/navigationToolbar/SeveralClassesInFile.kt
+   1 idea/testData/navigationToolbar/MethodInClass.kt.201
    1 idea/testData/navigationToolbar/MethodInClass.kt.193
-   1 idea/testData/navigationToolbar/MethodInClass.kt
+   1 idea/testData/navigationToolbar/ClassProperty.kt.201
    1 idea/testData/navigationToolbar/ClassProperty.kt.193
-   1 idea/testData/navigationToolbar/ClassProperty.kt
    1 idea/testData/multiplatform/useCorrectBuiltIns/js/js.kt
    1 idea/testData/multiModuleQuickFix/fixNativeThrowsErrors/removeThrowsOnIncompatibleOverride/native/test.kt.after
    1 idea/testData/multiModuleQuickFix/fixNativeThrowsErrors/removeThrowsOnIncompatibleOverride/native/test.kt
@@ -3848,9 +3856,8 @@ Changes from 2020-06-01 to 2020-07-01:
    1 idea/src/org/jetbrains/kotlin/idea/parameterInfo/TypeHints.kt
    1 idea/src/org/jetbrains/kotlin/idea/parameterInfo/LambdaReturnValueHints.kt
    1 idea/src/org/jetbrains/kotlin/idea/parameterInfo/KotlinFunctionParameterInfoHandler.kt
-   1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt.201
+   1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/KotlinNavBarModelExtension.kt
    1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt.193
-   1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt
    1 idea/src/org/jetbrains/kotlin/idea/kdoc/KDocRenderer.kt
    1 idea/src/org/jetbrains/kotlin/idea/joinLines/JoinToStringTemplateHandler.kt
    1 idea/src/org/jetbrains/kotlin/idea/intentions/loopToCallChain/utils.kt
@@ -4255,6 +4262,7 @@ Changes from 2020-06-01 to 2020-07-01:
    1 idea/idea-android/build.gradle.kts
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/util/expectActualUtil.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/stubindex/resolve/PluginDeclarationProviderFactory.kt
+   1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/structureView/KotlinStructureViewModel.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/search/ideaExtensions/KotlinReferenceScopeOptimizer.kt.193
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/search/ideaExtensions/KotlinReferenceScopeOptimizer.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/references/SyntheticPropertyAccessorReference.kt
@@ -4509,11 +4517,13 @@ Changes from 2020-06-01 to 2020-07-01:
    1 compiler/testData/ir/irText/expressions/specializedTypeAliasConstructorCall.fir.txt
    1 compiler/testData/ir/irText/expressions/smartCastsWithDestructuring.fir.txt
    1 compiler/testData/ir/irText/expressions/simpleUnaryOperators.fir.txt
+   1 compiler/testData/ir/irText/expressions/signedToUnsignedConversions_test.txt
    1 compiler/testData/ir/irText/expressions/signedToUnsignedConversions_test.fir.txt
    1 compiler/testData/ir/irText/expressions/sam/samConversionToGeneric.fir.txt
    1 compiler/testData/ir/irText/expressions/safeCalls.fir.txt
    1 compiler/testData/ir/irText/expressions/safeCallWithIncrementDecrement.fir.txt
    1 compiler/testData/ir/irText/expressions/safeAssignment.fir.txt
+   1 compiler/testData/ir/irText/expressions/primitivesImplicitConversions.txt
    1 compiler/testData/ir/irText/expressions/primitivesImplicitConversions.fir.txt
    1 compiler/testData/ir/irText/expressions/nullCheckOnLambdaReturn.txt
    1 compiler/testData/ir/irText/expressions/nullCheckOnGenericLambdaReturn.txt
@@ -4523,6 +4533,7 @@ Changes from 2020-06-01 to 2020-07-01:
    1 compiler/testData/ir/irText/expressions/jvmFieldWithIntersectionTypes.fir.txt
    1 compiler/testData/ir/irText/expressions/jvmFieldReferenceWithIntersectionTypes.kt
    1 compiler/testData/ir/irText/expressions/implicitCastToTypeParameter.fir.txt
+   1 compiler/testData/ir/irText/expressions/genericConstructorCallWithTypeArguments.txt
    1 compiler/testData/ir/irText/expressions/genericConstructorCallWithTypeArguments.fir.txt
    1 compiler/testData/ir/irText/expressions/funInterface/samConversionsWithSmartCasts.fir.txt
    1 compiler/testData/ir/irText/expressions/funInterface/samConversionOnCallableReference.fir.txt
@@ -5213,6 +5224,7 @@ Changes from 2020-06-01 to 2020-07-01:
    1 compiler/testData/codegen/box/properties/kt4252.kt
    1 compiler/testData/codegen/box/properties/const/interfaceCompanion.kt
    1 compiler/testData/codegen/box/properties/const/constValInAnnotationDefault.kt
+   1 compiler/testData/codegen/box/operatorConventions/kt14227.kt
    1 compiler/testData/codegen/box/objects/objectLiteralInClass.kt
    1 compiler/testData/codegen/box/nullCheckOptimization/parameterNullCheckThrowsNpe.kt
    1 compiler/testData/codegen/box/nullCheckOptimization/parameterNullCheckThrowsIae_1_3.kt
@@ -5440,7 +5452,6 @@ Changes from 2020-06-01 to 2020-07-01:
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/Primitives.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/IrGenerator.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/DescriptorBasedIr.kt
-   1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/transformations/InsertImplicitCasts.kt
    1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/intermediate/RematerializableValue.kt
    1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/intermediate/PropertyLValue.kt
    1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/SyntheticDeclarationsGenerator.kt

@@ -1,16 +1,15 @@
-Changes from 2021-09-01 to 2021-10-01:
   40 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnosticsImpl.kt
   40 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnostics.kt
-  39 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  39 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
-  39 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
+  40 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  40 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
+  40 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
   38 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDataClassConverters.kt
-  36 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
+  37 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   32 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/coroutines-codegen.md
-  29 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
-  29 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/es6/semantics/IrJsCodegenBoxES6TestGenerated.java
-  26 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/wasm/semantics/IrCodegenBoxWasmTestGenerated.java
-  26 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
+  30 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
+  30 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/es6/semantics/IrJsCodegenBoxES6TestGenerated.java
+  27 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/wasm/semantics/IrCodegenBoxWasmTestGenerated.java
+  27 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   25 compiler/fir/checkers/gen/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrors.kt
   24 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/FirDiagnosticsList.kt
   22 native/commonizer/src/org/jetbrains/kotlin/commonizer/core/ClassOrTypeAliasTypeCommonizer.kt
@@ -125,6 +124,7 @@ Changes from 2021-09-01 to 2021-10-01:
    5 kotlin-native/runtime/build.gradle.kts
    5 compiler/tests-gen/org/jetbrains/kotlin/ir/KlibTextTestCaseGenerated.java
    5 compiler/testData/diagnostics/testsWithStdLib/experimental/incorrectTargetsForExperimentalAnnotation.fir.kt
+   5 compiler/testData/cli/js/jsExtraHelp.out
    5 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/model/ResolvedCallAtoms.kt
    5 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/CallableReferenceResolution.kt
    5 compiler/ir/serialization.js/src/org/jetbrains/kotlin/ir/backend/js/ic/CacheAccessors.kt
@@ -157,6 +157,7 @@ Changes from 2021-09-01 to 2021-10-01:
    5 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirDiagnosticsWithLightTreeTestGenerated.java
    5 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirDiagnosticTestGenerated.java
    5 compiler/cli/cli-js/src/org/jetbrains/kotlin/cli/js/K2JsIrCompiler.kt
+   5 compiler/cli/cli-common/src/org/jetbrains/kotlin/cli/common/arguments/K2JSCompilerArguments.kt
    5 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/firLightUtils.kt
    5 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/compiler/based/AbstractCompilerBasedTest.kt
    5 analysis/low-level-api-fir/build.gradle.kts
@@ -220,7 +221,6 @@ Changes from 2021-09-01 to 2021-10-01:
    4 compiler/testData/diagnostics/foreignAnnotationsTests/java8Tests/jspecify/strictMode/kt47437.fir.kt
    4 compiler/testData/codegen/bytecodeText/forLoop/unsigned/forInDownToUIntMinValue.kt
    4 compiler/testData/cli/jvm/extraHelp.out
-   4 compiler/testData/cli/js/jsExtraHelp.out
    4 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/model/KotlinResolverContext.kt
    4 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/model/CallableReferencesCandidateFactory.kt
    4 compiler/ir/backend.wasm/src/org/jetbrains/kotlin/backend/wasm/ir2wasm/TypeTransformer.kt
@@ -254,9 +254,10 @@ Changes from 2021-09-01 to 2021-10-01:
    4 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirTailrecFunctionChecker.kt
    4 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirDeclarationCheckerUtils.kt
    4 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/PsiBasedProjectEnvironment.kt
-   4 compiler/cli/cli-common/src/org/jetbrains/kotlin/cli/common/arguments/K2JSCompilerArguments.kt
    4 compiler/cli/build.gradle.kts
    4 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/coroutines/CoroutineTransformer.kt
+   4 compiler/backend/src/org/jetbrains/kotlin/codegen/codegenUtil.kt
+   4 compiler/backend/src/org/jetbrains/kotlin/codegen/StringConcatGenerator.kt
    4 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/methods/FirLightAccessorMethodForSymbol.kt
    4 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/fields/FirLightFieldForPropertySymbol.kt
    4 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/api/LowLevelFirApiFacadeForResolveOnAir.kt
@@ -430,6 +431,7 @@ Changes from 2021-09-01 to 2021-10-01:
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/ir/IrInlineReferenceLocator.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/MethodSignatureMapper.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/IrInlineCodegen.kt
+   3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ExpressionCodegen.kt
    3 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/SyntheticAccessorLowering.kt
    3 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/SuspendLambdaLowering.kt
    3 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmTailrecLowering.kt
@@ -781,6 +783,8 @@ Changes from 2021-09-01 to 2021-10-01:
    2 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/fir/Fir2IrResultsConverter.kt
    2 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/classic/ClassicFrontend2IrConverter.kt
    2 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/backend/classic/JavaCompilerFacade.kt
+   2 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxModernJdkCodegenTestGenerated.java
+   2 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxModernJdkCodegenTestGenerated.java
    2 compiler/testData/psi/propertyBackingField/explicitBackingField.txt
    2 compiler/testData/loadJava/compiledJava/annotations/ClassObjectArrayInParam.fir.txt
    2 compiler/testData/loadJava/compiledJava/annotations/AnnotatedTypeInFun.fir.txt
@@ -1073,7 +1077,6 @@ Changes from 2021-09-01 to 2021-10-01:
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/AssertionLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/ir/JvmIrTypeUtils.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/FunctionCodegen.kt
-   2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ExpressionCodegen.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/AnnotationCodegen.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/caches/CollectionStubComputer.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/caches/BridgeLoweringCache.kt
@@ -2809,9 +2812,7 @@ Changes from 2021-09-01 to 2021-10-01:
    1 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/backend/ir/IrBackendInput.kt
    1 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/backend/handlers/JvmBoxRunner.kt
    1 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBytecodeListingTestGenerated.java
-   1 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxModernJdkCodegenTestGenerated.java
    1 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BytecodeListingTestGenerated.java
-   1 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxModernJdkCodegenTestGenerated.java
    1 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticsNativeTestGenerated.java
    1 compiler/tests-common-jvm6/build.gradle.kts
    1 compiler/tests-against-klib/build.gradle.kts
@@ -3934,6 +3935,10 @@ Changes from 2021-09-01 to 2021-10-01:
    1 compiler/testData/codegen/boxModernJdk/testsWithJava17/records/collectionSizeOverrides.kt
    1 compiler/testData/codegen/boxModernJdk/testsWithJava17/records/bytecodeShapeForJava.kt
    1 compiler/testData/codegen/boxModernJdk/testsWithJava15/_tags.txt
+   1 compiler/testData/codegen/boxModernJdk/testsWithJava11/kt47917_surrogatePairs.kt
+   1 compiler/testData/codegen/boxModernJdk/testsWithJava11/kt47917_russian.kt
+   1 compiler/testData/codegen/boxModernJdk/testsWithJava11/kt47917_oldBackend.kt
+   1 compiler/testData/codegen/boxModernJdk/testsWithJava11/kt47917.kt
    1 compiler/testData/codegen/boxInline/suspend/inlinePassthrough.kt
    1 compiler/testData/codegen/boxInline/signatureMangling/rawType.kt
    1 compiler/testData/codegen/boxInline/innerClasses/innerInlineFunCapturesOuter.kt
@@ -3986,6 +3991,8 @@ Changes from 2021-09-01 to 2021-10-01:
    1 compiler/testData/codegen/box/strings/twoArgumentStringTemplate.kt
    1 compiler/testData/codegen/box/strings/twoArgumentNullableStringPlus.kt
    1 compiler/testData/codegen/box/strings/twoArgumentNullableStringOperatorPlus.kt
+   1 compiler/testData/codegen/box/strings/surrogatePair.kt
+   1 compiler/testData/codegen/box/strings/kt47917.kt
    1 compiler/testData/codegen/box/specialBuiltins/throwableImplWithSecondaryConstructor.kt
    1 compiler/testData/codegen/box/specialBuiltins/throwableImpl.kt
    1 compiler/testData/codegen/box/specialBuiltins/throwableComplex.kt
@@ -5440,7 +5447,6 @@ Changes from 2021-09-01 to 2021-10-01:
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/processUninitializedStores.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/coroutineCodegenUtil.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/context/InlineLambdaContext.kt
-   1 compiler/backend/src/org/jetbrains/kotlin/codegen/codegenUtil.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/builtinSpecialBridges.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/TailRecursionCodegen.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/PropertyCodegen.java

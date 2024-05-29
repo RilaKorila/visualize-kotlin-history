@@ -1,9 +1,8 @@
-Changes from 2017-06-01 to 2017-07-01:
   18 idea/src/META-INF/plugin.xml
   16 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
+  12 build.gradle
   11 klib/src/main/kotlin/org/jetbrains/kotlin/cli/klib/PrettyPrinter.kt
   11 idea/tests/org/jetbrains/kotlin/idea/inspections/LocalInspectionTestGenerated.java
-  11 build.gradle
   10 idea/tests/org/jetbrains/kotlin/formatter/FormatterTestGenerated.java
   10 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   10 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/InlineCodegen.kt
@@ -229,6 +228,7 @@ Changes from 2017-06-01 to 2017-07-01:
    2 runtime/src/main/kotlin/konan/internal/HexStringParser.kt
    2 runtime/src/main/kotlin/konan/internal/FloatingPointParser.kt
    2 runtime/src/main/cpp/Memory.cpp
+   2 runtime/src/main/cpp/Exceptions.cpp
    2 runtime/src/launcher/cpp/launcher.cpp
    2 runtime/src/launcher/cpp/androidLauncher.h
    2 plugins/uast-kotlin/tests/AbstractKotlinUastTest.kt
@@ -607,7 +607,8 @@ Changes from 2017-06-01 to 2017-07-01:
    1 runtime/src/main/cpp/Memory.h
    1 runtime/src/main/cpp/KString.h
    1 runtime/src/main/cpp/Interop.cpp
-   1 runtime/src/main/cpp/Exceptions.cpp
+   1 runtime/src/main/cpp/ExecFormat.h
+   1 runtime/src/main/cpp/ExecFormat.cpp
    1 runtime/src/main/cpp/Console.cpp
    1 runtime/src/launcher/kotlin/konan/start.kt
    1 runtime/build.gradle
@@ -750,10 +751,7 @@ Changes from 2017-06-01 to 2017-07-01:
    1 libraries/tools/kotlin-allopen/build.gradle
    1 libraries/tools/gradle-tools/settings.gradle
    1 libraries/stdlib/test/properties/delegation/MapAccessorsTest.kt
-   1 libraries/stdlib/src/kotlin/text/StringsJVM.kt
-   1 libraries/stdlib/src/kotlin/collections/MutableCollections.kt
    1 libraries/stdlib/src/kotlin/collections/AbstractList.kt
-   1 libraries/stdlib/samples/test/samples/text/strings.kt
    1 libraries/commonConfiguration.gradle
    1 klib/build.gradle
    1 js/npm.templates/kotlin/package.json
@@ -2500,7 +2498,6 @@ Changes from 2017-06-01 to 2017-07-01:
    1 core/descriptor.loader.java/src/org/jetbrains/kotlin/builtins/JvmBuiltInsPackageFragmentProvider.kt
    1 core/descriptor.loader.java/src/org/jetbrains/kotlin/builtins/JvmBuiltInClassDescriptorFactory.kt
    1 core/descriptor.loader.java/descriptor.loader.java.iml
-   1 core/builtins/native/kotlin/Collections.kt
    1 compiler/util/util.iml
    1 compiler/util/src/org/jetbrains/kotlin/utils/jvmUtils.kt
    1 compiler/util/src/org/jetbrains/kotlin/utils/PathUtil.java

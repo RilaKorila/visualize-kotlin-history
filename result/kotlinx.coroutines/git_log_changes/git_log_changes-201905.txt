@@ -1,4 +1,3 @@
-Changes from 2019-05-01 to 2019-06-01:
    8 binary-compatibility-validator/reference-public-api/kotlinx-coroutines-core.txt
    5 kotlinx-coroutines-core/common/src/flow/Builders.kt
    4 kotlinx-coroutines-test/README.md

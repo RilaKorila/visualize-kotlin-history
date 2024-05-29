@@ -1,4 +1,3 @@
-Changes from 2017-04-01 to 2017-05-01:
   31 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/lower/FunctionInlining.kt
   31 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/common/DeepCopyIrTreeWithDescriptoros.kt
   25 libraries/build.gradle

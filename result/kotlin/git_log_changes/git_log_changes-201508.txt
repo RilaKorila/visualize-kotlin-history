@@ -1,4 +1,3 @@
-Changes from 2015-08-01 to 2015-09-01:
   28 compiler/tests/org/jetbrains/kotlin/checkers/JetDiagnosticsTestGenerated.java
   24 idea/idea-completion/src/org/jetbrains/kotlin/idea/completion/CompletionSession.kt
   22 idea/src/META-INF/plugin.xml

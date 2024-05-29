@@ -1,28 +1,28 @@
-Changes from 2018-03-01 to 2018-04-01:
   18 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   16 buildSrc/src/main/kotlin/pill/plugin.kt
+  16 backend.native/tests/build.gradle
   15 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   15 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   15 compiler/tests-ir-jvm/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
   15 build.gradle.kts
-  13 backend.native/tests/build.gradle
   11 idea/src/META-INF/plugin.xml
   11 compiler/frontend/src/org/jetbrains/kotlin/analyzer/AnalyzerFacade.kt
   10 runtime/src/main/cpp/Memory.cpp
   10 idea/tests/org/jetbrains/kotlin/idea/inspections/LocalInspectionTestGenerated.java
   10 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/KotlinCallCompleter.kt
    9 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
+   9 gradle.properties
    9 compiler/tests/org/jetbrains/kotlin/checkers/javac/DiagnosticsUsingJavacTestGenerated.java
    9 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
    9 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/IrToBitcode.kt
    8 settings.gradle
    8 idea/build.gradle.kts
-   8 gradle.properties
    7 idea/idea-gradle/src/org/jetbrains/kotlin/idea/configuration/KotlinGradleMultiplatformWizardStep.kt
    7 compiler/tests/org/jetbrains/kotlin/ir/IrTextTestCaseGenerated.java
    7 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrElementToJsStatementTransformer.kt
    7 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrElementToJsExpressionTransformer.kt
    7 compiler/build.gradle.kts
+   7 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/ContextUtils.kt
    6 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/IrBoxJsTestGenerated.java
    6 idea/tests/org/jetbrains/kotlin/idea/quickfix/QuickFixTestGenerated.java
    6 idea/idea-gradle/src/org/jetbrains/kotlin/idea/core/script/GradleScriptTemplateProvider.kt
@@ -35,7 +35,6 @@ Changes from 2018-03-01 to 2018-04-01:
    6 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/AnonymousObjectTransformer.kt
    6 compiler/backend/src/org/jetbrains/kotlin/codegen/ExpressionCodegen.java
    6 buildSrc/src/main/kotlin/pill/parser.kt
-   6 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/ContextUtils.kt
    6 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/CodeGenerator.kt
    5 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/EnvVariableSpecification.groovy
    5 prepare/idea-plugin/build.gradle.kts
@@ -67,6 +66,7 @@ Changes from 2018-03-01 to 2018-04-01:
    5 buildSrc/build.gradle.kts
    5 build-common/src/org/jetbrains/kotlin/incremental/protoDifferenceUtils.kt
    5 build-common/src/org/jetbrains/kotlin/incremental/IncrementalJsCache.kt
+   5 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/objcexport/ObjCExportCodeGenerator.kt
    5 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/StaticObjects.kt
    5 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/ir/Ir.kt
    4 tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KonanBuildingConfig.kt
@@ -124,15 +124,19 @@ Changes from 2018-03-01 to 2018-04-01:
    4 compiler/frontend/src/org/jetbrains/kotlin/contracts/ContractDeserializerImpl.kt
    4 compiler/frontend.java/src/org/jetbrains/kotlin/inline/inlineUtil.kt
    4 compiler/compiler-runner/build.gradle.kts
+   4 build.gradle
    4 build-common/src/org/jetbrains/kotlin/incremental/ProtoCompareGenerated.kt
    4 build-common/src/org/jetbrains/kotlin/incremental/IncrementalCacheCommon.kt
    4 build-common/src/org/jetbrains/kotlin/incremental/ChangesCollector.kt
-   4 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/objcexport/ObjCExportCodeGenerator.kt
    4 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/LlvmDeclarations.kt
    3 ultimate/build.gradle.kts
    3 tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/tasks/KonanCompileTask.kt
+   3 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/KonanTarget.kt
    3 runtime/src/main/kotlin/konan/worker/Freezing.kt
    3 runtime/src/main/cpp/Memory.h
+   3 runtime/src/main/cpp/KotlinMath.h
+   3 runtime/src/main/cpp/KotlinMath.cpp
+   3 runtime/src/main/cpp/JSInterop.cpp
    3 plugins/source-sections/source-sections-compiler/build.gradle.kts
    3 plugins/pill/generate-all-tests/build.gradle.kts
    3 plugins/noarg/noarg-ide/build.gradle.kts
@@ -249,20 +253,26 @@ Changes from 2018-03-01 to 2018-04-01:
    3 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/descriptors/DescriptorUtils.kt
    3 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/CAdapterGenerator.kt
    3 README.md
+   3 CHANGELOG.md
    3 .gitignore
    2 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/TaskSpecification.groovy
    2 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/MultiplatformSpecification.groovy
    2 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/KonanProject.groovy
+   2 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/IncrementalSpecification.groovy
    2 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/CMakeSpecification.groovy
    2 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/BaseKonanSpecification.groovy
    2 tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KonanToolRunner.kt
    2 tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KonanPlugin.kt
-   2 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/KonanTarget.kt
+   2 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/ClangArgs.kt
    2 samples/gradle.properties
    2 runtime/src/main/kotlin/konan/internal/Intrinsics.kt
    2 runtime/src/main/kotlin/konan/internal/Boxing.kt
+   2 runtime/src/main/js/math.js
+   2 runtime/src/main/cpp/Types.h
+   2 runtime/src/main/cpp/Operator.cpp
    2 runtime/src/main/cpp/ObjCExport.mm
    2 runtime/src/main/cpp/Arrays.cpp
+   2 runtime/build.gradle
    2 prepare/ide-lazy-resolver/build.gradle.kts
    2 prepare/compiler-client-embeddable/build.gradle.kts
    2 plugins/uast-kotlin-idea/build.gradle.kts
@@ -283,6 +293,7 @@ Changes from 2018-03-01 to 2018-04-01:
    2 libraries/kotlin.test/jvm/build.gradle
    2 libraries/kotlin.test/junit/build.gradle
    2 libraries/examples/kotlin-jsr223-daemon-local-eval-example/build.gradle.kts
+   2 konan/platforms/zephyr/stm32f4_disco
    2 konan/konan.properties
    2 js/js.translator/src/org/jetbrains/kotlin/js/translate/utils/JsAstUtils.java
    2 js/js.translator/src/org/jetbrains/kotlin/js/translate/operation/IntrinsicAssignmentTranslator.java
@@ -575,11 +586,12 @@ Changes from 2018-03-01 to 2018-04-01:
    2 buildSrc/src/main/kotlin/pill/runConfigurations/JPS_IDEA.xml
    2 buildSrc/src/main/kotlin/pill/kotlinPluginArtifact.kt
    2 buildSrc/plugins/src/main/groovy/org/jetbrains/kotlin/KonanTest.groovy
-   2 build.gradle
    2 build-common/test/org/jetbrains/kotlin/serialization/builtins/DebugBuiltInsProtoBuf.java
    2 build-common/src/java_descriptors.proto
    2 build-common/build.gradle.kts
+   2 backend.native/tests/stdlib_external/numbers/MathTest.kt
    2 backend.native/tests/runtime/workers/freeze1.kt
+   2 backend.native/tests/runtime/math/wasm.kt
    2 backend.native/tests/external/codegen/box/when/stringOptimization/sameHashCode.kt
    2 backend.native/tests/external/codegen/box/when/stringOptimization/duplicatingItemsSameHashCode.kt
    2 backend.native/tests/external/codegen/box/when/integralWhenWithNoInlinedConstants.kt
@@ -597,15 +609,18 @@ Changes from 2018-03-01 to 2018-04-01:
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/RTTIGenerator.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/BinaryInterface.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/descriptors/ClassVtablesBuilder.kt
+   2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanVersion.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanPlatform.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanConfig.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/EnumSpecialDescriptorsFactory.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/Boxing.kt
+   2 backend.native/build.gradle
    2 ReadMe.md
    2 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/jvm/main.kt
    2 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/jvm/ToolConfig.kt
    2 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/jvm/StubGenerator.kt
-   2 CHANGELOG.md
+   2 Interop/JsRuntime/src/main/kotlin/jsinterop.kt
+   2 Interop/JsRuntime/build.gradle
    1 versions.gradle.kts
    1 ultimate/ultimate-runner/build.gradle.kts
    1 ultimate/src/org/jetbrains/kotlin/idea/spring/generate/generateDependenciesUtils.kt
@@ -618,7 +633,6 @@ Changes from 2018-03-01 to 2018-04-01:
    1 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/RegressionSpecification.groovy
    1 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/PathSpecification.groovy
    1 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/LibrarySpecification.groovy
-   1 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/IncrementalSpecification.groovy
    1 tools/kotlin-native-gradle-plugin/src/test/groovy/org/jetbrains/kotlin/gradle/plugin/test/DefaultSpecification.groovy
    1 tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/tasks/KonanGenerateCMakeTask.kt
    1 tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinNativePlatformPlugin.kt
@@ -634,8 +648,10 @@ Changes from 2018-03-01 to 2018-04-01:
    1 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/Linker.kt
    1 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/KonanProperties.kt
    1 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/ConfigurablesImpl.kt
-   1 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/ClangArgs.kt
    1 shared/src/main/kotlin/org/jetbrains/kotlin/konan/target/Apple.kt
+   1 samples/zephyr/c_interop/platforms/stm32f4_disco.bat
+   1 samples/zephyr/build.bat
+   1 samples/zephyr/CMakeLists.txt
    1 samples/uikit/konan/main.m
    1 samples/uikit/konan/ViewController.m
    1 samples/uikit/konan/ViewController.h
@@ -660,14 +676,14 @@ Changes from 2018-03-01 to 2018-04-01:
    1 runtime/src/main/cpp/Worker.cpp
    1 runtime/src/main/cpp/TypeInfo.h
    1 runtime/src/main/cpp/Runtime.cpp
-   1 runtime/src/main/cpp/Operator.cpp
    1 runtime/src/main/cpp/ObjCExportErrors.mm
    1 runtime/src/main/cpp/ObjCExportCollections.mm
    1 runtime/src/main/cpp/ObjCExport.h
-   1 runtime/src/main/cpp/JSInterop.cpp
+   1 runtime/src/main/cpp/DoubleConversions.h
    1 runtime/src/main/cpp/Common.h
    1 runtime/src/main/cpp/Boxing.cpp
    1 runtime/src/main/cpp/Atomic.h
+   1 runtime/src/launcher/js/launcher.js
    1 prepare/formatter/build.gradle.kts
    1 prepare/compiler-embeddable/build.gradle.kts
    1 prepare/android-extensions-compiler-gradle/build.gradle.kts
@@ -813,7 +829,6 @@ Changes from 2018-03-01 to 2018-04-01:
    1 libraries/kotlin.test/common/build.gradle
    1 libraries/examples/kotlin-jsr223-local-example/build.gradle.kts
    1 libraries/examples/annotation-processor-example/build.gradle.kts
-   1 konan/platforms/zephyr/stm32f4_disco
    1 klib/src/main/kotlin/org/jetbrains/kotlin/cli/klib/main.kt
    1 js/js.translator/testData/lineNumbers/longLiteral.kt
    1 js/js.translator/testData/box/number/constantPropagation.kt
@@ -2925,6 +2940,7 @@ Changes from 2018-03-01 to 2018-04-01:
    1 build-common/src/org/jetbrains/kotlin/incremental/JavaClassesSerializerExtension.kt
    1 build-common/src/org/jetbrains/kotlin/incremental/IncrementalJvmCache.kt
    1 backend.native/tests/testing/annotations.kt
+   1 backend.native/tests/stdlib_external/numbers/MathExceptionTest.kt
    1 backend.native/tests/runtime/workers/freeze_stress.kt
    1 backend.native/tests/runtime/workers/freeze0.kt
    1 backend.native/tests/runtime/collections/typed_array1.kt
@@ -3042,15 +3058,16 @@ Changes from 2018-03-01 to 2018-04-01:
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/descriptors/utils.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/descriptors/LegacyDescriptorUtils.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/LinkStage.kt
-   1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanVersion.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanLower.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanDriver.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanBackendContext.kt
+   1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/InteropUtils.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/Context.kt
-   1 backend.native/build.gradle
    1 ant/build.gradle.kts
+   1 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/wasm/idl/idlMath.kt
    1 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/jvm/InteropConfiguration.kt
    1 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/SimpleBridgeGeneratorImpl.kt
+   1 Interop/JsRuntime/src/main/js/jsinterop.js
    1 GRADLE_PLUGIN.md
    1 CONCURRENCY.md
    1 .idea/scopes/Apply_copyright.xml

@@ -1,1 +1,12 @@
-Changes from 2024-04-01 to 2024-05-01:
+   3 docs/topics/coroutine-context-and-dispatchers.md
+   2 docs/topics/coroutines-and-channels.md
+   2 docs/topics/channels.md
+   1 reactive/kotlinx-coroutines-reactor/build.gradle.kts
+   1 kotlinx-coroutines-core/jvm/test/guide/test/ExceptionsGuideTest.kt
+   1 kotlinx-coroutines-core/jvm/test/guide/test/DispatcherGuideTest.kt
+   1 kotlinx-coroutines-core/jvm/test/guide/test/ChannelsGuideTest.kt
+   1 kotlinx-coroutines-core/jvm/test/guide/example-context-08.kt
+   1 kotlinx-coroutines-core/jvm/test/guide/example-channel-10.kt
+   1 kotlinx-coroutines-core/jvm/test/guide/example-channel-01.kt
+   1 gradle.properties
+   1 docs/topics/exception-handling.md

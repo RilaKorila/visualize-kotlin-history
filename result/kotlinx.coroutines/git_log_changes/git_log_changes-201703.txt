@@ -1,4 +1,3 @@
-Changes from 2017-03-01 to 2017-04-01:
   12 README.md
   10 pom.xml
    9 coroutines-guide.md

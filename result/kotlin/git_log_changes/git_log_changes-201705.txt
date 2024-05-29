@@ -1,4 +1,3 @@
-Changes from 2017-05-01 to 2017-06-01:
   26 js/js.tests/test/org/jetbrains/kotlin/js/test/JsLineNumberTestGenerated.java
   24 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   23 idea/src/META-INF/plugin.xml
@@ -8,12 +7,12 @@ Changes from 2017-05-01 to 2017-06-01:
   16 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   16 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   16 compiler/tests-ir-jvm/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
-  16 build.gradle
   16 backend.native/tests/build.gradle
   16 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/lower/FunctionInlining.kt
   15 generators/src/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
   15 compiler/tests/org/jetbrains/kotlin/codegen/CompileKotlinAgainstInlineKotlinTestGenerated.java
   15 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxInlineCodegenTestGenerated.java
+  15 build.gradle
   14 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/rendering/DefaultErrorMessages.java
   13 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
   13 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/DeepCopyIrTree.kt
@@ -316,8 +315,6 @@ Changes from 2017-05-01 to 2017-06-01:
    3 samples/gitchurn/gradle.properties
    3 samples/csvparser/gradle.properties
    3 runtime/src/main/cpp/KString.cpp
-   3 runtime/src/main/cpp/ExecFormat.cpp
-   3 runtime/src/main/cpp/Exceptions.cpp
    3 plugins/source-sections/source-sections-compiler/tests/org/jetbrains/kotlin/sourceSections/SourceSectionsTest.kt
    3 plugins/kapt3/test/org/jetbrains/kotlin/kapt3/test/ClassFileToSourceStubConverterTestGenerated.java
    3 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/stubs/ClassFileToSourceStubConverter.kt
@@ -485,7 +482,8 @@ Changes from 2017-05-01 to 2017-06-01:
    2 runtime/src/main/kotlin/kotlin/Primitives.kt
    2 runtime/src/main/kotlin/kotlin/Array.kt
    2 runtime/src/main/kotlin/konan/internal/KFunctionImpl.kt
-   2 runtime/src/main/cpp/ExecFormat.h
+   2 runtime/src/main/cpp/ExecFormat.cpp
+   2 runtime/src/main/cpp/Exceptions.cpp
    2 resources/kotlinManifest.properties
    2 plugins/kapt3/testData/kotlinRunner/Simple.it.txt
    2 plugins/kapt3/testData/kotlinRunner/Overloads.it.txt
@@ -1178,6 +1176,7 @@ Changes from 2017-05-01 to 2017-06-01:
    1 runtime/src/main/cpp/dtoa/cbigint.cpp
    1 runtime/src/main/cpp/Runtime.cpp
    1 runtime/src/main/cpp/Interop.cpp
+   1 runtime/src/main/cpp/ExecFormat.h
    1 runtime/src/main/cpp/Exceptions.h
    1 runtime/build.gradle
    1 plugins/uast-kotlin/testData/Simple.values.txt

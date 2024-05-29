@@ -1,4 +1,3 @@
-Changes from 2017-04-01 to 2017-05-01:
    4 reactive/coroutines-guide-reactive.md
    3 ui/coroutines-guide-ui.md
    3 reactive/kotlinx-coroutines-rx2/src/test/kotlin/guide/example-reactive-basic-09.kt

@@ -1,1 +1,17 @@
-Changes from 2022-11-01 to 2022-12-01:
+   1 reactive/kotlinx-coroutines-jdk9/build.gradle.kts
+   1 license/third_party/minima_LICENSE.txt
+   1 kotlinx-coroutines-debug/test/StacktraceUtils.kt
+   1 kotlinx-coroutines-debug/test/RunningThreadStackMergeTest.kt
+   1 kotlinx-coroutines-debug/test/CoroutinesDumpTest.kt
+   1 kotlinx-coroutines-core/native/test/TestBase.kt
+   1 kotlinx-coroutines-core/jvm/test/TestBase.kt
+   1 kotlinx-coroutines-core/js/test/TestBase.kt
+   1 kotlinx-coroutines-core/common/test/WithTimeoutOrNullTest.kt
+   1 kotlinx-coroutines-core/common/test/WithTimeoutOrNullDurationTest.kt
+   1 kotlinx-coroutines-core/common/test/Try.kt
+   1 kotlinx-coroutines-core/common/test/TestBase.common.kt
+   1 kotlinx-coroutines-core/common/test/JobTest.kt
+   1 kotlinx-coroutines-core/common/src/channels/Channel.kt
+   1 gradle.properties
+   1 docs/topics/coroutines-and-channels.md
+   1 docs/cfg/buildprofiles.xml

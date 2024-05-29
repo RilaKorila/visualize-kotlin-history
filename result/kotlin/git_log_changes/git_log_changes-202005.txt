@@ -1,4 +1,3 @@
-Changes from 2020-05-01 to 2020-06-01:
   54 idea/idea-gradle/src/org/jetbrains/kotlin/idea/scripting/gradle/roots/GradleBuildRootsManager.kt
   28 idea/idea-core/src/org/jetbrains/kotlin/idea/core/script/configuration/CompositeScriptConfigurationManager.kt
   26 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/targets/js/npm/NpmDependencyExtension.kt
@@ -172,7 +171,6 @@ Changes from 2020-05-01 to 2020-06-01:
    5 idea/formatter/src/org/jetbrains/kotlin/idea/formatter/trailingComma/util.kt
    5 idea/formatter/src/org/jetbrains/kotlin/idea/core/formatter/KotlinPackageEntry.kt
    5 idea/formatter/src/org/jetbrains/kotlin/idea/core/formatter/KotlinCodeStyleSettings.java
-   5 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
    5 compiler/tests-common/tests/org/jetbrains/kotlin/codegen/GenerationUtils.kt
    5 compiler/testData/diagnostics/testsWithStdLib/factoryPattern/overloadByLambdaReturnType_enabled.fir.kt
    5 compiler/testData/diagnostics/tests/inference/completion/postponedArgumentsAnalysis/basic.kt
@@ -249,6 +247,7 @@ Changes from 2020-05-01 to 2020-06-01:
    4 idea/idea-test-framework/test/org/jetbrains/kotlin/idea/test/KotlinLightCodeInsightFixtureTestCase.kt
    4 idea/idea-gradle/tests/org/jetbrains/kotlin/gradle/NewMultiplatformProjectImportingTest.kt
    4 idea/idea-analysis/src/org/jetbrains/kotlin/caches/resolve/JsResolverForModuleFactory.kt
+   4 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
    4 compose-compiler-hosted/src/main/java/androidx/compose/plugins/kotlin/compiler/lower/ComposerParamTransformer.kt
    4 compose-compiler-hosted/src/main/java/androidx/compose/plugins/kotlin/compiler/lower/AbstractComposeLowering.kt
    4 compose-compiler-hosted/integration-tests/src/test/java/androidx/compose/plugins/kotlin/KtxTransformationTest.kt
@@ -416,7 +415,6 @@ Changes from 2020-05-01 to 2020-06-01:
    3 idea/idea-core/src/org/jetbrains/kotlin/idea/core/script/ucache/ScriptClassRootsUpdater.kt
    3 idea/idea-core/src/org/jetbrains/kotlin/idea/core/script/ucache/ScriptClassRootsBuilder.kt
    3 idea/idea-core/src/org/jetbrains/kotlin/idea/core/ShortenReferences.kt
-   3 idea/idea-analysis/src/org/jetbrains/kotlin/idea/structureView/KotlinStructureViewModel.kt
    3 idea/idea-analysis/src/org/jetbrains/kotlin/idea/intentions/SelfTargetingIntention.kt
    3 idea/idea-analysis/src/org/jetbrains/kotlin/idea/fir/FirResolutionApi.kt
    3 idea/formatter/src/org/jetbrains/kotlin/idea/util/FormatterUtil.kt
@@ -898,9 +896,6 @@ Changes from 2020-05-01 to 2020-06-01:
    2 idea/src/org/jetbrains/kotlin/idea/quickfix/SpecifySuperTypeFix.kt
    2 idea/src/org/jetbrains/kotlin/idea/quickfix/QuickFixRegistrar.kt
    2 idea/src/org/jetbrains/kotlin/idea/quickfix/ChangeFunctionSignatureFix.kt
-   2 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/KotlinNavBarModelExtension.kt
-   2 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt.201
-   2 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt
    2 idea/src/org/jetbrains/kotlin/idea/intentions/branchedTransformations/BranchedFoldingUtils.kt
    2 idea/src/org/jetbrains/kotlin/idea/intentions/RemoveEmptyParenthesesFromLambdaCallIntention.kt
    2 idea/src/org/jetbrains/kotlin/idea/inspections/conventionNameCalls/ReplaceCallWithBinaryOperatorInspection.kt
@@ -975,6 +970,7 @@ Changes from 2020-05-01 to 2020-06-01:
    2 idea/idea-core/build.gradle.kts
    2 idea/idea-completion/src/org/jetbrains/kotlin/idea/completion/BasicLookupElementFactory.kt
    2 idea/idea-analysis/src/org/jetbrains/kotlin/idea/util/ApplicationUtils.kt.as41
+   2 idea/idea-analysis/src/org/jetbrains/kotlin/idea/structureView/KotlinStructureViewModel.kt
    2 idea/idea-analysis/src/org/jetbrains/kotlin/idea/fir/FirIdeProvider.kt
    2 idea/idea-analysis/src/org/jetbrains/kotlin/idea/caches/resolve/IDELightClassGenerationSupport.kt
    2 idea/idea-analysis/resources/messages/KotlinIdeaAnalysisBundle.properties
@@ -1468,7 +1464,6 @@ Changes from 2020-05-01 to 2020-06-01:
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrProperty.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrDeclaration.kt
    2 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/ExpressionHelpers.kt
-   2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/transformations/InsertImplicitCasts.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/IrSyntheticDeclarationGenerator.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/FunctionGenerator.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/ExpectDependencyGenerator.kt
@@ -2538,9 +2533,6 @@ Changes from 2020-05-01 to 2020-06-01:
    1 idea/tests/org/jetbrains/kotlin/idea/quickfix/AbstractQuickFixMultiModuleTest.kt
    1 idea/tests/org/jetbrains/kotlin/idea/quickfix/AbstractQuickFixMultiFileTest.kt
    1 idea/tests/org/jetbrains/kotlin/idea/perf/UltraLightChecker.kt
-   1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/KotlinNavBarTestGenerated.java
-   1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/AbstractKotlinNavBarTest.kt.201
-   1 idea/tests/org/jetbrains/kotlin/idea/navigationToolbar/AbstractKotlinNavBarTest.kt
    1 idea/tests/org/jetbrains/kotlin/idea/navigation/GotoCheck.kt.202
    1 idea/tests/org/jetbrains/kotlin/idea/multiplatform/multiPlatformSetup.kt
    1 idea/tests/org/jetbrains/kotlin/idea/kdoc/KdocRenameTest.java
@@ -2722,18 +2714,6 @@ Changes from 2020-05-01 to 2020-06-01:
    1 idea/testData/quickfix/abstract/manyImpl.kt
    1 idea/testData/perfTest/helloKotlin/src/HelloMain2.kt
    1 idea/testData/perfTest/helloKotlin/src/HelloMain.kt
-   1 idea/testData/navigationToolbar/topLevelProperty.kt.201
-   1 idea/testData/navigationToolbar/topLevelProperty.kt
-   1 idea/testData/navigationToolbar/topLevelFunction.kt.201
-   1 idea/testData/navigationToolbar/topLevelFunction.kt
-   1 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt.201
-   1 idea/testData/navigationToolbar/fileNameDoesntMatchClassName.kt
-   1 idea/testData/navigationToolbar/SeveralClassesInFile.kt.201
-   1 idea/testData/navigationToolbar/SeveralClassesInFile.kt
-   1 idea/testData/navigationToolbar/MethodInClass.kt.201
-   1 idea/testData/navigationToolbar/MethodInClass.kt
-   1 idea/testData/navigationToolbar/ClassProperty.kt.201
-   1 idea/testData/navigationToolbar/ClassProperty.kt
    1 idea/testData/multiModuleQuickFix/createExpect/topLevelFunctionWithAnnotations/common/myExtension.kt.after
    1 idea/testData/multiModuleQuickFix/createActual/annotation/jvm/Ann.kt.after.as36
    1 idea/testData/multiModuleQuickFix/addThrowAnnotation/jvmWithoutStdlib/jvm/jvm.kt
@@ -3445,6 +3425,9 @@ Changes from 2020-05-01 to 2020-06-01:
    1 idea/src/org/jetbrains/kotlin/idea/quickfix/AddJvmNameAnnotationFix.kt
    1 idea/src/org/jetbrains/kotlin/idea/projectView/compat.kt.201
    1 idea/src/org/jetbrains/kotlin/idea/projectView/compat.kt
+   1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/KotlinNavBarModelExtension.kt
+   1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt.201
+   1 idea/src/org/jetbrains/kotlin/idea/navigationToolbar/AbstractNavBarModelExtensionCompatBase.kt
    1 idea/src/org/jetbrains/kotlin/idea/intentions/UsePropertyAccessSyntaxIntention.kt
    1 idea/src/org/jetbrains/kotlin/idea/intentions/ToOrdinaryStringLiteralIntention.kt
    1 idea/src/org/jetbrains/kotlin/idea/intentions/SpecifyTypeExplicitlyIntention.kt
@@ -5701,7 +5684,6 @@ Changes from 2020-05-01 to 2020-06-01:
    1 compiler/testData/ir/irText/lambdas/samAdapter.kt
    1 compiler/testData/ir/irText/lambdas/samAdapter.fir.txt
    1 compiler/testData/ir/irText/expressions/thisOfGenericOuterClass.fir.txt
-   1 compiler/testData/ir/irText/expressions/signedToUnsignedConversions_test.txt
    1 compiler/testData/ir/irText/expressions/signedToUnsignedConversions_test.fir.txt
    1 compiler/testData/ir/irText/expressions/sam/samOperators.fir.txt
    1 compiler/testData/ir/irText/expressions/sam/samConversionsWithSmartCasts.fir.txt
@@ -5710,10 +5692,8 @@ Changes from 2020-05-01 to 2020-06-01:
    1 compiler/testData/ir/irText/expressions/sam/samConversionInGenericConstructorCall.fir.txt
    1 compiler/testData/ir/irText/expressions/sam/samConstructors.fir.txt
    1 compiler/testData/ir/irText/expressions/sam/arrayAsVarargAfterSamArgument.fir.txt
-   1 compiler/testData/ir/irText/expressions/primitivesImplicitConversions.txt
    1 compiler/testData/ir/irText/expressions/multipleThisReferences.fir.txt
    1 compiler/testData/ir/irText/expressions/kt16905.fir.txt
-   1 compiler/testData/ir/irText/expressions/genericConstructorCallWithTypeArguments.txt
    1 compiler/testData/ir/irText/expressions/funInterface/samConversionsWithSmartCasts.fir.txt
    1 compiler/testData/ir/irText/expressions/funInterface/castFromAny.fir.txt
    1 compiler/testData/ir/irText/expressions/funInterface/basicFunInterfaceConversion.fir.txt
@@ -6600,7 +6580,6 @@ Changes from 2020-05-01 to 2020-06-01:
    1 compiler/testData/codegen/box/platformTypes/inferenceFlexibleTToNullable.kt
    1 compiler/testData/codegen/box/package/invokespecial.kt
    1 compiler/testData/codegen/box/package/initializationOrder.kt
-   1 compiler/testData/codegen/box/operatorConventions/kt14227.kt
    1 compiler/testData/codegen/box/oldLanguageVersions/ieee754/when10.kt
    1 compiler/testData/codegen/box/oldLanguageVersions/dataClassEqualsHashCodeToString.kt
    1 compiler/testData/codegen/box/oldLanguageVersions/coroutines/suspendFunctionAsCoroutine/ifExpressionInsideCoroutine_1_2.kt
@@ -7127,6 +7106,7 @@ Changes from 2020-05-01 to 2020-06-01:
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/declarations/IrSimpleFunction.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/declarations/IrPropertyBuilder.kt
    1 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/IrGenerator.kt
+   1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/transformations/InsertImplicitCasts.kt
    1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/ReflectionReferencesGenerator.kt
    1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/OperatorExpressionGenerator.kt
    1 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/GeneratorContext.kt

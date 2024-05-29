@@ -1,19 +1,18 @@
-Changes from 2021-03-01 to 2021-04-01:
   67 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
   66 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
   63 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   62 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   39 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/es6/semantics/IrJsCodegenBoxES6TestGenerated.java
+  37 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDataClassConverters.kt
   36 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   36 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
-  36 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDataClassConverters.kt
-  33 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/FirDiagnosticsList.kt
-  32 compiler/fir/checkers/gen/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrors.kt
-  31 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnosticsImpl.kt
-  31 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnostics.kt
+  35 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/FirDiagnosticsList.kt
+  34 compiler/fir/checkers/gen/org/jetbrains/kotlin/fir/analysis/diagnostics/FirErrors.kt
+  32 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnosticsImpl.kt
+  32 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/diagnostics/KtFirDiagnostics.kt
   30 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/wasm/semantics/IrCodegenBoxWasmTestGenerated.java
+  25 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDefaultErrorMessages.kt
   24 compiler/visualizer/render-fir/src/org/jetbrains/kotlin/compiler/visualizer/FirVisualizer.kt
-  24 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDefaultErrorMessages.kt
   22 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirDeclarationsResolveTransformer.kt
   22 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/BodyResolveContext.kt
   20 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
@@ -21,14 +20,14 @@ Changes from 2021-03-01 to 2021-04-01:
   17 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/KtSymbolByFirBuilder.kt
   17 idea/idea-fir/src/org/jetbrains/kotlin/idea/completion/KotlinFirLookupElementFactory.kt
   17 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
-  15 compiler/fir/raw-fir/psi2fir/src/org/jetbrains/kotlin/fir/builder/RawFirBuilder.kt
+  16 compiler/fir/raw-fir/psi2fir/src/org/jetbrains/kotlin/fir/builder/RawFirBuilder.kt
   14 gradle/verification-metadata.xml
   14 build.gradle.kts
   13 native/commonizer/tests/org/jetbrains/kotlin/descriptors/commonizer/utils/mocks.kt
   13 native/commonizer/src/org/jetbrains/kotlin/descriptors/commonizer/cir/factory/CirTypeFactory.kt
   13 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/jsAstUtils.kt
+  13 compiler/fir/entrypoint/src/org/jetbrains/kotlin/fir/checkers/CommonDeclarationCheckers.kt
   12 plugins/pill/pill-importer/src/JpsCompatiblePluginTasks.kt
-  12 compiler/fir/entrypoint/src/org/jetbrains/kotlin/fir/checkers/CommonDeclarationCheckers.kt
   12 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirDeclarationCheckerUtils.kt
   11 compiler/visualizer/render-psi/src/org/jetbrains/kotlin/compiler/visualizer/PsiVisualizer.kt
   11 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/coneDiagnosticToFirDiagnostic.kt
@@ -44,6 +43,7 @@ Changes from 2021-03-01 to 2021-04-01:
    8 idea/idea-frontend-fir/idea-frontend-fir-generator/src/org/jetbrains/kotlin/idea/frontend/api/fir/generator/HLDiagnosticConverter.kt
    8 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ExpressionCodegen.kt
    8 compiler/fir/raw-fir/light-tree2fir/src/org/jetbrains/kotlin/fir/lightTree/converter/DeclarationsConverter.kt
+   8 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/LightTreePositioningStrategies.kt
    8 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/KotlinToJVMBytecodeCompiler.kt
    7 native/commonizer/src/org/jetbrains/kotlin/descriptors/commonizer/metadata/entityBuilders.kt
    7 native/commonizer/src/org/jetbrains/kotlin/descriptors/commonizer/metadata/CirDeserializers.kt
@@ -59,11 +59,11 @@ Changes from 2021-03-01 to 2021-04-01:
    7 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/symbols/KtFirKotlinPropertySymbol.kt
    7 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/symbols/KtFirFunctionSymbol.kt
    7 compiler/visualizer/tests-gen/org/jetbrains/kotlin/visualizer/VisualizerBlackBoxTestGenerated.java
+   7 compiler/testData/diagnostics/tests/modifiers/const/applicability.fir.kt
    7 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/ScriptGenerator.kt
    7 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/ir/IrUtils.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirExpressionsResolveTransformer.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirAbstractBodyResolveTransformer.kt
-   7 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/LightTreePositioningStrategies.kt
    7 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirDiagnosticsWithLightTreeTestGenerated.java
    7 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirDiagnosticTestGenerated.java
    7 buildSrc/src/main/kotlin/tasks.kt
@@ -86,7 +86,6 @@ Changes from 2021-03-01 to 2021-04-01:
    6 kotlin-native/performance/build.gradle
    6 idea/idea-fir/src/org/jetbrains/kotlin/idea/quickfix/fixes/ReplaceCallFixFactories.kt
    6 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/ir/IrTextTestGenerated.java
-   6 compiler/testData/diagnostics/tests/modifiers/const/applicability.fir.kt
    6 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ClassCodegen.kt
    6 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
    6 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/PositioningStrategies.kt
@@ -95,7 +94,9 @@ Changes from 2021-03-01 to 2021-04-01:
    6 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/JavaUtils.kt
    6 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/ir/Fir2IrTextTestGenerated.java
    6 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/CallAndReferenceGenerator.kt
+   6 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/SourceElementPositioningStrategies.kt
    6 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirConstPropertyChecker.kt
+   6 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/DiagnosticData.kt
    6 compiler/fir/analysis-tests/legacy-fir-tests/tests-gen/org/jetbrains/kotlin/fir/LazyBodyIsNotTouchedTilContractsPhaseTestGenerated.java
    5 native/commonizer/tests/org/jetbrains/kotlin/descriptors/commonizer/core/ValueParameterCommonizerTest.kt
    5 native/commonizer/src/org/jetbrains/kotlin/descriptors/commonizer/metadata/CirTypeAliasExpander.kt
@@ -116,6 +117,7 @@ Changes from 2021-03-01 to 2021-04-01:
    5 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/references/FirReferenceResolveHelper.kt
    5 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/symbols/KtFirSyntheticJavaPropertySymbol.kt
    5 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/symbols/KtFirPropertySetterSymbol.kt
+   5 idea/idea-frontend-fir/idea-fir-low-level-api/src/org/jetbrains/kotlin/idea/fir/low/level/api/file/structure/FileStructureElement.kt
    5 idea/idea-frontend-api/src/org/jetbrains/kotlin/idea/frontend/api/symbols/KtVariableLikeSymbol.kt
    5 idea/idea-fir/tests/org/jetbrains/kotlin/idea/quickfix/HighLevelQuickFixTestGenerated.java
    5 idea/idea-fir/src/org/jetbrains/kotlin/idea/quickfix/MainKtQuickFixRegistrar.kt
@@ -133,7 +135,6 @@ Changes from 2021-03-01 to 2021-04-01:
    5 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/ResolveUtils.kt
    5 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrDeclarationStorage.kt
    5 compiler/fir/entrypoint/src/org/jetbrains/kotlin/fir/checkers/CommonExpressionCheckers.kt
-   5 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/SourceElementPositioningStrategies.kt
    5 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/expression/FirGetClassCallChecker.kt
    5 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirTopLevelPropertiesChecker.kt
    5 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirMemberPropertiesChecker.kt
@@ -195,7 +196,6 @@ Changes from 2021-03-01 to 2021-04-01:
    4 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/scopes/KtFirDelegatingScope.kt
    4 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/components/KtFirTypeProvider.kt
    4 idea/idea-frontend-fir/src/org/jetbrains/kotlin/idea/frontend/api/fir/components/KtFirExpressionTypeProvider.kt
-   4 idea/idea-frontend-fir/idea-fir-low-level-api/src/org/jetbrains/kotlin/idea/fir/low/level/api/file/structure/FileStructureElement.kt
    4 idea/idea-frontend-fir/idea-fir-low-level-api/src/org/jetbrains/kotlin/idea/fir/low/level/api/file/structure/FileStructure.kt
    4 idea/idea-frontend-fir/idea-fir-low-level-api/src/org/jetbrains/kotlin/idea/fir/low/level/api/FirPhaseRunner.kt
    4 idea/idea-frontend-fir/idea-fir-low-level-api/src/org/jetbrains/kotlin/idea/fir/low/level/api/FirIdeSealedHierarchyProcessor.kt
@@ -235,7 +235,6 @@ Changes from 2021-03-01 to 2021-04-01:
    4 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirNotImplementedOverrideChecker.kt
    4 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirInlineClassDeclarationChecker.kt
    4 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/FirHelpers.kt
-   4 compiler/fir/checkers/checkers-component-generator/src/org/jetbrains/kotlin/fir/checkers/generator/diagnostics/DiagnosticData.kt
    4 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment.kt
    4 compiler/cli/cli-common/src/org/jetbrains/kotlin/cli/common/arguments/K2JVMCompilerArguments.kt
    4 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/CoroutineTransformerMethodVisitor.kt
@@ -1084,6 +1083,9 @@ Changes from 2021-03-01 to 2021-04-01:
    2 compiler/testData/diagnostics/tests/dataClasses/dataClassVarargParam.fir.kt
    2 compiler/testData/diagnostics/tests/dataClasses/dataClassNoName.fir.kt
    2 compiler/testData/diagnostics/tests/controlFlowAnalysis/UninitializedOrReassignedVariables.fir.kt
+   2 compiler/testData/diagnostics/tests/classObjects/multipleDissallowedDefaultObjects.fir.kt
+   2 compiler/testData/diagnostics/tests/classObjects/InnerClassAccessThroughEnum_before.fir.kt
+   2 compiler/testData/diagnostics/tests/classObjects/InnerClassAccessThroughEnum_after.fir.kt
    2 compiler/testData/diagnostics/tests/classLiteral/expressionWithNullableType.fir.kt
    2 compiler/testData/diagnostics/tests/callableReference/withQuestionMarks.fir.kt
    2 compiler/testData/diagnostics/tests/callableReference/unused.kt
@@ -1265,6 +1267,7 @@ Changes from 2021-03-01 to 2021-04-01:
    2 compiler/fir/cones/src/org/jetbrains/kotlin/fir/types/TypeRenderer.kt
    2 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/FirDiagnosticRenderers.kt
    2 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/collectors/FirDiagnosticsCollector.kt
+   2 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirOverrideChecker.kt
    2 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirFunctionParameterChecker.kt
    2 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirConstructorAllowedChecker.kt
    2 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirConstDeclarationChecker.kt
@@ -4132,6 +4135,7 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/scopes/kt1942.kt
    1 compiler/testData/diagnostics/tests/scopes/kt1580.kt
    1 compiler/testData/diagnostics/tests/scopes/kt1580.fir.kt
+   1 compiler/testData/diagnostics/tests/scopes/kt151.fir.kt
    1 compiler/testData/diagnostics/tests/scopes/inheritance/statics/staticVsOuter.kt
    1 compiler/testData/diagnostics/tests/scopes/inheritance/statics/staticVsOuter.fir.kt
    1 compiler/testData/diagnostics/tests/scopes/inheritance/nestedCompanionClassVsNestedJava.fir.kt
@@ -4141,6 +4145,7 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/scopes/implicitReceiverMemberVsParameter.kt
    1 compiler/testData/diagnostics/tests/scopes/implicitReceiverMemberVsParameter.fir.kt
    1 compiler/testData/diagnostics/tests/scopes/VisibilityInheritModifier.kt
+   1 compiler/testData/diagnostics/tests/scopes/VisibilityInheritModifier.fir.kt
    1 compiler/testData/diagnostics/tests/scopes/VisibilityInClassObject.kt
    1 compiler/testData/diagnostics/tests/samConversions/OverloadPriorityKT.fir.kt
    1 compiler/testData/diagnostics/tests/samConversions/OverloadPriority.fir.kt
@@ -4364,6 +4369,10 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/modifiers/repeatedModifiers.fir.kt
    1 compiler/testData/diagnostics/tests/modifiers/IllegalModifiers.kt
    1 compiler/testData/diagnostics/tests/modifiers/IllegalModifiers.fir.kt
+   1 compiler/testData/diagnostics/tests/localInterfaces.fir.kt
+   1 compiler/testData/diagnostics/tests/localClasses/localAnnotationClassError.kt
+   1 compiler/testData/diagnostics/tests/localClasses/localAnnotationClassError.fir.kt
+   1 compiler/testData/diagnostics/tests/localClasses/localAnnotationClass.fir.kt
    1 compiler/testData/diagnostics/tests/library/kt828.kt
    1 compiler/testData/diagnostics/tests/library/kt828.fir.kt
    1 compiler/testData/diagnostics/tests/library/Collections.kt
@@ -4413,17 +4422,27 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/j+k/canDeclareIfSamAdapterIsInherited.fir.kt
    1 compiler/testData/diagnostics/tests/j+k/ambiguousSamAdapters.kt
    1 compiler/testData/diagnostics/tests/j+k/accessClassObjectFromJava.kt
+   1 compiler/testData/diagnostics/tests/inner/nestedObject.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/nestedClassNotAllowed_before.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/nestedClassNotAllowed_after.kt
+   1 compiler/testData/diagnostics/tests/inner/nestedClassNotAllowed_after.fir.kt
    1 compiler/testData/diagnostics/tests/inner/nestedClassAccessedViaInstanceReference.fir.kt
    1 compiler/testData/diagnostics/tests/inner/modality.fir.kt
    1 compiler/testData/diagnostics/tests/inner/localThisSuper.kt
    1 compiler/testData/diagnostics/tests/inner/localThisSuper.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/interfaceInInnerClass.fir.kt
    1 compiler/testData/diagnostics/tests/inner/innerErrorForObjects.kt
    1 compiler/testData/diagnostics/tests/inner/innerErrorForClassObjects.kt
    1 compiler/testData/diagnostics/tests/inner/innerClassesInStaticParameters.kt
    1 compiler/testData/diagnostics/tests/inner/innerClassesInStaticParameters.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/innerClassInEnumEntryClass_lv13.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/innerClassInEnumEntryClass_lv12.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/innerClassInEnumEntryClass_lv11.fir.kt
    1 compiler/testData/diagnostics/tests/inner/extensionLambdaInsideNestedClass.kt
    1 compiler/testData/diagnostics/tests/inner/extensionLambdaInsideNestedClass.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/enumInInnerClass.fir.kt
    1 compiler/testData/diagnostics/tests/inner/classesInClassObjectHeader.fir.kt
+   1 compiler/testData/diagnostics/tests/inner/annotationInInnerClass.fir.kt
    1 compiler/testData/diagnostics/tests/inner/InnerClassNameClash.kt
    1 compiler/testData/diagnostics/tests/inner/InnerClassNameClash.fir.kt
    1 compiler/testData/diagnostics/tests/inlineClasses/varPropertyWithInlineClassReceiver.txt
@@ -4441,6 +4460,7 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/inlineClasses/delegatedPropertyInInlineClass.kt
    1 compiler/testData/diagnostics/tests/inlineClasses/delegatedPropertyInInlineClass.fir.kt
    1 compiler/testData/diagnostics/tests/inlineClasses/basicInlineClassDeclarationDisabled.fir.kt
+   1 compiler/testData/diagnostics/tests/inline/unsupportedConstruction.fir.kt
    1 compiler/testData/diagnostics/tests/inline/superCallDepecation.txt
    1 compiler/testData/diagnostics/tests/inline/superCallDepecation.kt
    1 compiler/testData/diagnostics/tests/inline/superCallDepecation.fir.kt
@@ -4705,9 +4725,16 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/evaluate/customExtensionOverKotlinExtensionInConst.fir.kt
    1 compiler/testData/diagnostics/tests/enum/javaEnumWithNameClashing.kt
    1 compiler/testData/diagnostics/tests/enum/javaEnumWithNameClashing.fir.kt
+   1 compiler/testData/diagnostics/tests/enum/inner/twoEnumsInClassObjectAndInnerClass.kt
+   1 compiler/testData/diagnostics/tests/enum/inner/twoEnumsInClassObjectAndInnerClass.fir.kt
+   1 compiler/testData/diagnostics/tests/enum/inner/insideInnerClassNotAllowed.kt
+   1 compiler/testData/diagnostics/tests/enum/inner/insideInnerClassNotAllowed.fir.kt
    1 compiler/testData/diagnostics/tests/enum/enumEntryInAbstractEnum.kt
    1 compiler/testData/diagnostics/tests/enum/enumEntryInAbstractEnum.fir.kt
    1 compiler/testData/diagnostics/tests/enum/entryShouldBeOfEnumType.kt
+   1 compiler/testData/diagnostics/tests/enum/dontCreatePackageTypeForEnumEntry_before.fir.kt
+   1 compiler/testData/diagnostics/tests/enum/dontCreatePackageTypeForEnumEntry_after.kt
+   1 compiler/testData/diagnostics/tests/enum/dontCreatePackageTypeForEnumEntry_after.fir.kt
    1 compiler/testData/diagnostics/tests/enum/constructorWithDefaultParametersOnly.fir.kt
    1 compiler/testData/diagnostics/tests/enum/AbstractInEnum.kt
    1 compiler/testData/diagnostics/tests/duplicateJvmSignature/vararg.kt
@@ -4835,9 +4862,9 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/testData/diagnostics/tests/collectionLiterals/argumentsOfAnnotationWithKClass.fir.kt
    1 compiler/testData/diagnostics/tests/classObjects/invisibleClassObjects.kt
    1 compiler/testData/diagnostics/tests/classObjects/classObjectHeader.kt
-   1 compiler/testData/diagnostics/tests/classObjects/InnerClassAccessThroughEnum_before.fir.kt
-   1 compiler/testData/diagnostics/tests/classObjects/InnerClassAccessThroughEnum_after.fir.kt
+   1 compiler/testData/diagnostics/tests/classObjects/InnerClassClassObject.fir.kt
    1 compiler/testData/diagnostics/tests/classObjects/InnerClassAccessThroughClassObject.fir.kt
+   1 compiler/testData/diagnostics/tests/classObjects/ClassObjects.fir.kt
    1 compiler/testData/diagnostics/tests/classLiteral/typealiases.fir.kt
    1 compiler/testData/diagnostics/tests/classLiteral/smartCast.kt
    1 compiler/testData/diagnostics/tests/classLiteral/smartCast.fir.kt
@@ -5956,8 +5983,8 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirSupertypeInitializedWithoutPrimaryConstructor.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirSupertypeInitializedInInterfaceChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirPrimaryConstructorRequiredForDataClassChecker.kt
-   1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirOverrideChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirOpenMemberChecker.kt
+   1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirNestedClassChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirModifierUtils.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirModifierChecker.kt
    1 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/checkers/declaration/FirMethodOfAnyImplementedInInterfaceChecker.kt
@@ -6078,6 +6105,9 @@ Changes from 2021-03-01 to 2021-04-01:
    1 compiler/fir/analysis-tests/testData/resolve/diagnostics/supertypeInitializedWithoutPrimaryConstructor.kt
    1 compiler/fir/analysis-tests/testData/resolve/diagnostics/notASupertype.kt
    1 compiler/fir/analysis-tests/testData/resolve/diagnostics/methodOfAnyImplementedInInterface.kt
+   1 compiler/fir/analysis-tests/testData/resolve/diagnostics/manyCompanionObjects.kt
+   1 compiler/fir/analysis-tests/testData/resolve/diagnostics/localEntitytNotAllowed.kt
+   1 compiler/fir/analysis-tests/testData/resolve/diagnostics/localAnnotationClass.kt
    1 compiler/fir/analysis-tests/testData/resolve/diagnostics/incompatibleModifiers.kt
    1 compiler/fir/analysis-tests/testData/resolve/diagnostics/conflictingOverloads.kt
    1 compiler/fir/analysis-tests/testData/resolve/diagnostics/annotationClassMember.kt

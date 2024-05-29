@@ -1,4 +1,3 @@
-Changes from 2016-01-01 to 2016-02-01:
   54 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   26 idea/src/org/jetbrains/kotlin/idea/quickfix/QuickFixRegistrar.kt
   21 idea/idea-analysis/src/org/jetbrains/kotlin/idea/KotlinBundle.properties

@@ -1,4 +1,3 @@
-Changes from 2019-11-01 to 2019-12-01:
   41 compiler/fir/resolve/tests/org/jetbrains/kotlin/fir/FirDiagnosticsTestGenerated.java
   37 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   36 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
@@ -434,6 +433,7 @@ Changes from 2019-11-01 to 2019-12-01:
    2 plugins/kotlin-serialization/kotlin-serialization-compiler/src/org/jetbrains/kotlinx/serialization/compiler/backend/ir/SerializerForEnumsGenerator.kt
    2 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/AbstractIrKotlinKapt3Test.kt
    2 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/AbstractIrKotlinKapt3IntegrationTest.kt
+   2 performance/build.gradle
    2 nj2k/testData/newJ2k/issues/comments.kt
    2 nj2k/testData/newJ2k/formatting/staticMembersWithComments.kt
    2 nj2k/testData/newJ2k/formatting/staticAndNonStaticMembersWithComments.kt
@@ -1404,7 +1404,6 @@ Changes from 2019-11-01 to 2019-12-01:
    1 platformLibs/src/platform/ios/UIKit.def
    1 platformLibs/src/platform/ios/OSLog.def
    1 platformLibs/src/platform/ios/CoreAudioTypes.def
-   1 performance/build.gradle
    1 nj2k/testData/newJ2k/tryWithResource/WithFinally.kt
    1 nj2k/testData/newJ2k/postProcessing/SortModifiers.kt
    1 nj2k/testData/newJ2k/postProcessing/SortModifiers.java

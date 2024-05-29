@@ -1,12 +1,11 @@
-Changes from 2020-03-01 to 2020-04-01:
-  44 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   44 build.gradle.kts
-  42 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
-  42 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
-  42 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/codegen/ir/FirBlackBoxCodegenTestGenerated.java
-  33 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
-  33 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
+  43 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  41 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
+  41 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
+  41 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/codegen/ir/FirBlackBoxCodegenTestGenerated.java
   33 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrVisitor.kt
+  32 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
+  32 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
   28 compiler/fir/resolve/tests/org/jetbrains/kotlin/fir/FirDiagnosticsWithLightTreeTestGenerated.java
   28 compiler/fir/resolve/tests/org/jetbrains/kotlin/fir/FirDiagnosticsTestGenerated.java
   27 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrDeclarationStorage.kt
@@ -575,7 +574,6 @@ Changes from 2020-03-01 to 2020-04-01:
    3 idea/idea-analysis/src/org/jetbrains/kotlin/idea/caches/project/ScriptModuleInfos.kt
    3 idea/idea-analysis/src/org/jetbrains/kotlin/idea/KotlinIdeaAnalysisBundle.kt
    3 extracted/konan.serializer/src/org/jetbrains/kotlin/konan/utils/KonanFactories.kt
-   3 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KCallableImpl.kt
    3 core/descriptors/src/org/jetbrains/kotlin/types/checker/ClassicTypeSystemContext.kt
    3 core/descriptors/src/org/jetbrains/kotlin/types/TypeUtils.java
    3 compose-compiler-hosted/src/main/java/androidx/compose/plugins/kotlin/compiler/lower/ComposerLambdaMemoization.kt
@@ -1303,6 +1301,7 @@ Changes from 2020-03-01 to 2020-04-01:
    2 dependencies/kotlin-build-gradle-plugin/build.gradle.kts
    2 core/util.runtime/build.gradle.kts
    2 core/type-system/src/org/jetbrains/kotlin/types/model/TypeSystemContext.kt
+   2 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KCallableImpl.kt
    2 core/deserialization/src/org/jetbrains/kotlin/serialization/deserialization/descriptors/DeserializedClassDescriptor.kt
    2 core/descriptors/src/org/jetbrains/kotlin/types/SpecialTypes.kt
    2 core/descriptors/src/org/jetbrains/kotlin/types/KotlinTypeFactory.kt
@@ -7336,10 +7335,8 @@ Changes from 2020-03-01 to 2020-04-01:
    1 compiler/testData/codegen/box/reflection/enclosing/lambdaInClassObject.kt
    1 compiler/testData/codegen/box/reflection/enclosing/kt6368.kt
    1 compiler/testData/codegen/box/reflection/enclosing/anonymousObjectInInlinedLambda.kt
-   1 compiler/testData/codegen/box/reflection/createAnnotation/callByWithEmptyVarArg.kt
    1 compiler/testData/codegen/box/reflection/constructors/constructorName.kt
    1 compiler/testData/codegen/box/reflection/classLiterals/bareArray.kt
-   1 compiler/testData/codegen/box/reflection/callBy/emptyVarArg.kt
    1 compiler/testData/codegen/box/reflection/call/cannotCallEnumConstructor.kt
    1 compiler/testData/codegen/box/reflection/builtins/stringLength.kt
    1 compiler/testData/codegen/box/reflection/builtins/collections.kt

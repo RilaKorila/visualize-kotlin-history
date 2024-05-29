@@ -1,4 +1,3 @@
-Changes from 2016-05-01 to 2016-06-01:
   27 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   24 ChangeLog.md
   16 js/js.translator/src/org/jetbrains/kotlin/js/translate/expression/PatternTranslator.java

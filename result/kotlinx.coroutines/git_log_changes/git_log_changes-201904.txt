@@ -1,4 +1,3 @@
-Changes from 2019-04-01 to 2019-05-01:
    9 gradle.properties
    8 binary-compatibility-validator/reference-public-api/kotlinx-coroutines-core.txt
    7 kotlinx-coroutines-test/README.md

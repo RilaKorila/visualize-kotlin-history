@@ -1,4 +1,3 @@
-Changes from 2017-03-01 to 2017-04-01:
   32 backend.native/tests/build.gradle
   32 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/lower/FunctionInlining.kt
   27 Interop/StubGenerator/src/main/kotlin/org/jetbrains/kotlin/native/interop/gen/jvm/StubGenerator.kt
@@ -802,6 +801,8 @@ Changes from 2017-03-01 to 2017-04-01:
    2 compiler/tests/org/jetbrains/kotlin/parsing/ParsingTestGenerated.java
    2 compiler/tests/org/jetbrains/kotlin/multiplatform/MultiPlatformIntegrationTestGenerated.java
    2 compiler/tests/org/jetbrains/kotlin/jvm/compiler/AbstractWriteSignatureTest.kt
+   2 compiler/tests/org/jetbrains/kotlin/codegen/CompileKotlinAgainstInlineKotlinTestGenerated.java
+   2 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxInlineCodegenTestGenerated.java
    2 compiler/tests/org/jetbrains/kotlin/cli/jvm/repl/GenericReplTest.kt
    2 compiler/tests/org/jetbrains/kotlin/cli/WrongBytecodeVersionTest.kt
    2 compiler/tests/org/jetbrains/kotlin/cli/AbstractCliTest.java
@@ -866,6 +867,7 @@ Changes from 2017-03-01 to 2017-04-01:
    2 compiler/testData/codegen/light-analysis/boxingOptimization/explicitEqualsOnDouble.txt
    2 compiler/testData/codegen/boxInline/smap/inlineOnly/reifiedProperty.kt
    2 compiler/testData/codegen/boxInline/smap/inlineOnly/reified.kt
+   2 compiler/testData/codegen/boxInline/anonymousObject/kt16193.kt
    2 compiler/testData/codegen/box/regressions/kt6485.kt
    2 compiler/testData/codegen/box/reflection/noReflectAtRuntime/simpleClassLiterals.kt
    2 compiler/testData/codegen/box/reflection/kClassInAnnotation/wrappingForCallableReferences.kt
@@ -992,6 +994,7 @@ Changes from 2017-03-01 to 2017-04-01:
    2 compiler/backend/src/org/jetbrains/kotlin/codegen/optimization/boxing/BoxingInterpreter.kt
    2 compiler/backend/src/org/jetbrains/kotlin/codegen/optimization/boxing/BoxedBasicValue.kt
    2 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/ReifiedTypeInliner.kt
+   2 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/AnonymousObjectTransformer.java
    2 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/CoroutineTransformationClassBuilder.kt
    2 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/CoroutineCodegen.kt
    2 compiler/backend/src/org/jetbrains/kotlin/codegen/builtinSpecialBridges.kt
@@ -3863,8 +3866,6 @@ Changes from 2017-03-01 to 2017-04-01:
    1 compiler/tests/org/jetbrains/kotlin/ir/AbstractIrGeneratorTestCase.kt
    1 compiler/tests/org/jetbrains/kotlin/integration/CompilerSmokeTestBase.java
    1 compiler/tests/org/jetbrains/kotlin/codegen/Kapt3BuilderModeBytecodeShapeTestGenerated.java
-   1 compiler/tests/org/jetbrains/kotlin/codegen/CompileKotlinAgainstInlineKotlinTestGenerated.java
-   1 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxInlineCodegenTestGenerated.java
    1 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxAgainstJavaCodegenTestGenerated.java
    1 compiler/tests/org/jetbrains/kotlin/codegen/AbstractKapt3BuilderModeBytecodeShapeTest.kt
    1 compiler/tests/org/jetbrains/kotlin/code/ModulesDependenciesTest.kt
@@ -6893,7 +6894,6 @@ Changes from 2017-03-01 to 2017-04-01:
    1 compiler/testData/codegen/boxInline/builders/buildersAndLambdaCapturing.kt
    1 compiler/testData/codegen/boxInline/builders/builders.kt
    1 compiler/testData/codegen/boxInline/anonymousObject/sam.kt
-   1 compiler/testData/codegen/boxInline/anonymousObject/kt16193.kt
    1 compiler/testData/codegen/boxInline/anonymousObject/kt13133.kt
    1 compiler/testData/codegen/boxAgainstJava/recursiveRawTypes/kt16639.kt
    1 compiler/testData/codegen/boxAgainstJava/recursiveRawTypes/kt16528.kt
@@ -8009,7 +8009,6 @@ Changes from 2017-03-01 to 2017-04-01:
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/ObjectTransformer.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/MethodInliner.java
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/InlineCodegen.java
-   1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/AnonymousObjectTransformer.java
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/refinedIntTypesAnalysis.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/coroutineCodegenUtil.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/SuspendFunctionGenerationStrategy.kt

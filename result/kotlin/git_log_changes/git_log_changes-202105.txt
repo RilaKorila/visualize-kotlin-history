@@ -1,4 +1,3 @@
-Changes from 2021-05-01 to 2021-06-01:
   41 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
   41 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
   40 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java

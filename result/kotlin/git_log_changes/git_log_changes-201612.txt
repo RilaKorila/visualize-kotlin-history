@@ -1,4 +1,3 @@
-Changes from 2016-12-01 to 2017-01-01:
   51 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   48 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   40 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/IrToBitcode.kt

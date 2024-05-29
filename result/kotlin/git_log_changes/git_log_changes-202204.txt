@@ -1,4 +1,3 @@
-Changes from 2022-04-01 to 2022-05-01:
   30 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   30 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java
   30 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsTestGenerated.java

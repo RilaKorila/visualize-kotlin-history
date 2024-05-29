@@ -1,4 +1,3 @@
-Changes from 2019-01-01 to 2019-02-01:
    4 README.md
    3 kotlinx-coroutines-core/jvm/test/exceptions/StackTraceRecoveryTest.kt
    3 kotlinx-coroutines-core/jvm/src/internal/ExceptionsConstuctor.kt

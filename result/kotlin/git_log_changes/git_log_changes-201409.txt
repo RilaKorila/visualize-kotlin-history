@@ -1,7 +1,5 @@
-Changes from 2014-09-01 to 2014-10-01:
   15 compiler/tests/org/jetbrains/jet/checkers/JetDiagnosticsTestGenerated.java
   13 idea/tests/org/jetbrains/jet/completion/JvmBasicCompletionTestGenerated.java
-  13 idea/src/org/jetbrains/jet/plugin/highlighter/JetLineMarkerProvider.java
   13 compiler/tests/org/jetbrains/jet/codegen/generated/BlackBoxCodegenTestGenerated.java
   12 idea/tests/org/jetbrains/jet/completion/JSBasicCompletionTestGenerated.java
   12 compiler/backend/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java
@@ -23,7 +21,6 @@ Changes from 2014-09-01 to 2014-10-01:
    7 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/functionBuilder.kt
    7 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/ModuleDependencyMapper.kt
    7 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/KotlinCacheService.kt
-   7 generators/src/org/jetbrains/jet/generators/tests/GenerateTests.kt
    7 compiler/backend/src/org/jetbrains/jet/codegen/binding/CodegenBinding.java
    7 compiler/backend/src/org/jetbrains/jet/codegen/JvmCodegenUtil.java
    6 js/js.translator/testData/kotlin_lib.js
@@ -37,7 +34,7 @@ Changes from 2014-09-01 to 2014-10-01:
    6 idea/src/org/jetbrains/jet/plugin/refactoring/extractFunction/extractableAnalysisUtil.kt
    6 idea/src/org/jetbrains/jet/plugin/codeInsight/TipsManager.kt
    6 idea/src/org/jetbrains/jet/plugin/caches/KotlinIndicesHelper.kt
-   6 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinWrappingLightClass.java
+   6 generators/src/org/jetbrains/jet/generators/tests/GenerateTests.kt
    6 compiler/frontend/src/org/jetbrains/jet/lang/cfg/JetControlFlowProcessor.java
    6 compiler/frontend.java/src/org/jetbrains/jet/lang/resolve/kotlin/FileBasedKotlinClass.java
    5 js/js.translator/src/org/jetbrains/k2js/translate/context/Namer.java
@@ -82,7 +79,6 @@ Changes from 2014-09-01 to 2014-10-01:
    4 idea/tests/org/jetbrains/jet/plugin/debugger/AbstractKotlinSteppingTest.kt
    4 idea/tests/org/jetbrains/jet/plugin/caches/resolve/IdeaModuleInfoTest.kt
    4 idea/src/org/jetbrains/jet/plugin/refactoring/extractFunction/ExtractableCodeDescriptor.kt
-   4 idea/src/org/jetbrains/jet/plugin/refactoring/JetRefactoringUtil.java
    4 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/FunctionInfo.kt
    4 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/CreateSetFunctionActionFactory.kt
    4 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/CreateNextFunctionActionFactory.kt
@@ -110,6 +106,7 @@ Changes from 2014-09-01 to 2014-10-01:
    4 compiler/tests/org/jetbrains/jet/cfg/PseudoValueTestGenerated.java
    4 compiler/tests/org/jetbrains/jet/cfg/ControlFlowTestGenerated.java
    4 compiler/testData/cfg-variables/bugs/varInitializationInIfInCycle.instructions
+   4 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinWrappingLightClass.java
    4 compiler/frontend/src/org/jetbrains/jet/lang/types/expressions/ExpressionTypingUtils.java
    4 compiler/frontend/src/org/jetbrains/jet/lang/resolve/DeclarationResolver.java
    4 compiler/frontend/src/org/jetbrains/jet/lang/cfg/pseudocode/JetControlFlowInstructionsGenerator.java
@@ -144,8 +141,6 @@ Changes from 2014-09-01 to 2014-10-01:
    3 idea/tests/org/jetbrains/jet/plugin/debugger/evaluate/AbstractKotlinEvaluateExpressionTest.kt
    3 idea/tests/org/jetbrains/jet/plugin/debugger/KotlinDebuggerTestBase.kt
    3 idea/tests/org/jetbrains/jet/plugin/debugger/AbstractJetPositionManagerTest.java
-   3 idea/tests/org/jetbrains/jet/plugin/codeInsight/LineMarkersTestGenerated.java
-   3 idea/tests/org/jetbrains/jet/plugin/codeInsight/AbstractLineMarkersTest.java
    3 idea/tests/org/jetbrains/jet/findUsages/JetFindUsagesTestGenerated.java
    3 idea/tests/org/jetbrains/jet/completion/weighers/SmartCompletionWeigherTestGenerated.java
    3 idea/tests/org/jetbrains/jet/completion/handlers/BasicCompletionHandlerTest.kt
@@ -156,6 +151,7 @@ Changes from 2014-09-01 to 2014-10-01:
    3 idea/src/org/jetbrains/jet/plugin/refactoring/move/moveTopLevelDeclarations/MoveKotlinTopLevelDeclarationsProcessor.kt
    3 idea/src/org/jetbrains/jet/plugin/refactoring/extractFunction/ui/KotlinExtractFunctionDialog.java
    3 idea/src/org/jetbrains/jet/plugin/refactoring/extractFunction/ExtractionData.kt
+   3 idea/src/org/jetbrains/jet/plugin/refactoring/JetRefactoringUtil.java
    3 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/CreateUnaryOperationActionFactory.kt
    3 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/CreateInvokeFunctionActionFactory.kt
    3 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/CreateBinaryOperationActionFactory.kt
@@ -189,7 +185,6 @@ Changes from 2014-09-01 to 2014-10-01:
    3 compiler/tests/org/jetbrains/jet/lang/resolve/lazy/LazyResolveRecursiveComparingTestGenerated.java
    3 compiler/tests/org/jetbrains/jet/lang/resolve/lazy/AbstractLazyResolveRecursiveComparingTest.java
    3 compiler/tests/org/jetbrains/jet/jvm/compiler/CompileJavaAgainstKotlinTestGenerated.java
-   3 compiler/tests/org/jetbrains/jet/JetTestUtils.java
    3 compiler/testData/diagnostics/tests/j+k/privateNestedClassStaticMember.kt
    3 compiler/testData/diagnostics/tests/j+k/packagePrivateClassStaticMember.kt
    3 compiler/testData/cfg/controlStructures/continueInWhile.instructions
@@ -199,7 +194,6 @@ Changes from 2014-09-01 to 2014-10-01:
    3 compiler/testData/cfg/bugs/jumpToOuterScope.instructions
    3 compiler/testData/cfg-variables/lexicalScopes/forScope.instructions
    3 compiler/testData/builtin-classes.txt
-   3 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightMethodForDeclaration.kt
    3 compiler/frontend/src/org/jetbrains/jet/lang/resolve/scopes/receivers/Qualifier.kt
    3 compiler/frontend/src/org/jetbrains/jet/lang/resolve/QualifiedExpressionResolver.java
    3 compiler/frontend/src/org/jetbrains/jet/lang/resolve/BindingContext.java
@@ -346,7 +340,6 @@ Changes from 2014-09-01 to 2014-10-01:
    2 idea/tests/org/jetbrains/jet/plugin/codeInsight/unwrap/UnwrapRemoveTestGenerated.java
    2 idea/tests/org/jetbrains/jet/plugin/codeInsight/surroundWith/SurroundWithTestGenerated.java
    2 idea/tests/org/jetbrains/jet/plugin/codeInsight/moveUpDown/CodeMoverTestGenerated.java
-   2 idea/tests/org/jetbrains/jet/plugin/codeInsight/OverrideImplementLineMarkerTest.java
    2 idea/tests/org/jetbrains/jet/plugin/codeInsight/OutOfBlockModificationTestGenerated.java
    2 idea/tests/org/jetbrains/jet/plugin/codeInsight/JetInspectionTestGenerated.java
    2 idea/tests/org/jetbrains/jet/plugin/codeInsight/InsertImportOnPasteTestGenerated.java
@@ -423,15 +416,11 @@ Changes from 2014-09-01 to 2014-10-01:
    2 idea/testData/completion/weighers/smart/NameSimilarityAndCompiledParameters.kt
    2 idea/testData/completion/weighers/smart/NameSimilarity3.kt
    2 idea/testData/completion/basic/common/GenericExtensionFunTypeArgument.kt
-   2 idea/testData/codeInsight/lineMarker/OverrideIconForOverloadMethodBug.kt
-   2 idea/testData/codeInsight/lineMarker/FakeOverridesForTraitFunWithImpl.kt
-   2 idea/testData/codeInsight/lineMarker/FakeOverrideForClasses.kt
    2 idea/testData/checker/ClassObjectInEnum.kt
    2 idea/src/org/jetbrains/jet/plugin/search/ideaExtensions/KotlinReferencesSearcher.java
    2 idea/src/org/jetbrains/jet/plugin/references/JetSimpleNameReference.kt
    2 idea/src/org/jetbrains/jet/plugin/refactoring/rename/RenameKotlinFunctionProcessor.kt
    2 idea/src/org/jetbrains/jet/plugin/refactoring/extractFunction/duplicateUtil.kt
-   2 idea/src/org/jetbrains/jet/plugin/refactoring/changeSignature/JetChangeSignatureData.java
    2 idea/src/org/jetbrains/jet/plugin/refactoring/JetRefactoringBundle.properties
    2 idea/src/org/jetbrains/jet/plugin/refactoring/JetNameValidator.kt
    2 idea/src/org/jetbrains/jet/plugin/refactoring/JetNameValidator.java
@@ -446,7 +435,6 @@ Changes from 2014-09-01 to 2014-10-01:
    2 idea/src/org/jetbrains/jet/plugin/liveTemplates/macro/BaseJetVariableMacro.java
    2 idea/src/org/jetbrains/jet/plugin/ktSignature/KotlinSignatureInJavaMarkerProvider.java
    2 idea/src/org/jetbrains/jet/plugin/ktSignature/KotlinSignatureAnnotationIntention.java
-   2 idea/src/org/jetbrains/jet/plugin/highlighter/markers/OverridenFunctionMarker.kt
    2 idea/src/org/jetbrains/jet/plugin/filters/JetExceptionFilter.java
    2 idea/src/org/jetbrains/jet/plugin/debugger/render/KotlinClassWithDelegatedPropertyRenderer.kt
    2 idea/src/org/jetbrains/jet/plugin/debugger/KotlinSmartStepIntoHandler.kt
@@ -458,9 +446,7 @@ Changes from 2014-09-01 to 2014-10-01:
    2 idea/idea-analysis/src/org/jetbrains/jet/plugin/libraries/ResolverForDecompiler.kt
    2 idea/idea-analysis/src/org/jetbrains/jet/plugin/libraries/DecompiledTextFactory.kt
    2 idea/idea-analysis/src/org/jetbrains/jet/plugin/highlighter/IdeErrorMessages.java
-   2 idea/idea-analysis/src/org/jetbrains/jet/plugin/codeInsight/DescriptorToDeclarationUtil.kt
    2 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/globalContextUtils.kt
-   2 idea/idea-analysis/src/org/jetbrains/jet/plugin/JetBundle.properties
    2 generators/src/org/jetbrains/jet/generators/tests/generator/TestGenerator.java
    2 core/serialization/src/org/jetbrains/jet/descriptors/serialization/descriptors/DeserializedPackageMemberScope.java
    2 core/serialization/src/org/jetbrains/jet/descriptors/serialization/ClassId.java
@@ -515,6 +501,7 @@ Changes from 2014-09-01 to 2014-10-01:
    2 compiler/tests/org/jetbrains/jet/checkers/BaseDiagnosticsTest.java
    2 compiler/tests/org/jetbrains/jet/cfg/DataFlowTestGenerated.java
    2 compiler/tests/org/jetbrains/jet/asJava/KotlinLightClassTestGenerated.java
+   2 compiler/tests/org/jetbrains/jet/JetTestUtils.java
    2 compiler/testData/psi/annotation/onFile/fileAnnotationInWrongPlace.txt
    2 compiler/testData/loadJava/compiledKotlin/annotations/classes/DollarsInAnnotationName.txt
    2 compiler/testData/loadJava/compiledJava/static/StaticMembersInEnum.txt
@@ -588,6 +575,7 @@ Changes from 2014-09-01 to 2014-10-01:
    2 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/light/KotlinLightField.java
    2 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/LightClassUtil.java
    2 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightParameter.java
+   2 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightMethodForDeclaration.kt
    2 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightClass.kt
    2 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinJavaFileStubProvider.java
    2 compiler/frontend/src/org/jetbrains/jet/lang/types/expressions/BasicExpressionTypingVisitor.java
@@ -1170,7 +1158,6 @@ Changes from 2014-09-01 to 2014-10-01:
    1 j2k/src/org/jetbrains/jet/j2k/visitors/ExpressionVisitor.kt
    1 j2k/src/org/jetbrains/jet/j2k/JavaToKotlinTranslator.kt
    1 idea_runner/runner.xml
-   1 idea/tests/org/jetbrains/jet/testing/HighlightTestDataUtil.java
    1 idea/tests/org/jetbrains/jet/psi/patternMatching/JetPsiUnifierTestGenerated.java
    1 idea/tests/org/jetbrains/jet/psi/patternMatching/AbstractJetPsiUnifierTest.kt
    1 idea/tests/org/jetbrains/jet/psi/AbstractJetPsiMatcherTest.java
@@ -1178,13 +1165,10 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/tests/org/jetbrains/jet/plugin/run/RunConfigurationTest.kt
    1 idea/tests/org/jetbrains/jet/plugin/refactoring/introduce/introduceVariable/AbstractJetExtractionTest.kt
    1 idea/tests/org/jetbrains/jet/plugin/quickfix/AbstractQuickFixMultiFileTest.java
-   1 idea/tests/org/jetbrains/jet/plugin/navigation/NavigationTestUtils.java
    1 idea/tests/org/jetbrains/jet/plugin/lightClasses/LightClassForLibrarySourceFileTest.java
    1 idea/tests/org/jetbrains/jet/plugin/libraries/NavigateToStdlibSourceRegressionTest.java
-   1 idea/tests/org/jetbrains/jet/plugin/libraries/NavigateToLibrarySourceTest.java
    1 idea/tests/org/jetbrains/jet/plugin/libraries/NavigateFromLibrarySourcesTest.kt
    1 idea/tests/org/jetbrains/jet/plugin/javaFacade/JetJavaFacadeTest.java
-   1 idea/tests/org/jetbrains/jet/plugin/highlighter/AbstractHighlightingTest.java
    1 idea/tests/org/jetbrains/jet/plugin/debugger/KotlinDebuggerTestCase.java
    1 idea/tests/org/jetbrains/jet/plugin/debugger/JetPositionManagerTestGenerated.java
    1 idea/tests/org/jetbrains/jet/plugin/debugger/JetPositionManagerTest.java
@@ -2121,19 +2105,6 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/testData/completion/basic/common/GenericExtensionFunReceiver1.kt
    1 idea/testData/completion/basic/common/ExtensionToIntInFloatStyle.kt
    1 idea/testData/completion/basic/common/AfterIntSeparatedWithComments.kt
-   1 idea/testData/codeInsight/lineMarker/ToStringInTrait.kt
-   1 idea/testData/codeInsight/lineMarker/OverridingTooltipOnDefaultTraitImpl.kt
-   1 idea/testData/codeInsight/lineMarker/OverridenTraitDeclarations.kt
-   1 idea/testData/codeInsight/lineMarker/Overloads.kt
-   1 idea/testData/codeInsight/lineMarker/NoOverridingMarkerOnDefaultTraitImpl.kt
-   1 idea/testData/codeInsight/lineMarker/NavigateToSeveralSuperElements.kt
-   1 idea/testData/codeInsight/lineMarker/FakeOverrideToStringInTrait.kt
-   1 idea/testData/codeInsight/lineMarker/FakeOverrideProperty.kt
-   1 idea/testData/codeInsight/lineMarker/FakeOverrideFunWithMostRelevantImplementation.kt
-   1 idea/testData/codeInsight/lineMarker/FakeOverrideFun.kt
-   1 idea/testData/codeInsight/lineMarker/DelegatedProperty.kt
-   1 idea/testData/codeInsight/lineMarker/DelegatedFun.kt
-   1 idea/testData/codeInsight/lineMarker/ClassObjectInStaticNestedClass.kt
    1 idea/testData/checker/regression/extensionMemberInClassObject.kt
    1 idea/testData/checker/AnnotationOnFile.kt
    1 idea/src/org/jetbrains/jet/plugin/versions/KotlinUpdatePluginComponent.kt
@@ -2151,6 +2122,7 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/src/org/jetbrains/jet/plugin/refactoring/move/moveFilesOrDirectories/MoveKotlinFileHandler.kt
    1 idea/src/org/jetbrains/jet/plugin/refactoring/move/MoveJavaInnerClassKotlinUsagesHandler.kt
    1 idea/src/org/jetbrains/jet/plugin/refactoring/introduce/introduceVariable/KotlinIntroduceVariableHandler.java
+   1 idea/src/org/jetbrains/jet/plugin/refactoring/changeSignature/JetChangeSignatureData.java
    1 idea/src/org/jetbrains/jet/plugin/refactoring/JetNameValidatorImpl.java
    1 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createVariable/CreateLocalVariableActionFactory.kt
    1 idea/src/org/jetbrains/jet/plugin/quickfix/createFromUsage/createFunction/typeUtils.kt
@@ -2182,10 +2154,7 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/src/org/jetbrains/jet/plugin/intentions/ReplaceWithOperatorAssignIntention.kt
    1 idea/src/org/jetbrains/jet/plugin/intentions/ReplaceExplicitFunctionLiteralParamWithItIntention.kt
    1 idea/src/org/jetbrains/jet/plugin/intentions/ConvertToBlockBodyAction.kt
-   1 idea/src/org/jetbrains/jet/plugin/highlighter/markers/SuperDeclarationMarker.kt
-   1 idea/src/org/jetbrains/jet/plugin/highlighter/markers/OverridenPropertyMarker.kt
-   1 idea/src/org/jetbrains/jet/plugin/highlighter/markers/OverridenDeclarationMarker.kt
-   1 idea/src/org/jetbrains/jet/plugin/highlighter/markers/JavaPsiUtils.kt
+   1 idea/src/org/jetbrains/jet/plugin/highlighter/JetLineMarkerProvider.java
    1 idea/src/org/jetbrains/jet/plugin/highlighter/DeclarationHintSupport.java
    1 idea/src/org/jetbrains/jet/plugin/hierarchy/overrides/KotlinOverrideTreeStructure.kt
    1 idea/src/org/jetbrains/jet/plugin/hierarchy/calls/KotlinCalleeMethodsTreeStructure.java
@@ -2214,15 +2183,12 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/upDownMover/JetExpressionMover.java
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/upDownMover/JetDeclarationMover.java
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/upDownMover/AbstractJetUpDownMover.java
-   1 idea/src/org/jetbrains/jet/plugin/codeInsight/OverrideImplementMethodsHandler.java
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/KotlinShortenReferencesRefactoringHelper.kt
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/KotlinCopyPasteReferenceProcessor.kt
-   1 idea/src/org/jetbrains/jet/plugin/codeInsight/JetFunctionPsiElementCellRenderer.java
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/JetFileReferencesResolver.kt
    1 idea/src/org/jetbrains/jet/plugin/codeInsight/CodeInsightUtils.java
    1 idea/src/org/jetbrains/jet/plugin/caches/JetShortNamesCache.kt
    1 idea/src/org/jetbrains/jet/plugin/actions/JetAddImportAction.java
-   1 idea/src/org/jetbrains/jet/plugin/actions/JetAddFunctionToClassifierAction.java
    1 idea/src/org/jetbrains/jet/plugin/JetQuickDocumentationProvider.java
    1 idea/src/org/jetbrains/jet/plugin/JetDescriptorIconProvider.java
    1 idea/idea.iml
@@ -2230,14 +2196,12 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/stubindex/SubpackagesIndexService.kt
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/stubindex/PackageIndexUtil.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/search/searchUtil.kt
-   1 idea/idea-analysis/src/org/jetbrains/jet/plugin/references/JetReference.kt
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/references/BuiltInsReferenceResolver.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/project/ResolveElementCache.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/libraries/JetSourceNavigationHelper.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/highlighter/PropertiesHighlightingVisitor.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/highlighter/JetPsiChecker.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/highlighter/DebugInfoAnnotator.java
-   1 idea/idea-analysis/src/org/jetbrains/jet/plugin/codeInsight/DescriptorToDeclarationUtil.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/moduleDependents.kt
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/cacheUtils.kt
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/LibraryModificationTracker.kt
@@ -2245,6 +2209,7 @@ Changes from 2014-09-01 to 2014-10-01:
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/JsAnalyzerFacade.kt
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/caches/resolve/IDELightClassGenerationSupport.java
    1 idea/idea-analysis/src/org/jetbrains/jet/plugin/ProjectRootsUtil.java
+   1 idea/idea-analysis/src/org/jetbrains/jet/plugin/JetBundle.properties
    1 ide-compiler-runner/src/org/jetbrains/jet/compiler/runner/CompilerRunnerUtil.java
    1 grammar/src/toplevel.grm
    1 generators/src/org/jetbrains/jet/generators/tests/generator/TestClassModel.java
@@ -2265,7 +2230,6 @@ Changes from 2014-09-01 to 2014-10-01:
    1 core/serialization/src/org/jetbrains/jet/descriptors/serialization/ClassDataFinder.java
    1 core/serialization.java/src/java_descriptors.proto
    1 core/runtime.jvm/src/kotlin/jvm/internal/InlineMarker.java
-   1 core/descriptors/src/org/jetbrains/jet/renderer/DescriptorRendererBuilder.java
    1 core/descriptors/src/org/jetbrains/jet/lang/resolve/name/NameUtil.kt
    1 core/descriptors/src/org/jetbrains/jet/lang/resolve/name/FqNameUnsafe.java
    1 core/descriptors/src/org/jetbrains/jet/lang/resolve/name/FqNameBase.java
@@ -4247,8 +4211,6 @@ Changes from 2014-09-01 to 2014-10-01:
    1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/LightParameter.java
    1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/LightClassStubWithData.kt
    1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightTypeParameter.java
-   1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightMethodFromTrait.kt
-   1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightMethodForTraitFakeOverride.kt
    1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightMethod.kt
    1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightFieldForDeclaration.kt
    1 compiler/jet.as.java.psi/src/org/jetbrains/jet/asJava/KotlinLightField.java
@@ -4361,7 +4323,6 @@ Changes from 2014-09-01 to 2014-10-01:
    1 annotations/com/intellij/psi/codeStyle/annotations.xml
    1 annotations/com/intellij/openapi/vfs/annotations.xml
    1 annotations/com/intellij/lang/annotations.xml
-   1 annotations/com/intellij/ide/util/annotations.xml
    1 annotations/com/intellij/debugger/ui/tree/render/annotations.xml
    1 annotations/com/intellij/debugger/ui/tree/annotations.xml
    1 annotations/com/intellij/debugger/ui/impl/watch/annotations.xml

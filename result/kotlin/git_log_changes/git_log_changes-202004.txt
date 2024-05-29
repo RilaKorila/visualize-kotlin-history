@@ -1,10 +1,9 @@
-Changes from 2020-04-01 to 2020-05-01:
-  44 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
-  44 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  44 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
-  44 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/codegen/ir/FirBlackBoxCodegenTestGenerated.java
-  30 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
-  30 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
+  45 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
+  45 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  45 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
+  45 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/codegen/ir/FirBlackBoxCodegenTestGenerated.java
+  31 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
+  31 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
   26 idea/src/org/jetbrains/kotlin/idea/slicer/OutflowSlicer.kt
   24 backend.native/tests/build.gradle
   22 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/targets/js/testing/karma/KotlinKarma.kt
@@ -1243,6 +1242,7 @@ Changes from 2020-04-01 to 2020-05-01:
    2 endorsedLibraries/build.gradle
    2 dependencies/kotlin-build-gradle-plugin/src/Bootstrap.kt
    2 dependencies/android-sdk/build.gradle.kts
+   2 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KCallableImpl.kt
    2 core/metadata.jvm/src/org/jetbrains/kotlin/metadata/jvm/JvmProtoBuf.java
    2 core/metadata.jvm/src/jvm_metadata.proto
    2 core/descriptors/src/org/jetbrains/kotlin/resolve/scopes/synthetic/FunInterfaceConstructorsSyntheticScope.kt
@@ -1370,6 +1370,7 @@ Changes from 2020-04-01 to 2020-05-01:
    2 compiler/testData/codegen/box/reflection/mapping/types/innerGenericTypeArgument.kt
    2 compiler/testData/codegen/box/reflection/enclosing/lambdaInPropertyDelegate.kt
    2 compiler/testData/codegen/box/reflection/enclosing/kt11969.kt
+   2 compiler/testData/codegen/box/reflection/callBy/emptyVarArg.kt
    2 compiler/testData/codegen/box/properties/lateinit/localClass.kt
    2 compiler/testData/codegen/box/nothingValue/nothingValueException.kt
    2 compiler/testData/codegen/box/multiplatform/multiModule/expectActualTypealiasLink.kt
@@ -3277,7 +3278,6 @@ Changes from 2020-04-01 to 2020-05-01:
    1 core/reflection.jvm/src/kotlin/reflect/jvm/internal/util.kt
    1 core/reflection.jvm/src/kotlin/reflect/jvm/internal/calls/InlineClassAwareCaller.kt
    1 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KDeclarationContainerImpl.kt
-   1 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KCallableImpl.kt
    1 core/metadata.jvm/src/org/jetbrains/kotlin/metadata/jvm/serialization/JvmStringTable.kt
    1 core/metadata.jvm/src/org/jetbrains/kotlin/metadata/jvm/deserialization/JvmNameResolver.kt
    1 core/deserialization/src/org/jetbrains/kotlin/serialization/deserialization/TypeDeserializer.kt
@@ -4752,6 +4752,7 @@ Changes from 2020-04-01 to 2020-05-01:
    1 compiler/testData/codegen/box/reflection/enclosing/kt6691_lambdaInSamConstructor.kt
    1 compiler/testData/codegen/box/reflection/enclosing/functionExpressionInProperty.kt
    1 compiler/testData/codegen/box/reflection/createAnnotation/parameterNamedEquals.kt
+   1 compiler/testData/codegen/box/reflection/createAnnotation/callByWithEmptyVarArg.kt
    1 compiler/testData/codegen/box/reflection/createAnnotation/annotationType.kt
    1 compiler/testData/codegen/box/reflection/constructors/simpleGetConstructors.kt
    1 compiler/testData/codegen/box/reflection/constructors/constructorName.kt
@@ -4786,7 +4787,6 @@ Changes from 2020-04-01 to 2020-05-01:
    1 compiler/testData/codegen/box/reflection/callBy/jvmStaticInCompanionObject.kt
    1 compiler/testData/codegen/box/reflection/callBy/inlineClassFunctionsAndConstructors.kt
    1 compiler/testData/codegen/box/reflection/callBy/extensionFunction.kt
-   1 compiler/testData/codegen/box/reflection/callBy/emptyVarArg.kt
    1 compiler/testData/codegen/box/reflection/callBy/defaultInSuperInterface.kt
    1 compiler/testData/codegen/box/reflection/callBy/defaultInSuperClass.kt
    1 compiler/testData/codegen/box/reflection/callBy/defaultAndNonDefaultIntertwined.kt

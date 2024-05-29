@@ -1,4 +1,3 @@
-Changes from 2019-08-01 to 2019-09-01:
   22 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ExpressionCodegen.kt
   21 idea/src/org/jetbrains/kotlin/idea/quickfix/expectactual/CreateExpectedFix.kt
   18 idea/src/org/jetbrains/kotlin/idea/quickfix/expectactual/ExpectActualUtils.kt
@@ -145,6 +144,7 @@ Changes from 2019-08-01 to 2019-09-01:
    3 idea/idea-jvm/src/org/jetbrains/kotlin/idea/scratch/actions/ClearScratchAction.kt
    3 idea/idea-core/src/org/jetbrains/kotlin/idea/core/generateUtil.kt
    3 idea/idea-completion/src/org/jetbrains/kotlin/idea/completion/LookupCancelWatcher.kt
+   3 idea/build.gradle.kts
    3 gradle/cacheRedirector.gradle.kts
    3 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt.as33
    3 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt.183
@@ -254,6 +254,7 @@ Changes from 2019-08-01 to 2019-09-01:
    3 compiler/backend/src/org/jetbrains/kotlin/codegen/optimization/nullCheck/RedundantNullCheckMethodTransformer.kt
    3 compiler/backend/src/org/jetbrains/kotlin/codegen/ExpressionCodegen.java
    3 compiler/backend/src/org/jetbrains/kotlin/codegen/AsmUtil.java
+   3 buildSrc/prepare-deps/build.gradle.kts
    3 build-tools/src/main/groovy/org/jetbrains/kotlin/KonanTest.groovy
    3 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/lower/FunctionInlining.kt
    3 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/IntrinsicGenerator.kt
@@ -444,7 +445,7 @@ Changes from 2019-08-01 to 2019-09-01:
    2 idea/idea-analysis/src/org/jetbrains/kotlin/idea/caches/lightClasses/IDELightClassContexts.kt
    2 idea/idea-analysis/src/org/jetbrains/kotlin/idea/KotlinIcons.java
    2 idea/idea-analysis/resources/org/jetbrains/kotlin/idea/KotlinBundle.properties
-   2 idea/build.gradle.kts
+   2 gradle/versions.properties.as36
    2 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt.as36
    2 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt.as35
    2 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt.as34
@@ -850,7 +851,6 @@ Changes from 2019-08-01 to 2019-09-01:
    2 buildSrc/src/main/kotlin/localDependencies.kt
    2 buildSrc/src/main/kotlin/artifacts.kt
    2 buildSrc/src/main/kotlin/IdeCompatibilityDsl.kt
-   2 buildSrc/prepare-deps/build.gradle.kts
    2 backend.native/tests/interop/objc/smoke.m
    2 backend.native/tests/interop/objc/smoke.kt
    2 backend.native/tests/interop/objc/smoke.h
@@ -2527,7 +2527,6 @@ Changes from 2019-08-01 to 2019-09-01:
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/IconExtensionChooser.java
    1 idea/idea-analysis/src/org/jetbrains/kotlin/caches/resolve/CompositeResolverForModuleFactory.kt
    1 idea/formatter/src/org/jetbrains/kotlin/idea/util/FormatterUtil.kt
-   1 gradle/versions.properties.as36
    1 gradle/versions.properties.as33
    1 gradle/versions.properties.182
    1 gradle.properties.as33

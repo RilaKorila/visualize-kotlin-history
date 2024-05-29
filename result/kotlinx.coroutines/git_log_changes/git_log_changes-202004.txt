@@ -1,4 +1,3 @@
-Changes from 2020-04-01 to 2020-05-01:
    6 gradle.properties
    4 kotlinx-coroutines-core/api/kotlinx-coroutines-core.api
    3 kotlinx-coroutines-core/jvm/test/internal/SegmentBasedQueue.kt

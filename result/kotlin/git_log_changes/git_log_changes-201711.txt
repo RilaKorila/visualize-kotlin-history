@@ -1,4 +1,3 @@
-Changes from 2017-11-01 to 2017-12-01:
   20 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   18 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   18 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
@@ -6,25 +5,19 @@ Changes from 2017-11-01 to 2017-12-01:
   15 idea/src/META-INF/plugin.xml
   12 libraries/tools/kotlin-stdlib-gen/src/generators/GenerateStandardLib.kt
   12 idea/tests/org/jetbrains/kotlin/idea/inspections/LocalInspectionTestGenerated.java
-  11 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/ClassFileToSourceStubConverter.kt
   10 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/BoxJsTestGenerated.java
   10 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/IrToBitcode.kt
    9 compiler/backend/src/org/jetbrains/kotlin/codegen/ExpressionCodegen.java
    9 build.gradle
-   8 settings.gradle
-   8 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/AbstractKotlinKapt3Test.kt
    8 backend.native/tests/build.gradle
-   7 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/javac/KaptJavaLog.kt
    7 gradle.properties
-   7 generators/src/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
-   7 build.gradle.kts
-   6 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/ClassFileToSourceStubConverterTestGenerated.java
+   6 settings.gradle
    6 libraries/reflect/build.gradle.kts
    6 idea/src/org/jetbrains/kotlin/idea/versions/KotlinRuntimeLibraryUtil.kt
    6 compiler/tests-common/tests/org/jetbrains/kotlin/checkers/CompilerTestLanguageVersionSettings.kt
    6 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment.kt
-   6 compiler/cli/src/org/jetbrains/kotlin/cli/common/CLICompiler.java
    6 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/InlineCodegen.kt
+   6 build.gradle.kts
    6 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/ContextUtils.kt
    6 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/llvm/CodeGenerator.kt
    5 tools/kotlin-native-gradle-plugin/build.gradle
@@ -37,7 +30,7 @@ Changes from 2017-11-01 to 2017-12-01:
    5 idea/tests/org/jetbrains/kotlin/idea/intentions/IntentionTestGenerated.java
    5 idea/src/org/jetbrains/kotlin/idea/slicer/Slicer.kt
    5 idea/src/org/jetbrains/kotlin/idea/inspections/RecursiveEqualsCallInspection.kt
-   5 gradle/project-schema.json
+   5 generators/src/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
    5 compiler/tests/org/jetbrains/kotlin/codegen/CompileKotlinAgainstInlineKotlinTestGenerated.java
    5 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxInlineCodegenTestGenerated.java
    5 compiler/tests/org/jetbrains/kotlin/checkers/javac/DiagnosticsUsingJavacTestGenerated.java
@@ -48,6 +41,7 @@ Changes from 2017-11-01 to 2017-12-01:
    5 compiler/tests-common/tests/org/jetbrains/kotlin/checkers/BaseDiagnosticsTest.kt
    5 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/components/ResolutionParts.kt
    5 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/DiagnosticReporterByTrackingStrategy.kt
+   5 compiler/cli/src/org/jetbrains/kotlin/cli/common/CLICompiler.java
    5 compiler/build.gradle.kts
    5 buildSrc/plugins/src/main/groovy/org/jetbrains/kotlin/KonanTest.groovy
    5 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/serialization/KonanIr.proto
@@ -60,10 +54,6 @@ Changes from 2017-11-01 to 2017-12-01:
    4 samples/libcurl/build.gradle
    4 samples/html5Canvas/src/main/kotlin/main.kt
    4 samples/html5Canvas/build.sh
-   4 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/stubs/ClassFileToSourceStubConverter.kt
-   4 plugins/kapt3/kapt3-idea/src/org/jetbrains/kotlin/kapt/idea/KaptProjectResolverExtension.kt
-   4 plugins/kapt3/kapt3-compiler/testData/converter/nonExistentClassTypesConversion.txt
-   4 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/KaptContext.kt
    4 libraries/tools/kotlin-stdlib-gen/src/templates/dsl/Writers.kt
    4 js/js.translator/src/org/jetbrains/kotlin/js/translate/expression/WhenTranslator.kt
    4 js/js.tests/test/org/jetbrains/kotlin/js/test/BasicBoxTest.kt
@@ -72,7 +62,7 @@ Changes from 2017-11-01 to 2017-12-01:
    4 idea/src/META-INF/extensions/kotlin2js.xml
    4 idea/src/META-INF/extensions/common.xml
    4 idea/idea-gradle/src/org/jetbrains/kotlin/idea/core/script/GradleScriptTemplateProvider.kt
-   4 generators/build.gradle.kts
+   4 gradle/project-schema.json
    4 compiler/util/src/org/jetbrains/kotlin/config/LanguageVersionSettings.kt
    4 compiler/tests-common/tests/org/jetbrains/kotlin/checkers/AbstractDiagnosticsTest.kt
    4 compiler/tests-common/build.gradle.kts
@@ -100,31 +90,12 @@ Changes from 2017-11-01 to 2017-12-01:
    3 samples/gitchurn/build.sh
    3 samples/gitchurn/build.gradle
    3 runtime/src/main/kotlin/konan/worker/Worker.kt
-   3 runtime/src/main/cpp/KString.cpp
    3 plugins/uast-kotlin/tests/SimpleKotlinRenderLogTest.kt
    3 plugins/uast-kotlin/testData/SuperCalls.render.txt
    3 plugins/uast-kotlin/testData/SuperCalls.log.txt
    3 plugins/uast-kotlin/src/org/jetbrains/uast/kotlin/KotlinAbstractUElement.kt
-   3 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/Simple.kt
-   3 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/Simple.it.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/nonExistentClassWIthoutCorrection.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/nonExistentClass.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/nestedClassesNonRootPackage.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/nestedClasses2.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/kt18791.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/importsForErrorTypes.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/errorLocationMapping.txt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/errorLocationMapping.kt
-   3 plugins/kapt3/kapt3-compiler/testData/converter/aliasedImports.kt
-   3 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/KotlinKapt3IntegrationTests.kt
-   3 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/ErrorTypeCorrector.kt
-   3 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/annotationProcessing.kt
-   3 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/Kapt3Extension.kt
-   3 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/parcel/ParcelBoxTest.kt
-   3 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/parcel/ParcelableCodegenExtension.kt
    3 libraries/tools/kotlin-stdlib-gen/src/templates/Generators.kt
    3 libraries/tools/kotlin-reflect/build.gradle
-   3 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/Kapt3KotlinGradleSubplugin.kt
    3 libraries/stdlib/src/kotlin/coroutines/experimental/intrinsics/Intrinsics.kt
    3 klib/build.gradle
    3 js/js.translator/src/org/jetbrains/kotlin/js/translate/callTranslator/CallTranslator.kt
@@ -140,12 +111,12 @@ Changes from 2017-11-01 to 2017-12-01:
    3 idea/idea-gradle/src/org/jetbrains/kotlin/idea/inspections/gradle/GradleDependencyInspection.kt
    3 idea/idea-core/src/org/jetbrains/kotlin/idea/core/script/ScriptDependenciesCache.kt
    3 generators/src/org/jetbrains/kotlin/generators/protobuf/GenerateProtoBuf.kt
+   3 generators/build.gradle.kts
    3 dependencies/upload.gradle
    3 compiler/tests/org/jetbrains/kotlin/scripts/ScriptTemplateTest.kt
    3 compiler/tests/org/jetbrains/kotlin/generators/tests/GenerateCompilerTests.kt
    3 compiler/tests/org/jetbrains/kotlin/codegen/BytecodeTextTestGenerated.java
    3 compiler/tests/org/jetbrains/kotlin/codegen/BytecodeListingTestGenerated.java
-   3 compiler/tests/org/jetbrains/kotlin/cli/CliTestGenerated.java
    3 compiler/tests/org/jetbrains/kotlin/cfg/AbstractPseudocodeTest.java
    3 compiler/tests-common/tests/org/jetbrains/kotlin/codegen/CodegenTestCase.java
    3 compiler/testData/diagnostics/tests/when/whenWithNothingAndLambdas.kt
@@ -229,8 +200,7 @@ Changes from 2017-11-01 to 2017-12-01:
    2 samples/build.gradle
    2 runtime/src/main/kotlin/kotlin/Numbers.kt
    2 runtime/src/main/kotlin/konan/internal/RuntimeUtils.kt
-   2 runtime/src/main/cpp/Memory.h
-   2 runtime/src/main/cpp/KString.h
+   2 runtime/src/main/cpp/KString.cpp
    2 prepare/idea-plugin/build.gradle.kts
    2 prepare/compiler/build.gradle.kts
    2 plugins/uast-kotlin/testData/SuperCalls.kt
@@ -239,73 +209,6 @@ Changes from 2017-11-01 to 2017-12-01:
    2 plugins/uast-kotlin/testData/StringTemplate.kt
    2 plugins/uast-kotlin/src/org/jetbrains/uast/kotlin/expressions/KotlinUFunctionCallExpression.kt
    2 plugins/uast-kotlin/src/org/jetbrains/uast/kotlin/KotlinUastLanguagePlugin.kt
-   2 plugins/plugins-tests/build.gradle.kts
-   2 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/Kapt3Plugin.kt
-   2 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/Kapt3Extension.kt
-   2 plugins/kapt3/kapt3-runtime/src/KaptIgnored.kt
-   2 plugins/kapt3/kapt3-compiler/testData/runner/Simple.java
-   2 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/Overloads.it.txt
-   2 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/NestedClasses.it.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/topLevel.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/strangeNames.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/strangeIdentifiers.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/strangeIdentifiers.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/severalPackageParts.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/propertyAnnotations.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/primitiveTypes.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/nonExistentClassWIthoutCorrection.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/nonExistentClassTypesConversion.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/nestedClassesNonRootPackage.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/nestedClasses2.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/nestedClasses.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/multifileClass.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/modifiers.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/methodPropertySignatureClash.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/methodParameterNames.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/mapEntry.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt19750.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt19700.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt18791.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt18682.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt18377.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt17567.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt15145.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt14998.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt14997.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/kt14996.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/jvmStaticFieldInParent.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/jvmStatic.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/jvmOverloads.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/javaKeywordsInPackageNames.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/javaKeywords.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/invalidFieldName.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/invalidFieldName.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/innerClassesWithTypeParameters.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/inheritanceSimple.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/importsForErrorTypes.kt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/ignoredMembers.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/genericSimple.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/genericRawSignatures.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/functions.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/fileFacadeJvmName.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/enums.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/defaultImpls.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/dataClass.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/annotations2.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/annotations.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/abstractMethods.txt
-   2 plugins/kapt3/kapt3-compiler/testData/converter/abstractEnum.txt
-   2 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/AbstractKotlinKapt3IntegrationTest.kt
-   2 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/util/MessageCollectorBackedWriter.kt
-   2 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/errorTypeConversion.kt
-   2 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/KaptStubLineInformation.kt
-   2 plugins/kapt3/kapt3-compiler/build.gradle.kts
-   2 plugins/kapt3/build.gradle.kts
-   2 plugins/android-extensions/android-extensions-idea/build.gradle.kts
-   2 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/simple.txt
-   2 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/IBinderIInterface.txt
-   2 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/parcel/AbstractParcelBoxTest.kt
-   2 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/parcel/serializers/ParcelSerializers.kt
    2 llvmDebugInfoC/src/scripts/konan_lldb.py
    2 libraries/tools/kotlin-stdlib-gen/src/templates/engine/Engine.kt
    2 libraries/tools/kotlin-stdlib-gen/src/templates/dsl/Templates.kt
@@ -313,12 +216,8 @@ Changes from 2017-11-01 to 2017-12-01:
    2 libraries/tools/kotlin-stdlib-gen/src/templates/Ranges.kt
    2 libraries/tools/kotlin-script-util/src/test/kotlin/org/jetbrains/kotlin/script/util/ScriptUtilIT.kt
    2 libraries/tools/kotlin-script-util/src/main/kotlin/org/jetbrains/kotlin/script/jsr223/KotlinJsr223JvmLocalScriptEngine.kt
-   2 libraries/tools/kotlin-maven-plugin/src/main/java/org/jetbrains/kotlin/maven/kapt/KaptJVMCompilerMojo.java
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/tasks/Tasks.kt
-   2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinPlugin.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinJsDcePlugin.kt
-   2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/KaptTask.kt
-   2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/AndroidSubplugin.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJsDceOptionsBase.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/dsl/KotlinJsDceOptions.kt
    2 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/compilerRunner/GradleKotlinCompilerRunner.kt
@@ -405,6 +304,7 @@ Changes from 2017-11-01 to 2017-12-01:
    2 compiler/tests/org/jetbrains/kotlin/jvm/compiler/CompileKotlinAgainstCustomBinariesTest.kt
    2 compiler/tests/org/jetbrains/kotlin/code/CodeConformanceTest.kt
    2 compiler/tests/org/jetbrains/kotlin/cli/jvm/repl/GenericReplTest.kt
+   2 compiler/tests/org/jetbrains/kotlin/cli/CliTestGenerated.java
    2 compiler/tests-java8/tests/org/jetbrains/kotlin/jvm/repl/ReplCompilerJava8Test.kt
    2 compiler/tests-java8/tests/org/jetbrains/kotlin/generators/tests/GenerateJava8Tests.kt
    2 compiler/tests-ir-jvm/build.gradle.kts
@@ -908,7 +808,6 @@ Changes from 2017-11-01 to 2017-12-01:
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanDriver.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanBackendContext.kt
    2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/Distribution.kt
-   2 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/CAdapterGenerator.kt
    2 README.md
    2 Interop/Indexer/build.gradle
    1 utilities/src/main/kotlin/org/jetbrains/kotlin/cli/utilities/main.kt
@@ -1021,8 +920,10 @@ Changes from 2017-11-01 to 2017-12-01:
    1 runtime/src/main/cpp/ObjCInterop.cpp
    1 runtime/src/main/cpp/ObjCExport.mm
    1 runtime/src/main/cpp/MemoryPrivate.hpp
+   1 runtime/src/main/cpp/Memory.h
    1 runtime/src/main/cpp/Memory.cpp
    1 runtime/src/main/cpp/Math.cpp
+   1 runtime/src/main/cpp/KString.h
    1 runtime/src/main/cpp/Exceptions.h
    1 runtime/src/main/cpp/Common.h
    1 runtime/src/main/cpp/Alloc.h
@@ -1040,156 +941,16 @@ Changes from 2017-11-01 to 2017-12-01:
    1 plugins/uast-kotlin/src/org/jetbrains/uast/kotlin/declarations/KotlinUMethod.kt
    1 plugins/uast-kotlin/build.gradle.kts
    1 plugins/source-sections/source-sections-compiler/build.gradle.kts
-   1 plugins/sam-with-receiver/sam-with-receiver-ide/src/SamWithReceiverGradleProjectImportHandler.kt
-   1 plugins/sam-with-receiver/sam-with-receiver-cli/test/org/jetbrains/kotlin/samWithReceiver/SamWithReceiverTestGenerated.java
-   1 plugins/sam-with-receiver/sam-with-receiver-cli/test/org/jetbrains/kotlin/samWithReceiver/SamWithReceiverScriptTestGenerated.java
-   1 plugins/sam-with-receiver/sam-with-receiver-cli/test/org/jetbrains/kotlin/samWithReceiver/AbstractSamWithReceiverTest.kt
-   1 plugins/sam-with-receiver/sam-with-receiver-cli/test/org/jetbrains/kotlin/samWithReceiver/AbstractSamWithReceiverScriptTest.kt
-   1 plugins/sam-with-receiver/sam-with-receiver-cli/build.gradle.kts
    1 plugins/plugins-tests/tests/org/jetbrains/kotlin/samWithReceiver/AbstractSamWithReceiverScriptTest.kt
-   1 plugins/noarg/noarg-cli/test/org/jetbrains/kotlin/noarg/BytecodeListingTestForNoArgGenerated.java
-   1 plugins/noarg/noarg-cli/test/org/jetbrains/kotlin/noarg/BlackBoxCodegenTestForNoArgGenerated.java
-   1 plugins/noarg/noarg-cli/test/org/jetbrains/kotlin/noarg/AbstractBytecodeListingTestForNoArg.kt
-   1 plugins/noarg/noarg-cli/test/org/jetbrains/kotlin/noarg/AbstractBlackBoxCodegenTestForNoArg.kt
-   1 plugins/noarg/noarg-cli/build.gradle.kts
+   1 plugins/plugins-tests/build.gradle.kts
    1 plugins/lint/lint-idea/src/org/jetbrains/android/inspections/klint/AndroidLintGlobalInspectionContext.java
    1 plugins/lint/lint-idea/src/org/jetbrains/android/inspections/klint/AndroidLintExternalAnnotator.java
-   1 plugins/kapt3/testData/converter/strangeIdentifiers.kt
-   1 plugins/kapt3/testData/converter/nonExistentClassTypesConversion.txt
-   1 plugins/kapt3/testData/converter/nonExistentClassTypesConversion.kt
-   1 plugins/kapt3/testData/converter/invalidFieldName.txt
-   1 plugins/kapt3/testData/converter/invalidFieldName.kt
-   1 plugins/kapt3/test/org/jetbrains/kotlin/kapt3/test/ClassFileToSourceStubConverterTestGenerated.java
-   1 plugins/kapt3/test/org/jetbrains/kotlin/kapt3/test/AbstractKotlinKapt3Test.kt
-   1 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/util/java9Utils.kt
-   1 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/javac/KaptJavaLog.kt
-   1 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/javac/KaptJavaFileObject.kt
-   1 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/annotationProcessing.kt
-   1 plugins/kapt3/kapt3-runtime/build.gradle.kts
-   1 plugins/kapt3/kapt3-idea/src/META-INF/services/org.jetbrains.plugins.gradle.tooling.ModelBuilderService
-   1 plugins/kapt3/kapt3-idea/build.gradle.kts
-   1 plugins/kapt3/kapt3-compiler/testData/runner/ParseError.java
-   1 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/Simple.txt
-   1 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/Overloads.txt
-   1 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/Overloads.kt
-   1 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/NestedClasses.txt
-   1 plugins/kapt3/kapt3-compiler/testData/kotlinRunner/NestedClasses.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/topLevel.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/strangeNames.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/severalPackageParts.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/propertyAnnotations.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/primitiveTypes.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/nonExistentClass.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/nestedClasses.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/multifileClass.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/modifiers.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/methodPropertySignatureClash.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/methodParameterNames.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/maxErrorCount.txt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/maxErrorCount.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/mapEntry.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt19750.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt19700.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt18682.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt18377.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt17567.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt15145.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt14998.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt14997.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/kt14996.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/jvmStaticFieldInParent.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/jvmStatic.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/jvmOverloads.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/javaKeywordsInPackageNames.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/javaKeywords.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/innerClassesWithTypeParameters.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/inheritanceSimple.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/ignoredMembers.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/genericSimple.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/genericRawSignatures.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/functions.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/fileFacadeJvmName.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/enums.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/defaultImpls.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/dataClass.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/comments.txt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/comments.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/annotations2.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/annotations.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/aliasedImports.txt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/abstractMethods.kt
-   1 plugins/kapt3/kapt3-compiler/testData/converter/abstractEnum.kt
-   1 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/java9TestUtils.kt
-   1 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/KotlinKaptContextTestGenerated.java
-   1 plugins/kapt3/kapt3-compiler/test/org/jetbrains/kotlin/kapt3/test/JavaKaptContextTest.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/util/javacListUtils.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/util/java9Utils.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/util/asmUtils.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/util/KaptLogger.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/parseParameters.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/SignatureParserVisitor.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/KaptLineMappingCollector.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/KDocCommentKeeper.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/stubs/AnonymousTypeHandler.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/javac/KaptTreeMaker.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/javac/KaptJavaFileObject.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/javac/KaptJavaCompiler.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/Kapt3Plugin.kt
-   1 plugins/kapt3/kapt3-compiler/src/org/jetbrains/kotlin/kapt3/Kapt3BuilderFactory.kt
-   1 plugins/kapt3/kapt3-compiler/src/META-INF/services/org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar
-   1 plugins/kapt3/kapt3-compiler/src/META-INF/services/org.jetbrains.kotlin.compiler.plugin.CommandLineProcessor
-   1 plugins/annotation-collector/test/org/jetbrains/kotlin/annotation/AnnotationProcessorBoxTestGenerated.java
-   1 plugins/annotation-collector/test/org/jetbrains/kotlin/annotation/AbstractAnnotationProcessorBoxTest.kt
+   1 plugins/kapt3/src/org/jetbrains/kotlin/kapt3/Kapt3Extension.kt
+   1 plugins/kapt3/build.gradle.kts
    1 plugins/annotation-collector/src/org/jetbrains/kotlin/annotation/StubProducerExtension.kt
-   1 plugins/android-extensions/android-extensions-runtime/src/kotlinx/android/parcel/Parceler.kt
-   1 plugins/android-extensions/android-extensions-runtime/src/kotlinx/android/parcel/IgnoredOnParcel.kt
-   1 plugins/android-extensions/android-extensions-runtime/src/kotlinx/android/extensions/LayoutContainer.kt
-   1 plugins/android-extensions/android-extensions-runtime/src/kotlinx/android/extensions/ContainerOptions.kt
-   1 plugins/android-extensions/android-extensions-runtime/src/kotlinx/android/extensions/CacheImplementation.kt
-   1 plugins/android-extensions/android-extensions-jps/test/org/jetbrains/kotlin/jps/build/android/AndroidJpsTestCaseGenerated.java
-   1 plugins/android-extensions/android-extensions-jps/test/org/jetbrains/kotlin/jps/build/android/AbstractAndroidJpsTestCase.kt
-   1 plugins/android-extensions/android-extensions-jps/src/KotlinAndroidJpsPlugin.kt
-   1 plugins/android-extensions/android-extensions-jps/build.gradle.kts
-   1 plugins/android-extensions/android-extensions-idea/src/org/jetbrains/kotlin/android/synthetic/idea/IDEAndroidExtensionsExpressionCodegenExtension.kt
-   1 plugins/android-extensions/android-extensions-idea/src/org/jetbrains/kotlin/android/synthetic/idea/ExperimentalUtils.kt
    1 plugins/android-extensions/android-extensions-idea/src/org/jetbrains/kotlin/android/synthetic/idea/AndroidExtensionsProjectResolverExtension.kt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/size.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/simpleList.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/serializable.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/parcelable.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/nullableNotNullSize.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/listInsideList.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/duplicatingClinit.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/describeContentsFromSuperType.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/customSimpleWithNewArray.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/customSimple.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/customParcelablesSameModule.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/customParcelablesDifferentModule.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/codegen/customDescribeContents.txt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/box/simple.kt
-   1 plugins/android-extensions/android-extensions-compiler/testData/parcel/box/kt20717.kt
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/kotlin/android/synthetic/test/AndroidSyntheticPropertyDescriptorTestGenerated.java
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/kotlin/android/synthetic/test/AndroidBytecodeShapeTestGenerated.java
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/kotlin/android/synthetic/test/AndroidBoxTestGenerated.java
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/kotlin/android/parcel/ParcelBytecodeListingTestGenerated.java
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/synthetic/test/CompilerTestUtils.kt
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/synthetic/test/AbstractAndroidSyntheticPropertyDescriptorTest.kt
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/synthetic/test/AbstractAndroidBytecodeShapeTest.kt
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/synthetic/test/AbstractAndroidBoxTest.kt
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/parcel/AbstractParcelBytecodeListingTest.kt
-   1 plugins/android-extensions/android-extensions-compiler/test/org/jetbrains/android/parcel/AbstractAsmLikeInstructionListingTest.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/synthetic/codegen/CliAndroidExtensionsExpressionCodegenExtension.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/synthetic/codegen/CacheMechanisms.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/synthetic/codegen/AbstractAndroidExtensionsExpressionCodegenExtension.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/synthetic/AndroidComponentRegistrar.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/parcel/serializers/ParcelSerializer.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/parcel/ParcelableDeclarationChecker.kt
-   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/parcel/ParcelableClinitClassBuilderInterceptorExtension.kt
-   1 plugins/android-extensions/android-extensions-compiler/build.gradle.kts
-   1 plugins/allopen/allopen-cli/test/org/jetbrains/kotlin/allopen/BytecodeListingTestForAllOpenGenerated.java
-   1 plugins/allopen/allopen-cli/test/org/jetbrains/kotlin/allopen/AbstractBytecodeListingTestForAllOpen.kt
-   1 plugins/allopen/allopen-cli/src/AllOpenPlugin.kt
-   1 plugins/allopen/allopen-cli/build.gradle.kts
+   1 plugins/android-extensions/android-extensions-idea/build.gradle.kts
+   1 plugins/android-extensions/android-extensions-compiler/src/org/jetbrains/kotlin/android/parcel/ParcelableCodegenExtension.kt
    1 performance/build.gradle
    1 non-compiler-tests/non-compiler-tests.iml
    1 node_utils.xml
@@ -1221,28 +982,14 @@ Changes from 2017-11-01 to 2017-12-01:
    1 libraries/tools/kotlin-stdlib-gen/src/templates/Aggregates.kt
    1 libraries/tools/kotlin-stdlib-gen/build.gradle
    1 libraries/tools/kotlin-script-util/src/main/kotlin/org/jetbrains/kotlin/script/util/context.kt
-   1 libraries/tools/kotlin-maven-plugin/src/main/java/org/jetbrains/kotlin/maven/K2JVMCompileMojo.java
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/incremental/GradleICReporter.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/tasks/TasksProvider.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/tasks/KotlinCompileCommon.kt
    1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/ParentLastURLClassLoader.java
-   1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/subpluginUtils.kt
-   1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/internal/KaptGenerateStubsTask.kt
+   1 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinPlugin.kt
    1 libraries/tools/kotlin-gradle-plugin/build.gradle
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kotlin2JsDceProject/mainProject/build.gradle
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/src/test/java/LibraryTest.java
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/src/main/java/Library.java
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/settings.gradle
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/gradle.properties
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/example/src/test/java/test.kt
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/example/src/main/java/Example.kt
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/example/build.gradle
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/build.gradle
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/annotation-processor/src/main/resources/META-INF/services/javax.annotation.processing.Processor
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/annotation-processor/src/main/java/TestAnnotationProcessor.kt
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/resources/testProject/kapt2/localAnnotationProcessor/annotation-processor/build.gradle
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/UpToDatenessIT.kt
-   1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/Kapt3IT.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/CacheVersionChangedIT.kt
    1 libraries/tools/kotlin-gradle-plugin-integration-tests/build.gradle
    1 libraries/tools/kotlin-annotations-jvm/src/kotlin/annotations/jvm/ReadOnly.java
@@ -1940,7 +1687,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 idea/idea-completion/testData/basic/common/inStringLiterals/StringTemplateDot2.kt
    1 idea/idea-completion/src/org/jetbrains/kotlin/idea/completion/KotlinCompletionContributor.kt
    1 idea/idea-completion/src/org/jetbrains/kotlin/idea/completion/CompletionUtils.kt
-   1 idea/idea-android/idea-android-output-parser/src/org/jetbrains/kotlin/android/KotlinOutputParserHelper.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/stubindex/resolve/PluginDeclarationProviderFactory.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/references/referenceUtil.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/inspections/IntentionBasedInspection.kt
@@ -1952,8 +1698,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/compiler/configuration/Kotlin2JvmCompilerArgumentsHolder.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/compiler/configuration/Kotlin2JsCompilerArgumentsHolder.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/codeInsight/shorten/delayedRequestsWaitingSet.kt
-   1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/caches/resolve/ProjectResolutionFacade.kt
-   1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/caches/resolve/KotlinResolveCache.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/caches/PerModulePackageCacheService.kt
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/KotlinIcons.java
    1 idea/idea-analysis/src/org/jetbrains/kotlin/idea/KotlinDescriptorIconProvider.java
@@ -2114,7 +1858,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 core/descriptors.jvm/build.gradle.kts
    1 core/builtins/native/kotlin/Primitives.kt
    1 core/build.gradle.kts
-   1 compiler/util/src/org/jetbrains/kotlin/utils/pluginUtils.kt
    1 compiler/util/src/org/jetbrains/kotlin/utils/KotlinPathsFromHomeDir.java
    1 compiler/util/src/org/jetbrains/kotlin/utils/KotlinPaths.java
    1 compiler/util/build.gradle.kts
@@ -2437,9 +2180,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 compiler/testData/codegen/box/callableReference/bound/kCallableNameIntrinsic.kt
    1 compiler/testData/codegen/box/callableReference/bound/inline/emptyLhsProperty.kt
    1 compiler/testData/codegen/box/arrays/nonLocalReturnArrayConstructor.kt
-   1 compiler/testData/cli/jvm/pluginSimpleUsage.out
-   1 compiler/testData/cli/jvm/pluginSimpleUsage.kt
-   1 compiler/testData/cli/jvm/pluginSimpleUsage.args
    1 compiler/testData/cli/jvm/legacySmartCastsAfterTry.out
    1 compiler/testData/cli/jvm/legacySmartCastsAfterTry.kt
    1 compiler/testData/cli/jvm/legacySmartCastsAfterTry.args
@@ -2482,7 +2222,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/KotlinResolutionConfiguration.kt
    1 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/KotlinCallResolver.kt
    1 compiler/resolution/build.gradle.kts
-   1 compiler/plugin-api/src/org/jetbrains/kotlin/compiler/plugin/CommandLineProcessor.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/builder/LightClassBuilder.kt
    1 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/BridgeLowering.kt
    1 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/util/IrUtils.kt
@@ -2525,7 +2264,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/CallExpressionResolver.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/ArgumentTypeResolver.java
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/VariableTypeAndInitializerResolver.kt
-   1 compiler/frontend/src/org/jetbrains/kotlin/resolve/LazyTopDownAnalyzer.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/DescriptorResolver.java
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/DeclarationsChecker.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/ControlFlowAnalyzer.java
@@ -2535,18 +2273,15 @@ Changes from 2017-11-01 to 2017-12-01:
    1 compiler/frontend/src/org/jetbrains/kotlin/psi/KtPsiFactory.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/psi/KtConstructorDelegationCall.java
    1 compiler/frontend/src/org/jetbrains/kotlin/parsing/KotlinParser.java
-   1 compiler/frontend/src/org/jetbrains/kotlin/extensions/AnnotationBasedExtension.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/rendering/DefaultErrorMessages.java
    1 compiler/frontend/src/org/jetbrains/kotlin/diagnostics/Errors.java
    1 compiler/frontend/src/org/jetbrains/kotlin/config/CompilerConfiguration.java
    1 compiler/frontend/src/org/jetbrains/kotlin/checkers/PositionalTextDiagnostic.kt
-   1 compiler/frontend/src/org/jetbrains/kotlin/analyzer/AnalysisResult.kt
    1 compiler/frontend/build.gradle.kts
    1 compiler/frontend.script/src/org/jetbrains/kotlin/script/scriptTemplateProviderExtensionPoint.kt
    1 compiler/frontend.script/src/org/jetbrains/kotlin/script/KotlinScriptDefinitionFromAnnotatedTemplate.kt
    1 compiler/frontend.script/src/META-INF/services/org.jetbrains.kotlin.script.ScriptHelper
    1 compiler/frontend.script/build.gradle.kts
-   1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/extensions/PartialAnalysisHandlerExtension.kt
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/diagnostics/ErrorsJvm.java
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/diagnostics/DefaultErrorMessagesJvm.java
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/checkers/JavaNullabilityChecker.kt
@@ -2568,7 +2303,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 compiler/cli/src/org/jetbrains/kotlin/cli/common/script/CliScriptDependenciesProvider.kt
    1 compiler/cli/src/org/jetbrains/kotlin/cli/common/script/CliScriptDefinitionProvider.kt
    1 compiler/cli/cli-common/build.gradle.kts
-   1 compiler/cli/build.gradle.kts
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/writeAnnotationUtil.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/state/KotlinTypeMapper.java
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/state/GenerationState.kt
@@ -2588,7 +2322,6 @@ Changes from 2017-11-01 to 2017-12-01:
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/TryBlockClustering.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/InlineCodegenForDefaultBody.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/CoveringTryCatchNodeProcessor.kt
-   1 compiler/backend/src/org/jetbrains/kotlin/codegen/coroutines/processUninitializedStores.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/codegenUtil.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/TransformationMethodVisitor.java
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/StackValue.java
@@ -3173,6 +2906,7 @@ Changes from 2017-11-01 to 2017-12-01:
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanLower.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanConfigurationKeys.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/EscapeAnalysis.kt
+   1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/CAdapterGenerator.kt
    1 backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/Boxing.kt
    1 backend.native/cli.bc/src/org/jetbrains/kotlin/cli/bc/K2NativeCompilerArguments.kt
    1 backend.native/cli.bc/src/org/jetbrains/kotlin/cli/bc/K2Native.kt

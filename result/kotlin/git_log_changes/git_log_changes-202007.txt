@@ -1,4 +1,3 @@
-Changes from 2020-07-01 to 2020-08-01:
   23 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrVisitor.kt
   21 compiler/tests/org/jetbrains/kotlin/checkers/javac/DiagnosticsUsingJavacTestGenerated.java
   21 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java

@@ -1,4 +1,3 @@
-Changes from 2014-08-01 to 2014-09-01:
   17 idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.kt
   16 idea/src/META-INF/plugin.xml
   14 compiler/tests/org/jetbrains/jet/checkers/JetDiagnosticsTestGenerated.java

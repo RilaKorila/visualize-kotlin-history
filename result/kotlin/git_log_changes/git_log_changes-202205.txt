@@ -1,13 +1,12 @@
-Changes from 2022-05-01 to 2022-06-01:
   30 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   30 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java
   30 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsTestGenerated.java
   29 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosisCompilerTestFE10TestdataTestGenerated.java
-  25 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
-  25 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
-  21 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
+  24 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
+  24 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
+  20 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   18 native/native.tests/tests-gen/org/jetbrains/kotlin/konan/blackboxtest/NativeCodegenBoxTestGenerated.java
-  18 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  17 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
   17 build.gradle.kts
   15 js/js.tests/tests-gen/org/jetbrains/kotlin/js/testOld/wasm/semantics/IrCodegenBoxWasmTestGenerated.java
   15 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/ir/IrJsCodegenBoxTestGenerated.java
@@ -576,7 +575,6 @@ Changes from 2022-05-01 to 2022-06-01:
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmSymbols.kt
    2 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/ScriptLowering.kt
    2 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/ReflectiveAccess.kt
-   2 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmPropertiesLowering.kt
    2 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmAnnotationImplementationTransformer.kt
    2 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/BridgeLowering.kt
    2 compiler/ir/backend.jvm/entrypoint/src/org/jetbrains/kotlin/backend/jvm/JvmIrCodegenFactory.kt
@@ -1542,7 +1540,6 @@ Changes from 2022-05-01 to 2022-06-01:
    1 generators/builtins/primitives.kt
    1 docs/analysis/analysis-api/analysis-api-usage.md
    1 core/util.runtime/build.gradle.kts
-   1 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KPropertyImpl.kt
    1 core/metadata/build.gradle.kts
    1 core/metadata.jvm/build.gradle.kts
    1 core/deserialization/build.gradle.kts
@@ -2401,7 +2398,6 @@ Changes from 2022-05-01 to 2022-06-01:
    1 compiler/testData/compileJavaAgainstKotlin/enum/DefaultArgumentInEnumConstructor.txt
    1 compiler/testData/compileJavaAgainstKotlin/class/kt4050.txt
    1 compiler/testData/compileJavaAgainstKotlin/class/kt3561.txt
-   1 compiler/testData/codegen/bytecodeText/optimizedDelegatedProperties/delegateToAnother.kt
    1 compiler/testData/codegen/bytecodeText/inline/linenumberForOneParametersArgumentCall.kt
    1 compiler/testData/codegen/bytecodeText/forLoop/unsigned/forInUntilUIntMinValue.kt
    1 compiler/testData/codegen/bytecodeText/forLoop/unsigned/forInUntilUIntMaxValue.kt
@@ -2409,7 +2405,6 @@ Changes from 2022-05-01 to 2022-06-01:
    1 compiler/testData/codegen/bytecodeText/forLoop/unsigned/forInConstBoundUnsignedRange.kt
    1 compiler/testData/codegen/bytecodeText/constants/inlineUnsignedIntConstant.kt
    1 compiler/testData/codegen/bytecodeText/coercionToUnitOptimization/nopInlineFuns.kt
-   1 compiler/testData/codegen/bytecodeListing/delegatedProperty/delegateMethodIsNonOverridable_ir.txt
    1 compiler/testData/codegen/boxWasmJsInterop/functionTypes.kt
    1 compiler/testData/codegen/boxKlib/simple.kt
    1 compiler/testData/codegen/boxKlib/properties.kt
@@ -2459,8 +2454,6 @@ Changes from 2022-05-01 to 2022-06-01:
    1 compiler/testData/codegen/box/sam/kt50108_java.kt
    1 compiler/testData/codegen/box/sam/kt50108.kt
    1 compiler/testData/codegen/box/sam/adapters/inheritedOverriddenAdapter.kt
-   1 compiler/testData/codegen/box/reflection/properties/getDelegate/noSetAccessibleTrue.kt
-   1 compiler/testData/codegen/box/reflection/properties/getDelegate/getExtensionDelegateForDelegatedToAnother.kt
    1 compiler/testData/codegen/box/platformTypes/inferenceFlexibleTToNullable.kt
    1 compiler/testData/codegen/box/operatorConventions/untilOperator.kt
    1 compiler/testData/codegen/box/operatorConventions/compareTo/boolean.kt
@@ -2641,6 +2634,7 @@ Changes from 2022-05-01 to 2022-06-01:
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/MainMethodGenerationLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmValueClassAbstractLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmStaticAnnotationLowering.kt
+   1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmPropertiesLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmOverloadsAnnotationLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmInlineClassLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmDefaultConstructorLowering.kt

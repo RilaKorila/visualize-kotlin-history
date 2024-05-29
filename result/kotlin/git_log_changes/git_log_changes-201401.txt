@@ -1,4 +1,3 @@
-Changes from 2014-01-01 to 2014-02-01:
   29 core/descriptor.loader.java/src/org/jetbrains/jet/lang/resolve/java/lazy/descriptors/LazyJavaMemberScope.kt
   22 core/descriptor.loader.java/src/org/jetbrains/jet/lang/resolve/java/lazy/descriptors/LazyJavaClassMemberScope.kt
   21 core/descriptor.loader.java/src/org/jetbrains/jet/lang/resolve/java/lazy/descriptors/LazyJavaPackageFragmentScope.kt

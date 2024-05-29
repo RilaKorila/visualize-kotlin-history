@@ -1,1 +1,18 @@
-Changes from 2023-08-01 to 2023-09-01:
+   2 kotlinx-coroutines-core/jvm/test/TestBase.kt
+   2 gradle.properties
+   1 kotlinx-coroutines-core/native/test/TestBase.kt
+   1 kotlinx-coroutines-core/native/test/ConcurrentTestUtilities.kt
+   1 kotlinx-coroutines-core/native/src/internal/Synchronized.kt
+   1 kotlinx-coroutines-core/jvm/src/SchedulerTask.kt
+   1 kotlinx-coroutines-core/jvm/src/Executors.kt
+   1 kotlinx-coroutines-core/jvm/src/EventLoop.kt
+   1 kotlinx-coroutines-core/js/test/TestBase.kt
+   1 kotlinx-coroutines-core/js/src/internal/LinkedList.kt
+   1 kotlinx-coroutines-core/concurrent/src/internal/LockFreeLinkedList.kt
+   1 kotlinx-coroutines-core/concurrent/src/CompletionHandler.kt
+   1 kotlinx-coroutines-core/common/src/channels/BufferedChannel.kt
+   1 kotlinx-coroutines-core/common/src/CoroutineScope.kt
+   1 docs/topics/coroutines-basics.md
+   1 docs/topics/composing-suspending-functions.md
+   1 buildSrc/src/main/kotlin/configure-compilation-conventions.gradle.kts
+   1 build.gradle

@@ -1,4 +1,3 @@
-Changes from 2021-11-01 to 2021-12-01:
   28 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
   28 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
   25 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
@@ -32,7 +31,6 @@ Changes from 2021-11-01 to 2021-12-01:
    9 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/diagnostics/KtFirDataClassConverters.kt
    8 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/targets/js/yarn/YarnPlugin.kt
    8 generators/analysis-api-generator/tests/org/jetbrains/kotlin/generators/tests/analysis/api/GenerateAnalysisApiTests.kt
-   8 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrModuleToJsTransformerTmp.kt
    8 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrVisitor.kt
    8 analysis/analysis-api/testData/symbols/symbolByPsi/typeAnnotations.descriptors.txt
    8 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/symbols/descriptorBased/KtFe10DescPropertySetterSymbol.kt
@@ -43,6 +41,7 @@ Changes from 2021-11-01 to 2021-12-01:
    7 gradle/verification-metadata.xml
    7 compiler/util/src/org/jetbrains/kotlin/config/LanguageVersionSettings.kt
    7 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/services/configuration/JsEnvironmentConfigurator.kt
+   7 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrModuleToJsTransformerTmp.kt
    7 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsIrBackendContext.kt
    7 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/body/resolve/FirExpressionsResolveTransformer.kt
    7 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrConverter.kt
@@ -59,7 +58,6 @@ Changes from 2021-11-01 to 2021-12-01:
    6 libraries/tools/kotlin-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/tasks/Tasks.kt
    6 kotlin-native/tools/kotlin-native-gradle-plugin/src/main/kotlin/org/jetbrains/kotlin/gradle/plugin/konan/KonanToolRunner.kt
    6 kotlin-native/build-tools/src/main/kotlin/org/jetbrains/kotlin/Utils.kt
-   6 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/AbstractJsIrTest.kt
    6 js/js.tests/test/org/jetbrains/kotlin/js/test/converters/JsIrBackendFacade.kt
    6 compiler/ir/backend.wasm/src/org/jetbrains/kotlin/backend/wasm/ir2wasm/BodyGenerator.kt
    6 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsIntrinsics.kt
@@ -100,6 +98,7 @@ Changes from 2021-11-01 to 2021-12-01:
    5 js/js.tests/test/org/jetbrains/kotlin/js/testNew/utils/RunnerUtils.kt
    5 js/js.tests/test/org/jetbrains/kotlin/js/testNew/handlers/JsBoxRunner.kt
    5 js/js.tests/test/org/jetbrains/kotlin/js/testNew/AbstractJsIrTest.kt
+   5 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/AbstractJsIrTest.kt
    5 js/js.tests/test/org/jetbrains/kotlin/js/test/BasicIrBoxTest.kt
    5 gradle.properties
    5 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/directives/JsEnvironmentConfigurationDirectives.kt
@@ -164,7 +163,6 @@ Changes from 2021-11-01 to 2021-12-01:
    4 kotlin-native/backend.native/build.gradle
    4 js/js.tests/tests-gen/org/jetbrains/kotlin/js/testNew/JsCodegenBoxTestGenerated.java
    4 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/wasm/semantics/IrCodegenBoxWasmTestGenerated.java
-   4 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/classic/ClassicFrontendFacade.kt
    4 compiler/testData/diagnostics/tests/generics/capturedParameters/uncheckedCast.fir.kt
    4 compiler/testData/codegen/box/ranges/safeCallRangeTo.kt
    4 compiler/testData/codegen/box/properties/lateinit/topLevel/uninitializedRead.kt
@@ -307,6 +305,7 @@ Changes from 2021-11-01 to 2021-12-01:
    3 js/js.config/src/org/jetbrains/kotlin/utils/JsLibraryUtils.kt
    3 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt
    3 compiler/tests-gen/org/jetbrains/kotlin/ir/KlibTextTestCaseGenerated.java
+   3 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/classic/ClassicFrontendFacade.kt
    3 compiler/tests-common-new/tests/org/jetbrains/kotlin/test/frontend/classic/ClassicFrontend2IrConverter.kt
    3 compiler/testData/ir/irText/stubs/builtinMap.fir.ir.txt
    3 compiler/testData/diagnostics/testsWithJsStdLib/export/extendingNonExportedType.kt
@@ -620,8 +619,6 @@ Changes from 2021-11-01 to 2021-12-01:
    2 js/js.translator/testData/typescript-export/classes/inner-class.d.ts
    2 js/js.translator/testData/package.json
    2 js/js.translator/testData/package-lock.json
-   2 js/js.translator/testData/box/inlineMultiFile/trait.kt
-   2 js/js.translator/testData/box/inline/operators.kt
    2 js/js.tests/tests-gen/org/jetbrains/kotlin/js/testOld/wasm/semantics/IrCodegenWasmJsInteropWasmTestGenerated.java
    2 js/js.tests/tests-gen/org/jetbrains/kotlin/js/testNew/IrBoxJsTestGenerated.java
    2 js/js.tests/tests-gen/org/jetbrains/kotlin/js/test/ir/IrJsTypeScriptExportTestGenerated.java
@@ -705,7 +702,6 @@ Changes from 2021-11-01 to 2021-12-01:
    2 compiler/testData/codegen/boxInline/callableReference/adaptedReferences/inlineDefault.kt
    2 compiler/testData/codegen/boxInline/annotations/instanceInAnonymousClass.kt
    2 compiler/testData/codegen/boxInline/annotations/annotationInstanceInlining.kt
-   2 compiler/testData/codegen/boxError/semantic/reifiedWithWrongArguments.kt
    2 compiler/testData/codegen/box/when/whenSubjectVariable/ieee754EqualityWithSmartCast.kt
    2 compiler/testData/codegen/box/vararg/kt37715.kt
    2 compiler/testData/codegen/box/unsignedTypes/varargsOfUnsignedTypes.kt
@@ -826,10 +822,6 @@ Changes from 2021-11-01 to 2021-12-01:
    2 compiler/testData/codegen/box/coroutines/tailCallOptimizations/crossinline.kt
    2 compiler/testData/codegen/box/coroutines/suspendCovariantJavaOverrides.kt
    2 compiler/testData/codegen/box/coroutines/stackUnwinding/inlineSuspendFunction.kt
-   2 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleWithInnerInlining.kt
-   2 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleWithController.kt
-   2 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleOverride.kt
-   2 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModule.kt
    2 compiler/testData/codegen/box/coroutines/localFunctions/anonymous/simple.kt
    2 compiler/testData/codegen/box/coroutines/kt49168.kt
    2 compiler/testData/codegen/box/coroutines/kt35967.kt
@@ -2204,7 +2196,6 @@ Changes from 2021-11-01 to 2021-12-01:
    1 js/js.translator/testData/box/reflection/kClassOnReifiedTypeInLambda-advanced.kt
    1 js/js.translator/testData/box/reflection/kClassOnReifiedType.kt
    1 js/js.translator/testData/box/propertyAccess/simpleLateInitIsInitialized.kt
-   1 js/js.translator/testData/box/number/constantPropagation.kt
    1 js/js.translator/testData/box/native/vararg.kt
    1 js/js.translator/testData/box/native/valueClass.kt
    1 js/js.translator/testData/box/native/valueClass.js
@@ -2236,29 +2227,24 @@ Changes from 2021-11-01 to 2021-12-01:
    1 js/js.translator/testData/box/main/incremental.kt
    1 js/js.translator/testData/box/kotlin.test/incremental.kt
    1 js/js.translator/testData/box/kotlin.test/_common.kt
-   1 js/js.translator/testData/box/jsModule/importCountUmd.kt
    1 js/js.translator/testData/box/jsModule/importCountCommonJS.kt
    1 js/js.translator/testData/box/jsCode/kt44981.kt
    1 js/js.translator/testData/box/jsCode/kt41964.kt
-   1 js/js.translator/testData/box/inlineStdlib/callableRefToFunInCurrentModule.kt
    1 js/js.translator/testData/box/inlineSizeReduction/lastBreak.kt
    1 js/js.translator/testData/box/inlineMultiModule/method.kt
    1 js/js.translator/testData/box/inlineMultiModule/anotherModuleValInClosure.kt
+   1 js/js.translator/testData/box/inlineMultiFile/trait.kt
    1 js/js.translator/testData/box/inline/privateProperty.kt
    1 js/js.translator/testData/box/inline/localDeclarationsClash.kt
-   1 js/js.translator/testData/box/inline/callableReference.kt
-   1 js/js.translator/testData/box/initialize/uninitializedLateinit.kt
    1 js/js.translator/testData/box/incremental/packagesWithSameName.kt
    1 js/js.translator/testData/box/incremental/jsModule.kt
    1 js/js.translator/testData/box/incremental/exportedPackage.kt
    1 js/js.translator/testData/box/incremental/enumUsage.kt
    1 js/js.translator/testData/box/expression/evaluationOrder/singleComponentDestructuring.kt
-   1 js/js.translator/testData/box/export/overriddenExternalMethodWithSameStableNameMethod.kt
    1 js/js.translator/testData/box/export/exportNestedObject.kt
    1 js/js.translator/testData/box/export/exportNestedClass.kt
    1 js/js.translator/testData/box/export/exportInterface.kt
    1 js/js.translator/testData/box/export/exportEnumClass.kt
-   1 js/js.translator/testData/box/export/defaultInlineClassConstructorParam.kt
    1 js/js.translator/testData/box/escapedIdentifiers/externalEscapedTopLevel.kt
    1 js/js.translator/testData/box/escapedIdentifiers/classLikeMemberClassMangling.kt
    1 js/js.translator/testData/box/esModules/export/overriddenExternalMethodWithSameNameMethod.kt
@@ -3984,6 +3970,7 @@ Changes from 2021-11-01 to 2021-12-01:
    1 compiler/testData/codegen/boxError/semantic/unresolvedFunctionReferece.kt
    1 compiler/testData/codegen/boxError/semantic/unmatchedArguments.kt
    1 compiler/testData/codegen/boxError/semantic/typeMismatch.kt
+   1 compiler/testData/codegen/boxError/semantic/reifiedWithWrongArguments.kt
    1 compiler/testData/codegen/boxError/semantic/reifiedNonInline.kt
    1 compiler/testData/codegen/boxError/semantic/missedBody.kt
    1 compiler/testData/codegen/boxError/semantic/mismatchTypeParameters.kt
@@ -4157,13 +4144,7 @@ Changes from 2021-11-01 to 2021-12-01:
    1 compiler/testData/codegen/box/smap/infixCalls.kt
    1 compiler/testData/codegen/box/smap/chainCalls.kt
    1 compiler/testData/codegen/box/secondaryConstructors/fieldInitializerOptimization_inlineClass.kt
-   1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/memberPropertyDeclaration.kt
-   1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/memberFunctionWithDefaultArgumentsDeclaration.kt
-   1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/memberFunctionDeclaration.kt
-   1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/lateinitMemberPropertyDeclaration.kt
    1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/jvmFieldMemberPropertyDeclaration.kt
-   1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/functionDeclaration.kt
-   1 compiler/testData/codegen/box/sameFileInSourceAndDependencies/classDeclaration.kt
    1 compiler/testData/codegen/box/sam/samInterfaceTypeParameterErasure.kt
    1 compiler/testData/codegen/box/sam/samConstructorGenericSignature.kt
    1 compiler/testData/codegen/box/sam/recordSubstitutedTypeForCallableSamParameter.kt
@@ -5305,9 +5286,6 @@ Changes from 2021-11-01 to 2021-12-01:
    1 compiler/testData/codegen/box/nonLocalReturns/kt9644let.kt
    1 compiler/testData/codegen/box/nonLocalReturns/kt6895.kt
    1 compiler/testData/codegen/box/multiplatform/optionalExpectationJvm.kt
-   1 compiler/testData/codegen/box/multiplatform/multiModule/expectActualMemberLink.kt
-   1 compiler/testData/codegen/box/multiplatform/multiModule/expectActualLink.kt
-   1 compiler/testData/codegen/box/multiplatform/multiModule/defaultArgument.kt
    1 compiler/testData/codegen/box/multiplatform/expectProperty.kt
    1 compiler/testData/codegen/box/multiplatform/defaultArguments/typeAlias.kt
    1 compiler/testData/codegen/box/multiplatform/defaultArguments/superCall.kt
@@ -6424,6 +6402,10 @@ Changes from 2021-11-01 to 2021-12-01:
    1 compiler/testData/codegen/box/coroutines/multiModule/simple.kt
    1 compiler/testData/codegen/box/coroutines/multiModule/inlineWithJava.kt
    1 compiler/testData/codegen/box/coroutines/multiModule/inlineTailCall.kt
+   1 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleWithInnerInlining.kt
+   1 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleWithController.kt
+   1 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModuleOverride.kt
+   1 compiler/testData/codegen/box/coroutines/multiModule/inlineMultiModule.kt
    1 compiler/testData/codegen/box/coroutines/multiModule/inlineFunctionWithOptionalParam.kt
    1 compiler/testData/codegen/box/coroutines/multiModule/inlineCrossModule.kt
    1 compiler/testData/codegen/box/coroutines/mergeNullAndString.kt
@@ -7348,7 +7330,6 @@ Changes from 2021-11-01 to 2021-12-01:
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/utils/JsStaticContext.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/utils/IrResolveUtils.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/utils/AnnotationUtils.kt
-   1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/MultiModuleSupport.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/Merger.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/JsPolyfillsVisitor.kt
    1 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/transformers/irToJs/IrFileToJsTransformer.kt

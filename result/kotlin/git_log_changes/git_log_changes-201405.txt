@@ -1,4 +1,3 @@
-Changes from 2014-05-01 to 2014-06-01:
   31 compiler/frontend/src/org/jetbrains/jet/lang/psi/stubs/elements/JetStubElementTypes.java
   27 compiler/frontend/src/org/jetbrains/jet/JetNodeTypes.java
   21 idea/src/org/jetbrains/jet/plugin/debugger/evaluate/KotlinEvaluationBuilder.kt

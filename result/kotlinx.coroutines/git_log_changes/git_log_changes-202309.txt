@@ -1,1 +1,18 @@
-Changes from 2023-09-01 to 2023-10-01:
+   1 kotlinx-coroutines-core/native/test/TestBase.kt
+   1 kotlinx-coroutines-core/native/test/ConcurrentTestUtilities.kt
+   1 kotlinx-coroutines-core/native/src/Exceptions.kt
+   1 kotlinx-coroutines-core/jvm/test/TestBase.kt
+   1 kotlinx-coroutines-core/jvm/src/Exceptions.kt
+   1 kotlinx-coroutines-core/js/test/TestBase.kt
+   1 kotlinx-coroutines-core/js/src/Exceptions.kt
+   1 kotlinx-coroutines-core/concurrent/src/internal/LockFreeLinkedList.kt
+   1 kotlinx-coroutines-core/common/test/flow/sharing/StateInTest.kt
+   1 kotlinx-coroutines-core/common/test/flow/sharing/StateFlowTest.kt
+   1 kotlinx-coroutines-core/common/test/flow/sharing/SharedFlowTest.kt
+   1 kotlinx-coroutines-core/common/test/flow/sharing/ShareInTest.kt
+   1 kotlinx-coroutines-core/common/test/AsyncTest.kt
+   1 kotlinx-coroutines-core/common/src/flow/SharedFlow.kt
+   1 kotlinx-coroutines-core/common/src/Exceptions.common.kt
+   1 kotlinx-coroutines-core/common/src/Dispatchers.common.kt
+   1 docs/topics/coroutine-context-and-dispatchers.md
+   1 README.md

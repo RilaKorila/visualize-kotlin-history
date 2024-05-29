@@ -1,19 +1,18 @@
-Changes from 2024-03-01 to 2024-04-01:
-  97 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
-  97 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirPreresolvedReversedDiagnosticCompilerFE10TestDataTestGenerated.java
-  97 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosticCompilerTestFE10TestdataTestGenerated.java
-  92 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirPsiOldFrontendDiagnosticsTestGenerated.java
-  91 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirLightTreeOldFrontendDiagnosticsTestGenerated.java
-  29 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  29 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirPsiBlackBoxCodegenTestGenerated.java
-  28 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenWithIrInlinerTestGenerated.java
-  28 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
-  28 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/JvmAbiConsistencyTestBoxGenerated.java
-  28 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirLightTreeBlackBoxCodegenWithFir2IrFakeOverrideGeneratorTestGenerated.java
-  28 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirLightTreeBlackBoxCodegenTestGenerated.java
-  28 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirReversedBlackBoxCodegenBasedTestGenerated.java
-  28 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirBlackBoxCodegenBasedTestGenerated.java
-  27 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/inlineScopes/FirBlackBoxCodegenTestWithInlineScopesGenerated.java
+  98 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
+  98 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirPreresolvedReversedDiagnosticCompilerFE10TestDataTestGenerated.java
+  98 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosticCompilerTestFE10TestdataTestGenerated.java
+  93 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirPsiOldFrontendDiagnosticsTestGenerated.java
+  92 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirLightTreeOldFrontendDiagnosticsTestGenerated.java
+  30 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  30 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirPsiBlackBoxCodegenTestGenerated.java
+  29 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenWithIrInlinerTestGenerated.java
+  29 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
+  29 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/JvmAbiConsistencyTestBoxGenerated.java
+  29 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirLightTreeBlackBoxCodegenWithFir2IrFakeOverrideGeneratorTestGenerated.java
+  29 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirLightTreeBlackBoxCodegenTestGenerated.java
+  29 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirReversedBlackBoxCodegenBasedTestGenerated.java
+  29 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/LLFirBlackBoxCodegenBasedTestGenerated.java
+  28 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/inlineScopes/FirBlackBoxCodegenTestWithInlineScopesGenerated.java
   22 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   18 native/native.tests/tests-gen/org/jetbrains/kotlin/konan/test/blackbox/FirNativeCodegenBoxTestNoPLGenerated.java
   18 native/native.tests/tests-gen/org/jetbrains/kotlin/konan/test/blackbox/FirNativeCodegenBoxTestGenerated.java
@@ -40,24 +39,24 @@ Changes from 2024-03-01 to 2024-04-01:
    9 gradle/verification-metadata.xml
    9 generators/analysis-api-generator/tests/org/jetbrains/kotlin/generators/tests/analysis/api/analysisApi.kt
    9 compiler/ir/ir.tree/tree-generator/src/org/jetbrains/kotlin/ir/generator/IrTree.kt
+   8 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/ir/ClassicJvmIrTextTestGenerated.java
    8 compiler/ir/backend.wasm/src/org/jetbrains/kotlin/backend/wasm/WasmSymbols.kt
    8 compiler/ir/backend.wasm/src/org/jetbrains/kotlin/backend/wasm/WasmLoweringPhases.kt
    8 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/ResolveUtils.kt
    8 compiler/fir/raw-fir/psi2fir/src/org/jetbrains/kotlin/fir/builder/PsiRawFirBuilder.kt
+   8 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/TypeUtils.kt
+   8 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/ir/FirPsiJvmIrTextTestGenerated.java
+   8 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/ir/FirLightTreeJvmIrTextTestGenerated.java
    8 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/CallAndReferenceGenerator.kt
    8 compiler/fir/checkers/gen/org/jetbrains/kotlin/fir/analysis/diagnostics/FirNonSuppressibleErrorNames.kt
    8 compiler/build-tools/kotlin-build-tools-api-tests/src/main/kotlin/compilation/scenario/scenarioDsl.kt
    8 build.gradle.kts
    8 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/transformers/LLFirTargetResolver.kt
-   7 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/ir/ClassicJvmIrTextTestGenerated.java
    7 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticsTestWithJvmIrBackendGenerated.java
    7 compiler/testData/diagnostics/tests/samConversions/samConversionToGenericWrongNullability.kt
    7 compiler/testData/asJava/lightClasses/lightClassByPsi/jvmWildcardAnnotations.java
    7 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/NodeConfigurator.kt
    7 compiler/fir/semantics/src/org/jetbrains/kotlin/fir/resolve/diagnostics/FirConstChecks.kt
-   7 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/TypeUtils.kt
-   7 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/ir/FirPsiJvmIrTextTestGenerated.java
-   7 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/ir/FirLightTreeJvmIrTextTestGenerated.java
    7 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/FirPsiDiagnosticsTestWithJvmIrBackendGenerated.java
    7 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/FirLightTreeDiagnosticsTestWithJvmIrBackendGenerated.java
    7 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/pipeline/compilerPipeline.kt
@@ -94,6 +93,7 @@ Changes from 2024-03-01 to 2024-04-01:
    5 native/objcexport-header-generator/test/org/jetbrains/kotlin/backend/konan/tests/ObjCExportHeaderGeneratorTest.kt
    5 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/support/compilation/TestCompilationArtifact.kt
    5 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/support/compilation/TestCompilation.kt
+   5 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/NativeSimpleTestUtils.kt
    5 kotlin-native/runtime/build.gradle.kts
    5 jps/jps-plugin/testData/incremental/lookupTracker/jvm/classifierMembers/usages.kt.new.2
    5 jps/jps-plugin/testData/incremental/lookupTracker/jvm/classifierMembers/usages.kt
@@ -117,6 +117,7 @@ Changes from 2024-03-01 to 2024-04-01:
    5 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/FirCallCompletionResultsWriterTransformer.kt
    5 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/tower/TowerLevels.kt
    5 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/CreateFreshTypeVariableSubstitutorStage.kt
+   5 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/JavaTypeConversion.kt
    5 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/cfa/util/PropertyInitializationInfo.kt
    5 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithPsiTestGenerated.java
    5 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithLightTreeTestGenerated.java
@@ -153,7 +154,6 @@ Changes from 2024-03-01 to 2024-04-01:
    4 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/support/settings/TestProcessSettings.kt
    4 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/support/runner/SharedExecutionBuilder.kt
    4 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/support/NativeTestSupport.kt
-   4 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/NativeSimpleTestUtils.kt
    4 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/AbstractNativePartialLinkageTest.kt
    4 native/native.tests/tests/org/jetbrains/kotlin/konan/test/KonanDriverTest.kt
    4 native/native.tests/build.gradle.kts
@@ -203,7 +203,6 @@ Changes from 2024-03-01 to 2024-04-01:
    4 compiler/fir/raw-fir/light-tree2fir/src/org/jetbrains/kotlin/fir/lightTree/converter/LightTreeRawFirExpressionBuilder.kt
    4 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/ConeInferenceContext.kt
    4 compiler/fir/providers/src/org/jetbrains/kotlin/fir/scopes/impl/FirTypeIntersectionScopeContext.kt
-   4 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/JavaTypeConversion.kt
    4 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrVisitor.kt
    4 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrConverter.kt
    4 compiler/fir/checkers/src/org/jetbrains/kotlin/fir/analysis/diagnostics/coneDiagnosticToFirDiagnostic.kt
@@ -526,6 +525,7 @@ Changes from 2024-03-01 to 2024-04-01:
    3 compiler/fir/raw-fir/light-tree2fir/src/org/jetbrains/kotlin/fir/lightTree/converter/LightTreeRawFirDeclarationBuilder.kt
    3 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/ConeTypeContext.kt
    3 compiler/fir/providers/src/org/jetbrains/kotlin/fir/scopes/impl/FirFakeOverrideGenerator.kt
+   3 compiler/fir/providers/src/org/jetbrains/kotlin/fir/resolve/substitution/Substitutors.kt
    3 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/generators/AdapterGenerator.kt
    3 compiler/fir/fir2ir/src/org/jetbrains/kotlin/fir/backend/Fir2IrDeclarationStorage.kt
    3 compiler/fir/entrypoint/src/org/jetbrains/kotlin/fir/pipeline/convertToIr.kt
@@ -1153,6 +1153,10 @@ Changes from 2024-03-01 to 2024-04-01:
    2 compiler/testData/ir/irText/fakeOverrides/kotlinextensions/memberExtensionOverride.fir.kt.txt
    2 compiler/testData/ir/irText/fakeOverrides/kotlinextensions/kotlinExtensionsOverride.kt.txt
    2 compiler/testData/ir/irText/fakeOverrides/kotlinextensions/kotlinExtensionsOverride.kt
+   2 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.overrides.txt
+   2 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.kt.txt
+   2 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.kt
+   2 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.fir.kt.txt
    2 compiler/testData/ir/irText/fakeOverrides/javastatic/substitutionStaticOverride.kt.txt
    2 compiler/testData/ir/irText/fakeOverrides/javastatic/substitutionStaticOverride.kt
    2 compiler/testData/ir/irText/fakeOverrides/javastatic/staticOverrideOnKJKJ.kt.txt
@@ -1753,7 +1757,6 @@ Changes from 2024-03-01 to 2024-04-01:
    2 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/calls/CandidateFactory.kt
    2 compiler/fir/providers/src/org/jetbrains/kotlin/fir/types/FunctionalTypeUtils.kt
    2 compiler/fir/providers/src/org/jetbrains/kotlin/fir/scopes/impl/FirNestedClassifierScope.kt
-   2 compiler/fir/providers/src/org/jetbrains/kotlin/fir/resolve/substitution/Substitutors.kt
    2 compiler/fir/providers/src/org/jetbrains/kotlin/fir/declarations/contractSubstitutions.kt
    2 compiler/fir/native/src/org/jetbrains/kotlin/fir/backend/native/FirNativeOverrideChecker.kt
    2 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/scopes/JavaOverrideChecker.kt
@@ -2661,8 +2664,14 @@ Changes from 2024-03-01 to 2024-04-01:
    1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/support/LoggedData.kt
    1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/SwiftTypeCheckBaseTest.kt
    1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/ObjCToKotlinSteppingInLLDBTest.kt
+   1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/KlibResolverTest.kt
+   1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/KT59030WorkaroundTest.kt
+   1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/InfrastructureDumpedTestListingTest.kt
+   1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/CinteropPackagesTest.kt
+   1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/CachesAutoBuildTest.kt
    1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/AbstractNativeSimpleTest.kt
    1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/AbstractNativeCInteropTest.kt
+   1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/AbstractNativeCInteropKT39120Test.kt
    1 native/native.tests/tests/org/jetbrains/kotlin/konan/test/blackbox/AbstractNativeCExportTest.kt
    1 native/native.tests/tests-gen/org/jetbrains/kotlin/konan/test/diagnostics/FirPsiOldFrontendNativeDiagnosticsTestGenerated.java
    1 native/native.tests/tests-gen/org/jetbrains/kotlin/konan/test/diagnostics/FirLightTreeOldFrontendNativeDiagnosticsTestGenerated.java
@@ -4407,10 +4416,10 @@ Changes from 2024-03-01 to 2024-04-01:
    1 compiler/testData/ir/irText/fakeOverrides/kotlinextensions/memberExtensionOverride.fir.ir.txt
    1 compiler/testData/ir/irText/fakeOverrides/kotlinextensions/kotlinExtensionsOverride.sig.kt.txt
    1 compiler/testData/ir/irText/fakeOverrides/kotlinextensions/kotlinExtensionsOverride.ir.txt
-   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.overrides.txt
-   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.kt.txt
-   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.kt
-   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.fir.kt.txt
+   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.sig.kt.txt
+   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.ir.txt
+   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.fir.sig.kt.txt
+   1 compiler/testData/ir/irText/fakeOverrides/kjkWithRawTypes.fir.ir.txt
    1 compiler/testData/ir/irText/fakeOverrides/javastatic/substitutionStaticOverride.sig.kt.txt
    1 compiler/testData/ir/irText/fakeOverrides/javastatic/substitutionStaticOverride.ir.txt
    1 compiler/testData/ir/irText/fakeOverrides/javastatic/staticOverrideOnKJKJ.sig.kt.txt
@@ -5134,6 +5143,8 @@ Changes from 2024-03-01 to 2024-04-01:
    1 compiler/testData/diagnostics/tests/j+k/nullableLinkedListToQueueDnnRepresentation.fir.kt
    1 compiler/testData/diagnostics/tests/j+k/kt62118.kt
    1 compiler/testData/diagnostics/tests/j+k/kt62118.fir.kt
+   1 compiler/testData/diagnostics/tests/j+k/kjkRawTypeWithKotlinUpperBound.kt
+   1 compiler/testData/diagnostics/tests/j+k/kjkRawTypeWithKotlinUpperBound.fir.kt
    1 compiler/testData/diagnostics/tests/j+k/kjkPropertyAndExtensionProperty.fir.kt
    1 compiler/testData/diagnostics/tests/j+k/jkjPrivateProperty.kt
    1 compiler/testData/diagnostics/tests/j+k/jkjPrivateProperty.fir.kt
@@ -5770,6 +5781,7 @@ Changes from 2024-03-01 to 2024-04-01:
    1 compiler/testData/codegen/box/javaInterop/primitiveVsWrapperTypeInInheritance/double.kt
    1 compiler/testData/codegen/box/javaInterop/primitiveVsWrapperTypeInInheritance/diamond.kt
    1 compiler/testData/codegen/box/javaInterop/primitiveVsWrapperTypeInInheritance/anotherKotlinClassInTheMiddle.kt
+   1 compiler/testData/codegen/box/javaInterop/kjkWithRawTypes.kt
    1 compiler/testData/codegen/box/javaInterop/kjkPropertyAndExtensionProperty.kt
    1 compiler/testData/codegen/box/javaInterop/invisibleFake2.kt
    1 compiler/testData/codegen/box/javaInterop/invisibleFake.kt

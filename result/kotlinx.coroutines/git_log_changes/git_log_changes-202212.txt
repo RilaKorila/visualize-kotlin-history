@@ -1,1 +1,22 @@
-Changes from 2022-12-01 to 2023-01-01:
+   6 docs/topics/debug-flow-with-idea.md
+   6 docs/topics/debug-coroutines-with-idea.md
+   4 docs/topics/coroutines-basics.md
+   2 docs/images/variable-optimised-out.png
+   1 settings.gradle
+   1 reactive/kotlinx-coroutines-rx3/test/Check.kt
+   1 reactive/kotlinx-coroutines-rx3/src/RxMaybe.kt
+   1 kotlinx-coroutines-core/common/src/flow/StateFlow.kt
+   1 kotlinx-coroutines-core/common/src/EventLoop.common.kt
+   1 js/example-frontend-js/build.gradle.kts
+   1 gradle.properties
+   1 docs/topics/cancellation-and-timeouts.md
+   1 buildSrc/src/main/kotlin/CommunityProjectsBuild.kt
+   1 buildSrc/build.gradle.kts
+   1 build.gradle
+   1 benchmarks/build.gradle.kts
+   1 CONTRIBUTING.md
+   1 .gitignore
+   1 .github/ISSUE_TEMPLATE/feature_request.md
+   1 .github/ISSUE_TEMPLATE/design_considerations.md
+   1 .github/ISSUE_TEMPLATE/config.yml
+   1 .github/ISSUE_TEMPLATE/bug_report.md

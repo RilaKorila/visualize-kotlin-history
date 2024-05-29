@@ -1,4 +1,3 @@
-Changes from 2022-01-01 to 2022-02-01:
   24 compiler/util/src/org/jetbrains/kotlin/config/LanguageVersionSettings.kt
   24 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   24 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java

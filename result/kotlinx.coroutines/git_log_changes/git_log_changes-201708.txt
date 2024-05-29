@@ -1,4 +1,3 @@
-Changes from 2017-08-01 to 2017-09-01:
   16 pom.xml
   15 integration/kotlinx-coroutines-io/src/main/kotlin/kotlinx/coroutines/experimental/io/ByteBufferChannel.kt
    8 README.md

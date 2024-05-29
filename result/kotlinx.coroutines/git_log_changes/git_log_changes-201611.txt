@@ -1,4 +1,3 @@
-Changes from 2016-11-01 to 2016-12-01:
    1 pom.xml
    1 kotlinx-coroutines-rx/src/main/kotlin/asyncRx.kt
    1 kotlinx-coroutines-rx/pom.xml

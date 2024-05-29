@@ -1,4 +1,3 @@
-Changes from 2017-10-01 to 2017-11-01:
   24 backend.native/tests/build.gradle
   23 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
   23 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java

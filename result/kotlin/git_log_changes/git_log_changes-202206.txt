@@ -1,14 +1,13 @@
-Changes from 2022-06-01 to 2022-07-01:
   24 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/CliExtraDiagnosticsProvider.kt
-  21 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
-  21 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
+  22 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/IrBlackBoxCodegenTestGenerated.java
+  22 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxCodegenTestGenerated.java
   19 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java
   19 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsTestGenerated.java
   19 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosisCompilerTestFE10TestdataTestGenerated.java
+  18 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  18 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   18 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   18 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/CliLightClassGenerationSupport.kt
-  17 compiler/tests-gen/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  17 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/codegen/BlackBoxCodegenTestGenerated.java
   15 native/native.tests/tests-gen/org/jetbrains/kotlin/konan/blackboxtest/NativeCodegenBoxTestGenerated.java
   15 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/LightClassDataProvider.kt
   14 settings.gradle
@@ -2759,6 +2758,7 @@ Changes from 2022-06-01 to 2022-07-01:
    1 generators/analysis-api-generator/build.gradle.kts
    1 docs/changelogs/ChangeLog-1.6.X.md
    1 core/util.runtime/src/org/jetbrains/kotlin/utils/addToStdlib.kt
+   1 core/reflection.jvm/src/kotlin/reflect/jvm/internal/KPropertyImpl.kt
    1 core/metadata/src/org/jetbrains/kotlin/metadata/deserialization/protoTypeTableUtil.kt
    1 core/metadata.jvm/src/org/jetbrains/kotlin/metadata/jvm/deserialization/JvmMetadataVersion.kt
    1 core/deserialization/src/org/jetbrains/kotlin/serialization/deserialization/descriptors/DeserializedClassDescriptor.kt
@@ -3601,6 +3601,7 @@ Changes from 2022-06-01 to 2022-07-01:
    1 compiler/testData/compileKotlinAgainstCustomBinaries/requireKotlinInNestedClasses/output.txt
    1 compiler/testData/compileKotlinAgainstCustomBinaries/requireKotlin/output.txt
    1 compiler/testData/compileJavaAgainstKotlin/class/ImplementsMapPP.txt
+   1 compiler/testData/codegen/bytecodeText/optimizedDelegatedProperties/delegateToAnother.kt
    1 compiler/testData/codegen/bytecodeText/javaFieldsWithIntersectionTypes.kt
    1 compiler/testData/codegen/bytecodeText/inlineClasses/mangledSamWrappersIndy.kt
    1 compiler/testData/codegen/bytecodeText/coroutines/debug/localVariableCorrectLabel.kt
@@ -3617,6 +3618,7 @@ Changes from 2022-06-01 to 2022-07-01:
    1 compiler/testData/codegen/bytecodeListing/localFunctions/inInitBlock_ir.txt
    1 compiler/testData/codegen/bytecodeListing/jvm8/defaults/allCompatibility/jvmDefaultWithoutCompatibility.txt
    1 compiler/testData/codegen/bytecodeListing/inline/enclosingInfo/crossinlineLambdaChain_ir.txt
+   1 compiler/testData/codegen/bytecodeListing/delegatedProperty/delegateMethodIsNonOverridable_ir.txt
    1 compiler/testData/codegen/bytecodeListing/coroutines/tcoContinuation_ir.txt
    1 compiler/testData/codegen/bytecodeListing/coroutines/spilling/select.txt
    1 compiler/testData/codegen/bytecodeListing/coroutines/spilling/select.kt
@@ -3631,12 +3633,14 @@ Changes from 2022-06-01 to 2022-07-01:
    1 compiler/testData/codegen/box/sam/kt52417.kt
    1 compiler/testData/codegen/box/safeCall/kt52743.kt
    1 compiler/testData/codegen/box/safeCall/kt52580.kt
+   1 compiler/testData/codegen/box/reflection/properties/getDelegate/noSetAccessibleTrue.kt
    1 compiler/testData/codegen/box/reflection/properties/getDelegate/method/delegateToSingleton.kt
    1 compiler/testData/codegen/box/reflection/properties/getDelegate/method/delegateToFinalProperty.kt
    1 compiler/testData/codegen/box/reflection/properties/getDelegate/method/delegateToFinalObjectProperty.kt
    1 compiler/testData/codegen/box/reflection/properties/getDelegate/method/delegateToEnum.kt
    1 compiler/testData/codegen/box/reflection/properties/getDelegate/method/delegateToConstProperty.kt
    1 compiler/testData/codegen/box/reflection/properties/getDelegate/method/delegateToConst.kt
+   1 compiler/testData/codegen/box/reflection/properties/getDelegate/getExtensionDelegateForDelegatedToAnother.kt
    1 compiler/testData/codegen/box/reflection/annotations/repeatable/nonRepeatedAnnotationWithItsContainer.kt
    1 compiler/testData/codegen/box/reflection/annotations/repeatable/kt49335.kt
    1 compiler/testData/codegen/box/reflection/annotations/repeatable/kotlinAnnotationOnType.kt
@@ -4035,6 +4039,7 @@ Changes from 2022-06-01 to 2022-07-01:
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/ReadResolveForDataObjectsLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/PropertyReferenceDelegationLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmSafeCallChainFoldingLowering.kt
+   1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmPropertiesLowering.kt
    1 compiler/ir/backend.jvm/lower/src/org/jetbrains/kotlin/backend/jvm/lower/JvmInlineClassLowering.kt
    1 compiler/ir/backend.jvm/lower/build.gradle.kts
    1 compiler/ir/backend.jvm/entrypoint/src/org/jetbrains/kotlin/backend/jvm/JvmIrDeserializerImpl.kt

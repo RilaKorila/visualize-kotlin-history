@@ -1,19 +1,18 @@
-Changes from 2019-06-01 to 2019-07-01:
   21 gradle/jps.gradle.kts
   18 idea/resources/META-INF/plugin-common.xml
   17 idea/tests/org/jetbrains/kotlin/idea/inspections/LocalInspectionTestGenerated.java
   16 libraries/stdlib/src/kotlin/time/Duration.kt
-  16 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
   16 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/resolve/transformers/FirBodyResolveTransformer.kt
   15 libraries/stdlib/test/time/DurationTest.kt
-  15 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
-  15 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
+  15 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxCodegenTestGenerated.java
+  14 compiler/tests/org/jetbrains/kotlin/codegen/LightAnalysisModeTestGenerated.java
+  14 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxCodegenTestGenerated.java
   14 compiler/tests/org/jetbrains/kotlin/checkers/javac/DiagnosticsUsingJavacTestGenerated.java
   14 compiler/tests/org/jetbrains/kotlin/checkers/DiagnosticsTestGenerated.java
   14 compiler/fir/resolve/tests/org/jetbrains/kotlin/fir/FirDiagnosticsSmokeTestGenerated.java
   13 gradle.properties
-  12 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
-  12 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
+  11 js/js.tests/test/org/jetbrains/kotlin/js/test/semantics/JsCodegenBoxTestGenerated.java
+  11 js/js.tests/test/org/jetbrains/kotlin/js/test/ir/semantics/IrJsCodegenBoxTestGenerated.java
   10 prepare/compiler/build.gradle.kts
   10 nj2k/nj2k-services/src/org/jetbrains/kotlin/nj2k/postProcessing/J2kPostProcessor.kt
   10 .gitignore
@@ -53,7 +52,6 @@ Changes from 2019-06-01 to 2019-07-01:
    6 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/IrModuleSerializer.kt
    6 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/IrModuleDeserializer.kt
    6 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/util/IrUtils.kt
-   6 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/builders/declarations/declarationBuilders.kt
    6 compiler/fir/java/src/org/jetbrains/kotlin/fir/java/FirJavaModuleBasedSession.kt
    6 build.gradle
    6 backend.native/tests/framework/values/expectedLazy.h
@@ -80,7 +78,6 @@ Changes from 2019-06-01 to 2019-07-01:
    5 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/KotlinIr.java
    5 compiler/ir/serialization.common/src/KotlinIr.proto
    5 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/JvmBackendContext.kt
-   5 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/descriptors/WrappedDescriptors.kt
    5 compiler/fir/resolve/src/org/jetbrains/kotlin/fir/scopes/impl/FirClassDeclaredMemberScope.kt
    5 compiler/fir/fir2ir/tests/org/jetbrains/kotlin/fir/Fir2IrTextTestGenerated.java
    5 buildSrc/src/main/kotlin/buildProperties.kt
@@ -113,10 +110,7 @@ Changes from 2019-06-01 to 2019-07-01:
    4 generators/tests/org/jetbrains/kotlin/generators/tests/GenerateTests.kt.as35
    4 compiler/util-klib/src/org/jetbrains/kotlin/library/impl/KotlinLibraryLayoutImpl.kt
    4 compiler/util-klib/src/org/jetbrains/kotlin/library/KotlinAbiVersion.kt
-   4 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBytecodeTextTestGenerated.java
    4 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBlackBoxInlineCodegenTestGenerated.java
-   4 compiler/testData/codegen/box/ranges/unsigned/literal/overflowZeroDownToMaxValue.kt
-   4 compiler/testData/codegen/box/ranges/unsigned/expression/overflowZeroDownToMaxValue.kt
    4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightUtils.kt
    4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightParameters.kt
    4 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForSourceDeclaration.kt
@@ -125,12 +119,12 @@ Changes from 2019-06-01 to 2019-07-01:
    4 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/IrTypeSubstitutor.kt
    4 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/builders/ExpressionHelpers.kt
    4 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/CallGenerator.kt
-   4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/inlineclasses/MemoizedInlineClassReplacements.kt
-   4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/inlineclasses/InlineClassAbi.kt
    4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/ir/IrUtils.kt
    4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/IrInlineCodegen.kt
    4 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/codegen/ClassCodegen.kt
    4 compiler/ir/backend.js/src/org/jetbrains/kotlin/ir/backend/js/JsLoweringPhases.kt
+   4 compiler/ir/backend.common/src/org/jetbrains/kotlin/ir/builders/declarations/declarationBuilders.kt
+   4 compiler/ir/backend.common/src/org/jetbrains/kotlin/backend/common/descriptors/WrappedDescriptors.kt
    4 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/tower/ResolvedAtomCompleter.kt
    4 compiler/fir/tree/visitors/org/jetbrains/kotlin/fir/visitors/FirVisitorVoidGenerated.kt
    4 compiler/fir/tree/visitors/org/jetbrains/kotlin/fir/visitors/FirVisitorGenerated.kt
@@ -228,9 +222,11 @@ Changes from 2019-06-01 to 2019-07-01:
    3 core/descriptors/src/org/jetbrains/kotlin/types/checker/ClassicTypeSystemContext.kt
    3 compiler/util-klib/src/org/jetbrains/kotlin/library/impl/KotlinLibraryImpl.kt
    3 compiler/util-klib/src/org/jetbrains/kotlin/library/KotlinLibrary.kt
-   3 compiler/tests/org/jetbrains/kotlin/codegen/BytecodeTextTestGenerated.java
+   3 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrBytecodeTextTestGenerated.java
    3 compiler/testData/ir/irText/types/localVariableOfIntersectionType_NI.txt
    3 compiler/testData/ir/irText/types/intersectionType1_OI.txt
+   3 compiler/testData/codegen/box/ranges/unsigned/literal/overflowZeroDownToMaxValue.kt
+   3 compiler/testData/codegen/box/ranges/unsigned/expression/overflowZeroDownToMaxValue.kt
    3 compiler/testData/codegen/box/coroutines/suspendCoroutineFromStateMachine.kt
    3 compiler/testData/codegen/box/coroutines/illegalState.kt
    3 compiler/testData/asJava/ultraLightFacades/coroutines.kt
@@ -243,6 +239,7 @@ Changes from 2019-06-01 to 2019-07-01:
    3 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/KotlinMangler.kt
    3 compiler/ir/ir.tree/src/org/jetbrains/kotlin/ir/types/impl/IrSimpleTypeImpl.kt
    3 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/Psi2IrTranslator.kt
+   3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/inlineclasses/InlineClassAbi.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/InterfaceLowering.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/InterfaceDelegationLowering.kt
    3 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/InlineCallableRefereceToLambda.kt
@@ -540,8 +537,8 @@ Changes from 2019-06-01 to 2019-07-01:
    2 compiler/util-klib/src/org/jetbrains/kotlin/library/KotlinLibraryWriter.kt
    2 compiler/util-klib/src/org/jetbrains/kotlin/library/KotlinLibraryLayout.kt
    2 compiler/util-io/src/org/jetbrains/kotlin/konan/file/File.kt
-   2 compiler/tests/org/jetbrains/kotlin/generators/tests/GenerateRangesCodegenTestData.java
    2 compiler/tests/org/jetbrains/kotlin/codegen/CompileKotlinAgainstInlineKotlinTestGenerated.java
+   2 compiler/tests/org/jetbrains/kotlin/codegen/BytecodeTextTestGenerated.java
    2 compiler/tests/org/jetbrains/kotlin/codegen/BlackBoxInlineCodegenTestGenerated.java
    2 compiler/tests/org/jetbrains/kotlin/cli/LauncherReplTest.kt
    2 compiler/tests-common/tests/org/jetbrains/kotlin/tests/di/injection.kt
@@ -572,7 +569,6 @@ Changes from 2019-06-01 to 2019-07-01:
    2 compiler/testData/codegen/bytecodeText/callableReference/boundFunReferenceInInline.kt
    2 compiler/testData/codegen/bytecodeText/callableReference/boundFieldReferenceInInline.kt
    2 compiler/testData/codegen/boxInline/noInline/extensionReceiver.kt
-   2 compiler/testData/codegen/box/unsignedTypes/forInUnsignedRangeWithCoercion.kt
    2 compiler/testData/codegen/box/properties/genericPropertyMultiModule.kt
    2 compiler/testData/codegen/box/coroutines/varCaptuedInCoroutineIntrinsic.kt
    2 compiler/testData/codegen/box/coroutines/tailCallOptimizations/tryCatch.kt
@@ -599,6 +595,7 @@ Changes from 2019-06-01 to 2019-07-01:
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/OperatorExpressionGenerator.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/BranchingExpressionGenerator.kt
    2 compiler/ir/ir.psi2ir/src/org/jetbrains/kotlin/psi2ir/generators/ArgumentsGenerationUtils.kt
+   2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/inlineclasses/MemoizedInlineClassReplacements.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/SingleAbstractMethodLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/PropertiesToFieldsLowering.kt
    2 compiler/ir/backend.jvm/src/org/jetbrains/kotlin/backend/jvm/lower/JvmOverloadsAnnotationLowering.kt
@@ -2967,6 +2964,7 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/tests/org/jetbrains/kotlin/scripts/ScriptCliCompilationTest.kt
    1 compiler/tests/org/jetbrains/kotlin/scripts/CollectScriptCompilationDependenciesTest.kt
    1 compiler/tests/org/jetbrains/kotlin/jvm/compiler/SlowTypeAssertionsEnabledTest.kt
+   1 compiler/tests/org/jetbrains/kotlin/generators/tests/GenerateRangesCodegenTestData.java
    1 compiler/tests/org/jetbrains/kotlin/generators/tests/GenerateCompilerTests.kt
    1 compiler/tests/org/jetbrains/kotlin/codegen/ir/IrCompileKotlinAgainstKotlinTestGenerated.java
    1 compiler/tests/org/jetbrains/kotlin/codegen/ScriptGenTest.kt
@@ -3165,7 +3163,6 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/diagnostics/tests/callableReference/generic/dependOnArgumentType.kt
    1 compiler/testData/diagnostics/tests/callableReference/correctInfoAfterArrayLikeCall.txt
    1 compiler/testData/diagnostics/tests/callableReference/correctInfoAfterArrayLikeCall.kt
-   1 compiler/testData/compileKotlinAgainstKotlin/inlineClassFromBinaryDependencies.kt
    1 compiler/testData/compileKotlinAgainstKotlin/constructorWithInlineClassParametersInBinaryDependencies.kt
    1 compiler/testData/compileKotlinAgainstKotlin/callDeserializedPropertyOnInlineClassType.kt
    1 compiler/testData/compileJavaAgainstKotlin/method/primitiveOverrideWithInlineClass/InlineIntOverridesObject.kt
@@ -3175,7 +3172,6 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/bytecodeText/inlineClasses/uIntArraySwapBoxing.kt
    1 compiler/testData/codegen/bytecodeText/inlineClasses/toStringIsCalledByInlineClass.kt
    1 compiler/testData/codegen/bytecodeText/inlineClasses/skipCallToUnderlyingValueOfInlineClass.kt
-   1 compiler/testData/codegen/bytecodeText/inlineClasses/resultMangling.kt
    1 compiler/testData/codegen/bytecodeText/inlineClasses/propertyAccessorsAreCalledByInlineClass.kt
    1 compiler/testData/codegen/bytecodeText/inlineClasses/primaryConstructorCalledByInlineClass.kt
    1 compiler/testData/codegen/bytecodeText/inlineClasses/passInlineClassesWithSpreadOperatorToVarargs.kt
@@ -3228,31 +3224,10 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/boxAgainstJava/reflection/mapping/javaConstructor.kt
    1 compiler/testData/codegen/boxAgainstJava/multiplatform/annotationsViaActualTypeAliasFromBinary.kt
    1 compiler/testData/codegen/box/unsignedTypes/whenByUnsigned.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedTypePrefixIncrementDecrementBoxing.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedLongRemainder.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedLongDivide.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedLongCompare.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedLiteralsWithSignedOverflow.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedLiteralsForMaxLongValue.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedIntRemainder.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedIntDivide.kt
-   1 compiler/testData/codegen/box/unsignedTypes/unsignedIntCompare.kt
    1 compiler/testData/codegen/box/unsignedTypes/nullableUnsignedEqualsLiteral.kt
    1 compiler/testData/codegen/box/unsignedTypes/literalEqualsNullableUnsigned.kt
-   1 compiler/testData/codegen/box/unsignedTypes/kt25784.kt
-   1 compiler/testData/codegen/box/unsignedTypes/iterateOverListOfBoxedUnsignedValues.kt
-   1 compiler/testData/codegen/box/unsignedTypes/iterateOverArrayOfUnsignedValues.kt
-   1 compiler/testData/codegen/box/unsignedTypes/inUnsignedUntil.kt
-   1 compiler/testData/codegen/box/unsignedTypes/inUnsignedRangeLiteral.kt
-   1 compiler/testData/codegen/box/unsignedTypes/inUnsignedRange.kt
-   1 compiler/testData/codegen/box/unsignedTypes/inUnsignedDownTo.kt
-   1 compiler/testData/codegen/box/unsignedTypes/forInUnsignedUntil.kt
-   1 compiler/testData/codegen/box/unsignedTypes/forInUnsignedRangeLiteral.kt
-   1 compiler/testData/codegen/box/unsignedTypes/forInUnsignedRange.kt
-   1 compiler/testData/codegen/box/unsignedTypes/forInUnsignedProgression.kt
-   1 compiler/testData/codegen/box/unsignedTypes/forInUnsignedDownTo.kt
+   1 compiler/testData/codegen/box/unsignedTypes/forInUnsignedRangeWithCoercion.kt
    1 compiler/testData/codegen/box/unsignedTypes/equalsImplForInlineClassWrappingNullableInlineClass.kt
-   1 compiler/testData/codegen/box/unsignedTypes/checkBasicUnsignedLiterals.kt
    1 compiler/testData/codegen/box/unsignedTypes/boxedUnsignedEqualsZero.kt
    1 compiler/testData/codegen/box/unsignedTypes/boxConstValOfUnsignedType.kt
    1 compiler/testData/codegen/box/unit/ifElse.kt
@@ -3316,64 +3291,6 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/box/reflection/annotations/onTypes/differentPositions.kt
    1 compiler/testData/codegen/box/reflection/annotations/onTypes/differentArgumentTypes.kt
    1 compiler/testData/codegen/box/reflection/annotations/onTypes/classLiteralWithExpectedType.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/simpleSteppedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/simpleSteppedDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/simpleRangeWithNonConstantEnds.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/simpleRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/simpleDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/reversedSimpleSteppedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/reversedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/reversedInexactSteppedDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/reversedEmptyRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/reversedEmptyBackSequence.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/reversedBackSequence.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/progressionMinValueToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/progressionMaxValueToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/progressionMaxValueToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/progressionMaxValueMinusTwoToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/progressionDownToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/overflowZeroToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/openRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/oneElementRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/oneElementDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/maxValueToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/maxValueToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/maxValueMinusTwoToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/inexactToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/inexactSteppedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/inexactSteppedDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/inexactDownToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/emptyRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/literal/emptyDownto.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/simpleSteppedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/simpleSteppedDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/simpleRangeWithNonConstantEnds.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/simpleRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/simpleDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/reversedSimpleSteppedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/reversedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/reversedInexactSteppedDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/reversedEmptyRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/reversedEmptyBackSequence.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/reversedBackSequence.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/progressionMinValueToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/progressionMaxValueToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/progressionMaxValueToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/progressionMaxValueMinusTwoToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/progressionDownToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/overflowZeroToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/openRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/oneElementRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/oneElementDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/maxValueToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/maxValueToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/maxValueMinusTwoToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/inexactToMaxValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/inexactSteppedRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/inexactSteppedDownTo.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/inexactDownToMinValue.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/emptyRange.kt
-   1 compiler/testData/codegen/box/ranges/unsigned/expression/emptyDownto.kt
    1 compiler/testData/codegen/box/multiplatform/defaultArguments/functionFromOtherModule.kt
    1 compiler/testData/codegen/box/localClasses/kt3584.kt
    1 compiler/testData/codegen/box/lazyCodegen/ifElse.kt
@@ -3413,7 +3330,6 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/box/inlineClasses/secondaryConstructorsInsideInlineClassWithPrimitiveCarrierType.kt
    1 compiler/testData/codegen/box/inlineClasses/secondaryConstructorsInsideInlineClass.kt
    1 compiler/testData/codegen/box/inlineClasses/secondaryConstructorWithVararg.kt
-   1 compiler/testData/codegen/box/inlineClasses/resultInlining.kt
    1 compiler/testData/codegen/box/inlineClasses/referToUnderlyingPropertyOfInlineClass.kt
    1 compiler/testData/codegen/box/inlineClasses/referToUnderlyingPropertyInsideInlineClass.kt
    1 compiler/testData/codegen/box/inlineClasses/referToPropertyInCompanionObjectOfInlineClass.kt
@@ -3452,7 +3368,6 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/box/inlineClasses/kt27096_innerClass.kt
    1 compiler/testData/codegen/box/inlineClasses/kt27096_functional.kt
    1 compiler/testData/codegen/box/inlineClasses/kt27096_enum.kt
-   1 compiler/testData/codegen/box/inlineClasses/kt27096.kt
    1 compiler/testData/codegen/box/inlineClasses/kt26103_original.kt
    1 compiler/testData/codegen/box/inlineClasses/kt26103_covariantUnderlyingType.kt
    1 compiler/testData/codegen/box/inlineClasses/kt26103_contravariantUnderlyingType.kt
@@ -3614,31 +3529,25 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/box/enum/enumMultiModule.kt
    1 compiler/testData/codegen/box/enum/enumEntryMembers.kt
    1 compiler/testData/codegen/box/delegatedProperty/insideInlinedObjectMultiModule.kt
-   1 compiler/testData/codegen/box/coroutines/unitTypeReturn/coroutineReturn.kt
    1 compiler/testData/codegen/box/coroutines/stackUnwinding/rethrowInFinallyWithSuspension.kt
    1 compiler/testData/codegen/box/coroutines/stackUnwinding/rethrowInFinally.kt
-   1 compiler/testData/codegen/box/coroutines/simpleWithHandleResult.kt
    1 compiler/testData/codegen/box/coroutines/simpleSuspendCallableReference.kt
    1 compiler/testData/codegen/box/coroutines/simple.kt
    1 compiler/testData/codegen/box/coroutines/returnByLabel.kt
    1 compiler/testData/codegen/box/coroutines/noSuspensionPoints.kt
    1 compiler/testData/codegen/box/coroutines/multiModule/inlineFunctionWithOptionalParam.kt
-   1 compiler/testData/codegen/box/coroutines/localFunctions/named/stateMachine.kt
    1 compiler/testData/codegen/box/coroutines/localFunctions/named/simpleSuspensionPoint.kt
    1 compiler/testData/codegen/box/coroutines/localFunctions/named/simple.kt
    1 compiler/testData/codegen/box/coroutines/localFunctions/named/nestedLocals.kt
    1 compiler/testData/codegen/box/coroutines/lastStementAssignment.kt
    1 compiler/testData/codegen/box/coroutines/kt31784.kt
-   1 compiler/testData/codegen/box/coroutines/intrinsicSemantics/startCoroutine.kt
    1 compiler/testData/codegen/box/coroutines/handleResultNonUnitExpression.kt
    1 compiler/testData/codegen/box/coroutines/handleResultCallEmptyBody.kt
    1 compiler/testData/codegen/box/coroutines/featureIntersection/callableReference/function/genericCallableReferencesWithNullableTypes.kt
    1 compiler/testData/codegen/box/coroutines/debug/runtimeDebugMetadata.kt
-   1 compiler/testData/codegen/box/coroutines/createCoroutinesOnManualInstances.kt
    1 compiler/testData/codegen/box/coroutines/createCoroutineSafe.kt
    1 compiler/testData/codegen/box/coroutines/capturedVarInSuspendLambda.kt
    1 compiler/testData/codegen/box/coroutines/beginWithExceptionNoHandleException.kt
-   1 compiler/testData/codegen/box/coroutines/beginWithException.kt
    1 compiler/testData/codegen/box/constants/constantsInWhen.kt
    1 compiler/testData/codegen/box/closures/kt5589.kt
    1 compiler/testData/codegen/box/callableReference/varargAndDefaults/varargWithDefaultValue.kt
@@ -3661,7 +3570,6 @@ Changes from 2019-06-01 to 2019-07-01:
    1 compiler/testData/codegen/box/callableReference/bound/equals/reflectionReference.kt
    1 compiler/testData/codegen/box/callableReference/bound/equals/nullableReceiverInEquals.kt
    1 compiler/testData/codegen/box/assert/jvm/suspendLambdaAssertionsEnabled.kt
-   1 compiler/testData/codegen/box/arrays/arraysOfInlineClass/arrayOfInlineClassOfArrayOfInlineClass.kt
    1 compiler/testData/codegen/box/arrays/arraysOfInlineClass/accessArrayOfUnsigned.kt
    1 compiler/testData/codegen/box/arrays/arraysOfInlineClass/accessArrayOfInlineClass.kt
    1 compiler/testData/codegen/box/annotations/annotatedLambda/samLambda.kt

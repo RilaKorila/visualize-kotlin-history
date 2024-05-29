@@ -1,4 +1,3 @@
-Changes from 2017-07-01 to 2017-08-01:
    8 kotlinx-coroutines-core/src/test/kotlin/guide/test/TestUtil.kt
    6 reactive/coroutines-guide-reactive.md
    5 kotlinx-coroutines-core/src/main/kotlin/kotlinx/coroutines/experimental/Job.kt

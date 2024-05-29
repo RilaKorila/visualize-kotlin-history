@@ -1,4 +1,3 @@
-Changes from 2022-08-01 to 2022-09-01:
   26 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   26 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsWithLightTreeTestGenerated.java
   26 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendDiagnosticsTestGenerated.java
@@ -25,11 +24,11 @@ Changes from 2022-08-01 to 2022-09-01:
    9 plugins/kotlin-serialization/kotlin-serialization-compiler/src/org/jetbrains/kotlinx/serialization/compiler/backend/ir/SerializerIrGenerator.kt
    9 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/Context.kt
    9 compiler/psi/src/org/jetbrains/kotlin/parsing/KotlinParsing.java
+   9 build.gradle.kts
    8 libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/native/cocoapods/KotlinCocoapodsPlugin.kt
    8 libraries/tools/kotlin-gradle-plugin-integration-tests/src/test/kotlin/org/jetbrains/kotlin/gradle/ConfigurationCacheIT.kt
    8 compiler/psi/src/org/jetbrains/kotlin/parsing/SemanticWhitespaceAwarePsiBuilderImpl.java
    8 compiler/frontend/src/org/jetbrains/kotlin/resolve/PlatformConfiguratorBase.kt
-   8 build.gradle.kts
    8 .idea/kotlinc.xml
    7 plugins/kotlin-serialization/kotlin-serialization-compiler/src/org/jetbrains/kotlinx/serialization/compiler/backend/ir/SerializableIrGenerator.kt
    7 plugins/kotlin-serialization/kotlin-serialization-compiler/src/org/jetbrains/kotlinx/serialization/compiler/backend/ir/IrPredicates.kt
@@ -59,6 +58,7 @@ Changes from 2022-08-01 to 2022-09-01:
    6 analysis/symbol-light-classes/tests/org/jetbrains/kotlin/light/classes/symbol/base/AbstractSymbolLightClassesAnnotationOwnerTest.kt
    6 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/caches/SymbolLightClassFacadeCache.kt
    6 analysis/analysis-api-standalone/src/org/jetbrains/kotlin/analysis/api/standalone/StandaloneAnalysisAPISessionBuilder.kt
+   5 settings.gradle
    5 plugins/kotlin-serialization/kotlin-serialization-compiler/test/org/jetbrains/kotlinx/serialization/SerializationIrBoxTestGenerated.java
    5 plugins/kotlin-serialization/kotlin-serialization-compiler/src/org/jetbrains/kotlinx/serialization/compiler/resolve/SerializableProperties.kt
    5 plugins/kotlin-serialization/kotlin-serialization-compiler/src/org/jetbrains/kotlinx/serialization/compiler/fir/SerializationFirUtils.kt
@@ -92,7 +92,7 @@ Changes from 2022-08-01 to 2022-09-01:
    5 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirLightTreeBlackBoxInlineCodegenTestGenerated.java
    5 compiler/fir/fir2ir/tests-gen/org/jetbrains/kotlin/test/runners/codegen/FirBlackBoxInlineCodegenTestGenerated.java
    5 compiler/cli/src/org/jetbrains/kotlin/cli/jvm/jvmArguments.kt
-   4 settings.gradle
+   5 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForFacadeBase.kt
    4 plugins/lombok/tests-gen/org/jetbrains/kotlin/lombok/IrBlackBoxCodegenTestForLombokGenerated.java
    4 plugins/lombok/tests-gen/org/jetbrains/kotlin/lombok/FirBlackBoxCodegenTestForLombokGenerated.java
    4 plugins/lombok/tests-gen/org/jetbrains/kotlin/lombok/BlackBoxCodegenTestForLombokGenerated.java
@@ -112,6 +112,7 @@ Changes from 2022-08-01 to 2022-09-01:
    4 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/descriptors/ClassLayoutBuilder.kt
    4 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/PsiToIr.kt
    4 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/backend/konan/KonanLoweringPhases.kt
+   4 compiler/tests-common/build.gradle.kts
    4 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/ir/IrTextTestGenerated.java
    4 compiler/testData/psi/typeArgumentList/recovery/callExpressions_ERR.txt
    4 compiler/testData/psi/typeArgumentList/recovery/callExpressions_ERR.kt
@@ -163,7 +164,6 @@ Changes from 2022-08-01 to 2022-09-01:
    4 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/diagnostic/compiler/based/DiagnosisCompilerFirTestdataTestGenerated.java
    4 analysis/low-level-api-fir/testdata/lazyResolve/annotationParameters.txt
    4 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/transformers/LLFirLazyTransformer.kt
-   4 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForFacadeBase.kt
    4 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/components/KtFirCallResolver.kt
    3 plugins/lombok/tests-gen/org/jetbrains/kotlin/lombok/FirDiagnosticTestForLombokGenerated.java
    3 plugins/lombok/tests-gen/org/jetbrains/kotlin/lombok/DiagnosticTestForLombokGenerated.java
@@ -227,7 +227,6 @@ Changes from 2022-08-01 to 2022-09-01:
    3 core/reflection.jvm/src/kotlin/reflect/jvm/internal/ReflectionFactoryImpl.java
    3 compiler/tests-gen/org/jetbrains/kotlin/cli/CliTestGenerated.java
    3 compiler/tests-different-jdk/build.gradle.kts
-   3 compiler/tests-common/build.gradle.kts
    3 compiler/testData/ir/irText/classes/enumEntries.ir.txt
    3 compiler/testData/diagnostics/testsWithStdLib/experimental/subClassOptInRequired.kt
    3 compiler/testData/diagnostics/tests/inference/builderInference/kt53422.kt
@@ -290,6 +289,7 @@ Changes from 2022-08-01 to 2022-09-01:
    3 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/FirLazyDeclarationResolveTestGenerated.java
    3 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/transformers/LLFirDesignatedSupertypeResolverTransformer.kt
    3 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/KotlinAsJavaSupportBase.kt
+   3 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/KotlinAsJavaSupport.kt
    3 analysis/analysis-internal-utils/src/org/jetbrains/kotlin/analysis/utils/errors/ExceptionAttachmentBuilder.kt
    3 analysis/analysis-api/build.gradle.kts
    3 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/psiDeclarationProvider/FirStandaloneNormalAnalysisSourceModuleDecompiledPsiDeclarationProviderTestGenerated.java
@@ -505,6 +505,9 @@ Changes from 2022-08-01 to 2022-09-01:
    2 compiler/resolution/src/org/jetbrains/kotlin/resolve/calls/model/KotlinCallDiagnostics.kt
    2 compiler/psi/src/org/jetbrains/kotlin/parsing/LastBefore.java
    2 compiler/psi/src/org/jetbrains/kotlin/kdoc/lexer/KDocTokens.java
+   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtLightModifierListDescriptorBased.kt
+   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightUtils.kt
+   2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightParameters.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraKtLightClassForFacade.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KotlinK1LightClassFactory.kt
    2 compiler/light-classes/src/org/jetbrains/kotlin/asJava/LightClassGenerationSupport.kt
@@ -539,6 +542,7 @@ Changes from 2022-08-01 to 2022-09-01:
    2 compiler/frontend/src/org/jetbrains/kotlin/types/expressions/BasicExpressionTypingVisitor.java
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/lazy/descriptors/LazyClassDescriptor.java
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/deprecation/DeprecationResolver.kt
+   2 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/callUtil.kt
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/GenericCandidateResolver.kt
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/TypeResolver.kt
    2 compiler/frontend/src/org/jetbrains/kotlin/resolve/CompilerDeserializationConfiguration.kt
@@ -737,8 +741,14 @@ Changes from 2022-08-01 to 2022-09-01:
    2 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/api/LowLevelFirApiFacadeForResolveOnAir.kt
    2 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/api/KtDeclarationAndFirDeclarationEqualityChecker.kt
    2 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/LLFirLazyDeclarationResolver.kt
-   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/KotlinAsJavaSupport.kt
+   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/lightClassUtils.kt
+   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightMethodImpl.kt
+   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForSourceDeclaration.kt
+   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassBase.kt
+   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinLightClassFactory.kt
+   2 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/LightClassUtil.kt
    2 analysis/decompiled/light-classes-for-decompiled/src/org/jetbrains/kotlin/analysis/decompiled/light/classes/DecompiledLightClassesFactory.kt
+   2 analysis/decompiled/decompiler-to-psi/build.gradle.kts
    2 analysis/analysis-api/testData/standalone/singleModule/todo.txt
    2 analysis/analysis-api-standalone/tests/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/components/psiDeclarationProvider/TestPsiElementRenderer.kt
    2 analysis/analysis-api-standalone/tests/org/jetbrains/kotlin/analysis/api/standalone/fir/test/StandaloneModeTestServiceRegistrar.kt
@@ -746,7 +756,6 @@ Changes from 2022-08-01 to 2022-09-01:
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/smartCastProvider/FirStandaloneNormalAnalysisSourceModuleHLSmartCastInfoTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/psiTypeProvider/FirStandaloneNormalAnalysisSourceModuleAnalysisApiPsiTypeProviderTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/compileTimeConstantProvider/FirStandaloneNormalAnalysisSourceModuleCompileTimeConstantEvaluatorTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/callResolver/FirStandaloneNormalAnalysisSourceModuleResolveCallTestGenerated.java
    2 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/annotations/FirStandaloneNormalAnalysisSourceModuleAnalysisApiAnnotationsOnDeclarationsTestGenerated.java
@@ -762,9 +771,7 @@ Changes from 2022-08-01 to 2022-09-01:
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/psiTypeProvider/FirIdeNormalAnalysisSourceModuleAnalysisApiPsiTypeProviderTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/psiTypeProvider/FirIdeDependentAnalysisSourceModuleAnalysisApiPsiTypeProviderTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/compileTimeConstantProvider/FirIdeNormalAnalysisSourceModuleCompileTimeConstantEvaluatorTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/compileTimeConstantProvider/FirIdeDependentAnalysisSourceModuleCompileTimeConstantEvaluatorTestGenerated.java
    2 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/callResolver/FirIdeNormalAnalysisSourceModuleResolveCallTestGenerated.java
@@ -777,12 +784,12 @@ Changes from 2022-08-01 to 2022-09-01:
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/annotations/firAnnotationUtils.kt
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/KtSymbolByFirBuilder.kt
    2 analysis/analysis-api-fir/src/org/jetbrains/kotlin/analysis/api/fir/KtFirAnalysisSessionProvider.kt
+   2 analysis/analysis-api-fir/build.gradle.kts
    2 analysis/analysis-api-fir/analysis-api-fir-generator/build.gradle.kts
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/references/Fe10IdeNormalAnalysisSourceModuleReferenceResolveTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/smartCastProvider/Fe10IdeNormalAnalysisSourceModuleHLSmartCastInfoTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/psiTypeProvider/Fe10IdeNormalAnalysisSourceModuleAnalysisApiPsiTypeProviderTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleHLExpressionTypeTestGenerated.java
-   2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/compileTimeConstantProvider/Fe10IdeNormalAnalysisSourceModuleCompileTimeConstantEvaluatorTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/callResolver/Fe10IdeNormalAnalysisSourceModuleResolveCallTestGenerated.java
    2 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/annotations/Fe10IdeNormalAnalysisSourceModuleAnalysisApiAnnotationsOnDeclarationsTestGenerated.java
@@ -2853,7 +2860,16 @@ Changes from 2022-08-01 to 2022-09-01:
    1 compiler/psi/src/org/jetbrains/kotlin/lexer/KtKeywordToken.java
    1 compiler/psi/src/org/jetbrains/kotlin/kdoc/lexer/KDocToken.java
    1 compiler/psi/src/org/jetbrains/kotlin/kdoc/lexer/KDocLexer.java
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/lightAnnotations.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/elements/KtToJvmAnnotationsConverter.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightSupport.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightMethods.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightClass.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/ultraLightAnnotations.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightClassForRepeatableAnnotationContainer.kt
+   1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/KtLightClassImpl.kt
    1 compiler/light-classes/src/org/jetbrains/kotlin/asJava/classes/FacadeCache.kt
+   1 compiler/light-classes/build.gradle.kts
    1 compiler/javac-wrapper/src/org/jetbrains/kotlin/javac/wrappers/trees/treeBasedTypes.kt
    1 compiler/ir/serialization.js/build.gradle.kts
    1 compiler/ir/serialization.common/src/org/jetbrains/kotlin/backend/common/serialization/proto/IrSyntheticBodyKind.java
@@ -3251,7 +3267,6 @@ Changes from 2022-08-01 to 2022-09-01:
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/extensions/AssignResolutionAltererExtension.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/constants/evaluate/ConstantExpressionEvaluator.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/checkers/OptInMarkerDeclarationAnnotationChecker.kt
-   1 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/callUtil.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/util/CallResolverUtil.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/tower/NewCallArguments.kt
    1 compiler/frontend/src/org/jetbrains/kotlin/resolve/calls/tower/KotlinToResolvedCallTransformer.kt
@@ -3272,10 +3287,12 @@ Changes from 2022-08-01 to 2022-09-01:
    1 compiler/frontend/cfg/src/org/jetbrains/kotlin/cfg/ControlFlowProcessor.kt
    1 compiler/frontend.java/src/org/jetbrains/kotlin/synthetic/JavaSyntheticScopes.kt
    1 compiler/frontend.java/src/org/jetbrains/kotlin/synthetic/JavaSyntheticPropertiesScope.kt
+   1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodParameterKind.java
    1 compiler/frontend.java/src/org/jetbrains/kotlin/resolve/jvm/checkers/WarningAwareUpperBoundChecker.kt
    1 compiler/frontend.common/src/org/jetbrains/kotlin/resolve/constants/evaluate/OperationsMapGenerated.kt
    1 compiler/frontend.common/src/org/jetbrains/kotlin/KtSourceElement.kt
    1 compiler/frontend.common.jvm/src/org/jetbrains/kotlin/fileClasses/JvmFileClassUtil.kt
+   1 compiler/frontend.common-psi/src/org/jetbrains/kotlin/resolve/calls/util/psiUtils.kt
    1 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/printer/element.kt
    1 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/model/Field.kt
    1 compiler/fir/tree/tree-generator/src/org/jetbrains/kotlin/fir/tree/generator/model/Element.kt
@@ -3882,7 +3899,17 @@ Changes from 2022-08-01 to 2022-09-01:
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/state/GenerationState.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/ObjectTransformer.kt
    1 compiler/backend/src/org/jetbrains/kotlin/codegen/inline/InlineCodegen.kt
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodSignature.java
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodParameterSignature.java
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodParameterKind.java
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmMethodGenericSignature.java
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/jvmSignature/JvmClassSignature.java
    1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/resolve/jvm/AsmTypes.java
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/load/kotlin/inlineClassMapping.kt
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/load/kotlin/TypeMappingModeExtensions.kt
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/codegen/signature/JvmSignatureWriter.java
+   1 compiler/backend.common.jvm/src/org/jetbrains/kotlin/codegen/signature/BothSignatureWriter.java
+   1 compiler/backend.common.jvm/build.gradle.kts
    1 compiler/android-tests/build.gradle.kts
    1 buildSrc/src/main/kotlin/tasks.kt
    1 buildSrc/src/main/kotlin/plugins/DexMethodCount.kt
@@ -3978,6 +4005,7 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/symbol-light-classes/src/org/jetbrains/kotlin/light/classes/symbol/SymbolLightIdentifier.kt
    1 analysis/symbol-light-classes/src/org/jetbrains/kotlin/analysis/providers/PsiDeclarationAndKtSymbolEqualityChecker.kt
    1 analysis/symbol-light-classes/src/org/jetbrains/kotlin/analysis/providers/KotlinPsiDeclarationProvider.kt
+   1 analysis/symbol-light-classes/build.gradle.kts
    1 analysis/project-structure/src/org/jetbrains/kotlin/analysis/project/structure/ProjectStructureProvider.kt
    1 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/services/LLFirSealedClassInheritorsProcessorFactoryForTests.kt
    1 analysis/low-level-api-fir/tests/org/jetbrains/kotlin/analysis/low/level/api/fir/resolve/InnerDeclarationsResolvePhaseTestGenerated.java
@@ -4041,16 +4069,49 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/FirDesignationState.kt
    1 analysis/low-level-api-fir/src/org/jetbrains/kotlin/analysis/low/level/api/fir/DeclarationCopyBuilder.kt
    1 analysis/low-level-api-fir/build.gradle.kts
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/lightClassUtils.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightMethodImpl.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassBase.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinLightClassFactory.kt
-   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/LightClassUtil.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/finder/KtLightPackage.java
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/finder/JavaElementFinder.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/utils.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/PsiElementWithOrigin.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/LightVariableBuilder.java
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/LightParameter.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightPsiJavaCodeReferenceElement.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightParameterList.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightModifierList.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightMemberImpl.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightIdentifier.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightElements.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightElementBase.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightAnnotationsValues.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KtLightAbstractAnnotation.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KotlinLightTypeParameterListBuilder.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/KotlinLightTypeParameterBuilder.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/elements/FakeFileForLightClass.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/methodIndices.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/lightClassPlatformUtils.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/implUtils.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/LightClassesLazyCreator.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightTypeParameter.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtUltraLightElementWithNullabilityAnnotation.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForScript.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClassForFacade.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtLightClass.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KtFakeLightClass.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinSuperTypeListBuilder.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinLightReferenceListBuilder.java
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/classes/KotlinClassInnerStuffCache.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/builder/LightElementOrigin.kt
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/builder/ClsWrapperStubPsiFactory.java
+   1 analysis/light-classes-base/src/org/jetbrains/kotlin/asJava/ImpreciseResolveResult.kt
+   1 analysis/light-classes-base/build.gradle.kts
    1 analysis/kt-references/src/org/jetbrains/kotlin/idea/references/KtReference.kt
+   1 analysis/kt-references/kt-references-fe10/build.gradle.kts
+   1 analysis/kt-references/build.gradle.kts
    1 analysis/decompiled/light-classes-for-decompiled/src/org/jetbrains/kotlin/analysis/decompiled/light/classes/KtLightMethodForDecompiledDeclaration.kt
    1 analysis/decompiled/light-classes-for-decompiled/src/org/jetbrains/kotlin/analysis/decompiled/light/classes/KtLightClassForDecompiledFacade.kt
+   1 analysis/decompiled/light-classes-for-decompiled/build.gradle.kts
+   1 analysis/decompiled/light-classes-for-decompiled-fe10/build.gradle.kts
    1 analysis/decompiled/decompiler-to-psi/tests/org/jetbrains/kotlin/analysis/decompiler/psi/ByDecompiledPsiStubBuilderTestGenerated.java
-   1 analysis/decompiled/decompiler-to-psi/build.gradle.kts
    1 analysis/decompiled/decompiler-to-file-stubs/tests/org/jetbrains/kotlin/analysis/decompiler/stub/files/ClsStubBuilderTestGenerated.java
    1 analysis/decompiled/decompiler-to-file-stubs/build.gradle.kts
    1 analysis/build.gradle.kts
@@ -4086,8 +4147,6 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/analysis-api/testData/components/psiTypeProvider/psiType/forDeclaration/suspendFunctionValueParameterNoStdlib.descriptors.txt
    1 analysis/analysis-api/testData/components/expressionTypeProvider/expressionType/assignment/readArrayElement.txt
    1 analysis/analysis-api/testData/components/expressionTypeProvider/expressionType/assignment/readArrayElement.kt
-   1 analysis/analysis-api/testData/components/expressionTypeProvider/declarationReturnType/varargParam.txt
-   1 analysis/analysis-api/testData/components/expressionTypeProvider/declarationReturnType/varargParam.kt
    1 analysis/analysis-api/testData/components/compileTimeConstantProvider/evaluate/javaStaticFinalField.txt
    1 analysis/analysis-api/testData/components/compileTimeConstantProvider/evaluate/javaStaticFinalField.kt
    1 analysis/analysis-api/testData/components/compileTimeConstantProvider/evaluate/javaStaticField.txt
@@ -4104,7 +4163,6 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/lifetime/KtReadActionConfinementLifetimeToken.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/components/KtSignatureSubstitutor.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/components/KtOverrideInfoProvider.kt
-   1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/components/KtExpressionTypeProvider.kt
    1 analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/components/KtCallResolver.kt
    1 analysis/analysis-api-standalone/tests/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/components/psiDeclarationProvider/AbstractDecompiledPsiDeclarationProviderTest.kt
    1 analysis/analysis-api-standalone/tests/org/jetbrains/kotlin/analysis/api/standalone/fir/test/StandaloneModeConfigurator.kt
@@ -4133,6 +4191,7 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/psiTypeProvider/FirStandaloneNormalAnalysisSourceModuleAnalysisApiExpressionPsiTypeProviderTestGenerated.java
    1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/importOptimizer/FirStandaloneNormalAnalysisSourceModuleAnalysisApiImportOptimizerTestGenerated.java
    1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleExpectedExpressionTypeTestGenerated.java
+   1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionTypeProvider/FirStandaloneNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionInfoProvider/FirStandaloneNormalAnalysisSourceModuleWhenMissingCasesTestGenerated.java
    1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/expressionInfoProvider/FirStandaloneNormalAnalysisSourceModuleReturnTargetSymbolTestGenerated.java
    1 analysis/analysis-api-standalone/tests-gen/org/jetbrains/kotlin/analysis/api/standalone/fir/test/cases/generated/cases/components/diagnosticProvider/FirStandaloneNormalAnalysisSourceModuleCollectDiagnosticsTestGenerated.java
@@ -4198,7 +4257,9 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/psiTypeProvider/FirIdeDependentAnalysisSourceModuleAnalysisApiExpressionPsiTypeProviderTestGenerated.java
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/importOptimizer/FirIdeNormalAnalysisSourceModuleAnalysisApiImportOptimizerTestGenerated.java
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleExpectedExpressionTypeTestGenerated.java
+   1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleExpectedExpressionTypeTestGenerated.java
+   1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionTypeProvider/FirIdeDependentAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionInfoProvider/FirIdeNormalAnalysisSourceModuleWhenMissingCasesTestGenerated.java
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionInfoProvider/FirIdeNormalAnalysisSourceModuleReturnTargetSymbolTestGenerated.java
    1 analysis/analysis-api-fir/tests-gen/org/jetbrains/kotlin/analysis/api/fir/test/cases/generated/cases/components/expressionInfoProvider/FirIdeDependentAnalysisSourceModuleWhenMissingCasesTestGenerated.java
@@ -4248,6 +4309,7 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/symbolDeclarationOverridesProvider/Fe10IdeNormalAnalysisSourceModuleOverriddenDeclarationProviderTestGenerated.java
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/symbolDeclarationOverridesProvider/Fe10IdeNormalAnalysisSourceModuleIsSubclassOfTestGenerated.java
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleExpectedExpressionTypeTestGenerated.java
+   1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionTypeProvider/Fe10IdeNormalAnalysisSourceModuleDeclarationReturnTypeTestGenerated.java
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionInfoProvider/Fe10IdeNormalAnalysisSourceModuleWhenMissingCasesTestGenerated.java
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/expressionInfoProvider/Fe10IdeNormalAnalysisSourceModuleReturnTargetSymbolTestGenerated.java
    1 analysis/analysis-api-fe10/tests-gen/org/jetbrains/kotlin/analysis/api/fe10/test/cases/generated/cases/components/diagnosticProvider/Fe10IdeNormalAnalysisSourceModuleCollectDiagnosticsTestGenerated.java
@@ -4258,7 +4320,6 @@ Changes from 2022-08-01 to 2022-09-01:
    1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/utils/KtFe10TypeSystemCommonBackendContextForTypeMapping.kt
    1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/symbols/descriptorBased/base/KtFe10DescSymbol.kt
    1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/components/KtFe10TypeProvider.kt
-   1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/components/KtFe10ExpressionTypeProvider.kt
    1 analysis/analysis-api-fe10/src/org/jetbrains/kotlin/analysis/api/descriptors/components/KtFe10CallResolver.kt
    1 .idea/runConfigurations/Generate_MPP_Tests.xml
    1 .idea/kotlinTestDataPluginTestDataPaths.xml

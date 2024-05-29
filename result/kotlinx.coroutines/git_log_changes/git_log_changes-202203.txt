@@ -1,1 +1,11 @@
-Changes from 2022-03-01 to 2022-04-01:
+   1 kotlinx-coroutines-test/common/src/TestDispatcher.kt
+   1 kotlinx-coroutines-test/README.md
+   1 kotlinx-coroutines-core/jvm/test/LimitedParallelismUnhandledExceptionTest.kt
+   1 kotlinx-coroutines-core/concurrent/test/LimitedParallelismConcurrentTest.kt
+   1 kotlinx-coroutines-core/common/test/LimitedParallelismSharedTest.kt
+   1 kotlinx-coroutines-core/common/src/internal/LimitedDispatcher.kt
+   1 kotlinx-coroutines-core/common/src/channels/Channel.kt
+   1 kotlinx-coroutines-core/common/src/Dispatchers.common.kt
+   1 docs/topics/exception-handling.md
+   1 docs/topics/coroutines-basics.md
+   1 docs/topics/coroutine-context-and-dispatchers.md

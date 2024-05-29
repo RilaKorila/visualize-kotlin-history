@@ -1,4 +1,3 @@
-Changes from 2018-06-01 to 2018-07-01:
   11 gradle.properties
   11 coroutines-guide.md
    8 ui/coroutines-guide-ui.md

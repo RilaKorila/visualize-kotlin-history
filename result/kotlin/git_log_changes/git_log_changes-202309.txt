@@ -1,4 +1,3 @@
-Changes from 2023-09-01 to 2023-10-01:
   36 compiler/tests-common-new/tests-gen/org/jetbrains/kotlin/test/runners/DiagnosticTestGenerated.java
   22 kotlin-native/backend.native/compiler/ir/backend.native/src/org/jetbrains/kotlin/ir/util/IrUtils2.kt
   21 compiler/fir/analysis-tests/tests-gen/org/jetbrains/kotlin/test/runners/FirOldFrontendMPPDiagnosticsWithPsiTestGenerated.java
