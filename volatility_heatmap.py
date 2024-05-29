@@ -2,16 +2,14 @@ import csv
 import re
 from collections import defaultdict
 
-start_year = 2011
+start_year = 2014
 start_month = 1
-end_year = 2016
+end_year = 2024
 end_month = 6
 file_names = []
 
 BASE_PATH = "./result/kotlin/git_log_changes/"
-output_csv_fname = (
-    "./result/kotlin/git_hisitory_logs_each_month_only_kt_before201606.csv"
-)
+output_csv_fname = "./result/kotlin/git_hisitory_logs_each_month.csv"
 
 # 開始年月から終了年月までの各年月のファイル名を生成
 for year in range(start_year, end_year + 1):
@@ -29,18 +27,19 @@ csv_columns = ["filename"]
 changed_files = defaultdict(dict)
 
 for file_name in file_names:
-    with open(file_name, "r") as file:
-        lines = file.readlines()
-        match = re.search(r"\d{4}-\d{2}-\d{2}", lines[0])
-        extracted_start_date = match.group()
-        csv_columns.append(extracted_start_date)
+    try:
+        with open(file_name, "r") as file:
+            match = re.search(r"\d{6}", file_name)
+            extracted_start_date = match.group()
+            csv_columns.append(extracted_start_date)
+            lines = file.readlines()
 
-        for line in lines[1:]:
-            if line[0] == "=":
-                break
-            changed_count = int(line.split()[0])
-            changed_filename = line.split()[1]
-            changed_files[changed_filename][extracted_start_date] = changed_count
+            for line in lines[1:]:
+                changed_count = int(line.split()[0])
+                changed_filename = line.split()[1]
+                changed_files[changed_filename][extracted_start_date] = changed_count
+    except FileNotFoundError as e:
+        print(e)
 
 # csvで出力
 # 縦軸: filename, 横軸: changed_date, セルの中: changed_counts
@@ -54,7 +53,7 @@ with open(output_csv_fname, "w") as f:
             continue
         padded_record = [file]
         changed_dates = set(records.keys())
-        for date in csv_columns:
+        for date in csv_columns[1:]:
             if date in changed_dates:
                 padded_record.append(records[date])
             else:
