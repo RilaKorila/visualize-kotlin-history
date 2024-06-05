@@ -1,0 +1,2 @@
+   3 proposals/stdlib/bignumber-operations.md
+   1 proposals/stdlib/window-sliding.md

@@ -1,0 +1,4 @@
+   9 README.md
+   4 proposals/type-aliases.md
+   3 proposals/bound-callable-references.md
+   1 spec-bound-calref.md

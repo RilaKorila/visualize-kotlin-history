@@ -1,0 +1,6 @@
+   2 proposals/stdlib/scan-and-scanReduce.md
+   2 proposals/jvm-records.md
+   1 proposals/stdlib/runningFold-and-runningReduce.md
+   1 proposals/stdlib/locale-agnostic-string-conversions.md
+   1 proposals/stdlib/char-int-conversions.md
+   1 proposals/inline-classes.md

@@ -1,0 +1,1 @@
+   3 proposals/stdlib/window-sliding.md

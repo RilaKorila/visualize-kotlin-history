@@ -1,0 +1,3 @@
+   2 proposals/unsigned-types.md
+   1 proposals/stdlib/result.md
+   1 proposals/stdlib/random.md

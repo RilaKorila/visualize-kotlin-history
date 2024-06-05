@@ -1,0 +1,2 @@
+   9 proposals/scripting-support.md
+   1 proposals/script-definition-template.md

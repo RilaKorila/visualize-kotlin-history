@@ -1,0 +1,5 @@
+   2 proposals/stdlib/durations-and-clocks.md
+   1 proposals/stdlib/scan-and-scanReduce.md
+   1 proposals/stdlib/durations-and-time-measurement.md
+   1 proposals/extensions/android-parcelable.md
+   1 proposals/explicit-api-mode.md

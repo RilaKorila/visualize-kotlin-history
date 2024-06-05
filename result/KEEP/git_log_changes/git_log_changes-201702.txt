@@ -1,0 +1,4 @@
+   1 proposals/stdlib/on-each.md
+   1 proposals/stdlib/map-copying.md
+   1 proposals/stdlib/group-and-fold.md
+   1 proposals/stdlib/bignumber-operations.md

@@ -1,0 +1,10 @@
+   3 proposals/underscores-in-numeric-literals.md
+   3 proposals/scope-control-for-implicit-receivers.md
+   2 proposals/type-aliases.md
+   2 proposals/generic-values-and-valueof-for-enums.md
+   1 proposals/underscore-for-unused-parameters.md
+   1 proposals/stdlib/window-sliding.md
+   1 proposals/stdlib/on-each.md
+   1 proposals/script-definition-template.md
+   1 proposals/jdk-dependent-built-ins.md
+   1 proposals/destructuring-in-parameters.md

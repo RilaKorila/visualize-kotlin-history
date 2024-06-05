@@ -1,0 +1,2 @@
+   2 proposals/stdlib/locale-agnostic-string-conversions.md
+   1 proposals/jdk-dependent-built-ins.md

@@ -1,0 +1,5 @@
+   2 proposals/jvm-field-annotation-in-interface-companion.md
+   1 proposals/jvm-static-annotation-in-interface-companion.md
+   1 proposals/inline-classes.md
+   1 proposals/coroutines.md
+   1 README.md

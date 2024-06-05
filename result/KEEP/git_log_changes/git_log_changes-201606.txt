@@ -1,0 +1,8 @@
+   4 proposals/stdlib/occurrences-of.md
+   4 proposals/stdlib/group-and-fold.md
+   2 proposals/sealed-class-inheritance.md
+   2 proposals/script-definition-template.md
+   2 proposals/data-class-inheritance.md
+   1 proposals/type-aliases.md
+   1 proposals/stdlib/string-to-number.md
+   1 proposals/destructuring-in-parameters.md

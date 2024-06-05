@@ -1,0 +1,9 @@
+   7 proposals/js/JsName.md
+   2 proposals/type-aliases.md
+   2 proposals/js/_Glossary.md
+   1 proposals/underscores-in-numeric-literals.md
+   1 proposals/underscore-for-unused-parameters.md
+   1 proposals/stdlib/abstract-collections.md
+   1 proposals/destructuring-in-parameters.md
+   1 proposals/data-class-inheritance.md
+   1 proposals/bound-callable-references.md

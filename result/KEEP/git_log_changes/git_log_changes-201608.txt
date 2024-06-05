@@ -1,0 +1,5 @@
+   7 proposals/bound-callable-references.md
+   3 proposals/stdlib/map-copying.md
+   3 proposals/stdlib/group-and-fold.md
+   2 proposals/stdlib/peek.md
+   2 README.md

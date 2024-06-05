@@ -1,0 +1,3 @@
+   2 proposals/repeatable-annotations.md
+   1 proposals/annotation-instantiation.md
+   1 notes/value-classes.md

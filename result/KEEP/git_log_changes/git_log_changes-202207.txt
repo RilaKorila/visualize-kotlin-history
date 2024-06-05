@@ -1,0 +1,4 @@
+   1 proposals/stdlib/durations-and-time-measurement.md
+   1 proposals/inline-classes.md
+   1 notes/web-workers.md
+   1 README.md

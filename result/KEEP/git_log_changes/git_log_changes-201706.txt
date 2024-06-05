@@ -1,0 +1,3 @@
+   1 proposals/stdlib/bignumber-operations.md
+   1 proposals/opening-classes-for-frameworks.md
+   1 proposals/extensions/opening-classes-for-frameworks.md

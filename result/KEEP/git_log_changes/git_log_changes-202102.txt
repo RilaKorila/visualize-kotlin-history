@@ -1,0 +1,4 @@
+   3 notes/value-classes.md
+   1 proposals/sealed-interface-freedom.md
+   1 proposals/sealed-class-inheritance.md
+   1 README.md

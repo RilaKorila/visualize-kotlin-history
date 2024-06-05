@@ -1,0 +1,12 @@
+   5 proposals/jdk-dependent-built-ins.md
+   4 proposals/stdlib/group-and-fold.md
+   4 proposals/inline-properties.md
+   4 TargetDependentBuiltIns.md
+   2 proposals/sealed-class-inheritance.md
+   2 proposals/scope-control-for-implicit-receivers.md
+   2 proposals/local-delegated-properties.md
+   1 proposals/stdlib/string-to-number.md
+   1 proposals/stdlib/map-copying.md
+   1 proposals/opening-classes-for-frameworks.md
+   1 proposals/generic-values-and-valueof-for-enums.md
+   1 proposals/data-class-inheritance.md

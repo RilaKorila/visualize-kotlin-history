@@ -1,0 +1,3 @@
+   7 proposals/open-ended-ranges.md
+   1 proposals/stdlib/durations-and-time-measurement.md
+   1 proposals/references-to-java-synthetic-properties.md

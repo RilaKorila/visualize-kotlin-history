@@ -8,8 +8,8 @@ end_year = 2024
 end_month = 6
 file_names = []
 
-BASE_PATH = "./result/kotlin/git_log_changes/"
-output_csv_fname = "./result/kotlin/git_hisitory_logs_each_month.csv"
+BASE_PATH = "./result/KEEP/git_log_changes/"
+output_csv_fname = "./result/KEEP/git_hisitory_logs_each_month.csv"
 
 # 開始年月から終了年月までの各年月のファイル名を生成
 for year in range(start_year, end_year + 1):
@@ -48,9 +48,9 @@ with open(output_csv_fname, "w") as f:
     writer.writerow(csv_columns)
 
     for file, records in changed_files.items():
-        if file.split(".")[-1] != "kt":
-            # 拡張子がkt以外はskip
-            continue
+        # if file.split(".")[-1] != "kt":
+        #     # 拡張子がkt以外はskip
+        #     continue
         padded_record = [file]
         changed_dates = set(records.keys())
         for date in csv_columns[1:]:

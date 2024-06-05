@@ -1,0 +1,12 @@
+   5 proposals/lateinit-property-intrinsics.md
+   2 proposals/lateinit-property-isinitialized-intrinsic.md
+   2 proposals/jsr-305-custom-nullability-qualifiers.md
+   1 proposals/type-aliases.md
+   1 proposals/stdlib/on-each.md
+   1 proposals/local-delegated-properties.md
+   1 proposals/jdk-dependent-built-ins.md
+   1 proposals/inline-properties.md
+   1 proposals/extensions/android-parcelable.md
+   1 proposals/destructuring-in-parameters.md
+   1 proposals/data-class-inheritance.md
+   1 proposals/bound-callable-references.md

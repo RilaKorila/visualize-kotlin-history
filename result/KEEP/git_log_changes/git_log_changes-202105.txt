@@ -1,0 +1,6 @@
+   2 proposals/inline-classes.md
+   1 proposals/unsigned-types.md
+   1 proposals/stdlib/result.md
+   1 proposals/stdlib/locale-agnostic-case-conversions.md
+   1 proposals/stdlib/char-int-conversions.md
+   1 notes/value-classes.md

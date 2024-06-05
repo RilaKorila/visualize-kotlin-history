@@ -1,0 +1,6 @@
+   5 proposals/enhancing-main-convention.md
+   2 proposals/inline-classes.md
+   1 proposals/scripting-support.md
+   1 proposals/named-arguments-in-their-own-position.md
+   1 proposals/denotable-nullability-flexible-types.md
+   1 README.md
