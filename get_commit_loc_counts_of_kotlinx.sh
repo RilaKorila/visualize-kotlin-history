@@ -9,7 +9,6 @@ while IFS= read -r line; do
 done < all_repositories_in_Kotlin.txt
 
 BASE_DIR="/path/to/visualize-kotlin-history"
-OUTPUT_FNAME="./result/commit_counts_per_month.csv"
 
 cd ${BASE_DIR}/sources/
 
@@ -29,13 +28,11 @@ done
 for REPOSITORY in "${REPOSITORIES[@]}"; do
     cd ${BASE_DIR}/sources/${REPOSITORY}
 
-    sh ${BASE_DIR}/get_volatility_loc.sh
+    sh ${BASE_DIR}/get_volatility_loc_sum.sh
 
-    mv git_log_changes_loc-20*.csv ${BASE_DIR}/tmp/
+    # リポジトリ名に . を含むものは _ に置換
+    REPOSITORY_NAME=${REPOSITORY//./_}
+    mv git_log_changes_loc_sum_per_month.csv ${BASE_DIR}/result/kotlin_organization/${REPOSITORY_NAME}.csv
 
     cd ${BASE_DIR}/
-
-    python commit_counts_line_chart.py ${REPOSITORY} ${OUTPUT_FNAME}
-
-    rm ${BASE_DIR}/tmp/*.txt
 done
