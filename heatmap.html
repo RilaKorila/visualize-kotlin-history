@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Code Changes Heatmap</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .cell:hover {
+            stroke: #000;
+            stroke-width: 1px;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+        }
+
+        .controls {
+            margin: 20px;
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+        }
+
+        .control-row {
+            display: flex;
+            gap: 40px;
+        }
+
+        .group-selector {
+            display: flex;
+            gap: 20px;
+        }
+
+        .filter-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .path-patterns {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .pattern-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .filter-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .path-level {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .path-level:last-child {
+            border-bottom: none;
+        }
+
+        .path-level-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .path-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .axis-label {
+            font-size: 11px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <div class="control-row">
+            <div class="group-selector">
+                <div class="section-title">Group:</div>
+                <label>
+                    <input type="radio" name="group" value="group1" checked>
+                    Group 1
+                </label>
+                <label>
+                    <input type="radio" name="group" value="group2">
+                    Group 2
+                </label>
+                <label>
+                    <input type="radio" name="group" value="group3">
+                    Group 3
+                </label>
+            </div>
+        </div>
+        <div class="control-row">
+            <div class="path-patterns">
+                <div class="section-title">Directory Pattern:</div>
+                <label class="pattern-group">
+                    <input type="radio" name="pattern" value="all" checked>
+                    All Files
+                </label>
+                <label class="pattern-group">
+                    <input type="radio" name="pattern" value="controller">
+                    src/main/controller
+                </label>
+                <label class="pattern-group">
+                    <input type="radio" name="pattern" value="application">
+                    src/main/application
+                </label>
+            </div>
+        </div>
+        <div class="control-row">
+            <div class="filter-section">
+                <div class="section-title">Additional Filters:</div>
+                <div id="pathFilters" class="filter-options">
+                    <!-- チェックボックスはJavaScriptで動的に生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="heatmap"></div>
+
+    <script>
+        const margin = { top: 50, right: 50, bottom: 120, left: 300 };
+        const width = 1600 - margin.left - margin.right;
+        const height = 800 - margin.top - margin.bottom;
+        const cellHeight = 12;
+
+        const PATTERNS = {
+            all: file => true,
+            controller: file => file.includes('src/main/controller'),
+            application: file => file.includes('src/main/application')
+        };
+
+        const svg = d3.select("#heatmap")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        const tooltip = d3.select("body")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        let currentData = null;
+        let selectedPaths = {
+            level1: new Set(),
+            level2: new Set(),
+            level3: new Set()
+        };
+        let currentPattern = 'all';
+
+        function getPathsByLevel(files) {
+            const paths = {
+                level1: new Set(),
+                level2: new Set(),
+                level3: new Set()
+            };
+
+            files.forEach(file => {
+                const parts = file.split('/');
+                if (parts.length >= 1) paths.level1.add(parts[0] || 'root');
+                if (parts.length >= 2) paths.level2.add(`${parts[0]}/${parts[1]}`);
+                if (parts.length >= 3) paths.level3.add(`${parts[0]}/${parts[1]}/${parts[2]}`);
+            });
+
+            return {
+                level1: [...paths.level1].sort(),
+                level2: [...paths.level2].sort(),
+                level3: [...paths.level3].sort()
+            };
+        }
+
+        function updatePathFilters(files) {
+            // パターンでフィルタリング
+            const filteredFiles = files.filter(PATTERNS[currentPattern]);
+            const pathsByLevel = getPathsByLevel(filteredFiles);
+            const filterContainer = d3.select("#pathFilters");
+
+            filterContainer.selectAll("*").remove();
+
+            // Level 1 filters
+            const level1Container = filterContainer.append("div")
+                .attr("class", "path-level");
+            level1Container.append("div")
+                .attr("class", "path-level-title")
+                .text("Level 1 (Top-level directories)");
+            const level1Options = level1Container.append("div")
+                .attr("class", "path-options");
+
+            // Level 2 filters
+            const level2Container = filterContainer.append("div")
+                .attr("class", "path-level");
+            level2Container.append("div")
+                .attr("class", "path-level-title")
+                .text("Level 2 (Subdirectories)");
+            const level2Options = level2Container.append("div")
+                .attr("class", "path-options");
+
+            // Level 3 filters
+            const level3Container = filterContainer.append("div")
+                .attr("class", "path-level");
+            level3Container.append("div")
+                .attr("class", "path-level-title")
+                .text("Level 3 (Sub-subdirectories)");
+            const level3Options = level3Container.append("div")
+                .attr("class", "path-options");
+
+            // Reset selected paths
+            selectedPaths = {
+                level1: new Set(),
+                level2: new Set(),
+                level3: new Set()
+            };
+
+            function createCheckbox(container, path, level) {
+                const label = container.append("label")
+                    .style("margin-right", "10px");
+
+                label.append("input")
+                    .attr("type", "checkbox")
+                    .attr("value", path)
+                    .attr("checked", true)
+                    .on("change", function () {
+                        if (this.checked) {
+                            selectedPaths[level].add(path);
+                        } else {
+                            selectedPaths[level].delete(path);
+                        }
+                        renderHeatmap(currentData);
+                    });
+
+                label.append("span")
+                    .text(` ${path}`);
+
+                selectedPaths[level].add(path);
+            }
+
+            pathsByLevel.level1.forEach(path => createCheckbox(level1Options, path, 'level1'));
+            pathsByLevel.level2.forEach(path => createCheckbox(level2Options, path, 'level2'));
+            pathsByLevel.level3.forEach(path => createCheckbox(level3Options, path, 'level3'));
+        }
+
+        function renderHeatmap(data) {
+            svg.selectAll("*").remove();
+
+            // パターンとパスフィルターの両方を適用
+            const filteredData = data.filter(d => {
+                if (!PATTERNS[currentPattern](d.filename)) return false;
+
+                const parts = d.filename.split('/');
+                const level1Path = parts[0] || 'root';
+                const level2Path = parts.length >= 2 ? `${parts[0]}/${parts[1]}` : null;
+                const level3Path = parts.length >= 3 ? `${parts[0]}/${parts[1]}/${parts[2]}` : null;
+
+                return selectedPaths.level1.has(level1Path) &&
+                    (!level2Path || selectedPaths.level2.has(level2Path)) &&
+                    (!level3Path || selectedPaths.level3.has(level3Path));
+            });
+
+            const dates = Object.keys(data[0]).slice(1);
+            const files = filteredData.map(d => d.filename);
+
+            const x = d3.scaleBand()
+                .range([0, width])
+                .domain(dates)
+                .padding(0.05);
+
+            const y = d3.scaleBand()
+                .range([height, 0])
+                .domain(files)
+                .padding(0.05);
+
+            let values = [];
+            filteredData.forEach(d => {
+                dates.forEach(date => {
+                    if (d[date] !== "0") values.push(Math.abs(+d[date]));
+                });
+            });
+
+            const colorScale = d3.scaleSequential()
+                .interpolator(d3.interpolateYlOrRd)
+                .domain([0, d3.max(values)]);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x))
+                .selectAll("text")
+                .attr("class", "axis-label")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-65)");
+
+            svg.append("g")
+                .call(d3.axisLeft(y))
+                .selectAll("text")
+                .attr("class", "axis-label")
+                .style("text-anchor", "end")
+                .attr("dx", "-0.5em")
+                .attr("dy", "0.3em");
+
+            filteredData.forEach(d => {
+                dates.forEach(date => {
+                    const value = Math.abs(+d[date]);
+                    if (value > 0) {
+                        svg.append("rect")
+                            .attr("x", x(date))
+                            .attr("y", y(d.filename))
+                            .attr("width", x.bandwidth())
+                            .attr("height", y.bandwidth())
+                            .attr("class", "cell")
+                            .style("fill", colorScale(value))
+                            .on("mouseover", function (event) {
+                                tooltip.transition()
+                                    .duration(200)
+                                    .style("opacity", .9);
+                                tooltip.html(`File: ${d.filename}<br/>Date: ${date}<br/>Changes: ${d[date]}`)
+                                    .style("left", (event.pageX + 10) + "px")
+                                    .style("top", (event.pageY - 28) + "px");
+                            })
+                            .on("mouseout", function () {
+                                tooltip.transition()
+                                    .duration(500)
+                                    .style("opacity", 0);
+                            });
+                    }
+                });
+            });
+        }
+
+        function updateHeatmap(groupName) {
+            d3.csv(`./result/KEEP/git_log_changes_loc/${groupName}_201603-202405.csv`).then(data => {
+                currentData = data;
+                updatePathFilters(data.map(d => d.filename));
+                renderHeatmap(data);
+            });
+        }
+
+        // Initial load
+        updateHeatmap("group1");
+
+        // Handle radio button changes
+        d3.selectAll('input[name="group"]').on("change", function () {
+            if (this.checked) {
+                updateHeatmap(this.value);
+            }
+        });
+
+        d3.selectAll('input[name="pattern"]').on("change", function () {
+            if (this.checked) {
+                currentPattern = this.value;
+                if (currentData) {
+                    updatePathFilters(currentData.map(d => d.filename));
+                    renderHeatmap(currentData);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
