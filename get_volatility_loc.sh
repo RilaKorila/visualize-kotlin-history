@@ -5,17 +5,19 @@ file_changes_in_range() {
     local date_from="$1"
     local date_to="$2"
     local fname="$3"
+    local exclude_dir_name="test"
     
-    echo "filename,add_lines,del_lines" >> "$fname"
+    echo "filename,author,add_lines,del_lines" >> "$fname"
 
-    # 変更されたファイルのリストを取得
-    changed_files=$(git log --pretty=format: --numstat --since="$date_from" --before="$date_to" | awk '{print $3}' | sort -u)
+    # 変更されたファイルのリストを取得（exclude_dir_name配下を除外）
+    changed_files=$(git log --pretty=format: --numstat --since="$date_from" --before="$date_to" -- . ":!${exclude_dir_name}" ":!**/${exclude_dir_name}/**" | awk '{print $3}' | sort -u)
     
     # 各ファイルごとに追加行数と削除行数を集計
     for file in $changed_files; do
+        author=$(git log --since="$date_from" --before="$date_to" --pretty=format:"%an" -- "$file" | head -n 1)
         add_lines=$(git log --since="$date_from" --before="$date_to" --pretty=tformat: --numstat -- "$file" | awk '{ add += $1 } END { print add }')
         del_lines=$(git log --since="$date_from" --before="$date_to" --pretty=tformat: --numstat -- "$file" | awk '{ del += $2 } END { print del }')
-        echo "$file,$add_lines,$del_lines" >> "$fname"
+        echo "$file,$author,$add_lines,$del_lines" >> "$fname"
     done
 }
 
